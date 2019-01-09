@@ -3,31 +3,48 @@ window.onload = function() {
   $("h2").addClass("faded");
 };
 
-$(".leg-exp").on("mouseover", function() {
-  $(".selection").text("Level 3. See how I got my EXP points.");
-  $(".selection").css('opacity', '1');
+$(".middle-box").hover(function(){
+  $('#passion-header').addClass('moveup');
+}, function() {
+  $('#passion-header').removeClass('moveup');
 });
 
-$(".leg-passion").on("mouseover", function() {
-  $(".selection").text("HP Full. Check out what drives me.");
-  $(".selection").css('opacity', '1');
+$(".leg-exp").hover(function(){
+  $(this).siblings('.floating').addClass('shad-change');
+}, function() {
+  $(this).siblings('.floating').removeClass('shad-change');
 });
 
-$(".leg-skills").on("mouseover", function() {
-  $(".selection").text("My skills are super effective, take a look.");
-  $(".selection").css('opacity', '1');
+$(".leg-passion").hover(function(){
+  $(this).siblings('.floating').addClass('shad-change');
+}, function() {
+  $(this).siblings('.floating').removeClass('shad-change');
 });
 
-$(".leg-proj").on("mouseover", function() {
-  $(".selection").text("Want to see what's in my bag?");
-  $(".selection").css('opacity', '1');
+$(".leg-skills").hover(function(){
+  $(this).siblings('.floating').addClass('shad-change');
+}, function() {
+  $(this).siblings('.floating').removeClass('shad-change');
 });
 
-$(".leg-chat").on("mouseover", function() {
-  $(".selection").text("Chat with me.");
-  $(".selection").css('opacity', '1');
+$(".leg-proj").hover(function(){
+  $(this).siblings('.floating').addClass('shad-change');
+}, function() {
+  $(this).siblings('.floating').removeClass('shad-change');
 });
 
+$(".leg-chat").hover(function(){
+  $(this).siblings('.floating').addClass('shad-change');
+}, function() {
+  $(this).siblings('.floating').removeClass('shad-change');
+});
+
+$("#lines").on({
+  click: function() {
+    $("#line3").toggleClass('line3clicked');
+    $("#line2").toggleClass('line2clicked');
+  }
+});
 
 $(document).ready(function() {
 

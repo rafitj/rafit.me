@@ -6,11 +6,14 @@ html {
 body {
   margin: 0px 0px 0px 0px;
   background-color: #f7f7f7;
+  text-align: center;
 }
 
-hr{
+hr {
   width: 30%;
+  margin-bottom: 0.5rem;
 }
+
 .dp {
   width: 16rem;
   margin: 1.2rem;
@@ -40,6 +43,11 @@ hr{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.pad {
+  padding: 0rem 12rem;
 }
 
 .para {
@@ -60,13 +68,11 @@ hr{
   color: #919191;
   font-size: 1rem;
   margin: 0rem;
-  margin-bottom: 3rem;
 }
 
 .icon {
   width: 4rem;
   margin-bottom: 0.3rem;
-  order: 0;
 }
 
 .shadowed {
@@ -75,23 +81,27 @@ hr{
 
 .intro {
   background-color: #f7f7f7;
-  color: #1e1e1e
+  color: #1e1e1e clear:both;
 }
 
 .passions {
   background-color: #f7f7f7;
+  clear: both;
 }
 
 .exp {
   background-color: #f7f7f7;
+  clear: both;
 }
 
 .skills {
   background-color: #f7f7f7;
+  clear: both;
 }
 
 .projects {
   background-color: #f7f7f7;
+  clear: both;
 }
 
 .contact {
@@ -117,16 +127,16 @@ hr{
   margin-bottom: 0;
 }
 
-.oval-shadow {
-  opacity: 0.3;
-  height: 1rem;
-  width: 47%;
-  border-radius: 100%;
+.large-shadow {
+  height: 0.75rem;
+  width: 20rem;
   margin: 0 auto;
-  margin-top: 2px;
+  margin-top: 0px;
   margin-bottom: 0;
-  background-color: grey;
-  filter: blur(5px);
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  filter: blur(2.5px);
+  opacity: 0.5;
 }
 
 .btn {
@@ -152,22 +162,104 @@ hr{
 }
 
 .legend-s {
+  width: 6rem;
+  transition: transform 0.8s;
+  text-align: center;
+}
+
+.legend-s img {
   width: 4rem;
-  transition: transform 1s;
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
 }
 
 .legend-s:hover {
-  transform: translateX(35px);
+  transform: translateX(40px);
 }
 
 .legend-s:hover:after {
-  transform: translateX(-35px);
+  transform: translateX(-40px);
+}
+
+.legend-s-text {
+  margin: 0 auto;
+  text-align: center;
+  color: #919191;
+  opacity: 0;
+  transition: opacity 0.5s transform 0.8s;
+}
+
+.legend-s:hover .legend-s-text {
+  opacity: 1;
+}
+
+.legend-s:hover:after .legend-s-text {
+  opacity: 0;
+}
+
+.mask2:hover .line2 {
+  width: 3.3rem;
+  border-radius: 999px;
+}
+
+.mask2:hover .line3 {
+  width: 2.8rem;
+  border-radius: 999px;
+}
+
+#line2.line2clicked {
+  width: 3.3rem;
+}
+
+#line3.line3clicked {
+  width: 2.8rem;
+}
+
+.mask2 {
+  top: 60px;
+  left: 52.5px;
+  z-index: 21;
+  color: white;
+  text-align: center;
+  line-height: 120px;
+  cursor: pointer;
+  position: fixed;
+  transition: all 0.5s;
+  margin: 0 auto;
+}
+
+.line1 {
+  width: 4rem;
+  background: linear-gradient(90deg, #000355, #e90054);
+  border-radius: 999px;
+}
+
+.line2 {
+  width: 4rem;
+  background: linear-gradient(90deg, #e90054, #000355);
+  transition: width 0.5s;
+  border-radius: 999px;
+}
+
+.line3 {
+  width: 4rem;
+  background: linear-gradient(90deg, #e90054, #000355);
+  transition: width 0.6s;
+  border-radius: 999px;
+}
+
+.menu-line {
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+  height: 0.7rem;
+  border-radius: 999px;
+  margin: 0 auto;
+  margin-bottom: 0.4rem;
+  text-align: center;
 }
 
 .menu {
-  width: 6rem;
-  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 999px;
 }
 
 .legend:hover {
@@ -198,6 +290,7 @@ hr{
   animation: AnimationName 4s ease infinite;
   width: 100vw;
   height: 1rem;
+  transition: transform 0.5s;
 }
 
 @keyframes AnimationName {
@@ -215,8 +308,6 @@ hr{
 }
 
 .progress {
-  display: left;
-  display: inline-block;
   width: 25rem;
 }
 
@@ -231,6 +322,7 @@ hr{
   background: -webkit-linear-gradient(#e90054, #000355);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-top: 0;
 }
 
 .s-level {
@@ -248,7 +340,7 @@ hr{
 
 .skill_icons {
   width: 3rem;
-  margin: 1rem;
+  margin: 0.5rem;
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
   float: left;
 }
@@ -274,8 +366,23 @@ hr{
   -webkit-text-fill-color: transparent;
 }
 
+.moveup {
+  transform: translateY(-40px);
+}
+
+#passion-header {
+  transition: transform 0.5s;
+}
+
+.pass-table>thead>tr>th, .pass-table>tbody>tr>th, .pass-table>tfoot>tr>th, .pass-table>thead>tr>td, .pass-table>tbody>tr>td, .pass-table>tfoot>tr>td {
+  padding: 2rem;
+}
+
 .pass-box {
   transition: transform 0.5s;
+  border-radius: 15px;
+  display: block;
+  padding: 1rem;
 }
 
 .pass-box:hover {
@@ -289,38 +396,44 @@ hr{
 }
 
 .floating {
-  width: 7rem;
-  display: inline-block;
-  transform: translateY(0);
-  transition: transform 1s;
-}
-
-.floating:after {
-  content: "";
-  position: absolute;
-  margin: 0rem;
-  bottom: -10px;
-  left: 50%;
-  height: 8px;
-  width: 80%;
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
+  width: 5.3rem;
+  height: 0.6rem;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.2);
-  filter: blur(3px);
+  filter: blur(2.2px);
   opacity: 0.5;
-  transform: translate(-50%, 0);
-  transition: transform 1s;
+  transition: opacity 0.5s, transform 0.5s, 0.5s -webkit-filter linear;
+  transition-timing-function: ease-in-out;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
 }
 
-/* Hover States */
-.floating:hover {
-  transform: translateY(-40px);
-  transition: transform 1s;
+.main-legend-item {
+  transition: transform 0.7s;
+  display: inline-block;
+  transition-timing-function: ease-in-out;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
-.floating:hover:after {
-  transform: translate(-50%, 40px) scale(0.75);
-  transition: transform 1s;
+.main-legend-item:hover {
+  transform: translateY(-30px) scale(1.1);
+}
+
+.main-legend-item:hover:after {
+  transform: translate(30px) scale(1);
+}
+
+.floating.shad-change {
+  transform: scale(0.8);
+  opacity: 0.8;
+  filter: blur(1.8px);
+}
+
+.main-legend {
+  display: inline-block;
+  text-align: center;
 }
 
 .x {
@@ -329,29 +442,14 @@ hr{
   text-align: center;
   top: 30px;
   z-index: 19;
-  left: 28px;
+  left: 36px;
   transition: all 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550) .6s;
-}
-
-.mask2:hover {
-  opacity: 0.5;
-}
-
-.mask2 {
-  top: 15px;
-  left: 15px;
-  position: absolute;
-  z-index: 21;
-  color: white;
-  text-align: center;
-  line-height: 120px;
-  cursor: pointer;
-  position: fixed;
-  transition: all 0.5s;
 }
 
 .parent2 {
   transition: all 0.5s;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .show {
@@ -362,18 +460,22 @@ hr{
   opacity: 0;
 }
 
+.tbody {
+  text-align: center;
+}
+
 .w-icon-lg {
   width: 7rem;
-  margin-bottom: 2rem;
+  float: left;
 }
 
 .w-f-icon-lg {
-  width: 6.5rem;
+  width: 6rem;
   margin-bottom: 0.5rem;
 }
 
 .w-sub-title {
-  font-size: 1.5rem;
+  font-size: 1.0rem;
   color: #919191;
   text-align: left;
   justify-content: left;
@@ -387,6 +489,8 @@ hr{
   -webkit-text-fill-color: transparent;
   text-align: left;
   justify-content: left;
+  float: left;
+  margin-bottom: 0rem;
 }
 
 .w-title-s {
@@ -394,18 +498,19 @@ hr{
   color: #919191;
   text-align: left;
   justify-content: left;
+  float: left;
 }
 
 .w-date {
   font-size: 1rem;
   color: #919191;
   text-align: right;
-  justify-content: right;
 }
 
 .w-f-title {
   font-size: 1rem;
   color: #919191;
+  margin-bottom: 0;
 }
 
 .btn-secondary {
@@ -437,27 +542,190 @@ hr{
   border-bottom-right-radius: 10px;
 }
 
-@media (max-width: 1100px) {
+.table {
+  transition: transform 0.5s;
+  margin-bottom: 0;
+}
+
+.table-borderless {
+  margin-bottom: 0;
+}
+
+.skill-header {
+  transition: transform 0.5s;
+}
+
+.skill-footer {
+  transition: transform 0.5s;
+}
+
+@media (max-width: 415px) {
   .pass-box {
     margin: 1rem;
   }
-  .w-sub-title{
+
+  .w-sub-title {
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0rem;
   }
-  .w-f-title{
-    margin-bottom: 1rem;
-  }
-  .dp{
-    width: 35rem;
-  }
-  .title{
+
+  .title {
     font-size: 7rem;
   }
-  .hi{
+
+  .hi {
     font-size: 2rem;
   }
-  .para{
+
+  .para {
     font-size: 1.5rem;
+  }
+}
+.skill-line{
+  margin-bottom: 1rem;
+}
+
+
+@media (max-width: 1250px) {
+  .pass-box {
+    margin: 0 auto;
+  }
+
+  .w-sub-title {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 4.5rem;
+  }
+
+  .para {
+    margin-bottom: 1rem;
+  }
+
+  .hi {
+    font-size: 1.5rem;
+  }
+
+  .scroll-table {
+    transform: scale(0.8);
+    margin-bottom: 0;
+  }
+
+  .skill-header {
+    transform: translateY(40px);
+  }
+
+  .skill-footer {
+    transform: translateY(-60px);
+  }
+}
+
+@media (max-width: 999px) {
+  .row-skills {
+    text-align: center;
+  }
+
+  .skills {
+    text-align: center;
+  }
+
+
+
+  #pls-scroll {
+    height: 40vh;
+    overflow: auto;
+    text-align: center;
+    border-radius: 20px;
+    margin: 4rem auto;
+    margin-bottom: 6rem;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.05);
+    transition: transform 0.6s;
+  }
+
+  #pls-scroll:hover {
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.07);
+    transform: scale(1.08);
+  }
+
+  .skill-line{
+    margin-bottom: 0rem;
+  }
+  .c-row{
+    padding: 0rem;
+  }
+
+  .scroll-table {
+    transform: scale(1);
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .scroll-table td {
+    display: block;
+    text-align: center;
+  }
+
+  .s-years {
+    opacity: 0;
+  }
+
+  .s-language {
+    text-align: left;
+    float: left;
+  }
+
+  .s-level {
+    margin-top: 0.2rem;
+    text-align: left;
+    float: left;
+  }
+
+  .exp-table tr td:first-child {
+    display: block;
+  }
+
+  .set {
+    margin: 0 auto;
+  }
+
+  .pad {
+    padding: 0rem 4rem;
+  }
+
+  .legend{
+    width: 4rem;
+  }
+
+
+
+  .passion-header {
+    margin-bottom: -2rem;
+  }
+
+  .p-icon {
+    height: 5rem;
+  }
+
+  .p-title {
+    font-size: 1.4rem;
+  }
+
+  .pass-box {
+    display: block;
+  }
+
+  .pass-box:hover {
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    transform: translateY(-18px) scale(1.05);
+  }
+
+  .pass-box:hover:after {
+    box-shadow: none;
+    transform: translateY(18px) scale(1);
+  }
+
+  .sub-title {
+    margin-bottom: 0rem;
   }
 }
