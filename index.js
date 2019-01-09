@@ -1,7 +1,7 @@
-window.onload = function() {
-  $("h1").addClass("faded");
-  $("h2").addClass("faded");
-};
+// window.onload = function() {
+//   $("h1").addClass("faded");
+//   $("h2").addClass("faded");
+// };
 
 $(".middle-box").hover(function(){
   $('#passion-header').addClass('moveup');

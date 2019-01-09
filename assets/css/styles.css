@@ -14,6 +14,12 @@ hr {
   margin-bottom: 0.5rem;
 }
 
+.para2{
+  font-size: 0.8rem;
+  padding-top: 0.3rem;
+  margin-bottom: 0rem;
+}
+
 .dp {
   width: 16rem;
   margin: 1.2rem;
@@ -308,6 +314,7 @@ hr {
 }
 
 .progress {
+  border-radius: 25px;
   width: 25rem;
 }
 
@@ -406,7 +413,6 @@ hr {
   transition-timing-function: ease-in-out;
   margin: 0 auto;
   margin-top: 0.5rem;
-  margin-bottom: 2rem;
 }
 
 .main-legend-item {
@@ -559,6 +565,27 @@ hr {
   transition: transform 0.5s;
 }
 
+.contact-item{
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  border-radius: 15px;
+  transition: transform 0.6s;
+  color: rgba(0, 0, 0, 0);
+
+}
+.contact-item:hover {
+  transform: scale(1.1);
+  color: #919191;
+}
+.fas:before, .fab:before {
+  font-size: 2.3rem;
+  background: -webkit-linear-gradient(#e90054, #000355);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: initial; /* reset Font Awesome's display:inline-block */
+}​
+
+
 @media (max-width: 415px) {
   .pass-box {
     margin: 1rem;
@@ -703,26 +730,22 @@ hr {
     margin-bottom: -2rem;
   }
 
-  .p-icon {
-    height: 5rem;
-  }
 
-  .p-title {
-    font-size: 1.4rem;
-  }
 
   .pass-box {
     display: block;
+    transition: transform 0.5s;
+    transform: scale(0.8);
   }
 
   .pass-box:hover {
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
-    transform: translateY(-18px) scale(1.05);
+    transform: translateY(-18px) scale(0.9);
   }
 
   .pass-box:hover:after {
     box-shadow: none;
-    transform: translateY(18px) scale(1);
+    transform: translateY(18px) scale(0.8);
   }
 
   .sub-title {
