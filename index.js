@@ -4,11 +4,11 @@
 // };
 
 AOS.init();
-
 AOS.init({
   disable: function() {
     var maxWidth = 900;
     return window.innerWidth < maxWidth;
+    once: true;
   }
 });
 
