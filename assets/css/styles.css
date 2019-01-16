@@ -22,7 +22,6 @@ hr {
 li {
   font-size: 0.8rem;
   color: #919191;
-  margin-top: -0.4rem;
 }
 
 .para2 {
@@ -578,8 +577,9 @@ li {
 .w-descrip {
   opacity: 0;
   margin-left: 1rem;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: #919191;
+  line-height: 1.8;
   text-align: left;
   transition: transform 0.5s, opacity 0.5s
 }
