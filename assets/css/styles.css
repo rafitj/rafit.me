@@ -371,14 +371,14 @@ li {
 .s-level {
   font-size: 1rem;
   color: #919191;
-  padding-left: 0.5rem;
 }
 
 .s-years {
-  font-size: 0.8rem;
-  background: -webkit-linear-gradient(#e90054, #000355);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 1rem;
+  color: #919191;
+
+    text-align: left;
+    float: left;
 }
 
 .skill_icons {
@@ -387,15 +387,9 @@ li {
   float: left;
 }
 
-.s-years {
-
-  text-align: left;
-  float: left;
-}
-
 .tool {
   width: 3.5rem;
-  margin: 0 0.5rem;
+  margin: 0.2rem 0.5rem;
 }
 
 .tool-long {
@@ -570,7 +564,6 @@ li {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: left;
-  margin-left: 1rem;
   margin-bottom: 0rem;
 }
 
@@ -581,12 +574,10 @@ li {
   font-size: 1rem;
   color: #919191;
   text-align: left;
-  margin-left: 1rem;
 }
 
 .w-descrip {
   opacity: 1;
-  margin-left: 1rem;
   font-size: 0.8rem;
   color: #919191;
   line-height: 1.8;
@@ -599,6 +590,9 @@ li {
   transform: translateY(0.5px);
 }
 
+.date-cell{
+  width: 9rem;
+}
 .w-date {
   font-size: 1rem;
   color: #919191;
@@ -715,17 +709,40 @@ li {
   }
 
   .skill-footer {
-    transform: translateY(-40px);
+    transform: translateY(-80px);
   }
 
-  .scroll-table {
+
+  .row-skills {
+    transition: transform 0.5s;
+    transform: scale(0.8);
+  }
+
+  .skill-header {
+    transform: translateY(15px);
+  }
+
+  .exp-footer {
+    transform: translateY(-40px);
+    transform: scale(0.8);
+  }
+
+  .exp-table {
     transform: scale(0.8);
     margin-bottom: 0;
   }
 
-  .skill-header {
+  .exp-header {
     transform: translateY(40px);
   }
+
+
+    .freelance-table, .w-sub-title{
+      display: none;
+    }
+
+
+
 }
 
 @media (max-width: 999px) {
@@ -772,11 +789,13 @@ li {
     padding: 0rem;
   }
 
-  .scroll-table {
+  .row-skills {
     transform: scale(1);
     text-align: center;
     margin: 0 auto;
   }
+
+
 
   .scroll-table td {
     display: block;
@@ -791,12 +810,6 @@ li {
   }
 
   .s-language {
-    text-align: left;
-    float: left;
-  }
-
-  .s-level {
-    margin-top: 0.2rem;
     text-align: left;
     float: left;
   }
@@ -901,7 +914,7 @@ li {
 .meter {
   opacity: 0;
   height: 1rem;
-  width: 25rem;
+  width: 17rem;
   position: relative;
   background: #efefef;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);

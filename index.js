@@ -12,8 +12,7 @@ AOS.init({
   disable: function() {
     var maxWidth = 900;
     return window.innerWidth < maxWidth;
-    once: true;
-  }
+  },
 });
 
 $(".middle-box").hover(function() {
