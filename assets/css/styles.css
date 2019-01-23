@@ -87,8 +87,37 @@ li {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
-  text-decoration: none;
+  transition: opacity 0.2s;
 }
+
+.strikey a, .strike {
+  text-decoration: none;
+  display: inline;
+  background: linear-gradient(90deg, #000355, #e90054);
+  background-position: 0 1em;
+  background-repeat: no-repeat;
+  background-size: 0% 6px;
+
+  transition: background-size 0.2s ease-in-out 0.2s;
+}
+
+.strikey a:hover,
+.strikey a:focus {
+  background-size: 100% 6px;
+  transition-delay: 0s;
+}
+
+.strike {
+  background-size: 0% 2px;
+  background-position: 0 0.5em; /*1em;*/
+}
+
+.strike:hover,
+.strike:focus {
+  background-size: 100% 2px;
+  transition-delay: 0s;
+}
+
 
 .sub-title {
   color: #919191;
