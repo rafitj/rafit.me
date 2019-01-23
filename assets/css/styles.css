@@ -585,7 +585,7 @@ li {
 }
 
 .w-descrip {
-  opacity: 0;
+  opacity: 1;
   margin-left: 1rem;
   font-size: 0.8rem;
   color: #919191;

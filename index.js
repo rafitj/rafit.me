@@ -3,6 +3,10 @@
 //   $("h2").addClass("faded");
 // };
 
+
+//Deffered CSS
+
+
 AOS.init();
 AOS.init({
   disable: function() {
