@@ -614,10 +614,7 @@ li {
   transition: transform 0.5s, opacity 0.5s
 }
 
-.w-descrip:hover {
-  opacity: 1;
-  transform: translateY(0.5px);
-}
+
 
 .date-cell{
   width: 9rem;
@@ -715,6 +712,8 @@ li {
     font-size: 2rem;
   }
 
+
+
   .para {
     font-size: 1.5rem;
   }
@@ -752,7 +751,7 @@ li {
   }
 
   .exp-footer {
-    transform: translateY(-40px);
+    transform: translateY(-20px);
     transform: scale(0.8);
   }
 
@@ -775,6 +774,12 @@ li {
 }
 
 @media (max-width: 999px) {
+  .trunc{
+    white-space: nowrap;
+    width: 25rem;
+    overflow: hidden;
+    text-overflow: ellipsis
+  }
   .row-skills {
     text-align: center;
   }
@@ -794,6 +799,14 @@ li {
     padding: 0.3rem;
   }
 
+
+    .skill-footer{
+      margin-top: 3rem;
+    }
+
+    .skill-header{
+      margin-bottom: 3rem;
+    }
   #pls-scroll {
     height: 40vh;
     overflow: auto;
