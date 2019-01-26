@@ -159,6 +159,33 @@ li {
   clear: both;
 }
 
+.proj-box{
+  width: 19rem;
+  transition: transform 0.3s, opacity 0.3s, filter 0.1s;
+}
+
+
+.proj-box-0.fade-down, .proj-box-1.fade-down, .proj-box-2.fade-down, .proj-box-3.fade-down{
+  transition: transform 0.3s opacity 0.3s;
+  opacity: 0.5;
+  filter: blur(3px);
+}
+
+.proj-box:hover {
+  transform: scale(1.08);
+  -webkit-filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.5));
+  filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.2));
+}
+
+.proj-table{
+  transition: transform 0.4s;
+}
+
+.proj-header{
+  transition: transform 0.4s;
+}
+
+
 .contact {
   background-color: #f7f7f7;
 }
@@ -720,6 +747,12 @@ li {
 }
 
 @media (max-width: 1250px) {
+  .proj-header {
+    transform: translateY(30px);
+  }
+  .proj-table {
+    transform: scale(0.8);
+  }
   .w-sub-title {
     text-align: center;
   }
@@ -774,6 +807,13 @@ li {
 }
 
 @media (max-width: 999px) {
+  .proj-header {
+    transform: translateY(60px);
+  }
+  .proj-table {
+    transform: scale(0.7);
+  }
+
   .trunc{
     white-space: nowrap;
     width: 25rem;
@@ -793,6 +833,8 @@ li {
     transform: scale(0.6);
     transform: translateY(-25px);
   }
+
+
 
   .exp-tag {
     margin: 0.3rem auto;
@@ -891,7 +933,6 @@ li {
   }
 }
 
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   margin: 0 auto;
   background-color: transparent;
@@ -902,7 +943,6 @@ li {
   transition: transform 0.5s;
 }
 
-/* This container is needed to position the front and back side */
 .flip-card-inner {
   margin-top: 1rem;
   position: relative;
@@ -922,6 +962,7 @@ li {
 .flip-card:hover {
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
   transform: translateY(-25px) scale(1.05);
+  cursor: pointer;
 }
 
 .flip-card:hover:after {
@@ -952,7 +993,7 @@ li {
   background-image: linear-gradient(-45deg, #e90054, #000355);
   transform: rotateY(180deg);
 }
-
+/*
 .meter {
   opacity: 0;
   height: 1rem;
@@ -983,4 +1024,4 @@ li {
   background-image: linear-gradient(-90deg, #e90054, #000355);
   position: relative;
   overflow: hidden;
-}
+} */
