@@ -154,9 +154,14 @@ li {
   clear: both;
 }
 
+
 .projects {
   background-color: #f7f7f7;
   clear: both;
+}
+
+.gitlink{
+  margin-bottom: 1rem;
 }
 
 .proj-box{
@@ -728,6 +733,13 @@ li {
   margin-bottom: 1rem;
 }
 
+.c-img{
+  margin-left: 1.1rem;
+}
+.set-c{
+  margin-top: 0.8rem;
+}
+
 ​ @media (max-width: 415px) {
   .w-sub-title {
     text-align: center;
@@ -863,6 +875,29 @@ li {
     transition: transform 0.6s;
   }
 
+  .c-break{
+    margin: 0;
+    padding: 0;
+  }
+
+  .c-img{margin-left: 0;}
+  .set-c{
+    margin-top: 0rem;
+  }
+  .c-txt{
+    padding-left: 1rem;
+  }
+
+  .skill_icons{
+    float: none;
+    margin: 0 auto;
+  }
+
+  .s-language{
+    float: none;
+    margin: 0 auto;
+  }
+
   #pls-scroll:hover {
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.07);
     transform: scale(1.08);
@@ -872,9 +907,6 @@ li {
     margin-bottom: 0rem;
   }
 
-  .c-row {
-    padding: 0rem;
-  }
 
   .row-skills {
     transform: scale(1);
