@@ -160,8 +160,9 @@ li {
 }
 
 .proj-box{
-  width: 19rem;
+  width: 17rem;
   transition: transform 0.3s, opacity 0.3s, filter 0.1s;
+  margin: 1.5rem;
 }
 
 
@@ -179,10 +180,12 @@ li {
 
 .proj-table{
   transition: transform 0.4s;
+  transform: scale(0.8);
 }
 
 .proj-header{
   transition: transform 0.4s;
+  transform: translateY(60px);
 }
 
 
@@ -748,10 +751,10 @@ li {
 
 @media (max-width: 1250px) {
   .proj-header {
-    transform: translateY(30px);
+    transform: translateY(75px);
   }
   .proj-table {
-    transform: scale(0.8);
+    transform: scale(0.75);
   }
   .w-sub-title {
     text-align: center;
@@ -808,10 +811,10 @@ li {
 
 @media (max-width: 999px) {
   .proj-header {
-    transform: translateY(60px);
+    transform: translateY(135px);
   }
   .proj-table {
-    transform: scale(0.7);
+    transform: scale(0.5);
   }
 
   .trunc{
