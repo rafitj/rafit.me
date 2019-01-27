@@ -65,7 +65,7 @@ var flip3 = false;
 $("#inner-1").on({
   click: function() {
     $(this).toggleClass('flip');
-    flip1 = true;
+    flip1 = !flip1;
     if (flip3){
       $("#inner-3").toggleClass('flip');
       flip3 = !flip3;
@@ -79,7 +79,7 @@ $("#inner-1").on({
 $("#inner-2").on({
   click: function() {
     $(this).toggleClass('flip');
-    flip2 = true;
+    flip2 = !flip2;
     if (flip1){
       $("#inner-1").toggleClass('flip');
       flip1 = !flip1;
@@ -93,7 +93,7 @@ $("#inner-2").on({
 $("#inner-3").on({
   click: function() {
     $(this).toggleClass('flip');
-    flip3 = true;
+    flip3 = !flip3;
     if (flip1){
       $("#inner-1").toggleClass('flip');
       flip1 = !flip1;
