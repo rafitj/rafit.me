@@ -24,6 +24,7 @@ li {
   color: #919191;
 }
 
+
 .para2 {
   color: #919191;
   font-size: 0.8rem;
@@ -158,6 +159,7 @@ li {
 .projects {
   background-color: #f7f7f7;
   clear: both;
+  text-align: center;
 }
 
 .gitlink{
@@ -165,9 +167,9 @@ li {
 }
 
 .proj-box{
-  width: 17rem;
+  width: 12.5rem;
   transition: transform 0.3s, opacity 0.3s, filter 0.1s;
-  margin: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 
@@ -186,8 +188,12 @@ li {
 .proj-table{
   transition: transform 0.4s;
   transform: scale(0.8);
+  margin: 0 auto;
 }
 
+.proj-table td{
+  width: 16rem;
+}
 .proj-header{
   transition: transform 0.4s;
   transform: translateY(60px);
