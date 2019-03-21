@@ -138,6 +138,12 @@ li {
 .intro {
   background-color: #f7f7f7;
   color: #1e1e1e clear:both;
+  text-align: center;
+}
+
+.maint{
+  margin-top: 15rem;
+  vertical-align: middle;
 }
 
 .passions {
