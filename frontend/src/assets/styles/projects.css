@@ -1,0 +1,14 @@
+* {
+  font-family: 'Karla', sans-serif;
+}
+
+.projects-container{
+  text-align: center;
+}
+
+.projects-title {
+  margin-top: 15rem;
+  color: #dddddd;
+  font-size: 6rem;
+  letter-spacing: 5rem;
+}

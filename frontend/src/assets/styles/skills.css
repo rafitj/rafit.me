@@ -1,0 +1,14 @@
+* {
+  font-family: 'Karla', sans-serif;
+}
+
+.skills-container{
+  text-align: center;
+}
+
+.skills-title {
+  margin-top: 15rem;
+  color: #dddddd;
+  font-size: 6rem;
+  letter-spacing: 5rem;
+}
