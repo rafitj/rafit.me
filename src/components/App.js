@@ -5,7 +5,7 @@ import Content from './Content';
 
 class App extends React.Component {
     render() {
-        const maintenance = false;
+        const maintenance = true;
         if (maintenance === true) {
             return <Maintenance / >
         }
