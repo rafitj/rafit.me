@@ -1,17 +1,20 @@
+* {
+  font-family: 'Karla', sans-serif;
+}
 .container {
   width: 100vw;
   height: 100vh;
   display: table-cell;
   text-align: center;
   vertical-align: middle;
-  font-size: 2rem;
+  font-size: 1.25rem;
 }
 
 .break {
   margin: 0 auto;
   width: 40%;
   height: 0.3%;
-  background-color: grey;
+  background-color: #2d2d2d;
   margin-top: 2.8rem;
   transition: all 0.5s ease;
   animation: animate_line 2s forwards linear;
@@ -27,41 +30,42 @@
 }
 
 .container p {
-  color: grey;
+  color: #2d2d2d;
+  transition: all 0.5s ease;
 }
 
-
 #resume {
-  background: -webkit-linear-gradient(#ff777f,#ff0756);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #2d2d2d;
   transition: all 0.5s ease;
 }
 #github {
-  background: -webkit-linear-gradient(#aaffc2,#00e949);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #2d2d2d;
   transition: all 0.5s ease;
 }
 #email {
-  background: -webkit-linear-gradient(#7be0ff,#00a5e9);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #2d2d2d;
   transition: all 0.5s ease;
 }
 
 .container a {
   text-decoration: none;
+  color: #2d2d2d;
+  margin: 1.5rem;
+  transition: all 0.5s ease;
+  margin-top: 0;
+}
+.container a:hover {
+  text-decoration: none;
+  color: grey;
   margin: 1.5rem;
   transition: all 0.8s ease;
   margin-top: 0;
 }
-
 .anchor-div {
   display: inline-block;
   text-align: center;
   transition: all 0.5s ease;
 }
 .anchor-div:hover{
-  transform: translateY(-7px);
+  color: grey;
 }

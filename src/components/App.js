@@ -1,25 +1,18 @@
-import React, {Fragment} from 'react';
+import React, { Fragment } from 'react';
 import Maintenance from './Maintenance';
-import SectionSelector from './SectionSelector';
-import Section from './Section';
-import { SectionStore } from '../contexts/SectionContext';
+import Content from './Content';
 
 
 class App extends React.Component {
-  render () {
-    const maintenance = true;
-    if (maintenance === true){
-      return <Maintenance />
+    render() {
+        const maintenance = false;
+        if (maintenance === true) {
+            return <Maintenance / >
+        }
+        return (
+          <Content />
+        );
     }
-    return (
-      <Fragment>
-        <SectionStore>
-            <Section/>
-            <SectionSelector/>
-        </SectionStore>
-      </Fragment>
-    );
-  }
 }
 
 export default App;

@@ -5,52 +5,36 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 class Maintenance extends Component {
-  state = {
-    resume: 'resume',
-    github: 'github',
-    email: 'email',
-    selected: ''
-  }
   componentDidMount () {
     AOS.init({
       duration : 1
     })
   }
-  renderText  = (text, d) => {
-    const array = [];
-    for (var i = 0; i < text.length; i++) {
-      var delay = d + (i*100);
-      array.push(<span key = {delay} className = "char" data-aos="fade" data-aos-delay={delay}>{text.charAt(i)}</span>);
-    }
-    return array;
-  }
   render(){
     return (
       <Fragment>
         <div className = "container">
-            <p>{this.renderText("chill, im working on it ...", 200)}</p>
-            <div className = "break" data-aos="fade"  data-aos-delay="1000"></div>
-            <br/>
-            <div id = "resume" className = "anchor-div">
+            <p data-aos="fade" data-aos-duration = "500" >chill, im working on it ...</p>
+            <div data-aos="fade" data-aos-delay = "2000" id = "resume" className = "anchor-div">
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href = {Resume}>
-                {this.renderText("resume", 400)}
+                resume
               </a>
             </div>
-            <div id = "github" className = "anchor-div" >
+            <div data-aos="fade"  data-aos-delay = "2000"  id = "github" className = "anchor-div" >
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href = "https://github.com/RafitJ">
-                {this.renderText("github", 300)}
+                github
               </a>
           </div>
-            <div id = "email" className = "anchor-div" >
+            <div data-aos="fade" data-aos-delay = "3000" id = "email" className = "anchor-div" >
               <a
                 href = "mailto: rafit.jamil@gmail.com">
-                {this.renderText("email", 700)}
+                email
               </a>
           </div>
         </div>
