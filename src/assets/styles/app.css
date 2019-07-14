@@ -1,0 +1,8 @@
+.bg{
+    position: absolute;
+    mix-blend-mode: color-dodge;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+
+}

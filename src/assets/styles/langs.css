@@ -1,0 +1,46 @@
+.lang_card{
+    border-radius: 15px;
+    margin: 0 0.25rem 3rem 0.25rem;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.300);
+    height: 8rem;
+    color: white;
+    background-image: linear-gradient(-45deg, rgba(231, 69, 69, 0.654),rgb(128, 0, 0, 0.654));
+    position: relative;
+}
+
+.lang_logo{
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1),rgba(255, 255, 255, 0.4));
+    height: 5rem;
+    width: 5rem;
+    border-radius: 100%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.300);
+}
+.lang_name{
+    position: absolute;
+    top: 45px;
+    right: 25px;
+    font-size: 2rem;
+}
+
+.tool_card{
+    border-radius: 15px;
+    margin: 0 0.25rem 3rem 0.25rem;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.300);
+    height: 7rem;
+    width: 8rem;
+    color: white;
+    background-image: linear-gradient(-45deg, rgba(231, 69, 69, 0.654),rgb(128, 0, 0, 0.654));
+    text-align: center;
+    padding-top: 1rem;
+}
+.tool_logo{
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1),rgba(255, 255, 255, 0.4));
+    height: 5rem;
+    width: 5rem;
+    border-radius: 100%;
+    margin: 0 auto;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.300);
+}
