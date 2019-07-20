@@ -1,5 +1,5 @@
 .home_img{
-    margin: 0.5rem auto;
+    margin: 2rem auto 1rem;
     width: 9rem;
     height: 9rem;
     border-radius: 100%;
@@ -13,6 +13,7 @@
 .muted_p{
     color: rgba(255, 255, 255, 0.555);
     font-size: 0.95rem;
+    margin: 1.5rem 1rem;
 }
 .name_header{
     color: white;

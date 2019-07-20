@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-grid-system';
 import '../../assets/styles/nav.css'
 import nav_arrow from '../../assets/images/nav_arrow.svg'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+
 class Nav extends Component {
     state = {
         'show': true
@@ -19,20 +21,24 @@ class Nav extends Component {
         const Nav = (
             <>
                 <Col xs={3}>
-                    <div className = "nav_button">
-                    </div>
+                    <AnchorLink href='#home'> 
+                    <div className = "nav_button"></div>
+                    </AnchorLink>
                 </Col>
                 <Col xs={3}>
-                    <div className = "nav_button">
-                    </div>
+                    <AnchorLink href='#projects'> 
+                    <div className = "nav_button"></div>
+                    </AnchorLink>
                 </Col>
                 <Col xs={3}>
-                    <div className = "nav_button">
-                    </div>
+                    <AnchorLink href='#experience'> 
+                    <div className = "nav_button"></div>
+                    </AnchorLink>
                 </Col>
                 <Col xs={3}>
-                    <div className = "nav_button">
-                    </div>
+                    <AnchorLink href='#skills'> 
+                    <div className = "nav_button"></div>
+                    </AnchorLink>
                 </Col>
         </>
         )

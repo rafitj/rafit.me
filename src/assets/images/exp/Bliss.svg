@@ -3,37 +3,47 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#5BC99F;}
-	.st1{clip-path:url(#SVGID_2_);fill:none;}
-	.st2{fill:none;}
-	.st3{fill:#FFFFFF;}
-	.st4{font-family:'Lobster1.4';}
-	.st5{font-size:145.7552px;}
+	.st0{clip-path:url(#SVGID_2_);}
+	.st1{fill:#FFFFFF;stroke:#5BC99F;stroke-width:31;stroke-miterlimit:10;}
+	.st2{font-family:'Lobster1.4';}
+	.st3{font-size:216.3547px;}
+	.st4{clip-path:url(#SVGID_4_);}
+	.st5{fill:#FFFFFF;stroke:#33A073;stroke-width:31;stroke-miterlimit:10;}
+	.st6{fill:#FFFFFF;}
 </style>
-<circle class="st0" cx="200" cy="200" r="188.7"/>
 <g>
 	<defs>
-		<circle id="SVGID_1_" cx="200" cy="200" r="188.7"/>
+		<polygon id="SVGID_1_" points="250.2,143.1 308.9,135.1 333.1,143.1 391.5,135.1 431.1,200 431.1,293.1 0,324.6 -140.4,216.6 
+			-35.4,50.1 113.1,71.1 177.6,71.1 254,90.5 		"/>
 	</defs>
 	<clipPath id="SVGID_2_">
 		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
 	</clipPath>
-	<circle class="st1" cx="11.3" cy="-37" r="0"/>
-	<rect x="-13" y="-32" class="st1" width="451" height="451"/>
-</g>
-<rect x="195" y="195" class="st2" width="81" height="115"/>
-<g>
-	<defs>
-		<circle id="SVGID_3_" cx="200" cy="200" r="188.7"/>
-	</defs>
-	<clipPath id="SVGID_4_">
-		<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
-	</clipPath>
-	<g style="clip-path:url(#SVGID_4_);">
-		
-			<image style="overflow:visible;" width="1096" height="656" xlink:href="../../../../../../Downloads/treat.png"  transform="matrix(0.365 0 0 0.365 -449 55.9197)">
-		</image>
+	<g class="st0">
+		<text transform="matrix(1 0 0 1 19.4546 267.6108)" class="st1 st2 st3">bliss</text>
+	</g>
+	<g class="st0">
+		<defs>
+			<path id="SVGID_3_" d="M-20,200c0,0,66,22,214,22s218-22,218-22v-5v104H-15L-20,200z"/>
+		</defs>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+		</clipPath>
+		<g class="st4">
+			<text transform="matrix(1 0 0 1 19.4546 267.6108)" class="st5 st2 st3">bliss</text>
+		</g>
+	</g>
+	<g class="st0">
+		<text transform="matrix(1 0 0 1 19.4546 267.6108)" class="st6 st2 st3">bliss</text>
 	</g>
 </g>
-<text transform="matrix(1 0 0 1 78.3691 245.5486)" class="st3 st4 st5">bliss</text>
+<g>
+	<defs>
+		<polygon id="SVGID_5_" points="250.2,143.1 308.9,135.1 333.1,143.1 391.5,135.1 431.1,200 431.1,293.1 0,324.6 -140.4,216.6 
+			-35.4,50.1 113.1,71.1 177.6,71.1 254,90.5 		"/>
+	</defs>
+	<clipPath id="SVGID_6_">
+		<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
+	</clipPath>
+</g>
 </svg>

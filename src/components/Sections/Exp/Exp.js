@@ -11,7 +11,7 @@ import bliss from '../../../assets/images/exp/Bliss.svg'
 class Exp extends Component {
     render() {
         return (
-        <>
+        <section id='experience'>
           <Header text = "Experience"/>
           <Container>
              <Row>
@@ -29,7 +29,7 @@ class Exp extends Component {
             </Col>
            </Row>
           </Container>
-          </>
+          </section>
         );
     }
 }

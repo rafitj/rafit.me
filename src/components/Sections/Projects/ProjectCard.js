@@ -7,6 +7,7 @@ class ProjectCard extends Component {
         return (
             <div className = {classes} data-aos="fade-up" data-aos-duration = "500">
                 <div className = "project_logo">
+                    <img alt = {this.props.title} src = {this.props.img} />
                 </div>
                 <div className = "project_date">
                 {this.props.date}
@@ -18,6 +19,7 @@ class ProjectCard extends Component {
                 Lorem ipsum
                 </div>
                 <div className = "project_git">
+                    <i class="fab  fa-2x fa-github"></i>
                 </div>
                 <div className = "project_view">
                 </div>

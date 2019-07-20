@@ -21,8 +21,6 @@ class ExpCard extends Component {
                 <div className = "exp_desc">
                 Lorem ipsum
                 </div>
-                <div className = "exp_git">
-                </div>
                 <div className = "exp_view">
                 
                 </div>
