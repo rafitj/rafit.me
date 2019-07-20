@@ -3,16 +3,16 @@ import React, { Component } from 'react';
 import '../../../assets/styles/projects.css'
 class ProjectCard extends Component {
     render() {
+        const classes = "project_card " + this.props.extra_classes
         return (
-            <div className = "project_card">
+            <div className = {classes} data-aos="fade-up" data-aos-duration = "500">
                 <div className = "project_logo">
-
                 </div>
                 <div className = "project_date">
-                MAY 2019
+                {this.props.date}
                 </div>
                 <div className = "project_title">
-                DENSITY
+                {this.props.title}
                 </div>
                 <div className = "project_desc">
                 Lorem ipsum
@@ -20,7 +20,6 @@ class ProjectCard extends Component {
                 <div className = "project_git">
                 </div>
                 <div className = "project_view">
-                
                 </div>
             </div>
         );

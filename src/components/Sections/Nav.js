@@ -1,12 +1,21 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-grid-system';
 import '../../assets/styles/nav.css'
+import nav_arrow from '../../assets/images/nav_arrow.svg'
 class Nav extends Component {
     state = {
         'show': true
     }
+
+    getNavClass = () => {
+        return "nav_container " + (this.state.show ? " " : " hide_nav");
+    }
+    getArrowClass = () => {
+        return "nav_arrow " + (this.state.show ? "hide_arrow" : " ");
+    }
       
     render() {
+        console.log(this.getNavClass())
         const Nav = (
             <>
                 <Col xs={3}>
@@ -27,26 +36,20 @@ class Nav extends Component {
                 </Col>
         </>
         )
-        const Arrow = (
-                <div className ="nav_arrow" onClick={()=>{this.setState({'show':true})}}></div>
-        )
-        if (this.state.show){
-            return(
-                <div className = "nav_container" onClick={()=>{this.setState({'show':false})}}>
-                <Container>
-                    <Row>
-                        {Nav}
-                    </Row>
-                </Container>
-                </div>
-            )
-        }
-        return (
-            <div>
-                {Arrow}
+        return(
+            <>
+            <div className = {this.getNavClass()} onClick={()=>{this.setState({'show':false})}}>
+            <Container>
+                <Row>
+                    {Nav}
+                </Row>
+            </Container>
             </div>
-            
-        );
+            <div  className ="nav_arrow_cont">
+                <img src = {nav_arrow} className ={this.getArrowClass()} onClick={()=>{this.setState({'show':true})}} alt = "nav_arrow"/>
+            </div>
+            </>
+        )
     }
 }
 

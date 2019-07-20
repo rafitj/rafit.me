@@ -1,29 +1,61 @@
 .nav_container{
     position: sticky;
-    bottom: 10px;
+    bottom: 0;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.452);
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.300);
+    background-image: linear-gradient(0deg, #0c0c0c, #0c0c0ccc, rgba(0, 0, 0, 0));
     border-radius: 15px;
-    height: 4rem;
+    height: 6rem;
+    transition: all 0.25s ease;
 }
-
+.nav_container:hover{
+   cursor: pointer;
+}
 .nav_button{
-    background-color: rgba(255, 255, 255, 0.452);
+    background-color: rgba(255, 255, 255, 0.589);
     width: 3rem;
     height: 3rem;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.300);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.753);
     border-radius: 10px;
     margin: 0 auto;
     margin-top: 0.3rem;
     text-align: center;
+    transition: all 0.25s ease;
+    color: rgba(255, 255, 255, 0.692);
+}
+.nav_button:hover{
+    background-color: rgba(255, 255, 255, 0.795);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.9);
 }
 .nav_arrow{
-    background-color: rgba(255, 255, 255, 0.452);
     width: 2rem;
     height: 2rem;
-    border-radius: 100%;
+    -webkit-filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));
+    filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));    
     margin: 0 auto;
+    transition: all 0.25s ease;
+    opacity: 0.8;
+}
+.nav_arrow:hover{
+    cursor: pointer;
+    -webkit-filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.9));
+    filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.9));    
+    opacity: 1;
+    transform: translateY(-5px)
+
+ }
+.nav_arrow_cont{
     position: sticky;
     bottom: 10px;
+    text-align: center;
+}
+.hide_arrow{
+    position: sticky;
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.hide_nav{
+    transition: all 0.25s ease;
+    transform: translateY(100px);
+    opacity: 0;
 }

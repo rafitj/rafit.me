@@ -11,16 +11,22 @@ class Skills extends Component {
           <Container>
              <Row>
             <Col sm ={4}>
-                <LangCard />
+                <LangCard lang = "Python" extra_classes = "python" />
             </Col>
             <Col sm ={4}>
-                <LangCard />
+                <LangCard lang = "Javascript" extra_classes = "js" />
             </Col>
             <Col sm ={4}>
-                <LangCard />
+            <LangCard lang = "C++" extra_classes = "cplus" />
             </Col>
             <Col sm ={4}>
-                <LangCard />
+            <LangCard lang = "C" extra_classes = "c" />
+            </Col>
+            <Col sm ={4}>
+                <LangCard lang = "SQL" extra_classes = "sql" />
+            </Col>
+            <Col sm ={4}>
+                <LangCard lang = "HTML/CSS" extra_classes = "html" />
             </Col>
            </Row>
           </Container>

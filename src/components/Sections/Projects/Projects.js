@@ -10,10 +10,10 @@ class Projects extends Component {
           <Container>
              <Row>
             <Col sm ={6}>
-                <ProjectCard />
+                <ProjectCard title = "Density" date = "May 2019" extra_classes = "density"/>
             </Col>
             <Col sm ={6}>
-                <ProjectCard />
+                <ProjectCard title = "FrameAR" date = "June 2019" extra_classes = "framear"/>
             </Col>
             <Col sm ={6}>
                 <ProjectCard />
