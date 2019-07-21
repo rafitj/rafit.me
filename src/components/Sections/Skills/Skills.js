@@ -44,7 +44,7 @@ class Skills extends Component {
           <Container>
              <Row>
                 <LangCard img = {Python} lang = "Python" extra_classes = "python" />
-                <LangCard img = {JS}  lang = "Javascript" extra_classes = "js" />
+                <LangCard img = {JS}  lang = "JavaScript" extra_classes = "js" />
                 <LangCard img = {Swift} lang = "Swift" extra_classes = "swift" />
                 <LangCard img = {CPlus} lang = "C++" extra_classes = "cplus" />
                 <LangCard img = {C} lang = "C" extra_classes = "c" />

@@ -7,7 +7,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 class Nav extends Component {
 
     state = {
-        'show': true
+        'show': false
     }
 
     componentDidMount() {
@@ -72,7 +72,7 @@ class Nav extends Component {
                     <div className = "nav_button">
                         <i class="fab fa-lg fa-black-tie"></i>
                         <Hidden xs sm>
-                            <div className = "nav_text">Experience</div>    
+                            <div className = "nav_text">Work</div>    
                         </Hidden>
                     </div>
                     </AnchorLink>

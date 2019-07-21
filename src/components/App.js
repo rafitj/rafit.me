@@ -11,7 +11,7 @@ class App extends React.Component {
         this.setState({pageLoaded:true})
     }
     render() {
-        const style = this.state.pageLoaded ? {} : {visibility: 'hidden'}
+        const style = this.state.pageLoaded ? {transition: 'all 1s ease', opacity: 1} : {opacity: 0}
         const maintenance = false;
         if (maintenance) {
             return <Maintenance />

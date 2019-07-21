@@ -1,0 +1,152 @@
+.lang_card{
+    border-radius: 15px;
+    margin: 0 0rem 3rem 0rem;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.600);
+    height: 6.5rem;
+    color: rgba(255, 255, 255, 0.884);
+    position: relative;
+    text-align: center;
+}
+
+.lang_logo img{
+    width: 4rem;
+    position: absolute;
+    margin: auto;
+    top: -25px;
+    left: 0; 
+    right: 0;
+    -webkit-filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));
+    filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));    
+}
+.lang_name{
+    font-size: 1.4rem;
+    padding-top: 3.2rem;
+    opacity: 0.8;
+}
+
+.tool_card{
+    border-radius: 15px;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.600);
+    height: 4rem;
+    width: 80%;
+    margin: 1.5rem auto;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+.tool_logo img{
+    width: 4rem;
+    position: absolute;
+    margin: auto;
+    top: -30px;
+    left: 0; 
+    right: 0;
+    
+    -webkit-filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));
+    filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));    
+}
+
+.python {
+    background-image: linear-gradient(-135deg, #f5cd60a7,#4976a1a7);
+}
+
+.sql {
+    background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.654),rgba(2, 38, 65, 0.654));
+}
+
+.js{
+    background-image: linear-gradient(-45deg, rgba(251, 255, 9, 0.654),rgba(65, 60, 2, 0.654));
+}
+
+.cplus{
+    background-image: linear-gradient(45deg, rgba(49, 77, 201, 0.654),rgba(74, 125, 201, 0.654));
+}
+
+.c{
+    background-image: linear-gradient(45deg, rgba(157, 9, 255, 0.654),rgba(0, 0, 0, 0.654));
+}
+
+.html{
+    background-image: linear-gradient(45deg, rgba(255, 140, 9, 0.654),rgba(41, 102, 214, 0.654));
+}
+
+.swift{
+    background-image: linear-gradient(45deg, rgba(255, 140, 9, 0.654),rgba(214, 125, 41, 0.654));
+}
+
+.react{
+    background-image: linear-gradient(45deg, rgba(139, 255, 249, 0.654),rgba(68, 227, 255, 0.654));
+}
+
+.node{
+    background-image: linear-gradient(45deg, rgba(73, 73, 73, 0.654),rgba(74, 255, 68, 0.654));
+}
+
+.ts{
+    background-image: linear-gradient(45deg, rgba(31, 173, 192, 0.654),rgba(21, 103, 150, 0.654));
+}
+
+.django{
+    background-image: linear-gradient(45deg, rgba(12, 141, 81, 0.654),rgba(21, 150, 90, 0.654));
+}
+
+.flask{
+    background-image: linear-gradient(45deg, rgba(185, 185, 185, 0.654),rgba(121, 121, 121, 0.654));
+}
+
+.jquery{
+    background-image: linear-gradient(45deg, rgba(7, 135, 255, 0.705),rgba(32, 32, 32, 0.654));
+}
+
+.aws{
+    background-image: linear-gradient(45deg, rgba(187, 113, 2, 0.705),rgba(255, 198, 77, 0.654));
+
+}
+
+.azure{
+    background-image: linear-gradient(45deg, rgba(5, 100, 112, 0.705),rgba(77, 148, 255, 0.654));
+
+}
+
+.graphql{
+    background-image: linear-gradient(45deg, rgba(233, 123, 255, 0.705),rgba(255, 124, 255, 0.654));
+
+}
+
+.keras{
+    background-image: linear-gradient(45deg, rgba(158, 52, 52, 0.705),rgba(255, 34, 34, 0.654));
+
+}
+
+.docker{
+    background-image: linear-gradient(45deg, rgba(231, 231, 231, 0.705),rgba(34, 111, 255, 0.654));
+
+}
+.aspark, .pyspark{
+    background-image: linear-gradient(45deg, rgba(255, 115, 0, 0.705),rgba(255, 185, 34, 0.654));
+}
+
+.mongo{
+    background-image: linear-gradient(45deg, rgba(11, 150, 53, 0.705),rgba(121, 85, 9, 0.654));
+}
+
+.mysql{
+    background-image: linear-gradient(45deg, rgba(255, 136, 0, 0.705),rgba(9, 76, 121, 0.654));
+}
+
+
+.postgres{
+    background-image: linear-gradient(45deg, rgba(8, 8, 8, 0.705),rgba(8, 131, 189, 0.654));
+}
+.redis{
+    background-image: linear-gradient(45deg, rgba(240, 88, 88, 0.692),rgba(250, 53, 53, 0.654));
+}
+.firebase{
+    background-image: linear-gradient(45deg, rgba(250, 230, 49, 0.692),rgba(241, 169, 60, 0.654));
+}
+.memcached{
+    background-image: linear-gradient(45deg, rgba(109, 89, 89, 0.767),rgba(112, 247, 213, 0.654));
+}
+.cassandra{
+    background-image: linear-gradient(45deg, rgba(233, 233, 233, 0.692),rgba(243, 243, 243, 0.654));
+}

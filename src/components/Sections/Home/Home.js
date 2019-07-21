@@ -9,7 +9,7 @@ class Home extends Component {
     }
     render() {
         return (
-        <div id = "home" data-aos = "fade-up">
+        <div id = "home">
             <div className = "home_container">
                 <div className = "home_img">
                     <img src = {dp} alt = "profile" />
