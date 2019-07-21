@@ -11,20 +11,35 @@
    cursor: pointer;
 }
 .nav_button{
-    background-color: rgba(255, 255, 255, 0.589);
-    width: 3rem;
+    background-color: rgba(0, 0, 0, 0.384);
     height: 3rem;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.753);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.755);
     border-radius: 10px;
     margin: 0 auto;
     margin-top: 0.3rem;
     text-align: center;
     transition: all 0.25s ease;
-    color: rgba(255, 255, 255, 0.692);
+    color: rgba(255, 255, 255, 0.671);
 }
 .nav_button:hover{
-    background-color: rgba(255, 255, 255, 0.795);
+    color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.9);
+}
+.nav_button i{
+    margin-top: 1rem;
+    text-shadow: 0 15px 15px rgba(0, 0, 0, 0.534);
+    transition: all 0.25s ease;
+}
+.nav_button i:hover{
+    margin-top: 0.7rem;
+    text-shadow: 0 20px 15px rgba(0, 0, 0, 0.734);
+}
+.nav_text {
+    display: inline-block;
+    font-weight: 700;
+    transition: all 0.25s ease;
+    margin-left: 0.7rem;
 }
 .nav_arrow{
     width: 2rem;
@@ -47,15 +62,19 @@
     position: sticky;
     bottom: 10px;
     text-align: center;
+    transition: all 0.25s ease;
 }
 .hide_arrow{
+    transition: all 0.25s ease;
     position: sticky;
-    transform: translateY(100px);
     opacity: 0;
+    transform: translateY(100px);
+    visibility: hidden;
 }
 
 .hide_nav{
     transition: all 0.25s ease;
-    transform: translateY(100px);
     opacity: 0;
+    transform: translateY(100px);
+    visibility: hidden;
 }

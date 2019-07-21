@@ -4,6 +4,7 @@ import Home from './Sections/Home/Home';
 import Exp from './Sections/Exp/Exp';
 import Skills from './Sections/Skills/Skills';
 import Nav from './Sections/Nav';
+import Footer from '../components/Sections/Footer';
 import AOS from 'aos';
 
 class Content extends Component {
@@ -17,6 +18,7 @@ class Content extends Component {
             <Projects />
             <Exp />
             <Skills />
+            <Footer/>
             <Nav />
           </>
         );

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'react-grid-system';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 
