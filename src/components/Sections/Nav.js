@@ -38,9 +38,13 @@ class Nav extends Component {
     getArrowClass = () => {
         return "nav_arrow_cont " + (this.state.show ? "hide_arrow" : " ");
     }
-      
+    handleNavClick = ()=>{
+        this.setState({'show':false})
+    }
+    handleArrowClick = ()=>{
+        this.setState({'show':true})
+    }
     render() {
-        console.log(this.getNavClass())
         const Nav = (
             <>
                 <Col xs={2.4}>
@@ -97,7 +101,7 @@ class Nav extends Component {
         )
         return(
             <>
-            <div className = {this.getNavClass()} onClick={()=>{this.setState({'show':false})}}>
+            <div className = {this.getNavClass()} onClick={this.handleNavClick}>
             <Container>
                 <Row>
                     {Nav}
@@ -105,7 +109,7 @@ class Nav extends Component {
             </Container>
             </div>
             <div  className ={this.getArrowClass()}>
-                <img src = {nav_arrow} className ="nav_arrow" onClick={()=>{this.setState({'show':true})}} alt = "nav_arrow"/>
+                <img src = {nav_arrow} className ="nav_arrow" onClick={this.handleArrowClick} alt = "nav_arrow"/>
             </div>
             </>
         )

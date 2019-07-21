@@ -4,6 +4,9 @@ import dp from '../../../assets/images/dp/DP2.svg'
 import Resume from '../../../assets/resume/Resume.pdf';
 
 class Home extends Component {
+    componentDidMount(){
+        console.log("mounted")
+    }
     render() {
         return (
         <div id = "home" data-aos = "fade-up">
