@@ -63,7 +63,7 @@
 }
 
 .c{
-    background-image: linear-gradient(45deg, rgba(157, 9, 255, 0.654),rgba(0, 0, 0, 0.654));
+    background-image: linear-gradient(45deg, rgba(162, 162, 162, 0.654),rgba(191, 243, 255, 0.654));
 }
 
 .html{
@@ -75,11 +75,11 @@
 }
 
 .react{
-    background-image: linear-gradient(45deg, rgba(139, 255, 249, 0.654),rgba(68, 227, 255, 0.654));
+    background-image: linear-gradient(45deg, rgba(171, 249, 245, 0.654),rgba(100, 218, 239, 0.654));
 }
 
 .node{
-    background-image: linear-gradient(45deg, rgba(73, 73, 73, 0.654),rgba(74, 255, 68, 0.654));
+    background-image: linear-gradient(45deg, rgba(61, 110, 47, 0.654),rgba(173, 248, 135, 0.654));
 }
 
 .ts{
@@ -104,12 +104,12 @@
 }
 
 .azure{
-    background-image: linear-gradient(45deg, rgba(5, 100, 112, 0.705),rgba(77, 148, 255, 0.654));
+    background-image: linear-gradient(45deg, rgba(0, 71, 81, 0.705),rgba(12, 41, 83, 0.654));
 
 }
 
 .graphql{
-    background-image: linear-gradient(45deg, rgba(233, 123, 255, 0.705),rgba(255, 124, 255, 0.654));
+    background-image: linear-gradient(45deg, rgba(177, 14, 172, 0.705),rgba(77, 5, 77, 0.654));
 
 }
 
@@ -119,11 +119,11 @@
 }
 
 .docker{
-    background-image: linear-gradient(45deg, rgba(231, 231, 231, 0.705),rgba(34, 111, 255, 0.654));
+    background-image: linear-gradient(45deg, rgba(231, 231, 231, 0.705),rgba(34, 178, 255, 0.654));
 
 }
 .aspark, .pyspark{
-    background-image: linear-gradient(45deg, rgba(255, 115, 0, 0.705),rgba(255, 185, 34, 0.654));
+    background-image: linear-gradient(45deg, rgba(113, 51, 0, 0.705),rgba(196, 111, 7, 0.654));
 }
 
 .mongo{
@@ -149,4 +149,28 @@
 }
 .cassandra{
     background-image: linear-gradient(45deg, rgba(233, 233, 233, 0.692),rgba(243, 243, 243, 0.654));
+}
+
+.tool_filter{
+    border-radius: 10px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.692);
+    color: rgba(255, 255, 255, 0.763);
+    background-color: rgba(0, 0, 0, 0.700);
+    padding: 1rem;
+    text-align: center;
+    margin: 0 0.5rem 2rem;
+    transition: all 0.25s ease;
+}
+.tool_filter:hover{
+    box-shadow: 0 20px 20px black;
+    color: rgba(255, 255, 255, 0.903);
+    background-color: rgba(240, 240, 240, 0.25);
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+.selected_filter{
+    box-shadow: 0 20px 20px black;
+    color: rgba(255, 255, 255, 0.903);
+    background-color: rgba(103, 102, 102, 0.25);
+    transform: translateY(-5px);
 }

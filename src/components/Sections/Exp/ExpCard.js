@@ -22,7 +22,7 @@ class ExpCard extends Component {
                 {this.props.title}
                 </div>
                 <div className = "exp_desc">
-                Lorem ipsum
+                 {this.props.desc}
                 </div>
                 <div className = "exp_view">
                 </div>

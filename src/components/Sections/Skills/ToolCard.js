@@ -7,8 +7,8 @@ class ToolCard extends Component {
         const tool_class = "tool_card " + this.props.tool
         return (
             <Col xs = {4} sm = {4}  md ={2}>
-            <div data-aos= "fade-up" className = {tool_class}>
-                <div className = "tool_logo">
+            <div data-aos= "fade-up" data-aos-duration = "600" className = {tool_class}>
+                <div data-aos= "fade" className = "tool_logo">
                     <img src =  {this.props.img} alt = {this.props.tool} />
                 </div>
             </div>

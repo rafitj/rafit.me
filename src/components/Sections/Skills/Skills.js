@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row } from 'react-grid-system';
+import { Container, Row, Col } from 'react-grid-system';
 import LangCard from './LangCard';
 import ToolCard from './ToolCard';
 import Header from '../Header';
@@ -37,7 +37,47 @@ import cassandra from '../../../assets/images/tools/cassandra.svg'
 
 
 class Skills extends Component {
+     state = {
+          filter: 'framework'
+     }
+     getFilterClass = (f) => {
+          return "tool_filter " + (this.state.filter === f ? " selected_filter" : " ")
+     }
     render() {
+         const {filter} = this.state;
+          const tools = [
+               {type: 'framework', tool: 'react', img: react},
+               {type: 'framework', tool: 'node', img: node},
+               {type: 'tool', tool: 'docker', img: docker},
+               {type: 'database', tool: 'mysql', img: mysql},
+               {type: 'framework', tool: 'django', img: django},
+               {type: 'database', tool: 'redis', img: redis},
+               {type: 'database', tool: 'firebase', img: firebase},
+               {type: 'framework', tool: 'flask', img: flask},
+               {type: 'tool', tool: 'aws', img: aws},
+               {type: 'tool', tool: 'azure', img: azure},
+               {type: 'database', tool: 'mongo', img: mongo},
+               {type: 'database', tool: 'cassandra', img: cassandra},
+               {type: 'framework', tool: 'ts', img: ts},
+               {type: 'tool', tool: 'graphql', img: graphql},
+               {type: 'library', tool: 'keras', img: keras},
+               {type: 'database', tool: 'postgres', img: postgres},
+               {type: 'tool', tool: 'aspark', img: aspark},
+               // {type: 'database', tool: 'memcached', img: memcached},
+               {type: 'library', tool: 'jquery', img: jquery},
+               {type: 'library', tool: 'pyspark', img: pyspark}
+          ]
+
+          const toolList = tools.reduce((filtered, item) => {
+               if (item.type === this.state.filter || this.state.filter === 'all') {
+                  filtered.push(
+                         <ToolCard img = {item.img} tool = {item.tool} />
+                  );
+               }
+               return filtered;
+             }, []);
+          
+
         return (
         <section id = "skills">
           <Header text="Skills"/>
@@ -54,32 +94,27 @@ class Skills extends Component {
           </Container>
           <Container>
              <Row>
-                <ToolCard img = {react} tool = "react" />
-                <ToolCard img = {node} tool = "node" />
-                <ToolCard img = {django} tool = "django" />
-                <ToolCard img = {flask} tool = "flask" />
-                <ToolCard img = {ts} tool = "ts" />
-                <ToolCard img = {jquery} tool = "jquery" />
-           </Row>
-           <Row>
-                <ToolCard img = {aws} tool = "aws" />
-                <ToolCard img = {azure} tool = "azure" />
-                <ToolCard img = {graphql} tool = "graphql" />
-                <ToolCard img = {keras} tool = "keras" />
-                <ToolCard img = {docker} tool = "docker" />
-                <ToolCard img = {pyspark} tool = "pyspark" />
-                <ToolCard img = {aspark} tool = "aspark" />
-           </Row>
-
-           <Row>
-                <ToolCard img = {mongo} tool = "mongo" />
-                <ToolCard img = {mysql} tool = "mysql" />
-                <ToolCard img = {postgres} tool = "postgres" />
-                <ToolCard img = {redis} tool = "redis" />
-                <ToolCard img = {firebase} tool = "firebase" />
-                <ToolCard img = {memcached} tool = "memcached" />
-                <ToolCard img = {cassandra} tool = "cassandra" />
-           </Row>
+                <Col xs = {2.4}>
+                    <div className = {this.getFilterClass('all')} onClick = {()=>{this.setState({filter: 'all'})}}>All</div>
+                  </Col>
+                  <Col xs = {2.4}>
+                    <div className = {this.getFilterClass('framework')} onClick = {()=>{this.setState({filter: 'framework'})}}>Frameworks</div>
+                  </Col>
+                  <Col xs = {2.4}>
+                  <div className = {this.getFilterClass('database')} onClick = {()=>{this.setState({filter: 'database'})}}>Databases</div>
+                  </Col>
+                  <Col xs = {2.4}>
+                  <div className = {this.getFilterClass('library')} onClick = {()=>{this.setState({filter: 'library'})}}>Libraries</div>
+                  </Col>
+                  <Col xs = {2.4}>
+                  <div className = {this.getFilterClass('tool')} onClick = {()=>{this.setState({filter: 'tool'})}}>Tools</div>
+                  </Col>
+             </Row>
+          </Container>
+          <Container>
+             <Row>
+                  {toolList}
+               </Row>
           </Container>
           </section>
         );

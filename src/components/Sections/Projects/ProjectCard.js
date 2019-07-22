@@ -24,7 +24,7 @@ class ProjectCard extends Component {
                 <div className = "project_git">
                     <a href = {this.props.link}><i class="fab fa-2x fa-github"></i></a>
                 </div>
-                <div className = "project_view">
+                <div  onClick = {this.props.onClick} className = "project_view">
                 </div>
             </div>
             </Col>

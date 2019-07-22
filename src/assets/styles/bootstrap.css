@@ -51,11 +51,6 @@
   }
 }
 
-.modal.show .modal-dialog {
-  -webkit-transform: none;
-  transform: none;
-}
-
 .modal-dialog-scrollable {
   display: -ms-flexbox;
   display: flex;
@@ -114,13 +109,14 @@
   -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
+  margin: 0 25%;
   pointer-events: auto;
-  background-color: rgba(0, 0, 0, 0.83);
+  background-color: rgba(0, 0, 0, 0.808);
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   outline: 0;
-  color: rgba(255, 255, 255, 0.87);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .modal-backdrop {
@@ -138,7 +134,7 @@
 }
 
 .modal-backdrop.show {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .modal-header {
@@ -171,7 +167,6 @@
   padding: 1rem;
   text-align: center;
   box-shadow: 0 20px 20px black;
-  background-color: none;
 }
 
 .modal-footer {

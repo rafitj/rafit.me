@@ -15,7 +15,9 @@
     padding: 0 2rem;
 }
 .name_header{
-    color: white;
+    color: rgba(255, 255, 255, 0.938);
+    text-shadow: 0 10px 10px rgb(0, 0, 0);
+
 }
 
 .home_button{
