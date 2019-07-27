@@ -36,7 +36,6 @@
 .home_button:hover{
     box-shadow: 0 20px 20px rgb(0, 0, 0);
     transform: translateY(-5px);
-    padding: 1rem 2.5rem;
     cursor: pointer;
     opacity: 0.9;
     color: rgba(255, 255, 255, 0.9);

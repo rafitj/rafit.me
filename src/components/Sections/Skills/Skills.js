@@ -11,13 +11,17 @@ import C from '../../../assets/images/langs/C.svg';
 import Swift from '../../../assets/images/langs/Swift.svg';
 import SQL from '../../../assets/images/langs/SQL.svg';
 import HTML from '../../../assets/images/langs/HTML+CSS.svg';
+import Go from '../../../assets/images/langs/Go.svg';
+import TS from '../../../assets/images/langs/TS.svg'
 
 import react from '../../../assets/images/tools/react.svg'
 import node from '../../../assets/images/tools/node.svg'
 import django from '../../../assets/images/tools/django.svg'
 import flask from '../../../assets/images/tools/flask.svg'
-import ts from '../../../assets/images/tools/ts.svg'
 import jquery from '../../../assets/images/tools/jquery.svg'
+import d3 from '../../../assets/images/tools/d3.svg'
+import rxjs from '../../../assets/images/tools/rxjs.svg'
+import tf from '../../../assets/images/tools/tf.svg'
 
 import aws from '../../../assets/images/tools/aws.svg'
 import azure from '../../../assets/images/tools/azure.svg'
@@ -44,7 +48,6 @@ class Skills extends Component {
           return "tool_filter " + (this.state.filter === f ? " selected_filter" : " ")
      }
     render() {
-         const {filter} = this.state;
           const tools = [
                {type: 'framework', tool: 'react', img: react},
                {type: 'framework', tool: 'node', img: node},
@@ -58,14 +61,18 @@ class Skills extends Component {
                {type: 'tool', tool: 'azure', img: azure},
                {type: 'database', tool: 'mongo', img: mongo},
                {type: 'database', tool: 'cassandra', img: cassandra},
-               {type: 'framework', tool: 'ts', img: ts},
                {type: 'tool', tool: 'graphql', img: graphql},
                {type: 'library', tool: 'keras', img: keras},
                {type: 'database', tool: 'postgres', img: postgres},
                {type: 'tool', tool: 'aspark', img: aspark},
-               // {type: 'database', tool: 'memcached', img: memcached},
+               {type: 'database', tool: 'memcached', img: memcached},
                {type: 'library', tool: 'jquery', img: jquery},
-               {type: 'library', tool: 'pyspark', img: pyspark}
+               {type: 'library', tool: 'pyspark', img: pyspark},
+               {type: 'library', tool: 'tf', img: tf},
+               {type: 'library', tool: 'rxjs', img: rxjs},
+               {type: 'library', tool: 'd3', img: d3},
+
+
           ]
 
           const toolList = tools.reduce((filtered, item) => {
@@ -84,7 +91,9 @@ class Skills extends Component {
           <Container>
              <Row>
                 <LangCard img = {Python} lang = "Python" extra_classes = "python" />
+                <LangCard img = {Go}  lang = "Go" extra_classes = "go" />
                 <LangCard img = {JS}  lang = "JavaScript" extra_classes = "js" />
+                <LangCard img = {TS}  lang = "TypeScript" extra_classes = "ts" />
                 <LangCard img = {Swift} lang = "Swift" extra_classes = "swift" />
                 <LangCard img = {CPlus} lang = "C++" extra_classes = "cplus" />
                 <LangCard img = {C} lang = "C" extra_classes = "c" />
@@ -94,19 +103,19 @@ class Skills extends Component {
           </Container>
           <Container>
              <Row>
-                <Col xs = {2.4}>
+                <Col xs={12} sm = {2.4}>
                     <div className = {this.getFilterClass('all')} onClick = {()=>{this.setState({filter: 'all'})}}>All</div>
                   </Col>
-                  <Col xs = {2.4}>
+                  <Col xs={6} sm = {2.4}>
                     <div className = {this.getFilterClass('framework')} onClick = {()=>{this.setState({filter: 'framework'})}}>Frameworks</div>
                   </Col>
-                  <Col xs = {2.4}>
+                  <Col xs={6} sm = {2.4}>
                   <div className = {this.getFilterClass('database')} onClick = {()=>{this.setState({filter: 'database'})}}>Databases</div>
                   </Col>
-                  <Col xs = {2.4}>
+                  <Col xs={6} sm = {2.4}>
                   <div className = {this.getFilterClass('library')} onClick = {()=>{this.setState({filter: 'library'})}}>Libraries</div>
                   </Col>
-                  <Col xs = {2.4}>
+                  <Col xs={6} sm = {2.4}>
                   <div className = {this.getFilterClass('tool')} onClick = {()=>{this.setState({filter: 'tool'})}}>Tools</div>
                   </Col>
              </Row>

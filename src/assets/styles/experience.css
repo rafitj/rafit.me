@@ -59,9 +59,13 @@
     bottom: 20px;
     right: 20px;
     background-color: rgba(255, 255, 255, 0.74);
-    color: black;
     text-align: center;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.500);
+}
+.exp_view_text{
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+    margin: auto 0;
 }
 .exp_view:hover{
     background-color: rgba(255, 255, 255, 0.836);
@@ -196,7 +200,13 @@
         opacity: 0.7;
     }
     .exp_view{
+        margin: 0;
         bottom: 20px;
         right: 20px;
+        left: 75%;
+    }
+    .exp_view:hover{
+        cursor: pointer;
+        transform: translateY(-5px)
     }
 }
