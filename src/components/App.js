@@ -14,7 +14,9 @@ class App extends React.Component {
         const style = this.state.pageLoaded ? {transition: 'all 1s ease', opacity: 1} : {opacity: 0}
         const maintenance = true;
         if (maintenance) {
-            return <Maintenance />
+            return (
+                    <Maintenance />
+            )
         }
         return (
             <div style = {style} className="main" onLoad = {this.handleLoad}>

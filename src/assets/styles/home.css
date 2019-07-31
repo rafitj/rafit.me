@@ -23,13 +23,13 @@
 .home_button{
     text-decoration: none;
     display: inline-block;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.900);
-    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.650);
+    border-radius: 15px;
     border: none;
     padding: 1rem 2rem;
     margin: 1rem;
     font-size:1.1rem;
-    background-color: rgba(0, 0, 0, 0.384);
+    background-color: rgba(0, 0, 0, 0.4);
     transition: all 0.25s ease;
     color: rgba(255, 255, 255, 0.74);
 }
@@ -37,7 +37,6 @@
     box-shadow: 0 20px 20px rgb(0, 0, 0);
     transform: translateY(-5px);
     cursor: pointer;
-    opacity: 0.9;
-    color: rgba(255, 255, 255, 0.9);
-
+    background-color: rgba(0, 0, 0, 0.65);
+    color: rgba(255, 255, 255, 0.95);
 }

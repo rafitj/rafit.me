@@ -1,13 +1,36 @@
 
-.container {
+.maint_cont {
   width: 100vw;
   height: 100vh;
   display: table-cell;
   text-align: center;
   vertical-align: middle;
   font-size: 1.25rem;
+  background-color : #121414;
+  background-image: url('../images/Background2.svg');
+  background-size: cover;
+  
 }
-
+.maint_box {
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.600);
+  border-radius: 15px;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 2rem;
+  font-size: 0.9rem;
+  background-color: rgba(0, 0, 0, 0.45);
+  transition: all 0.25s ease;
+  color: rgba(255, 255, 255, 0.7);
+}
+.maint_box:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.900);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.85);
+}
 .break {
   margin: 0 auto;
   width: 40%;
@@ -66,4 +89,11 @@
 }
 .anchor-div:hover{
   color: grey;
+}
+
+.small {
+  font-size: 0.95rem;
+}
+.edit{
+  margin-bottom: 1rem;
 }

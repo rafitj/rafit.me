@@ -1,8 +1,9 @@
 import React, {Component, Fragment} from 'react';
-import '../assets/styles/maintenance.css';
 import Resume from '../assets/resume/Resume.pdf';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import '../assets/styles/home.css'
+import '../assets/styles/maintenance.css';
 
 class Maintenance extends Component {
   componentDidMount () {
@@ -12,33 +13,15 @@ class Maintenance extends Component {
   }
   render(){
     return (
-      <Fragment>
-        <div className = "container">
-            <p data-aos="fade" data-aos-duration = "500" >chill, im working on it ...</p>
-            <div data-aos="fade" data-aos-delay = "2000" id = "resume" className = "anchor-div">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href = {Resume}>
-                resume
-              </a>
-            </div>
-            <div data-aos="fade"  data-aos-delay = "2000"  id = "github" className = "anchor-div" >
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href = "https://github.com/RafitJ">
-                github
-              </a>
-          </div>
-            <div data-aos="fade" data-aos-delay = "3000" id = "email" className = "anchor-div" >
-              <a
-                href = "mailto: rafit.jamil@gmail.com">
-                email
-              </a>
-          </div>
+      <div className = "maint_cont">
+        <div className = "home_container">
+            <p className = "maint_box edit muted_p">hey, i'm rafit :) <br/> and my websites not done...</p>
+            <br/>
+            <a href = {Resume} className = "home_button  small"> <i class="fas fa-file-alt"></i></a>
+            <a href = "mailto: rafit.jamil@gmail.com" className = "small home_button "> <i class="fas fa-envelope"> </i></a>
+            <a href = "http://github.com/rafitj" className = "small home_button "> <i class="fab fa-github"></i></a>
         </div>
-      </Fragment>
+      </div>
     );
   }
 }
