@@ -77,7 +77,7 @@ class Skills extends Component {
           const toolList = tools.reduce((filtered, item) => {
                if (item.type === this.state.filter || this.state.filter === 'all') {
                   filtered.push(
-                         <ToolCard img = {item.img} tool = {item.tool} />
+                         <ToolCard key = {item.tool} img = {item.img} tool = {item.tool} />
                   );
                }
                return filtered;
@@ -102,19 +102,19 @@ class Skills extends Component {
           <Container>
              <Row>
                 <Col xs={12} sm = {2.4}>
-                    <div className = {this.getFilterClass('all')} onClick = {()=>{this.setState({filter: 'all'})}}>All</div>
+                    <div data-aos = "fade-right" className = {this.getFilterClass('all')} onClick = {()=>{this.setState({filter: 'all'})}}>All</div>
                   </Col>
                   <Col xs={6} sm = {2.4}>
-                    <div className = {this.getFilterClass('framework')} onClick = {()=>{this.setState({filter: 'framework'})}}>Frameworks</div>
+                    <div data-aos = "fade-right"  className = {this.getFilterClass('framework')} onClick = {()=>{this.setState({filter: 'framework'})}}>Frameworks</div>
                   </Col>
                   <Col xs={6} sm = {2.4}>
-                  <div className = {this.getFilterClass('database')} onClick = {()=>{this.setState({filter: 'database'})}}>Databases</div>
+                  <div data-aos = "fade-right"  className = {this.getFilterClass('database')} onClick = {()=>{this.setState({filter: 'database'})}}>Databases</div>
                   </Col>
                   <Col xs={6} sm = {2.4}>
-                  <div className = {this.getFilterClass('library')} onClick = {()=>{this.setState({filter: 'library'})}}>Libraries</div>
+                  <div data-aos = "fade-right"  className = {this.getFilterClass('library')} onClick = {()=>{this.setState({filter: 'library'})}}>Libraries</div>
                   </Col>
                   <Col xs={6} sm = {2.4}>
-                  <div className = {this.getFilterClass('tool')} onClick = {()=>{this.setState({filter: 'tool'})}}>Tools</div>
+                  <div data-aos = "fade-right"  className = {this.getFilterClass('tool')} onClick = {()=>{this.setState({filter: 'tool'})}}>Tools</div>
                   </Col>
              </Row>
           </Container>

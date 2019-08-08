@@ -2,9 +2,17 @@
 import React, { Component } from 'react';
 import '../../../assets/styles/projects.css';
 import { Col } from 'react-grid-system';
-
+import Tech from './Tech'
 class ProjectCard extends Component {
+    state = {
+        showTech: false
+    }
+    toggleTech = () =>{
+        const newState = !this.state.showTech
+        this.setState({showTech: newState})
+    }
     render() {
+        console.log(this.state.showTech)
         const classes = "project_card " + this.props.extra_classes
         return (
             <Col sm ={12} md ={6}>
@@ -24,7 +32,13 @@ class ProjectCard extends Component {
                 <div className = "project_git">
                     <a href = {this.props.link}><i class="fab fa-2x fa-github"></i></a>
                 </div>
-                <div  onClick = {this.props.onClick} className = "project_view">
+                <div className = "tech">
+                    <p onClick = {this.toggleTech} className = { "view_tech " + (this.state.showTech ? "hide_tech" : "")}> View Tech  ></p>
+                    <div className =  { "tech_nuggets " + (this.state.showTech ? "" : "hide_nuggets")}>
+                        <Tech onClose = {this.toggleTech} data = {["Python", "Keras"]}/>
+                    </div>
+                </div>
+                <div onClick = {this.props.onClick} className = "project_view">
                 </div>
             </div>
             </Col>
