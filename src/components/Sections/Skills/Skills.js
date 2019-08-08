@@ -12,7 +12,6 @@ import Swift from '../../../assets/images/langs/Swift.svg';
 import SQL from '../../../assets/images/langs/SQL.svg';
 import HTML from '../../../assets/images/langs/HTML+CSS.svg';
 import Go from '../../../assets/images/langs/Go.svg';
-import TS from '../../../assets/images/langs/TS.svg'
 
 import react from '../../../assets/images/tools/react.svg'
 import node from '../../../assets/images/tools/node.svg'
@@ -22,6 +21,7 @@ import jquery from '../../../assets/images/tools/jquery.svg'
 import d3 from '../../../assets/images/tools/d3.svg'
 import rxjs from '../../../assets/images/tools/rxjs.svg'
 import tf from '../../../assets/images/tools/tf.svg'
+import ts from '../../../assets/images/langs/TS.svg'
 
 import aws from '../../../assets/images/tools/aws.svg'
 import azure from '../../../assets/images/tools/azure.svg'
@@ -55,6 +55,7 @@ class Skills extends Component {
                {type: 'database', tool: 'mysql', img: mysql},
                {type: 'framework', tool: 'django', img: django},
                {type: 'database', tool: 'redis', img: redis},
+               {type:'framework', tool:'ts', img: ts},
                {type: 'database', tool: 'firebase', img: firebase},
                {type: 'framework', tool: 'flask', img: flask},
                {type: 'tool', tool: 'aws', img: aws},
@@ -71,8 +72,6 @@ class Skills extends Component {
                {type: 'library', tool: 'tf', img: tf},
                {type: 'library', tool: 'rxjs', img: rxjs},
                {type: 'library', tool: 'd3', img: d3},
-
-
           ]
 
           const toolList = tools.reduce((filtered, item) => {
@@ -93,7 +92,6 @@ class Skills extends Component {
                 <LangCard img = {Python} lang = "Python" extra_classes = "python" />
                 <LangCard img = {Go}  lang = "Go" extra_classes = "go" />
                 <LangCard img = {JS}  lang = "JavaScript" extra_classes = "js" />
-                <LangCard img = {TS}  lang = "TypeScript" extra_classes = "ts" />
                 <LangCard img = {Swift} lang = "Swift" extra_classes = "swift" />
                 <LangCard img = {CPlus} lang = "C++" extra_classes = "cplus" />
                 <LangCard img = {C} lang = "C" extra_classes = "c" />

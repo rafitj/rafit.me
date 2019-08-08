@@ -34,6 +34,7 @@
     top: 85px;
     left: 30px;
     line-height: 1.5;
+    opacity: 0.85;
     margin-right: 1rem;
 }
 .project_view{
@@ -92,6 +93,64 @@
 
 .project_modal {
     border-radius: 15px;
-    opacity: 0.8;
-    padding: 2rem;
+    opacity: 0.75;
+    padding: 3rem;
+    height: 90vh;
+}
+
+.modal-content{
+    margin: 10% 0 !important;
+}
+
+@media (max-width: 992px) {
+    .modal-content{
+        margin: 15% 0 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-content{
+        margin: 15% 5% !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .project_logo img{
+        height: 6.75rem;
+        position: absolute;
+        top: -40px;
+        right: 10px;
+        -webkit-filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.666));
+        filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.666));  
+    }
+}
+@media (max-width: 325px) {
+    .project_logo img{
+        height: 6.75rem;
+        position: absolute;
+        top: -40px;
+        right: -10px;
+        -webkit-filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.666));
+        filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.666));  
+    }
+    .project_title{
+        position: absolute;
+        top: 45px;
+        left: 29px;
+        font-size: 2rem;
+    }
+    .project_date{
+        opacity: 0.6;
+        position: absolute;
+        top: 20px;
+        left: 30px;
+    }
+    .project_desc{
+        position: absolute;
+        top: 85px;
+        left: 30px;
+        line-height: 1.5;
+        opacity: 0.85;
+        margin-right: 1rem;
+    }
 }

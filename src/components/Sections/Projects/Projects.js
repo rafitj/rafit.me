@@ -9,24 +9,27 @@ import pseudo from '../../../assets/images/projects/PseudoLogo.svg'
 class Projects extends Component {
       state = {
         showModal: false,
+        modalData: null
     }
-    onHide=()=>{
+    closeModal=()=>{
         this.setState({showModal:false})
     }
-    openEmail=()=>{
+    openModal=(e)=>{
+        console.log(e)
         this.setState({showModal:true})
     }
     render() {
         return (
         <section id = "projects">
           <Header text="Projects"/>
-          {/* <ProjectModal onClick={this.onHide} class = "density" show = {this.state.showModal} onHide = {this.onHide}
-                header = "Email is the best way to reach me!" text = "rafit.jamil@gmail.com"/> */}
+          <ProjectModal onClick={this.closeModal} class = "density" show = {this.state.showModal} onHide = {this.closeModal}
+                data = {this.state.modalData}/>
           <Container>
              <Row>
                 <ProjectCard img = {density} title = "Density" date = "May 2019" extra_classes = "density"
                             desc = "Population density tracking and analytics via passive wifi-detection"
-                            link = "https://github.com/rafitj/density"/>
+                            link = "https://github.com/rafitj/density"
+                            onClick = {this.openModal}/>
                 <ProjectCard img = {framear} title = "FrameAR" date = "June 2019" extra_classes = "framear"
                               desc = "Custom version control system and AR visualization for 3D CAD"
                               link = "https://github.com/rafitj/framear"/>

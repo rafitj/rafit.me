@@ -1,4 +1,4 @@
-import React, {Component, Fragment} from 'react';
+import React, {Component} from 'react';
 import Resume from '../assets/resume/Resume.pdf';
 import AOS from 'aos';
 import 'aos/dist/aos.css';

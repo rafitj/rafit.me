@@ -12,7 +12,7 @@ class App extends React.Component {
     }
     render() {
         const style = this.state.pageLoaded ? {transition: 'all 1s ease', opacity: 1} : {opacity: 0}
-        const maintenance = true;
+        const maintenance = false;
         if (maintenance) {
             return (
                     <Maintenance />
