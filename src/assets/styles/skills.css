@@ -7,6 +7,31 @@
     position: relative;
     text-align: center;
 }
+.lang_card::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    border-radius: 30px;
+    
+    /* Declaring our shadow color inherit from the parent (button) */
+    background: inherit;
+    
+    /* Blurring the element for shadow effect */
+    -webkit-filter: blur(12.5px);
+    -moz-filter: blur(12.5px);
+    -o-filter: blur(12.5px);
+    -ms-filter: blur(12.5px);
+    filter: blur(12.5px);
+    
+    /* Transition for the magic */
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
 
 .lang_logo img{
     width: 4rem;
@@ -33,6 +58,42 @@
     color: white;
     position: relative;
     text-align: center;
+}
+
+.tool_card{
+    border-radius: 15px;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.600);
+    height: 4rem;
+    width: 100%;
+    margin: 1.5rem auto;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+.tool_card:after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    border-radius: 30px;
+    
+    /* Declaring our shadow color inherit from the parent (button) */
+    background: inherit;
+    
+    /* Blurring the element for shadow effect */
+    -webkit-filter: blur(12px);
+    -moz-filter: blur(12px);
+    -o-filter: blur(12px);
+    -ms-filter: blur(12px);
+    filter: blur(12px);
+    
+    /* Transition for the magic */
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
 }
 .tool_logo img{
     width: 4rem;
@@ -187,4 +248,8 @@
     color: rgba(255, 255, 255, 0.903);
     background-color: rgba(103, 102, 102, 0.25);
     transform: translateY(-5px);
+}
+
+#skills {
+    padding: 0 0.75rem;
 }

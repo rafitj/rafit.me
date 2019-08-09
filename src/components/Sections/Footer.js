@@ -47,15 +47,15 @@ class Footer extends Component {
                  <Col  xs = {12} sm = {3}></Col>
                 <Col xs = {12} sm = {3}>
                 <h4 >Get in Touch</h4>
-                <i class="fas fa-2x fa-envelope" onClick = {this.openEmail}></i>
-                <i class="fas  fa-2x fa-mobile" onClick = {this.openNum}></i> 
-                <i class="fas  fa-2x fa-map-marker-alt" onClick = {this.openLoc}></i> 
+                <i className="fas fa-2x fa-envelope" onClick = {this.openEmail}></i>
+                <i className="fas  fa-2x fa-mobile" onClick = {this.openNum}></i> 
+                <i className="fas  fa-2x fa-map-marker-alt" onClick = {this.openLoc}></i> 
                 </Col>
                 <Col xs = {12} sm = {3}>
                 <h4>Let's Connect</h4>
-                <a href="https://www.linkedin.com/in/rafitj/"><i class="fab fa-2x fa-linkedin"></i></a>
-                <a href="http://github.com/rafitj"><i class="fab fa-2x fa-github"></i></a>
-                <a href="https://dribbble.com/rafitj"><i class="fab fa-2x fa-dribbble-square"></i></a>
+                <a href="https://www.linkedin.com/in/rafitj/"><i className="fab fa-2x fa-linkedin"></i></a>
+                <a href="http://github.com/rafitj"><i className="fab fa-2x fa-github"></i></a>
+                <a href="https://dribbble.com/rafitj"><i className="fab fa-2x fa-dribbble-square"></i></a>
                 </Col>
                 <Col  xs = {12} sm = {3}></Col>
            </Row>

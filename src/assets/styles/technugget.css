@@ -1,31 +1,33 @@
 .tech_nugget_container{
-    background-color: rgba(255, 255, 255, 0.75);
     border-radius: 20px;
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.500);
-    padding: 0.5rem;
+    padding: 0.15rem;
     display: inline-block;
-    margin: 0.5rem;
+    margin: 0.5rem 0.5rem 0.5rem 0;
 }
 .tech_nugget_text{
     color: rgba(0, 0, 0, 0.7);
     font-size: 0.7rem;
     margin-left: 0.3rem;
+    display: inline-block;
+    vertical-align: middle;
 }
-
 .tech_nugget_img{
-   width: 1.25rem;
-   height: 1.25rem;
+   height: 2rem;
    -webkit-filter: drop-shadow( 0 5px 5px rgba(0, 0, 0, 0.3));
-   filter: drop-shadow( 0 5px 5px rgba(0, 0, 0, 0.3));  }
+   filter: drop-shadow( 0 5px 5px rgba(0, 0, 0, 0.3));  
+   display: inline-block;
+   vertical-align: middle;
+}
 
 .close_tech{
     color: rgba(255, 255, 255, 0.541);
     padding: 0.5rem;
     display: inline-block;
     margin: 0.5rem;
-    font-size: 0.7rem;
+    margin-left: 0;
+    font-size: 0.95rem;
+    opacity: 0.9;
 }
-
 .view_tech{
     color: white;
     opacity: 0.6;
@@ -35,21 +37,41 @@
     font-size: 0.9rem;
     cursor: pointer;
 }
+.view_tech:hover{
+    transform: translateX(5px);
+
+}
 .tech_nuggets{
     opacity: 0.9;
     position: absolute;
-    bottom: 12.5px;
+    bottom: 10px;
     left: 30px;
     font-size: 0.9rem;
     cursor: pointer;
 }
+.tech_nuggets_set{
+    display: inline-block;
+}
+.tech_nuggets_set:hover{
+    transform: translateX(-5px);
+}
 .hide_tech{
     opacity: 0;
-    left: 100px;
+    left: 25px;
     z-index: -9999;
 }
 .hide_nuggets {
     opacity: 0;
-    left: -50px;
+    left: -25px;
     z-index: -9999;
+}
+@media (max-width: 992px) {
+    .view_tech, .tech_nuggets{
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .view_tech, .tech_nuggets{
+        display: block;
+    }
 }

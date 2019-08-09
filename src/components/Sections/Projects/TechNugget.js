@@ -28,13 +28,52 @@ import docker from '../../../assets/images/tools/docker.svg'
 import Keras from '../../../assets/images/tools/keras.svg'
 import pyspark from '../../../assets/images/tools/pyspark.svg'
 import aspark from '../../../assets/images/tools/aspark.svg'
+import mongo from '../../../assets/images/tools/mongo.svg'
+import firebase from '../../../assets/images/tools/firebase.svg'
 
 class TechNugget extends Component {
+
+    returnImg = (skill_string) => {
+        switch(skill_string) {
+            case "Keras":
+              return Keras
+            case "AWS":
+              return aws
+            case "JS":
+                return JS
+            case "C++":
+                return CPlus
+            case "React":
+                return react
+            case "Django":
+                return django
+            case "Swift":
+                return Swift
+            case "Node":
+                return node
+            case "MongoDB":
+                return mongo
+            case "HTML":
+                    return HTML
+            case "Flask":
+                    return flask
+            case "RxJS":
+                    return rxjs
+            case "Azure":
+                    return azure
+            case "Pyspark":
+                    return pyspark
+            case "Firebase":
+                    return firebase
+            default:
+              return Python
+          }
+    }
+
     render(){
         return (
            <div className = "tech_nugget_container">
-            <img className = "tech_nugget_img" src ={Python} alt = {this.props.tech} />
-            <span  className = "tech_nugget_text">{this.props.tech}</span>
+                <img className = "tech_nugget_img" src ={this.returnImg(this.props.tech)} alt = {this.props.tech} />
            </div>
         );
     }

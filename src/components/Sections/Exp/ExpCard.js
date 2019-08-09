@@ -1,16 +1,23 @@
 import React, { Component } from 'react';
 import '../../../assets/styles/experience.css';
 import { Col } from 'react-grid-system';
-
+import Tech from '../Projects/Tech';
 class ExpCard extends Component {
+    state = {
+        showTech: false
+    }
+    toggleTech = () =>{
+        const newState = !this.state.showTech
+        this.setState({showTech: newState})
+    }
     render() {
         const classes = "exp_card " + this.props.extra_classes
-        const img_class = "exp_logo " + (this.props.extra_classes === "mlse" ? "mlse-img" : "")
+        const img_class = "exp_logo " + (this.props.extra_classes === "mlse" ? "mlse_img" : "")
         return (
-            <Col sm ={12} md ={6}>
+            <Col sm ={12} md ={6} >
             <div className = {classes} data-aos="fade-up" data-aos-duration = "500">
-                <div className = {img_class}>
-                    <img alt = {this.props.company} src = {this.props.img} />
+                <div>
+                    <img className = {img_class} alt = {this.props.company} src = {this.props.img} />
                 </div>
                 <div className = "exp_date">
                 {this.props.date}
@@ -24,7 +31,13 @@ class ExpCard extends Component {
                 <div className = "exp_desc">
                  {this.props.desc}
                 </div>
-                <div className = "exp_view">
+                {/* <div className = "exp_view">
+                </div> */}
+                <div className = "tech">
+                    <p onClick = {this.toggleTech} className = { "view_tech " + (this.state.showTech ? "hide_tech" : "")}> View Tech  ></p>
+                    <div className =  { "tech_nuggets " + (this.state.showTech ? "" : "hide_nuggets")}>
+                        <Tech onClose = {this.toggleTech} data = {this.props.techData}/>
+                    </div>
                 </div>
             </div>
             </Col>

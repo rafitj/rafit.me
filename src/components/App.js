@@ -6,11 +6,11 @@ class App extends React.Component {
     state = {
         pageLoaded: false
     }
-    handleLoad = () => {
-        console.log("page loaded")
-        this.setState({pageLoaded:true})
+    componentDidMount(){
+        setTimeout(this.setState({pageLoaded:true}), 5000)
     }
     render() {
+        console.log(this.state.pageLoaded)
         const style = this.state.pageLoaded ? {transition: 'all 1s ease', opacity: 1} : {opacity: 0}
         const maintenance = false;
         if (maintenance) {
@@ -18,8 +18,13 @@ class App extends React.Component {
                     <Maintenance />
             )
         }
+        if ( this.state.pageLoaded === false){
+            return (
+                <div><h1>Loading</h1></div>
+            )
+        }
         return (
-            <div style = {style} className="main" onLoad = {this.handleLoad}>
+            <div style = {style} className="main" >
                 <div>
                     <Content />
                 </div>

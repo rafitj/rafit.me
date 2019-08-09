@@ -50,7 +50,7 @@ class Nav extends Component {
                 <Col xs={2.4}>
                     <AnchorLink href='#home'> 
                     <div className = "nav_button">
-                        <i class="fas fa-lg fa-home"></i> 
+                        <i className="fas fa-lg fa-home"></i> 
                         <Hidden xs sm>
                             <div className = "nav_text">Home</div>    
                         </Hidden>
@@ -60,7 +60,7 @@ class Nav extends Component {
                 <Col xs={2.4}>
                     <AnchorLink href='#projects'> 
                     <div className = "nav_button">
-                        <i class="fas fa-lg fa-rocket"></i>
+                        <i className="fas fa-lg fa-rocket"></i>
                         <Hidden xs sm>
                             <div className = "nav_text">Projects</div>    
                         </Hidden>
@@ -70,7 +70,7 @@ class Nav extends Component {
                 <Col xs={2.4}>
                     <AnchorLink href='#experience'> 
                     <div className = "nav_button">
-                        <i class="fab fa-lg fa-black-tie"></i>
+                        <i className="fab fa-lg fa-black-tie"></i>
                         <Hidden xs sm>
                             <div className = "nav_text">Work</div>    
                         </Hidden>
@@ -80,7 +80,7 @@ class Nav extends Component {
                 <Col xs={2.4}>
                     <AnchorLink href='#skills'> 
                     <div className = "nav_button">
-                        <i class="fas fa-lg fa-layer-group"></i>
+                        <i className="fas fa-lg fa-layer-group"></i>
                         <Hidden xs sm>
                             <div className = "nav_text">Skills</div>    
                        </Hidden>
@@ -90,7 +90,7 @@ class Nav extends Component {
                 <Col xs={2.4}>
                     <AnchorLink href='#contact'> 
                     <div className = "nav_button">
-                        <i class="fas fa-lg fa-coffee"></i>
+                        <i className="fas fa-lg fa-coffee"></i>
                         <Hidden xs sm>
                             <div className = "nav_text">Contact</div>    
                        </Hidden>

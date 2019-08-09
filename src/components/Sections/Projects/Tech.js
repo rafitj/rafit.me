@@ -8,10 +8,10 @@ class Tech extends Component {
     render() {
         const techNuggets = this.props.data.map((i) => <TechNugget key = {i} tech={i}/>);
         return (
-           <>
+           <div className="tech_nuggets_set"  onClick = {this.props.onClose} >
             {techNuggets}
-            <div onClick = {this.props.onClose} className="close_tech"> Close </div>
-           </>
+            <div className="close_tech">&lt;</div>
+           </div>
         );
     }
 }

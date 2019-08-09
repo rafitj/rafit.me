@@ -12,10 +12,9 @@ class ProjectCard extends Component {
         this.setState({showTech: newState})
     }
     render() {
-        console.log(this.state.showTech)
         const classes = "project_card " + this.props.extra_classes
         return (
-            <Col sm ={12} md ={6}>
+            <Col sm ={12} md ={6} xl ={4}>
             <div className = {classes} data-aos="fade-up" data-aos-duration = "500">
                 <div className = "project_logo">
                     <img alt = {this.props.title} src = {this.props.img} />
@@ -30,16 +29,16 @@ class ProjectCard extends Component {
                 {this.props.desc}
                 </div>
                 <div className = "project_git">
-                    <a href = {this.props.link}><i class="fab fa-2x fa-github"></i></a>
+                    <a href = {this.props.link}><i className="fab fa-2x fa-github"></i></a>
                 </div>
                 <div className = "tech">
                     <p onClick = {this.toggleTech} className = { "view_tech " + (this.state.showTech ? "hide_tech" : "")}> View Tech  ></p>
                     <div className =  { "tech_nuggets " + (this.state.showTech ? "" : "hide_nuggets")}>
-                        <Tech onClose = {this.toggleTech} data = {["Python", "Keras"]}/>
+                        <Tech onClose = {this.toggleTech} data = {this.props.techData}/>
                     </div>
                 </div>
-                <div onClick = {this.props.onClick} className = "project_view">
-                </div>
+                {/* <div onClick = {this.props.onClick} className = "project_view">
+                </div> */}
             </div>
             </Col>
         );
