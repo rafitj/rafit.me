@@ -42,7 +42,7 @@ class Footer extends Component {
         {this.renderModals()}
           <Container>
             <div id = "contact" data-aos="fade-up" data-aos-duration = "500" className = "footer_container">
-             <Header text = "Coffee?" contact/>
+             <Header text = "Let's Chat" contact/>
              <Row>
                  <Col  xs = {12} sm = {3}></Col>
                 <Col xs = {12} sm = {3}>

@@ -101,19 +101,19 @@ class Skills extends Component {
           </Container>
           <Container>
              <Row>
-                <Col xs={12} sm = {2.4}>
+                <Col xs={12} sm = {12} md = {2.4}>
                     <div data-aos = "fade-right" className = {this.getFilterClass('all')} onClick = {()=>{this.setState({filter: 'all'})}}>All</div>
                   </Col>
-                  <Col xs={6} sm = {2.4}>
+                  <Col xs={6} sm = {6} md = {2.4}>
                     <div data-aos = "fade-right"  className = {this.getFilterClass('framework')} onClick = {()=>{this.setState({filter: 'framework'})}}>Frameworks</div>
                   </Col>
-                  <Col xs={6} sm = {2.4}>
+                  <Col xs={6} sm = {6} md = {2.4}>
                   <div data-aos = "fade-right"  className = {this.getFilterClass('database')} onClick = {()=>{this.setState({filter: 'database'})}}>Databases</div>
                   </Col>
-                  <Col xs={6} sm = {2.4}>
+                  <Col xs={6} sm = {6} md = {2.4}>
                   <div data-aos = "fade-right"  className = {this.getFilterClass('library')} onClick = {()=>{this.setState({filter: 'library'})}}>Libraries</div>
                   </Col>
-                  <Col xs={6} sm = {2.4}>
+                  <Col xs={6} sm = {6} md = {2.4}>
                   <div data-aos = "fade-right"  className = {this.getFilterClass('tool')} onClick = {()=>{this.setState({filter: 'tool'})}}>Tools</div>
                   </Col>
              </Row>

@@ -24,25 +24,33 @@ class Nav extends Component {
 
     handleScroll = (event) => {
         const wrappedElement = document.getElementById('root');
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
         if (this.isBottom(wrappedElement)) {
             this.setState({'show':true})
+
         }
-        else {
+        else if (scrolled < 95) {
             this.setState({'show':false})
         }
     }
 
+
     getNavClass = () => {
-        return "nav_container " + (this.state.show ? " " : " hide_nav");
+        var classes =  "nav_container " + (this.state.show ? " " : " hide_nav");
+        return classes
     }
     getArrowClass = () => {
         return "nav_arrow_cont " + (this.state.show ? "hide_arrow" : " ");
     }
     handleNavClick = ()=>{
         this.setState({'show':false})
+
     }
     handleArrowClick = ()=>{
         this.setState({'show':true})
+
     }
     render() {
         const Nav = (
@@ -92,7 +100,7 @@ class Nav extends Component {
                     <div className = "nav_button">
                         <i className="fas fa-lg fa-coffee"></i>
                         <Hidden xs sm>
-                            <div className = "nav_text">Contact</div>    
+                            <div className = "nav_text">Chat</div>    
                        </Hidden>
                        </div> 
                     </AnchorLink>

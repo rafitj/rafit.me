@@ -4,8 +4,7 @@
     bottom: 0;
     margin: 0 auto;
     /* background-image: linear-gradient(0deg, #0c0c0c, #0c0c0ccc, rgba(0, 0, 0, 0)); */
-    border-radius: 15px;
-    height: 4.5rem;
+    height: 6rem;
     transition: all 0.25s ease;
     padding: 0 2rem;
 }
@@ -13,12 +12,13 @@
    cursor: pointer;
 }
 .nav_button{
-    /* background-color: rgba(0, 0, 0, 0.584); */
-    /* box-shadow: 0 15px 20px rgba(0, 0, 0, 755); */
+    background-color: rgba(0, 0, 0, 0.584);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
     height: 3rem;
-    border-radius: 10px;
+    width: 3rem;
+    border-radius: 100%;
     margin: 0 auto;
-    margin-top: 0.3rem;
+    margin-top: 1.5rem;
     text-align: center;
     transition: all 0.25s ease;
     color: rgba(255, 255, 255, 0.6);
@@ -28,6 +28,7 @@
 .nav_button:hover, .nav_button i:hover{
     color: rgba(255, 255, 255, 0.8);
     text-shadow:0 0 7px rgba(255, 255, 255, 0.6);
+    transform: translateY(-5px)
     /* background-color: rgba(255, 255, 255, 0.5); */
     /* box-shadow: 0 20px 20px rgba(0, 0, 0, 0.9); */
 }
@@ -42,6 +43,10 @@
     transition: all 0.25s ease;
     margin-left: 0.7rem;
     font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    margin: 0 auto;
+    margin-top: 0.8rem;
 }
 .nav_arrow{
     width: 2rem;
@@ -77,3 +82,4 @@
     opacity: 0;
     transform: translateY(50px);
 }
+

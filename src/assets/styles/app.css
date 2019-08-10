@@ -7,7 +7,7 @@
 
 body{
     margin: 0;
-    background-image: linear-gradient(0deg, #121414, black)
+    background-image: linear-gradient(0deg, #121414, black);
 }
 
 @font-face {
@@ -26,4 +26,33 @@ body{
 
 i {
     letter-spacing: 0;
+}
+
+.loading_show {
+    transition: all 0.25s ease;
+    opacity: 0.85;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: black; 
+    margin: 0;
+    overflow: hidden;
+    position: static;
+}
+
+.loading_hide{
+    opacity: 0;
+}
+
+.logo_part{
+    width: 16rem;
+    position: absolute;
+    -webkit-filter: drop-shadow( 0 0 5px rgba(255, 255, 255, 0.9));
+    filter: drop-shadow( 0 0 5px rgba(255, 255, 255, 0.9));
+    right: 0; left: 0;
+    top: 30%; bottom: 0;
+    margin: 0 auto;
+    transform: translateY(-5%);
 }
