@@ -38,10 +38,9 @@
 }
 
 .nav_text {
-    display: inline-block;
+    display: none;
     font-weight: 700;
     transition: all 0.25s ease;
-    margin-left: 0.7rem;
     font-size: 0.9em;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;

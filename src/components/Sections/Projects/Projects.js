@@ -6,6 +6,7 @@ import ProjectModal from './ProjectModal';
 import framear from '../../../assets/images/projects/FrameAR.svg'
 import density from '../../../assets/images/projects/Density.png'
 import pseudo from '../../../assets/images/projects/PseudoLogo.svg'
+import realm from '../../../assets/images/projects/Realm.svg'
 class Projects extends Component {
       state = {
         showModal: false,
@@ -26,6 +27,10 @@ class Projects extends Component {
                 data = {this.state.modalData}/>
           <Container style = {{maxWidth: 'none'}}>
              <Row>
+                <ProjectCard img = {realm} title = "Realm" date = "August 2019" extra_classes = "realm"
+                            desc = "Virtual, immersive AR and ML enhanced presentation software"
+                            link = "https://github.com/rafitj/realm"
+                            techData = {["AWS","React","Swift"]}/>
                 <ProjectCard img = {density} title = "Density" date = "May 2019" extra_classes = "density"
                             desc = "Population density tracking and analytics via passive wifi-detection"
                             link = "https://github.com/rafitj/density"
