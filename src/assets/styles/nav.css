@@ -25,13 +25,13 @@
     text-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
 }
 
-.nav_button:hover, .nav_button i:hover{
+.nav_button:hover{
     color: rgba(255, 255, 255, 0.8);
-    text-shadow:0 0 7px rgba(255, 255, 255, 0.6);
     transform: translateY(-5px)
     /* background-color: rgba(255, 255, 255, 0.5); */
     /* box-shadow: 0 20px 20px rgba(0, 0, 0, 0.9); */
 }
+
 .nav_button i{
     margin-top: 1rem;
     transition: all 0.25s ease;

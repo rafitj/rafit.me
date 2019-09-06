@@ -26,7 +26,7 @@ class LogoAnimation extends Component {
             return <img data-aos = "fade" data-aos-delay = {delay} data-aos-duration className = "logo_part" src={i} alt="asdf" key={Math.random()}/>
         })
         return(
-            <div>{logo}</div>
+            <div className="logo_part_cont">{logo}</div>
         )
     }
 }

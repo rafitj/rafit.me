@@ -74,4 +74,7 @@
     .view_tech, .tech_nuggets{
         display: block;
     }
+    .tech_nuggets{
+        left: 20px;
+    }
 }
