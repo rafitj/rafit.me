@@ -2,11 +2,9 @@
     transition: all 0.25s ease;
 }
 .exp_card{
-    border-radius: 30px;
     margin: 0 0.5rem 3rem 0.5rem;
-    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.300);
-    height: 14rem;
-    color: white;
+    height: 11rem;
+    color: rgb(41, 41, 41);
     position: relative;
 }
 .exp_card::after {
@@ -37,41 +35,39 @@
 .exp_logo{
     width: 6rem;
     position: absolute;
-    top: -25px;
-    right: 20px;
-    -webkit-filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));
-    filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));    
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2rem;
 }
 .mlse_img{
-    height: 10rem;
-    width: 10rem; 
-    top: -50px;
-    right: 15px;
+    height: 8rem;
+    width: 8rem; 
+    left: 1rem;
 }
 .exp_title{
     position: absolute;
     top: 75px;
-    left: 25px;
+    left: 10rem;
     font-size: 1.6em;
 }
 .exp_date{
     opacity: 0.6;
     position: absolute;
     top: 25px;
-    left: 25px;
+    left: 10rem;
     font-size: 0.8rem;
 }
 .exp_company{
     position: absolute;
     top: 50px;
-    left: 25px;
+    left: 10rem;
     font-size: 1.1rem;
     font-weight: 500;
 }
 .exp_desc{
     position: absolute;
     top: 110px;
-    left: 25px;
+    left: 10rem;
     line-height: 1.5;
     opacity: 0.7;
     padding-right: 1rem;
@@ -88,7 +84,6 @@
     right: 20px;
     background-color: rgba(255, 255, 255, 0.6);
     text-align: center;
-    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.50);
 }
 .exp_view_text{
     color: rgba(0, 0, 0, 0.6);
@@ -97,7 +92,6 @@
 }
 .exp_view:hover{
     background-color: rgba(255, 255, 255, 0.7);
-    box-shadow: 0 18px 18px rgba(0, 0, 0, 0.6);
     cursor: pointer;
     transform: translateY(-3px)
 }
@@ -105,248 +99,33 @@
 
 
 .mlse{
-    background-image: linear-gradient(-45deg, rgba(231, 69, 69, 0.654),rgba(105, 1, 1, 0.654));
+    border-left: double 4px transparent;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    background-image:linear-gradient(#dfdfdf, #dfdfdf), linear-gradient(0deg, rgba(231, 69, 69),rgba(105, 1, 1));
 }
 
 .bliss{
-    background-image: linear-gradient(-45deg, rgba(69, 231, 91, 0.654),rgba(0, 124, 128, 0.654));
+    border-left: double 4px transparent;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    background-image:linear-gradient(#dfdfdf, #dfdfdf),  linear-gradient(0deg, rgba(69, 231, 91),rgba(0, 124, 128));
 }
 
 .actioncind{
-    background-image: linear-gradient(-45deg, rgba(26, 52, 167, 0.654),rgba(70, 0, 128, 0.654));
+    border-left: double 4px transparent;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    background-image: linear-gradient(#dfdfdf, #dfdfdf),  linear-gradient(0deg, rgba(26, 52, 167),rgba(70, 0, 128));
 }
 
 .festivecurrents{
-    background-image: linear-gradient(-45deg, rgba(226, 48, 226, 0.654),rgba(48, 172, 221, 0.654),rgba(227, 243, 84, 0.654));
+    border-left: double 4px transparent;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    background-image: linear-gradient(#dfdfdf, #dfdfdf),  linear-gradient(0deg, rgba(226, 48, 226),rgb(255, 196, 1),rgba(48, 172, 221));
 }
 
-
-@media (max-width: 992px) {
-    .exp_logo{
-        width: 5.5rem;
-        top: -35px;
-        right: -5px; 
-        -webkit-filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));
-        filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));    
-    }
-    .mlse_img{
-        height: 9rem;
-        width: 9rem; 
-        top: -55px;
-        right: -10px;
-    }
-    .exp_title{
-        position: absolute;
-        left: 10; 
-        top: 85px; 
-        width: 20rem;
-        font-size: 1.6em;
-    }
-    .exp_date{
-        opacity: 0.6;
-        position: absolute;
-        top: 40px;
-        left: 10; 
-        font-size: 0.8rem;
-        line-height: 1.3;
-    }
-    .exp_company{
-        position: absolute;
-        left: 10; 
-        top: 62px; 
-        width: 20rem;
-        font-size: 0.95rem;
-        font-weight: 500;
-    }
-    .exp_desc{
-        position: absolute;
-        left: 10; 
-        top: 115px; 
-        font-size: 0.8rem;
-        line-height: 1.6;
-        font-weight: 500;
-        opacity: 0.7;
-    }
-    .exp_view{
-        width: 5rem;
-        height: 2rem;
-        margin: auto;
-        right: 15px;
-        bottom: 18px;
-    }
-    .exp_view:hover{
-        transform: translateY(5px)
-    }
-}
-
-@media (max-width: 768px) {
-    .exp_logo{
-        width: 6rem;
-        position: absolute;
-        top: -30px;
-        right: 5px;
-        -webkit-filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));
-        filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));    
-    }
-    .mlse_img{
-        height: 9.5rem;
-        width: 9.5rem; 
-        top: -60px;
-        right: 2px;
-    }
-    .exp_title{
-        position: absolute;
-        top: 72px;
-        left: 30px;
-        font-size: 1.55em;
-    }
-    .exp_date{
-        opacity: 0.6;
-        position: absolute;
-        top: 30px;
-        left: 30px;
-        font-size: 0.75rem;
-    }
-    .exp_company{
-        position: absolute;
-        top: 50px;
-        left: 30px;
-        font-size: 1.0rem;
-        font-weight: 500;
-    }
-    .exp_desc{
-        position: absolute;
-        font-size: 0.8rem;
-        line-height: 1.6;
-        position: absolute;
-        top: 105px;
-        left: 30px;
-        font-size: 0.85rem;
-        opacity: 0.7;
-    }
-    .exp_view{
-        margin: 0;
-        bottom: 20px;
-        right: 20px;
-        left: 77.5%;
-    }
-    .exp_view:hover{
-        cursor: pointer;
-        transform: translateY(-5px)
-    }
-}
-
-
-@media (max-width: 455px) {
-    .exp_desc{
-        position: absolute;
-        font-size: 0.8rem;
-        line-height: 1.6;
-        position: absolute;
-        top: 105px;
-        left: 20px;
-        font-size: 0.85rem;
-        opacity: 0.7;
-    }
-    .exp_logo{
-        width: 5.75rem;
-        position: absolute;
-        top: -30px;
-        right: -5px;
-        -webkit-filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));
-        filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));    
-    }
-    .mlse_img{
-        height: 9rem;
-        width: 9rem; 
-        top: -60px;
-        right: -5px;
-    }
-    .exp_title{
-        position: absolute;
-        top: 70px;
-        left: 20px;
-        font-size: 1.55em;
-    }
-    .exp_date{
-        opacity: 0.6;
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        font-size: 0.75rem;
-    }
-    .exp_company{
-        position: absolute;
-        top: 42px;
-        left: 20px;
-        font-size: 1.0rem;
-        font-weight: 500;
-    }
-    .exp_view{
-        margin: 0;
-        bottom: 20px;
-        right: 15px;
-        left: 70%;
-    }
-   
-}
-
-
-@media (max-width: 365px) {
-    .exp_logo{
-        width: 5rem;
-        position: absolute;
-        top: -30px;
-        right: -5px;
-        -webkit-filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));
-        filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));    
-    }
-    .mlse_img{
-        height: 8rem;
-        width: 8rem; 
-        top: -60px;
-        right: -5px;
-    }
-    .exp_title{
-        position: absolute;
-        top: 70px;
-        left: 20px;
-        width: 15rem;
-        font-size: 1.4em;
-    }
-    .exp_date{
-        opacity: 0.7;
-        position: absolute;
-        top: 20px;
-        width: auto;
-        left: 20px;
-        font-size: 0.6rem;
-    }
-    .exp_company{
-        position: absolute;
-        top: 42px;
-        left: 20px;
-        width: 15rem;
-        font-size: 0.975rem;
-        font-weight: 500;
-    }
-    .exp_view{
-        width: 5rem;
-        height: 2rem;
-        margin: auto;
-        left: 0;
-        right: 0;
-        bottom: -8px;
-    }   
-    .exp_desc{
-        position: absolute;
-        font-size: 0.7rem;
-        line-height: 1.3;
-        top: 102px;
-        left: 20px;
-        font-size: 0.85rem;
-        opacity: 0.7;
-        margin-right: 10px;
-    }
-  
+.view_tech_exp, .tech_nuggets_exp{
+    left: 10rem;
 }

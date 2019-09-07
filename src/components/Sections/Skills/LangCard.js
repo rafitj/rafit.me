@@ -21,7 +21,7 @@ class LangCard extends Component {
         const text_class = "lang_text" + (this.state.clicked ? " lang_text_clicked" : "")
         return (
             <Col xs = {12} sm = {6} md ={3}>
-            <div onClick = {this.toggleClick} className = {classes} data-aos="fade-up" data-aos-duration = "500">
+            <div onClick = {this.toggleClick} className = {classes} data-aos="fade-right" data-aos-duration = "500">
                 <img className = {logo_class} src =  {this.props.img} alt = {this.props.lang} />
                 <div className = {name_class}>
                     {this.props.lang}

@@ -1,6 +1,6 @@
 .footer_container  {
     text-align: center;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(18, 18, 18, 0.8);
     margin: 0 auto;
 }
 
@@ -15,17 +15,15 @@
  
 
 .footer_container i{
-    color: rgba(255, 255, 255, 0.633);
+    color: rgba(33, 33, 33, 0.633);
     margin: 1rem;
-    text-shadow: 0 8px 8px rgba(0, 0, 0, 0.9);
     transition: all 0.25s ease;
     text-decoration: none !important;
 }
 
 .footer_container i:hover{
     transform: translateY(-5px);
-    color: rgba(255, 255, 255, 0.849);
-    text-shadow: 0 10px 10px rgba(0, 0, 0, 1);
+    color: rgba(9, 9, 9, 0.849);
     cursor: pointer;
 }
 

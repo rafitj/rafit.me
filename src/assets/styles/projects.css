@@ -1,8 +1,6 @@
 .project_card{
-    border-radius: 30px;
-    margin: 0 0.5rem 3rem 0.5rem;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.300);
-    height: 14rem;
+    margin: 0 0.5rem 2rem 0.5rem;
+    height: 9rem;
     color: rgb(29, 29, 29);
     position: relative;
     transition: all 0.25s ease;
@@ -34,31 +32,30 @@
   }
 
 .project_logo img{
-    height: 7rem;
+    height: 6rem;
     position: absolute;
-    top: -40px;
-    right: 15px;
-    -webkit-filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.666));
-    filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.666));  
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
 }
 
 .project_title{
     position: absolute;
-    top: 45px;
-    left: 29px;
+    top: 35px;
+    left: 8rem;
     font-size: 2rem;
 }
 .project_date{
     opacity: 0.6;
     position: absolute;
-    top: 20px;
-    left: 30px;
+    top: 10px;
+    left: 8.2rem;
     width: 10rem;
 }
 .project_desc{
     position: absolute;
-    top: 85px;
-    left: 30px;
+    top: 72px;
+    left: 8rem;
     line-height: 1.5;
     opacity: 0.85;
     margin-right: 1rem;
@@ -72,12 +69,10 @@
     right: 20px;
     background-color: rgba(255, 255, 255, 0.6);
     text-align: center;
-    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.50);
     transition: all 0.25s ease;
 }
 .project_view:hover{
     background-color: rgba(255, 255, 255, 0.7);
-    box-shadow: 0 18px 18px rgba(0, 0, 0, 0.6);
     cursor: pointer;
     transform: translateY(-3px)
 }
@@ -87,52 +82,49 @@
     width: 2rem;
     height: 2rem;
     bottom: 20px;
-    right: 25px;
-    color: rgba(255, 255, 255, 0.6);
+    right: 1rem;
+    color: rgba(0, 0, 0, 0.9);
     text-align: center;
-    text-shadow: 0 15px 15px rgba(0, 0, 0, 0.7);
+    opacity: 0.75;
     transition: all 0.25s ease;
 }
 
 .project_git:hover{
-    transform: translateY(-3px);
-    color: rgba(255, 255, 255, 0.95);
-    text-shadow: 0 18px 15px rgba(0, 0, 0, 0.8);
+    opacity: 0.85;
     cursor: pointer;
 }
 .project_git a{
     color: inherit !important;
 }
 .density{
-    border: double 4px transparent;
+    border-left: double 4px transparent;
     background-origin: border-box;
     background-clip: content-box, border-box;
-    background-image:linear-gradient(#dfdfdf, #dfdfdf), radial-gradient(circle at top left,  #4563e7,#179cb3);
-
+    background-image:linear-gradient(#dfdfdf, #dfdfdf), linear-gradient(0deg,  #4563e7,#179cb3);
     
 }
 
 
 .framear{
-    border: double 4px transparent;
+    border-left: double 4px transparent;
     background-origin: border-box;
     background-clip: content-box, border-box;
-    background-image:linear-gradient(#dfdfdf, #dfdfdf), radial-gradient(circle at top left,  #d66b6b,#a33b3b);
+    background-image:linear-gradient(#dfdfdf, #dfdfdf), linear-gradient(0deg,  #d66b6b,#a33b3b);
 }
 
 
 .pseudo{
-    border: double 4px transparent;
+    border-left: double 4px transparent;
     background-origin: border-box;
     background-clip: content-box, border-box;
-    background-image:linear-gradient(#dfdfdf, #dfdfdf), radial-gradient(circle at top left, #159fd5,#cc0a61);
+    background-image:linear-gradient(#dfdfdf, #dfdfdf), linear-gradient(0deg, #159fd5,#cc0a61);
 }
 
 .realm{
-    border: double 4px transparent;
+    border-left: double 4px transparent;
     background-origin: border-box;
     background-clip: content-box, border-box;
-    background-image:linear-gradient(#dfdfdf, #dfdfdf), radial-gradient(circle at top left,  #001050,#001652);
+    background-image:linear-gradient(#dfdfdf, #dfdfdf), linear-gradient(0deg,  #001050,#001652);
 }
 
 .project_modal {
@@ -144,82 +136,4 @@
 
 .modal-content{
     margin: 10% 0 !important;
-}
-
-@media (max-width: 992px) {
-    .project_title{
-        top: 50px;
-        left: 29px;
-        font-size: 1.9rem;
-    }
-    .project_date{
-        top: 25px;
-        left: 30px;
-        width: 10rem;
-    }
-    .project_desc{
-        top: 90px;
-        left: 30px;
-    }
-    .modal-content{
-        margin: 15% 0 !important;
-    }
-    .project_logo img{
-        height: 6.5rem;
-        position: absolute;
-        top: -35px;
-        right: 2px;
-        -webkit-filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.666));
-        filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.666));  
-    }
-}
-
-@media (max-width: 768px) {
-    .modal-content{
-        margin: 15% 5% !important;
-    }
-}
-
-@media (max-width: 375px) {
-    .project_desc{
-        font-size: 0.85rem;
-    }
-    .project_logo img{
-        height: 6.75rem;
-        position: absolute;
-        top: -40px;
-        right: 10px;
-        -webkit-filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.666));
-        filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.666));  
-    }
-}
-@media (max-width: 325px) {
-    .project_logo img{
-        height: 6.75rem;
-        position: absolute;
-        top: -40px;
-        right: -10px;
-        -webkit-filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.666));
-        filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.666));  
-    }
-    .project_title{
-        position: absolute;
-        top: 45px;
-        left: 29px;
-        font-size: 2rem;
-    }
-    .project_date{
-        opacity: 0.6;
-        position: absolute;
-        top: 20px;
-        left: 30px;
-    }
-    .project_desc{
-        position: absolute;
-        top: 85px;
-        left: 30px;
-        line-height: 1.5;
-        opacity: 0.85;
-        margin-right: 1rem;
-    }
 }

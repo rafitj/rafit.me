@@ -13,14 +13,12 @@
 }
 .tech_nugget_img{
    height: 2rem;
-   -webkit-filter: drop-shadow( 0 5px 5px rgba(0, 0, 0, 0.3));
-   filter: drop-shadow( 0 5px 5px rgba(0, 0, 0, 0.3));  
    display: inline-block;
    vertical-align: middle;
 }
 
 .close_tech{
-    color: rgba(255, 255, 255, 0.541);
+    color: rgba(0, 0, 0, 0.541);
     padding: 0.5rem;
     display: inline-block;
     margin: 0.5rem;
@@ -29,11 +27,11 @@
     opacity: 0.9;
 }
 .view_tech{
-    color: white;
+    color: rgb(41, 41, 41);
     opacity: 0.6;
     position: absolute;
-    bottom: 12.5px;
-    left: 30px;
+    bottom: -5px;
+    left: 8rem;
     font-size: 0.9rem;
     cursor: pointer;
 }
@@ -44,8 +42,8 @@
 .tech_nuggets{
     opacity: 0.9;
     position: absolute;
-    bottom: 10px;
-    left: 30px;
+    bottom: -5px;
+    left: 8rem;
     font-size: 0.9rem;
     cursor: pointer;
 }

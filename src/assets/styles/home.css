@@ -6,7 +6,7 @@
     padding: 3rem;
 }
 .muted_p{
-    color: rgba(255, 255, 255, 0.555);
+    color: rgba(34, 34, 34, 0.555);
     font-size: 0.95rem;
     margin: 1.5rem 1rem;
     line-height: 2;
@@ -14,13 +14,12 @@
     padding: 0 2rem;
 }
 .name_header{
-    color: rgba(255, 255, 255, 0.938);
+    color: rgba(21, 21, 21, 0.938);
 }
 
 .home_button{
     text-decoration: none;
     display: inline-block;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.650);
     border-radius: 15px;
     border: none;
     padding: 1rem 2rem;
@@ -31,7 +30,6 @@
     color: rgba(255, 255, 255, 0.74);
 }
 .home_button:hover{
-    box-shadow: 0 20px 20px rgb(0, 0, 0);
     transform: translateY(-5px);
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.65);

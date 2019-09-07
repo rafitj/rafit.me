@@ -16,7 +16,7 @@ class ToolCard extends Component {
         const tool_class = "tool_card " + this.props.tool 
         return (
             <Col xs = {4} sm = {4}  md ={3}>
-            <div data-aos = "fade-up"
+            <div data-aos = "fade-right"
                 className = {tool_class} onClick = {this.toggleClick}> 
                 <div className = {tool_text}>
                     {this.props.name}

@@ -13,7 +13,6 @@
 }
 .nav_button{
     background-color: rgba(0, 0, 0, 0.584);
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
     height: 3rem;
     width: 3rem;
     border-radius: 100%;
@@ -22,7 +21,6 @@
     text-align: center;
     transition: all 0.25s ease;
     color: rgba(255, 255, 255, 0.6);
-    text-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
 }
 
 .nav_button:hover{
@@ -58,8 +56,6 @@
 }
 .nav_arrow:hover{
     cursor: pointer;
-    -webkit-filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.9));
-    filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.9));    
     opacity: 1;
     transform: translateY(-5px)
  }
