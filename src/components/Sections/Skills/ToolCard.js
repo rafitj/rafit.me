@@ -15,7 +15,7 @@ class ToolCard extends Component {
         const tool_text = "tool_text" + (this.state.clicked ? " text_clicked" : "")
         const tool_class = "tool_card " + this.props.tool 
         return (
-            <Col xs = {4} sm = {4}  md ={3}>
+            <Col xs = {4} sm = {4}  md ={2.4}>
             <div data-aos = "fade-right"
                 className = {tool_class} onClick = {this.toggleClick}> 
                 <div className = {tool_text}>

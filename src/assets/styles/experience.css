@@ -3,71 +3,61 @@
 }
 .exp_card{
     margin: 0 0.5rem 3rem 0.5rem;
-    height: 11rem;
-    color: rgb(41, 41, 41);
+    color: rgb(237, 237, 237);
     position: relative;
+    border-radius: 20px;
+    cursor: pointer;
+} 
+.exp_card:hover{
+    margin-left: 2rem;
 }
-.exp_card::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0.7;
-    border-radius: 30px;
-    
-    /* Declaring our shadow color inherit from the parent (button) */
-    background: inherit;
-    
-    /* Blurring the element for shadow effect */
-    -webkit-filter: blur(20px);
-    -moz-filter: blur(20px);
-    -o-filter: blur(20px);
-    -ms-filter: blur(20px);
-    filter: blur(20px);
-    
-    /* Transition for the magic */
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
-  }
 .exp_logo{
     width: 6rem;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: -35px;
     left: 2rem;
+    filter: drop-shadow(0 15px 15px rgb(11, 11, 11, 0.4));
+}
+
+.hide_details{
+    display: none;
 }
 .mlse_img{
-    height: 8rem;
-    width: 8rem; 
-    left: 1rem;
+    height: 8.5rem;
+    width: 8.5rem; 
+    top: -55px;
+    left: 10px;
+}
+
+.expanded{
+    top: 10px;
+}
+.mlse_expanded{
+    top: -5px;
 }
 .exp_title{
-    position: absolute;
-    top: 75px;
-    left: 10rem;
+    margin-left: 10rem;
+    margin-bottom: 0.3rem;
     font-size: 1.6em;
+    opacity: 0.9;
 }
 .exp_date{
     opacity: 0.6;
-    position: absolute;
-    top: 25px;
-    left: 10rem;
-    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+    padding-top: 1rem;
+    margin-left: 10rem;
+    font-size: 0.9rem;
 }
 .exp_company{
-    position: absolute;
-    top: 50px;
-    left: 10rem;
+    margin-bottom: 0.3rem;
+    opacity: 0.8;
+    margin-left: 10rem;
     font-size: 1.1rem;
     font-weight: 500;
 }
 .exp_desc{
-    position: absolute;
-    top: 110px;
-    left: 10rem;
+    margin-bottom: 0.3rem;
+    margin-left: 10rem;
     line-height: 1.5;
     opacity: 0.7;
     padding-right: 1rem;
@@ -75,57 +65,33 @@
     font-size: 0.9rem;
     margin-right: 25px;
 }
-.exp_view{
-    position: absolute;
-    width: 5rem;
-    height: 2rem;
-    border-radius: 50px;
-    bottom: 20px;
-    right: 20px;
-    background-color: rgba(255, 255, 255, 0.6);
-    text-align: center;
+.exp_details{
+    margin-bottom: 0.3rem;
+    margin-left: 10rem;
+    line-height: 1.5;
+    opacity: 0.65;
+    padding-right: 1rem;
+    width: auto;
+    font-size: 0.85rem;
+    margin-right: 25px;
 }
-.exp_view_text{
-    color: rgba(0, 0, 0, 0.6);
-    font-weight: bold;
-    margin: auto 0;
-}
-.exp_view:hover{
-    background-color: rgba(255, 255, 255, 0.7);
-    cursor: pointer;
-    transform: translateY(-3px)
-}
-
-
 
 .mlse{
-    border-left: double 4px transparent;
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    background-image:linear-gradient(#dfdfdf, #dfdfdf), linear-gradient(0deg, rgba(231, 69, 69),rgba(105, 1, 1));
+    background-color: #b34e50;
 }
 
 .bliss{
-    border-left: double 4px transparent;
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    background-image:linear-gradient(#dfdfdf, #dfdfdf),  linear-gradient(0deg, rgba(69, 231, 91),rgba(0, 124, 128));
+    background-color: #5bc99f;
 }
 
 .actioncind{
-    border-left: double 4px transparent;
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    background-image: linear-gradient(#dfdfdf, #dfdfdf),  linear-gradient(0deg, rgba(26, 52, 167),rgba(70, 0, 128));
+    background-color: #774ba6;
 }
 
 .festivecurrents{
-    border-left: double 4px transparent;
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    background-image: linear-gradient(#dfdfdf, #dfdfdf),  linear-gradient(0deg, rgba(226, 48, 226),rgb(255, 196, 1),rgba(48, 172, 221));
+    background-color: #46a9b6;
 }
 
-.view_tech_exp, .tech_nuggets_exp{
-    left: 10rem;
+.view_tech_exp{
+    margin-left: 2rem;
 }

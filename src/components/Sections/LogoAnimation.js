@@ -20,7 +20,7 @@ class LogoAnimation extends Component {
     logo_parts = [img_7,img_6,img_5,img_4,img_3,img_2,img_1,img_0]
 
     render() {
-        var delay = 500
+        var delay = 0
         const logo = this.logo_parts.map((i)=>{
             delay += 150
             return <img data-aos = "fade" data-aos-delay = {delay} data-aos-duration className = "logo_part" src={i} alt="asdf" key={Math.random()}/>

@@ -23,6 +23,8 @@ import rxjs from '../../../assets/images/tools/rxjs.svg'
 import tf from '../../../assets/images/tools/tf.svg'
 import ts from '../../../assets/images/langs/TS.svg'
 
+import git from '../../../assets/images/tools/git.svg'
+import opencv from '../../../assets/images/tools/opencv.svg'
 import aws from '../../../assets/images/tools/aws.svg'
 import azure from '../../../assets/images/tools/azure.svg'
 import graphql from '../../../assets/images/tools/graphql.svg'
@@ -56,7 +58,7 @@ class Skills extends Component {
                {name: 'Django', type: 'framework', tool: 'django', img: django},
                {name: 'Redis', type: 'database', tool: 'redis', img: redis},
                {name: 'Type Script', type:'framework', tool:'ts', img: ts},
-               {name: 'OpenCV', type: 'library', tool: 'opencv', img: jquery},
+               {name: 'OpenCV', type: 'library', tool: 'opencv', img: opencv},
                {name: 'Firebase', type: 'database', tool: 'firebase', img: firebase},
                {name: 'Flask', type: 'framework', tool: 'flask', img: flask},
                {name: 'AWS', type: 'tool', tool: 'aws', img: aws},
@@ -64,7 +66,7 @@ class Skills extends Component {
                {name: 'MongoDB', type: 'database', tool: 'mongo', img: mongo},
                {name: 'Cassanadra', type: 'database', tool: 'cassandra', img: cassandra},
                {name: 'GraphQL', type: 'tool', tool: 'graphql', img: graphql},
-               {name: 'Git', type: 'tool', tool: 'git', img: graphql},
+               {name: 'Git', type: 'tool', tool: 'git', img: git},
                {name: 'Keras', type: 'library', tool: 'keras', img: keras},
                {name: 'Postgres', type: 'database', tool: 'postgres', img: postgres},
                {name: 'Apache', type: 'tool', tool: 'aspark', img: aspark},

@@ -30,11 +30,14 @@ import pyspark from '../../../assets/images/tools/pyspark.svg'
 import aspark from '../../../assets/images/tools/aspark.svg'
 import mongo from '../../../assets/images/tools/mongo.svg'
 import firebase from '../../../assets/images/tools/firebase.svg'
+import arduino from '../../../assets/images/tools/arduino.svg'
 
 class TechNugget extends Component {
 
     returnImg = (skill_string) => {
         switch(skill_string) {
+            case "Arduino":
+                return arduino
             case "Keras":
               return Keras
             case "AWS":

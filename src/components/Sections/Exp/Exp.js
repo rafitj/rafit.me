@@ -17,7 +17,8 @@ class Exp extends Component {
              <Row>
             <ExpCard img = {mlse} company = "MAPLE LEAF SPORTS" title = "DATA SCIENTIST" date = "MAY 2019 - AUG 2019" extra_classes = "mlse"
             desc = "Developed Big-Data algorithmns and Deep-Learning models for Toronto FC & Toronto Raptors"
-            techData = {["Python","Keras","Azure","Flask", "Pyspark"]}/>
+            techData = {["Python","Keras","Azure","Flask", "Pyspark"]}
+            detail = "At the MLSE I worked as a Data Scientist for TorontoFC and the Toronto Raptors specifically in opposition analysis and tactical scouting. My work involved..."/>
             <ExpCard img = {bliss} company = "THE BLISS COMPANY" title = "FULL STACK DEVELOPER" date = "MAY 2019 - AUG 2019" extra_classes = "bliss"
             desc = "Built progressive web app, Treat, for herbal medicine pickup, rewards and more"
             techData = {["React","RxJS","Firebase"]}/>

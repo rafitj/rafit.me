@@ -9,25 +9,21 @@
     color: rgba(34, 34, 34, 0.555);
     font-size: 0.95rem;
     margin: 1.5rem 1rem;
+    margin-top: 10rem;
     line-height: 2;
     transition: all 0.25s ease;
     padding: 0 2rem;
-}
-.name_header{
-    color: rgba(21, 21, 21, 0.938);
 }
 
 .home_button{
     text-decoration: none;
     display: inline-block;
-    border-radius: 15px;
-    border: none;
-    padding: 1rem 2rem;
+    border-bottom: 2px solid;
+    padding: 0.5rem 1rem;
     margin: 1rem;
-    font-size:1.1rem;
-    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 0.9rem;
     transition: all 0.25s ease;
-    color: rgba(255, 255, 255, 0.74);
+    color: rgba(33, 33, 33, 0.74);
 }
 .home_button:hover{
     transform: translateY(-5px);
