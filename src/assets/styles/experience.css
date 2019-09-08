@@ -9,7 +9,7 @@
     cursor: pointer;
 } 
 .exp_card:hover{
-    margin-left: 2rem;
+    transform: translateX(-2rem) !important;
 }
 .exp_logo{
     width: 6rem;
@@ -92,6 +92,40 @@
     background-color: #46a9b6;
 }
 
-.view_tech_exp{
-    margin-left: 2rem;
+
+
+@media(max-width: 767px) {
+    .exp_logo{
+        height: 5rem;
+        top: -30px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .expanded{
+        top: -30px;
+    }
+    .mlse_img{
+        top: -55px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 8rem;
+    }
+    .exp_title{
+        margin-left: 2rem;
+    }
+    .exp_date{
+        padding-top: 3rem;
+        margin-left: 2rem;
+    }
+    .exp_company{
+        margin-left: 2rem;
+    }
+    .exp_desc{
+        margin-left: 2rem;
+    }
+    .exp_details {
+        margin-left: 2rem;
+    }
 }

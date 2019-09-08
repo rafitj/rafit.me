@@ -67,3 +67,33 @@
     cursor: default;
     margin-left: -8rem;
 }
+.view_tech_exp{
+    margin-left: 2rem;
+}
+
+@media(max-width: 767px) {
+    .view_tech_exp{
+        margin-left: 0;
+    }
+    .view_tech{
+        margin-left: -2rem;
+        padding-bottom: 0.8rem;
+    }
+    .tech_nuggets{
+        margin-left: 2rem;
+    }
+    .hide_tech{
+        margin-left: 2rem;
+    }
+    .hide_nuggets {
+        margin-left: -6rem;
+    }
+    .four_nugs{
+        cursor: default;
+        margin-left: -9rem;
+    }
+    .five_nugs{
+        cursor: default;
+        margin-left: -12rem;
+    }
+}

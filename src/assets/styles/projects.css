@@ -9,12 +9,12 @@
     border-radius: 20px;
 }
 .project_card:hover{
-    margin-left: 2rem;
+    transform: translateX(-2rem) !important;
 }
 .project_logo img{
     height: 6rem;
     position: absolute;
-    top: -35px;
+    top: -30px;
     left: 15px;
     filter: drop-shadow(0 15px 15px rgb(11, 11, 11, 0.4));
 }
@@ -26,11 +26,13 @@
     filter: drop-shadow(0 15px 15px rgb(11, 11, 11, 0.4));
 }
 .project_title{
+    padding-top: 1rem;
     margin-left: 8rem;
     font-size: 2rem;
     opacity: 0.8;
 }
 .project_date{
+    display: none;
     padding-top: 1rem;
     opacity: 0.6;
     margin-left: 8.2rem;
@@ -40,8 +42,9 @@
 .project_desc{
     margin-left: 8rem;
     line-height: 1.5;
-    opacity: 0.7;
+    opacity: 0.8;
     margin-right: 2rem;
+    font-weight: bold;
 }
 .project_read_more{
     margin-left: 8rem;
@@ -110,4 +113,32 @@
     background-color: rgb(154, 154, 154);
     padding: 0.5rem 1rem;
     cursor: pointer;
+}
+
+@media(max-width: 767px) {
+    .project_logo img{
+        height: 5rem;
+        top: -30px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .project_logo_expanded img{
+        top: -30px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .project_title{
+        padding-top: 3rem;
+        margin-left: 2rem;
+        font-size: 2rem;
+        opacity: 0.8;
+    }
+    .project_desc{
+        margin-left: 2rem;
+    }
+    .project_details {
+        margin-left: 2rem;
+    }
 }

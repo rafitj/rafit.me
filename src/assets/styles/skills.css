@@ -8,12 +8,18 @@
     font-size: 0.9rem;
     font-weight: 600;
     border-radius: 20px;
+    transition-property: all;
+    transition: all 0.25s ease;
+}
+.lang_card:hover{
+    margin: 0 2rem 3rem 2rem;
 }
 .lang_logo{
     width: 3.5rem;
     position: absolute;
     margin: auto;
-    top: -20px;
+    top: 50%;
+    transform: translateY(-50%);
     left: 0; right: 0; 
     filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.4))
 }
@@ -35,47 +41,17 @@
     font-size: 0.9rem;
     opacity: 0.8;
 }
-.lang_name_clicked{
-    opacity: 0;
-}
-.tool_card{
-    border-radius: 15px;
-    height: 2rem;
-    width: 50%;
-    margin: 1.5rem auto;
-    position: relative;
-    text-align: center;
-    transition: all 0.25s ease;
-    cursor: pointer;
-    color: white;
-}
-  
+
 .tool_logo{
     opacity: 1;
-    width: 4rem;
+    width: 3.25rem;
     position: absolute;
     margin: auto;
     top: -30px;
     left: 0; 
     right: 0;
-    filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.3));
 }
-.tool_text {
-    color:#d7d7d700;
-    position: absolute;
-    margin: 0;
-    left: 0; right: 0;
-    font-weight: bold;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 1rem;
-}
-.text_clicked{
-    color: #e4e4e4b3;
-}
-.logo_clicked{
-    opacity: 0;
-}
+
 .python {
     background-color:#f5cd60
 }
@@ -230,9 +206,13 @@
     padding: 0 0.75rem;
 }
 
-@media(max-width:1200px){
-    .lang_text{
-        width: 70%;
-        font-size: 0.8rem;
-    }
+.tool_card{
+    height: 2rem;
+    width: 50%;
+    margin: 1.5rem auto;
+    text-align: center;
+    transition: all 0.25s ease;
+    background-color: #dfdfdf;
+    background-image: linear-gradient(45deg,#dfdfdf,#dfdfdf);
 }
+  
