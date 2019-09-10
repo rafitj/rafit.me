@@ -8,8 +8,17 @@
     border-radius: 20px;
     cursor: pointer;
 } 
+@keyframes clicked {
+    0%   { opacity: 1}
+    50% { opacity: 0.65;}
+    100% {opacity: 1}
+}
+
 .exp_card:hover{
     transform: translateX(-2rem) !important;
+}
+.exp_card:active{
+    animation: clicked 0.4s ease;
 }
 .exp_logo{
     width: 6rem;
@@ -42,7 +51,7 @@
     opacity: 0.9;
 }
 .exp_date{
-    opacity: 0.6;
+    opacity: 0.7;
     margin-bottom: 0.3rem;
     padding-top: 1rem;
     margin-left: 10rem;
@@ -50,7 +59,7 @@
 }
 .exp_company{
     margin-bottom: 0.3rem;
-    opacity: 0.8;
+    opacity: 0.9;
     margin-left: 10rem;
     font-size: 1.1rem;
     font-weight: 500;
@@ -59,22 +68,26 @@
     margin-bottom: 0.3rem;
     margin-left: 10rem;
     line-height: 1.5;
-    opacity: 0.7;
+    opacity: 0.9;
     padding-right: 1rem;
     width: auto;
-    font-size: 0.9rem;
+    font-weight: bold;
     margin-right: 25px;
 }
 .exp_details{
-    margin-bottom: 0.3rem;
     margin-left: 10rem;
     line-height: 1.5;
-    opacity: 0.65;
+    opacity: 0.8;
     padding-right: 1rem;
     width: auto;
     font-size: 0.85rem;
+    margin-bottom: 0;
     margin-right: 25px;
 }
+.exp_details p{
+    margin-bottom: 0;
+}
+
 
 .mlse{
     background-color: #b34e50;
@@ -95,6 +108,9 @@
 
 
 @media(max-width: 767px) {
+    .exp_card:hover{
+        transform: none !important;
+    }
     .exp_logo{
         height: 5rem;
         top: -30px;
@@ -104,6 +120,7 @@
     }
     .expanded{
         top: -30px;
+        height: 5.5rem;
     }
     .mlse_img{
         top: -55px;

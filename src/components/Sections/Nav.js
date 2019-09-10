@@ -66,21 +66,21 @@ class Nav extends Component {
                     </AnchorLink>
                 </Col>
                 <Col xs={2.4}>
-                    <AnchorLink href='#projects'> 
-                    <div className = "nav_button">
-                        <i className="fas fa-lg fa-rocket"></i>
-                        <Hidden xs sm>
-                            <div className = "nav_text">Projects</div>    
-                        </Hidden>
-                    </div>
-                    </AnchorLink>
-                </Col>
-                <Col xs={2.4}>
                     <AnchorLink href='#experience'> 
                     <div className = "nav_button">
                         <i className="fab fa-lg fa-black-tie"></i>
                         <Hidden xs sm>
                             <div className = "nav_text">Work</div>    
+                        </Hidden>
+                    </div>
+                    </AnchorLink>
+                </Col>
+                <Col xs={2.4}>
+                    <AnchorLink href='#projects'> 
+                    <div className = "nav_button">
+                        <i className="fas fa-lg fa-rocket"></i>
+                        <Hidden xs sm>
+                            <div className = "nav_text">Projects</div>    
                         </Hidden>
                     </div>
                     </AnchorLink>

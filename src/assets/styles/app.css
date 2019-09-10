@@ -29,11 +29,18 @@ i {
     letter-spacing: 0;
 }
 
-
+.logo_part_cont {
+    position: relative;
+    width: 15rem;
+    height: 14rem;
+    margin: 0 auto;
+}
 .logo_part{
     opacity: 0;
     width: 14rem;
     position: absolute;
     right: 0; left: 0;
-    margin: 0 auto;
+    margin:  auto;
 }
+
+

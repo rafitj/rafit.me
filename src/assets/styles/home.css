@@ -3,18 +3,32 @@
 }
 .home_container{
     text-align: center;
-    padding: 3rem;
+    padding: 0rem;
+    display: table-cell;
+    width: 100vw;
+    height: 100vh;
+    vertical-align: middle;
 }
 .muted_p{
     color: rgba(34, 34, 34, 0.555);
     font-size: 0.95rem;
-    margin: 1.5rem 1rem;
-    margin-top: 10rem;
+    margin: 0 1rem 1rem;
     line-height: 2;
     transition: all 0.25s ease;
     padding: 0 2rem;
 }
 
+.home_down_arrow{
+    transform: rotate(180deg) translateY(0);
+    width: 1rem;
+    opacity: 0.8;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+    padding-bottom: 3rem;
+}
+.home_down_arrow:hover{
+    transform: rotate(180deg) translateY(-5px);
+}
 .home_button{
     text-decoration: none;
     display: inline-block;
@@ -31,6 +45,15 @@
     background-color: rgba(0, 0, 0, 0.65);
     color: rgba(255, 255, 255, 0.95);
     border-radius: 10px;
+}
+@keyframes clicked {
+    0%   { opacity: 1}
+    50% { opacity: 0.65;}
+    100% {opacity: 1}
+}
+
+.home_button:active{
+    animation: clicked 0.4s ease;
 }
 
 @media (max-width: 768px) {

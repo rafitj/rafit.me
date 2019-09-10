@@ -22,10 +22,8 @@ class ExpCard extends Component {
         const img_class = "exp_logo " + (this.props.extra_classes === "mlse" ? "mlse_img" : "") + (this.state.showDetails ? " expanded" : "") + (this.state.showDetails && this.props.extra_classes === "mlse" ? " mlse_expanded" : "")
         return (
             <Col sm ={12} md ={12} >
-            <div onClick = {this.toggleDetails} className = {classes} data-aos="fade-up" data-aos-duration = "500">
-                <div>
-                    <img className = {img_class } alt = {this.props.company} src = {this.props.img} />
-                </div>
+            <div onClick = {this.toggleDetails} className = {classes} data-aos="fade-up">
+                <img className = {img_class } alt = {this.props.company} src = {this.props.img} />
                 <div className = "exp_date">
                 {this.props.date}
                 </div>
@@ -36,7 +34,7 @@ class ExpCard extends Component {
                 {this.props.title}
                 </div>
                 <div className = "exp_desc ">
-                    {this.props.desc}
+                    {(this.props.desc)}
                 </div>
                 <div className = {"exp_details " + (this.state.showDetails ? "" : "hide_details")}>
                     {this.props.detail}

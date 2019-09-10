@@ -1,24 +1,36 @@
-
+* {
+    transition: all 0.25s ease !important;
+    transition-property: all !important;
+}
 .project_card{
     margin: 0 0.5rem 2rem 0.5rem;
     margin-left: 0.5rem;
-    color: white;
-    transition: all 2s ease;
+    color: rgb(232, 232, 232);
     cursor: pointer;
-    transition-property: all;
     border-radius: 20px;
+    position: relative;
+}
+
+@keyframes clicked {
+    0%   { opacity: 1}
+    50% { opacity: 0.65;}
+    100% {opacity: 1}
+}
+
+.project_card:active {
+    animation: clicked 0.4s ease;
 }
 .project_card:hover{
     transform: translateX(-2rem) !important;
 }
-.project_logo img{
+.project_logo{
     height: 6rem;
     position: absolute;
     top: -30px;
     left: 15px;
     filter: drop-shadow(0 15px 15px rgb(11, 11, 11, 0.4));
 }
-.project_logo_expanded img{
+.project_logo_expanded{
     height: 6rem;
     position: absolute;
     top: 10px;
@@ -29,12 +41,12 @@
     padding-top: 1rem;
     margin-left: 8rem;
     font-size: 2rem;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 .project_date{
     display: none;
     padding-top: 1rem;
-    opacity: 0.6;
+    opacity: 0.7;
     margin-left: 8.2rem;
     margin-bottom: 0.4rem;
     width: 10rem;
@@ -51,13 +63,18 @@
     opacity: 0.6;
 }
 .project_details {
-    opacity: 0.6;
+    opacity: 0.8;
     line-height: 1.5;
     margin-top:0.5rem;
     margin-left: 8rem;
     font-size: 0.9rem;
     margin-right: 2.5rem;
+    margin-bottom: 0;
 }
+.project_details p{
+    margin-bottom: 0;
+}
+
 .hide_details {
     display: none;
 }
@@ -85,7 +102,6 @@
     background-image:linear-gradient(45deg,  #5496d7,#5496d7);
 }
 
-
 .framear{
     background-image: linear-gradient(45deg,  #d66b6b,#d66b6b);;
 }
@@ -95,8 +111,20 @@
     background-image:linear-gradient(35deg, #cc0a60,#cc0a61);
 }
 
+.gaze {
+    background-color: #5f5cce;
+}
+
 .realm{
     background-image:linear-gradient(45deg,  #001050,#001652);
+}
+
+.fashionably{
+    background-image:linear-gradient(45deg,  #e27f51,#e27f51);
+}
+
+.echo {
+    background-color: #94e086;
 }
 
 .load_more {
@@ -105,7 +133,6 @@
     padding: 0.5rem 1rem;
     border-radius: 10px;
     color: rgb(63, 63, 63);
-    
 }
 
 .load_more:hover{
@@ -115,15 +142,22 @@
     cursor: pointer;
 }
 
+.load_more:active{
+    animation: clicked 0.4s ease;
+}
+
 @media(max-width: 767px) {
-    .project_logo img{
+    .project_card:hover{
+        transform: none !important;
+    }
+    .project_logo{
         height: 5rem;
         top: -30px;
         left: 0;
         right: 0;
         margin: auto;
     }
-    .project_logo_expanded img{
+    .project_logo_expanded{
         top: -30px;
         left: 0;
         right: 0;

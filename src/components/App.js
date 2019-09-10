@@ -2,8 +2,13 @@ import React from 'react';
 import Maintenance from './Maintenance';
 import Content from './Content';
 import '../assets/styles/app.css'
-import LogoAnimation from './Sections/LogoAnimation';
+import Home from './Sections/Home/Home';
+import AOS from 'aos';
+
 class App extends React.Component {
+    componentDidMount(){
+        AOS.init();
+      }
     render() {
         const maintenance = false;
         if (maintenance) {
@@ -13,8 +18,8 @@ class App extends React.Component {
         }
         return (
             <>
-            <LogoAnimation/>
-            <div data-aos = "fade" data-aos-delay = {1500}  >
+            <Home/>
+            <div data-aos = "fade" data-aos-delay = {0}  >
                 <div  className = "main" >
                     <div>
                     <Content/>
