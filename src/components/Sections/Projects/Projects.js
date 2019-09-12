@@ -47,6 +47,8 @@ class Projects extends Component {
                                 desc = "ML assisted attire and closet management"
                                 link = "https://github.com/rafitj/fashionably"
                                 techData = {["Swift","Python","Keras"]}
+                                trophy = "StarterHacks 2019 Winner"
+                                devpostUrl = "https://devpost.com/software/fashionably"
                                 detail = {<p>
                                     As AI continues to sneak further into our lives, it is simply a matter of time before it decides what we wear. Fashionably approaches this future gracefully, providing an app that empowers individuals through an AI powered closet. 
                                     <br/><br/>
@@ -77,6 +79,8 @@ class Projects extends Component {
                 <ProjectCard img = {realm} title = "Realm" date = "August 2019" extra_classes = "realm"
                             desc = "Virtual, immersive AR and ML enhanced presentation software"
                             link = "https://github.com/rafitj/realm"
+                            trophy = "Hack the 6ix 2019 Winner"
+                            devpostUrl = "https://devpost.com/software/realm"
                             techData = {["AWS","React","Swift"]}
                             detail = {
                                 <p>
@@ -92,6 +96,7 @@ class Projects extends Component {
                             desc = "Population density tracking and analytics via passive wifi-detection"
                             link = "https://github.com/rafitj/density"
                             onClick = {this.openModal}
+                            trophy = "RU Hacks 2019 Winner"
                             techData = {["Node","Arduino","C++","React"]}
                             detail = {
                             <p>
@@ -103,6 +108,8 @@ class Projects extends Component {
                               desc = "Custom version control system and AR visualization for 3D CAD"
                               link = "https://github.com/rafitj/framear" 
                               techData = {["Swift","JS","MongoDB"]}
+                              trophy = "ENG Hacks 2019 Winner"
+                              devpostUrl = "https://devpost.com/software/framear"
                               detail = {<p>
                                   Despite there being multi-billion dollar industry, 3D modellers and CAD designers lack a way to instantly display and receive live edits on their work or experience the full power of version control that software engineers are so familiar with. FrameAR is a multi-platform application that fills this gap through the creation of a version control system where users can track live commits in Slack and instantly view edits and their models in augmented reality with the full power of branches, comparisons and merging from the VCS.
                                   <br/><br/>

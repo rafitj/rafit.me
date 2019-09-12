@@ -4,7 +4,8 @@ import '../../../assets/styles/projects.css';
 import '../../../assets/styles/app.css';
 import { Col } from 'react-grid-system';
 import Tech from './Tech'
-
+import devpost from '../../../assets/images/devpost.svg'
+import trophy from '../../../assets/images/trophy.svg'
 class ProjectCard extends Component {
     state = {
         showTech: false,
@@ -21,6 +22,13 @@ class ProjectCard extends Component {
           }));
     }
     render() {
+        console.log(this.props.devpostUrl)
+        const devpostButton = this.props.devpostUrl !== undefined ? (<div className = "project_devpost">
+                                                                        <a href = {this.props.devpostUrl}><img src={devpost} alt ="devpost" /></a>
+                                                                    </div>) : (<></>)
+        const trophyButton = this.props.trophy !== undefined ? (<div className = "project_trophy">
+                                                                    {this.props.trophy}
+                                                                </div>) : (<></>)
         const classes = "project_card  " + this.props.extra_classes + (this.state.showDetails ?" clicked": "") 
         return (
             <Col sm ={12} md ={12} xl ={12}>
@@ -33,6 +41,8 @@ class ProjectCard extends Component {
                         <div className = "project_title">
                         {this.props.title}
                         </div>
+                        {trophyButton}
+                        {devpostButton}
                         <div className = "project_git">
                             <a href = {this.props.link}><i className="fab fa-2x fa-github"></i></a>
                         </div>

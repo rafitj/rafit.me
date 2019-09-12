@@ -63,6 +63,7 @@
     opacity: 0.6;
 }
 .project_details {
+    
     opacity: 0.8;
     line-height: 1.5;
     margin-top:0.5rem;
@@ -72,28 +73,46 @@
     margin-bottom: 0;
 }
 .project_details p{
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .hide_details {
     display: none;
 }
 
-.project_git{
+.project_trophy{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    transition: all 0.25s ease;
+    color: rgb(82, 82, 82);
+    background-color: rgb(250, 221, 105);
+    padding: 0.5rem 0.6rem;
+    font-size: 0.85rem;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.project_git, .project_devpost{
     position: absolute;
     width: 2rem;
     height: 2rem;
     bottom: 15px;
     right: 1.5rem;
-    color: rgba(233, 233, 233, 0.75);
+    color: rgba(233, 233, 233);
     text-align: center;
-    opacity: 0.75;
+    opacity: 0.6;
     transition: all 0.25s ease;
 }
 
-.project_git:hover{
+.project_git:hover,.project_devpost:hover{
     opacity: 0.9;
     cursor: pointer;
+}
+
+.project_devpost{
+    opacity: 0.6;
+    right: 4rem;
 }
 .project_git a{
     color: inherit !important;
@@ -147,6 +166,15 @@
 }
 
 @media(max-width: 767px) {
+    .project_trophy{
+        top: -8px;
+        right: -8px;
+        text-align: center;
+        width: 5rem;
+        transition: all 0.25s ease;
+        padding: 0.3rem 0.4rem;
+        font-size: 0.6rem;
+    }
     .project_card:hover{
         transform: none !important;
     }
@@ -174,5 +202,7 @@
     }
     .project_details {
         margin-left: 2rem;
+        height: 15rem;
+        overflow: scroll;
     }
 }
