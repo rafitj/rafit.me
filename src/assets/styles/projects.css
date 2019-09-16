@@ -1,7 +1,4 @@
-* {
-    transition: all 0.25s ease !important;
-    transition-property: all !important;
-}
+
 .project_card{
     margin: 0 0.5rem 2rem 0.5rem;
     margin-left: 0.5rem;
@@ -93,7 +90,7 @@
     text-align: center;
 }
 
-.project_git, .project_devpost{
+.project_git, .project_devpost, .project_hacker_earth{
     position: absolute;
     width: 2rem;
     height: 2rem;
@@ -105,12 +102,16 @@
     transition: all 0.25s ease;
 }
 
-.project_git:hover,.project_devpost:hover{
+.project_git:hover,.project_devpost:hover, .project_hacker_earth:hover{
     opacity: 0.9;
     cursor: pointer;
 }
 
 .project_devpost{
+    opacity: 0.6;
+    right: 4rem;
+}
+.project_hacker_earth{
     opacity: 0.6;
     right: 4rem;
 }
@@ -136,6 +137,10 @@
 
 .realm{
     background-image:linear-gradient(45deg,  #001050,#001652);
+}
+
+.compass{
+    background-color: #3fb3fb;
 }
 
 .fashionably{
@@ -186,9 +191,10 @@
         margin: auto;
     }
     .project_logo_expanded{
-        top: -30px;
+        top: -40px;
         left: 0;
         right: 0;
+        height: 5.7rem; 
         margin: auto;
     }
     .project_title{
