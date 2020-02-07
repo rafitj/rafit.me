@@ -40,6 +40,7 @@ import redis from '../../../assets/images/tools/redis.svg'
 import firebase from '../../../assets/images/tools/firebase.svg'
 // import memcached from '../../../assets/images/tools/memcached.svg'
 import cassandra from '../../../assets/images/tools/cassandra.svg'
+import Scrollable from '../Scrollable'
 
 
 class Skills extends Component {
@@ -73,69 +74,38 @@ class Skills extends Component {
                // {name: 'MemCached', type: 'database', tool: 'memcached', img: memcached},
                {name: 'jQuery', type: 'library', tool: 'jquery', img: jquery},
                {name: 'PySpark', type: 'library', tool: 'pyspark', img: pyspark},
-               {name: 'Tensor Flow', type: 'library', tool: 'tf', img: tf},
+               {name: 'Tensor Flow', type: 'Python', tool: 'tf', img: tf},
                {name: 'RxJS', type: 'library', tool: 'rxjs', img: rxjs},
-               {name: 'D3', type: 'library', tool: 'd3', img: d3,},
+               {name: 'D3', type: 'Python', tool: 'd3', img: d3,},
           ]
 
-          const toolList = tools.reduce((filtered, item) => {
-               if (item.type === this.state.filter || this.state.filter === 'all') {
-                  filtered.push(
-                         <ToolCard key = {item.tool} img = {item.img} 
+          const toolList = tools.map(item => (
+                        <ToolCard type = {item.type} key = {item.tool} img = {item.img} 
                               name = {item.name} tool = {item.tool} />
-                  );
-               }
-               return filtered;
-             }, []);
+                ))
           
 
         return (
         <section id = "skills">
           <Header text="Skills"/>
-          <Container>
-             <Row>
-                <LangCard img = {Python} lang = "Python" extra_classes = "python"
+          <Scrollable show = {5} tools = {toolList}>
+                <LangCard img = {Python} title = "Python" extra_classes = "python"
                     content = {["Micro-Servers", "Machine Learning", "Utility & Scripting"]} />
-                <LangCard img = {Go}  lang = "Go" extra_classes = "go" 
+                <LangCard img = {Go}  title = "Go" extra_classes = "go" 
                     content = {["Micro-Servers", "Distributed Backends", "Chatbots"]}/>
-                <LangCard img = {JS}  lang = "JavaScript" extra_classes = "js"
+                <LangCard img = {JS}  title = "JavaScript" extra_classes = "js"
                     content = {["Backend Servers", "Frontend APIs", "Data Visualization"]} />
-                <LangCard img = {Swift} lang = "Swift" extra_classes = "swift"
+                <LangCard img = {Swift} title = "Swift" extra_classes = "swift"
                     content = {["iOS Mobile Apps", "AR Applications"]}  />
-                <LangCard img = {CPlus} lang = "C++" extra_classes = "cplus"
+                <LangCard img = {CPlus} title = "C++" extra_classes = "cplus"
                     content = {["Embedded Software", "Hardware Hacks"]}  />
-                <LangCard img = {C} lang = "C" extra_classes = "c" 
+                <LangCard img = {C} title = "C" extra_classes = "c" 
                     content = {["Embedded Software", "Hardware Hacks"]}/>
-                <LangCard img = {SQL} lang = "SQL" extra_classes = "sql" 
+                <LangCard img = {SQL} title = "SQL" extra_classes = "sql" 
                     content = {["Database Query"]}/>
-                <LangCard img = {HTML} lang = "HTML/CSS" extra_classes = "html" 
+                <LangCard img = {HTML} title = "HTML/CSS" extra_classes = "html" 
                     content = {["Web Development"]}/>
-           </Row>
-          </Container>
-          <Container>
-             <Row>
-                <Col xs={12} sm = {12} md = {2.4}>
-                    <div data-aos = "fade-right" className = {this.getFilterClass('all')} onClick = {()=>{this.setState({filter: 'all'})}}>All</div>
-                  </Col>
-                  <Col xs={6} sm = {6} md = {2.4}>
-                    <div data-aos = "fade-right"  className = {this.getFilterClass('framework')} onClick = {()=>{this.setState({filter: 'framework'})}}>Frameworks</div>
-                  </Col>
-                  <Col xs={6} sm = {6} md = {2.4}>
-                  <div data-aos = "fade-right"  className = {this.getFilterClass('database')} onClick = {()=>{this.setState({filter: 'database'})}}>Databases</div>
-                  </Col>
-                  <Col xs={6} sm = {6} md = {2.4}>
-                  <div data-aos = "fade-right"  className = {this.getFilterClass('library')} onClick = {()=>{this.setState({filter: 'library'})}}>Libraries</div>
-                  </Col>
-                  <Col xs={6} sm = {6} md = {2.4}>
-                  <div data-aos = "fade-right"  className = {this.getFilterClass('tool')} onClick = {()=>{this.setState({filter: 'tool'})}}>Tools</div>
-                  </Col>
-             </Row>
-          </Container>
-          <Container>
-             <Row>
-                  {toolList}
-               </Row>
-          </Container>
+          </Scrollable>
           </section>
         );
     }

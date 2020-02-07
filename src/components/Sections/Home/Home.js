@@ -15,9 +15,9 @@ class Home extends Component {
                         <p className="muted_p">
                             <strong> Software Engineering Student at the University of Waterloo </strong>
                         </p>
-                        <a href={Resume} className="home_button"> <i className="fas fa-file-alt"></i>&nbsp; Resume</a>
-                        <a href="mailto: rafit.jamil@gmail.com" className="home_button"> <i className="fas fa-envelope"> </i>&nbsp; Email</a>
-                        <a href="http://github.com/rafitj" className="home_button"> <i className="fab fa-github"></i>&nbsp; Github</a>
+                        <a href={Resume} className="home_button">Resume</a>
+                        <a href="mailto: rafit.jamil@gmail.com" className="home_button">Email</a>
+                        <a href="http://github.com/rafitj" className="home_button">Github</a>
                     </div>
                     <div data-aos="fade-down" data-aos-delay={1500}>
                         <AnchorLink href='#experience'>

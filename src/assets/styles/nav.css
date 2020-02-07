@@ -45,8 +45,8 @@
     margin-top: 0.8rem;
 }
 .nav_arrow{
-    width: 2rem;
-    height: 2rem;
+    width: 1rem;
+    height: 1rem;
     -webkit-filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));
     filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));    
     margin: 0 auto;

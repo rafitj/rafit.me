@@ -52,3 +52,40 @@ i {
 .hide {
     opacity: 0;
 }
+
+.scrollable {
+    height: 8rem;
+    width: 100vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.slider-text {
+    margin: 0.8rem auto;
+    text-align: center;
+}
+
+.slider-main {
+    font-size: 1.2rem;
+}
+
+.slider-sub {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.dim{
+    opacity: 0.5;
+}
+
+.slider-tool {
+    display: inline-block;
+    margin: 0 0.5rem;
+    height: 0.7rem;
+}

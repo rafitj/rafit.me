@@ -1,13 +1,12 @@
 .header_container{
-    height: 5rem;
+    height: 3rem;
     text-align:center;
-    padding: 0 3rem 0.5rem 3rem;
-    margin: 2rem auto 2rem;
+    margin: 0 auto;
 }
 
 .header_container h2{
     color: rgba(0, 0, 0, 0.666);
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 
 .less {

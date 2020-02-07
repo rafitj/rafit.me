@@ -28,8 +28,7 @@ class Nav extends Component {
         var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         var scrolled = (winScroll / height) * 100;
         if (this.isBottom(wrappedElement)) {
-            this.setState({'show':true})
-
+            this.setState({'show':false})
         }
         else if (scrolled < 95) {
             this.setState({'show':false})
@@ -109,16 +108,12 @@ class Nav extends Component {
         )
         return(
             <>
-            <div className = {this.getNavClass()} onClick={this.handleNavClick}>
-            <Container>
-                <Row>
-                    {Nav}
-                </Row>
-            </Container>
-            </div>
+            <AnchorLink href='#home'> 
             <div  className ={this.getArrowClass()}>
                 <img src = {nav_arrow} className ="nav_arrow" onClick={this.handleArrowClick} alt = "nav_arrow"/>
             </div>
+            </AnchorLink>
+
             </>
         )
     }
