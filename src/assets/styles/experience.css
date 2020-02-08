@@ -85,6 +85,14 @@
    color: #5bc99f;
 }
 
+.mfest {
+    color: rgb(218, 132, 51);
+}
+
+.setter {
+    color: #264E68;
+}
+
 
 @media(max-width: 767px) {
     .exp_card:hover{
