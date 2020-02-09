@@ -3,11 +3,11 @@
     cursor: pointer;
 }
 .lang_card:hover{
-    transform: translateY(-0.5rem) !important;
+    transform: translateY(-0.25rem) !important;
 }
 .lang_logo{
-    width: 4rem;
-    margin: 1rem auto;
+    height: 3rem;
+    margin: 0 auto;
 }
 
 .lang_text{
@@ -29,7 +29,7 @@
 }
 
 .tool_logo{
-    width: 2.5rem;
+    width: 2rem;
 }
 
 .python {
@@ -61,7 +61,7 @@
 }
 
 .swift{
-    color: linear-gradient(45deg, rgba(255, 140, 9),rgba(214, 125, 41));
+    color:rgba(255, 140, 9);
 }
 
 .react{
@@ -196,12 +196,12 @@
 }
 
 .tool_card{
-    height: 2rem;
-    width: 50%;
-    margin: 1.5rem auto;
+    margin: 0.5rem auto;
     text-align: center;
     transition: all 0.25s ease;
-    color: #dfdfdf;
-    color: linear-gradient(45deg,#dfdfdf,#dfdfdf);
 }
   
+
+#skills {
+    border: 1.2px solid black;
+}

@@ -17,7 +17,7 @@ class Projects extends Component {
         return (
             <section id="projects">
                 <Header text="Projects" />
-                <Scrollable show = {5}>
+                <Scrollable  max = {10} show = {5} projects = {true}>
                         <ProjectCard img={density} title="Density" date="May 2019" extra_classes="density"
                             desc="Passive Wifi Density Triangulation"
                             link="https://github.com/rafitj/density"
@@ -31,7 +31,7 @@ class Projects extends Component {
                             link="https://github.com/rafitj/traffix"
                             onClick={this.openModal}
                             trophy="RU Hacks 2019 Winner"
-                            hackerUrl="https://ruhacks2019.hackerearth.com/challenges/hackathon/ru-hacks-2019/dashboard/1e422e1/submission/"
+                            devpostUrl="https://devpost.com/software/traffix-pns9ax"
                             techData={["Node", "Arduino", "C++", "React"]}
                             />
                         <ProjectCard img={framear} title="FrameAR" date="June 2019" extra_classes="framear"
@@ -64,10 +64,10 @@ class Projects extends Component {
                      
                     />
                     <ProjectCard img={pillar} title="Pillar" date="August 2019" extra_classes="pillar"
-                                desc="Low-Cost & Voice-Powered Medical Hubs"
+                                desc="Low-Cost and Voice-Powered Medical Hubs"
                                 link="https://github.com/rafitj/pillar"
                                 trophy="Hack the 6ix 2019 Winner"
-                                devpostUrl="https://devpost.com/software/pillar"
+                                devpostUrl="https://devpost.com/software/pillar-cum1sq"
                                 techData={["AWS", "React", "Swift"]}
                      
                     />

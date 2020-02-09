@@ -18,7 +18,7 @@ class ExpCard extends Component {
     }
     render() {
         const classes = "exp_card " + this.props.extra_classes
-        const img_class = "exp_logo " 
+        const img_class ="exp_logo"
         return (
             <div className = {classes} >
                 <img className = {img_class } alt = {this.props.company} src = {this.props.img} />

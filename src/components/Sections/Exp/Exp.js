@@ -12,7 +12,7 @@ class Exp extends Component {
     return (
       <section id='experience'>
         <Header text="Experience" />
-        <Scrollable show = {3}>
+        <Scrollable max = {4} show = {3}>
             <ExpCard img={setter} title="Setter" desc="Software Engineering Intern" date="MAY 2019 - AUG 2019" extra_classes="setter"
               details="Developed Big-Data algorithmns and Deep-Learning models for Toronto FC & Toronto Raptors"
               techData={["Python", "Keras", "Azure", "Flask", "Pyspark"]}

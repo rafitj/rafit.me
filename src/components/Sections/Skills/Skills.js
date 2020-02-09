@@ -9,9 +9,10 @@ import JS from '../../../assets/images/langs/JS.svg';
 import CPlus from '../../../assets/images/langs/CPlus.svg';
 import C from '../../../assets/images/langs/C.svg';
 import Swift from '../../../assets/images/langs/Swift.svg';
-import SQL from '../../../assets/images/langs/SQL.svg';
+import Cloud from '../../../assets/images/langs/Cloud.svg';
 import HTML from '../../../assets/images/langs/HTML+CSS.svg';
 import Go from '../../../assets/images/langs/Go.svg';
+import DB from '../../../assets/images/langs/DB.svg';
 
 import react from '../../../assets/images/tools/react.svg'
 import node from '../../../assets/images/tools/node.svg'
@@ -52,30 +53,30 @@ class Skills extends Component {
      }
     render() {
           const tools = [
-               {name: 'React', type: 'framework', tool: 'react', img: react},
-               {name: 'Node JS', type: 'framework', tool: 'node', img: node},
-               {name: 'Docker', type: 'tool', tool: 'docker', img: docker},
-               {name: 'MySQL', type: 'database', tool: 'mysql', img: mysql},
-               {name: 'Django', type: 'framework', tool: 'django', img: django},
-               {name: 'Redis', type: 'database', tool: 'redis', img: redis},
-               {name: 'Type Script', type:'framework', tool:'ts', img: ts},
-               {name: 'OpenCV', type: 'library', tool: 'opencv', img: opencv},
-               {name: 'Firebase', type: 'database', tool: 'firebase', img: firebase},
-               {name: 'Flask', type: 'framework', tool: 'flask', img: flask},
-               {name: 'AWS', type: 'tool', tool: 'aws', img: aws},
-               {name: 'Azure', type: 'tool', tool: 'azure', img: azure},
-               {name: 'MongoDB', type: 'database', tool: 'mongo', img: mongo},
-               {name: 'Cassanadra', type: 'database', tool: 'cassandra', img: cassandra},
-               {name: 'GraphQL', type: 'tool', tool: 'graphql', img: graphql},
-               {name: 'Git', type: 'tool', tool: 'git', img: git},
-               {name: 'Keras', type: 'library', tool: 'keras', img: keras},
-               {name: 'Postgres', type: 'database', tool: 'postgres', img: postgres},
-               {name: 'Apache', type: 'tool', tool: 'aspark', img: aspark},
+               {name: 'React', type: 'JavaScript', tool: 'react', img: react},
+               {name: 'Node JS', type: 'JavaScript', tool: 'node', img: node},
+               {name: 'Docker', type: 'Other', tool: 'docker', img: docker},
+               {name: 'MySQL', type: 'Databases', tool: 'mysql', img: mysql},
+               {name: 'Django', type: 'Python', tool: 'django', img: django},
+               {name: 'Redis', type: 'Databases', tool: 'redis', img: redis},
+               {name: 'Type Script', type:'JavaScript', tool:'ts', img: ts},
+               {name: 'OpenCV', type: 'Python', tool: 'opencv', img: opencv},
+               {name: 'Firebase', type: 'Cloud Technology', tool: 'firebase', img: firebase},
+               {name: 'Flask', type: 'Python', tool: 'flask', img: flask},
+               {name: 'AWS', type: 'Cloud Technology', tool: 'aws', img: aws},
+               {name: 'Azure', type: 'Cloud Technology', tool: 'azure', img: azure},
+               {name: 'MongoDB', type: 'Databases', tool: 'mongo', img: mongo},
+               {name: 'Cassanadra', type: 'Databases', tool: 'cassandra', img: cassandra},
+               {name: 'GraphQL', type: 'JavaScript', tool: 'graphql', img: graphql},
+               {name: 'Git', type: 'Other', tool: 'git', img: git},
+               {name: 'Keras', type: 'Python', tool: 'keras', img: keras},
+               {name: 'Postgres', type: 'Databases', tool: 'postgres', img: postgres},
+               {name: 'Apache', type: 'Other', tool: 'aspark', img: aspark},
                // {name: 'MemCached', type: 'database', tool: 'memcached', img: memcached},
-               {name: 'jQuery', type: 'library', tool: 'jquery', img: jquery},
-               {name: 'PySpark', type: 'library', tool: 'pyspark', img: pyspark},
+               {name: 'jQuery', type: 'JavaScript', tool: 'jquery', img: jquery},
+               {name: 'PySpark', type: 'Python', tool: 'pyspark', img: pyspark},
                {name: 'Tensor Flow', type: 'Python', tool: 'tf', img: tf},
-               {name: 'RxJS', type: 'library', tool: 'rxjs', img: rxjs},
+               {name: 'RxJS', type: 'JavaScript', tool: 'rxjs', img: rxjs},
                {name: 'D3', type: 'Python', tool: 'd3', img: d3,},
           ]
 
@@ -88,7 +89,7 @@ class Skills extends Component {
         return (
         <section id = "skills">
           <Header text="Skills"/>
-          <Scrollable show = {5} tools = {toolList}>
+          <Scrollable  max = {9}  show = {5} tools = {toolList}>
                 <LangCard img = {Python} title = "Python" extra_classes = "python"
                     content = {["Micro-Servers", "Machine Learning", "Utility & Scripting"]} />
                 <LangCard img = {Go}  title = "Go" extra_classes = "go" 
@@ -101,10 +102,13 @@ class Skills extends Component {
                     content = {["Embedded Software", "Hardware Hacks"]}  />
                 <LangCard img = {C} title = "C" extra_classes = "c" 
                     content = {["Embedded Software", "Hardware Hacks"]}/>
-                <LangCard img = {SQL} title = "SQL" extra_classes = "sql" 
-                    content = {["Database Query"]}/>
-                <LangCard img = {HTML} title = "HTML/CSS" extra_classes = "html" 
+                        <LangCard img = {HTML} title = "HTML/CSS" extra_classes = "html" 
                     content = {["Web Development"]}/>
+                <LangCard img = {DB} title = "Databases" extra_classes = "sql" 
+                    content = {["Database Query"]}/>
+                <LangCard img = {Cloud} title = "Cloud Technology" extra_classes = "cloud" 
+                    content = {["Web Development"]}/>
+            
           </Scrollable>
           </section>
         );

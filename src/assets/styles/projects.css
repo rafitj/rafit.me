@@ -14,7 +14,7 @@
     transform: translateY(-0.3rem) !important;
 }
 .project_logo{
-    height: 5rem;
+    height: 4rem;
     margin: 0 auto;
 }
 .project_title{
@@ -187,4 +187,9 @@
         height: 15rem;
         overflow: scroll;
     }
+}
+
+#projects {
+    border-right: 1.2px solid black;
+    border-left: 1.2px solid black;
 }

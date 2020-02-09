@@ -23,7 +23,7 @@ class ProjectCard extends Component {
         </div>) : (<></>)
         const classes = "project_card  " + this.props.extra_classes 
         return (
-            <div className={classes} data-aos="fade-up" data-aos-duration="500">
+            <div className={classes} >
                 <img className="project_logo" alt={this.props.title} src={this.props.img} />
             </div>
         );

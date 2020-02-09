@@ -12,24 +12,18 @@
 }
 
 .exp_card:hover{
-    transform: translateY(-0.5rem) !important;
+    transform: translateY(-0.25rem) !important;
 }
 .exp_card:active{
     animation: clicked 0.4s ease;
 }
 .exp_logo{
-    height: 5rem;
+    height: 4rem;
     margin: 0 auto;
 }
 
 .hide_details{
     display: none;
-}
-.mlse_img{
-    height: 8.5rem;
-    width: 8.5rem; 
-    top: -55px;
-    left: 10px;
 }
 
 .exp_title{
@@ -132,4 +126,8 @@
     .exp_details {
         margin-left: 2rem;
     }
+}
+
+#experience {
+    border: 1.2px solid black;
 }
