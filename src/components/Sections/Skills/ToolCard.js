@@ -12,15 +12,11 @@ class ToolCard extends Component {
     }
     render() {
         const tool_logo_class = "tool_logo" + (this.state.clicked ? " logo_clicked" : "")
-        const tool_text = "tool_text" + (this.state.clicked ? " text_clicked" : "")
         const tool_class = "tool_card " + this.props.tool 
         return (
-            <Col xs = {4} sm = {4}  md ={3}>
-            <div data-aos = "fade-up"
+            <Col xs = {3} sm = {2}  md ={1.5}>
+            <div
                 className = {tool_class} onClick = {this.toggleClick}> 
-                <div className = {tool_text}>
-                    {this.props.name}
-                </div>
                 <img className = {tool_logo_class} src = {this.props.img} alt = {this.props.tool} />
             </div>
             </Col>

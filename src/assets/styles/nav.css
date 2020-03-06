@@ -1,32 +1,27 @@
 .nav_container{
-    position: sticky;
-    position: -webkit-sticky;
     bottom: 0;
     margin: 0 auto;
     /* background-image: linear-gradient(0deg, #0c0c0c, #0c0c0ccc, rgba(0, 0, 0, 0)); */
     height: 6rem;
     transition: all 0.25s ease;
-    padding: 0 2rem;
 }
 .nav_container:hover{
    cursor: pointer;
 }
 .nav_button{
-    background-color: rgba(0, 0, 0, 0.584);
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
+    background-color: rgb(62, 62, 62);
     height: 3rem;
     width: 3rem;
-    border-radius: 100%;
+    border-radius: 10px;
     margin: 0 auto;
     margin-top: 1.5rem;
     text-align: center;
     transition: all 0.25s ease;
     color: rgba(255, 255, 255, 0.6);
-    text-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
 }
 
 .nav_button:hover{
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.85);
     transform: translateY(-5px)
     /* background-color: rgba(255, 255, 255, 0.5); */
     /* box-shadow: 0 20px 20px rgba(0, 0, 0, 0.9); */
@@ -48,27 +43,24 @@
     margin-top: 0.8rem;
 }
 .nav_arrow{
-    width: 2rem;
-    height: 2rem;
-    -webkit-filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));
-    filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));    
+    width: 1.2rem;
+    height: 1.2rem;
     margin: 0 auto;
     transition: all 0.25s ease;
     opacity: 0.8;
 }
 .nav_arrow:hover{
     cursor: pointer;
-    -webkit-filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.9));
-    filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.9));    
     opacity: 1;
     transform: translateY(-5px)
  }
 .nav_arrow_cont{
-    position: sticky;
-    position: -webkit-sticky;
     bottom: 10px;
     text-align: center;
+    padding: 1rem;
     transition: all 0.25s ease;
+    width: 10%;
+    margin: 0 auto;
 }
 .hide_arrow{
     transition: all 0.25s ease;
@@ -82,3 +74,12 @@
     transform: translateY(50px);
 }
 
+@keyframes clicked {
+    0%   { opacity: 1}
+    50% { opacity: 0.65;}
+    100% {opacity: 1}
+}
+
+.nav_button:active, .nav_arrow:active{
+    animation: clicked 0.4s ease;
+}

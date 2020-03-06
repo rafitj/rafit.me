@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Projects from './Sections/Projects/Projects';
-import Home from './Sections/Home/Home';
 import Exp from './Sections/Exp/Exp';
 import Skills from './Sections/Skills/Skills';
 import Nav from './Sections/Nav';
@@ -14,9 +13,8 @@ class Content extends Component {
     render() {
         return (
           <>
-            <Home />
-            <Projects />
             <Exp />
+            <Projects />
             <Skills />
             <Footer/>
             <Nav />

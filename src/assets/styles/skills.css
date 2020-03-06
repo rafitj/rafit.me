@@ -1,55 +1,16 @@
 .lang_card{
-    border-radius: 25px;
-    margin: 0 0rem 3rem 0rem;
-    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.600);
-    height: 6.5rem;
-    color: rgba(255, 255, 255, 0.884);
-    position: relative;
     text-align: center;
     cursor: pointer;
 }
-.lang_card::after{
-    content: "";
-    position: absolute;
-    z-index: -1;
-    bottom: 0%;
-    left: 0%;
-    height: 100%;
-    width: 100%;
-    opacity: 0.7;
-    border-radius: 30px;
-    
-    /* Declaring our shadow color inherit from the parent (button) */
-    background: inherit;
-    
-    /* Blurring the element for shadow effect */
-    -webkit-filter: blur(12.5px);
-    -moz-filter: blur(12.5px);
-    -o-filter: blur(12.5px);
-    -ms-filter: blur(12.5px);
-    filter: blur(12.5px);
-    
-    /* Transition for the magic */
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
+.lang_card:hover{
+    transform: translateY(-0.25rem) !important;
+}
+.lang_logo{
+    height: 3rem;
+    margin: 0 auto;
+    padding: 0.3rem;
 }
 
-.lang_logo{
-    width: 4rem;
-    position: absolute;
-    margin: auto;
-    top: -25px;
-    left: 0; 
-    right: 0;
-    -webkit-filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));
-    filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));    
-}
-.lang_logo_clicked{
-    top: 25px;
-    right: 120%;
-    left: -20px;
-    width: 3rem;
-}
 .lang_text{
     position: absolute;
     left: 0;
@@ -59,229 +20,179 @@
     width: 80%;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 0.9rem;
-    line-height: 1.25;
-    text-shadow:  0 2px 10px rgba(0, 0, 0, 0.7)
+    font-size: 0.8rem;
+    line-height: 1.5;
 }
-.lang_text_clicked{
-    opacity: 0.8;
-}
+
 .lang_name{
-    font-size: 1.4rem;
-    padding-top: 3.5rem;
+    font-size: 0.9rem;
     opacity: 0.8;
 }
-.lang_name_clicked{
-    opacity: 0;
-}
-.tool_card{
-    border-radius: 20px;
-    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.600);
-    height: 4rem;
-    width: 80%;
-    margin: 1.5rem auto;
-    position: relative;
-    text-align: center;
-    transition: all 0.25s ease;
-    cursor: pointer;
-}
 
-.tool_card:after{
-    content: "";
-    position: absolute;
-    z-index: -1;
-    bottom: 0%;
-    left: 0%;
-    height: 100%;
-    width: 100%;
-    opacity: 0.7;
-    border-radius: 30px;
-    
-    /* Declaring our shadow color inherit from the parent (button) */
-    background: inherit;
-    
-    /* Blurring the element for shadow effect */
-    -webkit-filter: blur(12px);
-    -moz-filter: blur(12px);
-    -o-filter: blur(12px);
-    -ms-filter: blur(12px);
-    filter: blur(12px);
-    
-    /* Transition for the magic */
-    -webkit-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-}
-
-  
 .tool_logo{
-    opacity: 1;
-    width: 4rem;
-    position: absolute;
-    margin: auto;
-    top: -30px;
-    left: 0; 
-    right: 0;
-    
-    -webkit-filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));
-    filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));    
+    height: 2rem;
 }
-.tool_text {
-    color:#ffffff00;
-    position: absolute;
-    margin: 0;
-    left: 0; right: 0;
-    font-weight: bold;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 75%;
-}
-.text_clicked{
-    color: rgba(255, 255, 255, 0.700);
-    text-shadow:  0 2px 10px rgba(0, 0, 0, 0.7)
-}
-.logo_clicked{
-    opacity: 0;
-}
+
 .python {
-    background-image: linear-gradient(-135deg, #f5cd60a7,#4976a1a7);
+    color:#f5cd60
 }
 
 .sql {
-    background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.654),rgba(2, 38, 65, 0.654));
+    color:#316092;
 }
 
 .js{
-    background-image: linear-gradient(-45deg, rgba(251, 255, 9, 0.654),rgba(65, 60, 2, 0.654));
+    color: #eed94f
 }
 
 .cplus{
-    background-image: linear-gradient(45deg, rgba(49, 77, 201, 0.654),rgba(74, 125, 201, 0.654));
+    color: #5c97d4;
 }
 
 .go{
-    background-image: linear-gradient(30deg, #7decffa7,#ffe3bbc7);
+    color: #7beaf7;
 }
 
 .c{
-    background-image: linear-gradient(45deg, rgba(162, 162, 162, 0.654),rgba(191, 243, 255, 0.654));
+    color: #abb8c8;
 }
 
 .html{
-    background-image: linear-gradient(45deg, rgba(255, 140, 9, 0.654),rgba(41, 102, 214, 0.654));
+    color: #d45f39;
 }
 
 .swift{
-    background-image: linear-gradient(45deg, rgba(255, 140, 9, 0.654),rgba(214, 125, 41, 0.654));
+    color:rgba(255, 140, 9);
+}
+
+.php{
+    color:rgb(148, 130, 179);
 }
 
 .react{
-    background-image: linear-gradient(45deg, rgba(171, 249, 245, 0.654),rgba(100, 218, 239, 0.654));
+    color: rgb(124, 214, 247,0.5);
 }
 
 .node{
-    background-image: linear-gradient(45deg, rgba(61, 110, 47, 0.654),rgba(173, 248, 135, 0.654));
+    color: linear-gradient(45deg, rgba(61, 110, 47),rgba(173, 248, 135));
 }
 
 .ts{
-    background-image: linear-gradient(45deg, rgba(31, 173, 192, 0.654),rgba(21, 103, 150, 0.654));
+    color: linear-gradient(45deg, rgba(31, 173, 192),rgba(21, 103, 150));
 }
 
 .django{
-    background-image: linear-gradient(45deg, rgba(12, 141, 81, 0.654),rgba(21, 150, 90, 0.654));
+    color: linear-gradient(45deg, rgba(12, 141, 81),rgba(21, 150, 90));
 }
 
 .flask{
-    background-image: linear-gradient(45deg, rgba(185, 185, 185, 0.654),rgba(121, 121, 121, 0.654));
+    color: linear-gradient(45deg, rgba(185, 185, 185),rgba(121, 121, 121));
 }
 
 .jquery{
-    background-image: linear-gradient(45deg, rgba(7, 135, 255, 0.705),rgba(32, 32, 32, 0.654));
+    color: linear-gradient(45deg, rgba(7, 135, 255),rgba(32, 32, 32));
 }
 
 .aws{
-    background-image: linear-gradient(45deg, rgba(187, 113, 2, 0.705),rgba(255, 198, 77, 0.654));
+    color: linear-gradient(45deg, rgba(187, 113, 2),rgba(255, 198, 77));
 
 }
 
 .azure{
-    background-image: linear-gradient(45deg, rgba(0, 71, 81, 0.705),rgba(12, 41, 83, 0.654));
+    color: linear-gradient(45deg, rgba(0, 71, 81),rgba(12, 41, 83));
 
 }
 
 .graphql{
-    background-image: linear-gradient(45deg, rgba(177, 14, 172, 0.705),rgba(77, 5, 77, 0.654));
+    color: linear-gradient(45deg, rgba(177, 14, 172),rgba(77, 5, 77) );
 
 }
 
 .keras{
-    background-image: linear-gradient(45deg, rgba(158, 52, 52, 0.705),rgba(255, 34, 34, 0.654));
+    color: linear-gradient(45deg, rgba(158, 52, 52),rgba(255, 34, 34) );
 
 }
 
 .docker{
-    background-image: linear-gradient(45deg, rgba(231, 231, 231, 0.705),rgba(34, 178, 255, 0.654));
+    color: linear-gradient(45deg, rgba(231, 231, 231),rgba(34, 178, 255));
 
 }
 .aspark, .pyspark{
-    background-image: linear-gradient(45deg, rgba(113, 51, 0, 0.705),rgba(196, 111, 7, 0.654));
+    color: linear-gradient(45deg, rgba(113, 51, 0),rgba(196, 111, 7));
 }
 
 .mongo{
-    background-image: linear-gradient(45deg, rgba(11, 150, 53, 0.705),rgba(121, 85, 9, 0.654));
+    color: linear-gradient(-45deg, rgb(116, 211, 76),rgba(121, 85, 9));
 }
 
 .mysql{
-    background-image: linear-gradient(45deg, rgba(255, 136, 0, 0.705),rgba(9, 76, 121, 0.654));
+    color: rgba(9, 76, 121);
 }
-
 
 .postgres{
-    background-image: linear-gradient(45deg, rgba(8, 8, 8, 0.705),rgba(8, 131, 189, 0.654));
+    color: linear-gradient(45deg, rgba(8, 8, 8),rgba(8, 131, 189));
 }
 .redis{
-    background-image: linear-gradient(45deg, rgba(240, 88, 88, 0.692),rgba(250, 53, 53, 0.654));
+    color: linear-gradient(45deg, rgba(240, 88, 88),rgba(250, 53, 53));
 }
 .firebase{
-    background-image: linear-gradient(45deg, rgba(250, 230, 49, 0.692),rgba(241, 169, 60, 0.654));
+    color: linear-gradient(45deg, rgba(250, 230, 49),rgba(241, 169, 60));
 }
 .memcached{
-    background-image: linear-gradient(45deg, rgba(109, 89, 89, 0.767),rgba(112, 247, 213, 0.654));
+    color: linear-gradient(45deg, rgba(109, 89, 89),rgba(112, 247, 213));
 }
 .cassandra{
-    background-image: linear-gradient(45deg, rgba(233, 233, 233, 0.692),rgba(243, 243, 243, 0.654));
+    color: linear-gradient(45deg, rgb(195, 230, 252),rgb(177, 228, 255));
 }
 .rxjs{
-    background-image: linear-gradient(45deg,#512c86a7, #ec168eb0);
+    color: linear-gradient(45deg,#512c86, #ec168e);
 }
 .tf{
-    background-image: linear-gradient(45deg,#ffae67a7, #f18c31b0);
+    color: linear-gradient(45deg, rgb(241, 148, 48,0.7), rgb(241, 148, 48,0.7));
 }
 .d3{
-    background-image: linear-gradient(45deg,#c67155a7, #eea14fb0);
+    color: linear-gradient(45deg,#c67155, #eea14f);
+}
+
+ {
+    color: linear-gradient(45deg,#fca016, #e47a09);
+}
+.opencv{
+    color: linear-gradient(45deg,#fc1616,#1efc16, #0d09e4);
 }
 
 .tool_filter{
-    border-radius: 10px;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.692);
     color: rgba(255, 255, 255, 0.763);
-    background-color: rgba(0, 0, 0, 0.700);
+    color: rgba(0, 0, 0, 0.700);
     font-size: 80%;
     padding: 1rem;
     text-align: center;
     margin: 0 0.25rem 2rem;
     transition: all 0.25s ease;
+    color: rgb(187, 187, 187);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    color: rgb(63, 63, 63);
+}
+@keyframes clicked {
+    0%   { opacity: 1}
+    50% { opacity: 0.65;}
+    100% {opacity: 1}
+}
+
+.tool_filter:active{
+    animation: clicked 0.4s ease;
 }
 .tool_filter:hover{
-    box-shadow: 0 20px 20px black;
-    color: rgba(255, 255, 255, 0.903);
-    background-color: rgba(240, 240, 240, 0.25);
+    padding: 0.5rem 1rem;
+    color: rgba(41, 41, 41, 0.903);
+    color: rgb(154, 154, 154);
     transform: translateY(-5px);
     cursor: pointer;
 }
 .selected_filter{
-    box-shadow: 0 20px 20px black;
-    color: rgba(255, 255, 255, 0.903);
-    background-color: rgba(103, 102, 102, 0.25);
+    color: rgba(225, 225, 225, 0.903);
+    color: rgba(0, 0, 0, 0.749);
     transform: translateY(-5px);
 }
 
@@ -289,66 +200,13 @@
     padding: 0 0.75rem;
 }
 
-@media(max-width:1200px){
-    .lang_text{
-        width: 70%;
-        font-size: 0.8rem;
-    }
+.tool_card{
+    margin: 0.5rem auto;
+    text-align: center;
+    transition: all 0.25s ease;
 }
-@media(max-width:576px){
-    .lang_text{
-        width: 85%;
-        font-size: 1rem;
-        line-height: 1.5;
-    }
-    .lang_logo_clicked{
-        top: 20px;
-        right: 120%;
-        left: 15px;
-        width: 4rem;
-    }
-}
-@media(max-width:430px){
-    .lang_text{
-        width: 85%;
-        font-size: 0.92rem;
-    }
-    .lang_logo_clicked{
-        top: 15px;
-        right: 120%;
-        left: 10px;
-        width: 4rem;
-    }
-}
-@media(max-width:395px){
-    .lang_text{
-        width: 85%;
-        font-size: 0.9rem;
-    }
-    .lang_logo_clicked{
-        top: 18px;
-        right: 120%;
-        left: -5px;
-        width: 3.8rem;
-    }
-}
-@media(max-width:340px){
-    .lang_text{
-        width: 85%;
-        font-size: 0.9rem;
-    }
-    .lang_logo_clicked{
-        top: 25px;
-        right: 120%;
-        left: -15px;
-        width: 3rem;
-    }
-}
-@media(max-width:320px){
-    .lang_logo_clicked{
-        display: none;
-    }
-    .tool_card{
-        width: 100%;
-    }
+  
+
+#skills {
+    border: 1.2px solid black;
 }

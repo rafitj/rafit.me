@@ -37,7 +37,7 @@
   height: 0.3%;
   background-color: #2d2d2d;
   margin-top: 2.8rem;
-  transition: all 0.5s ease;
+  transition: all 0.25s ease;
   animation: animate_line 2s forwards linear;
 }
 
@@ -52,27 +52,27 @@
 
 .container p {
   color: #2d2d2d;
-  transition: all 0.5s ease;
+  transition: all 0.25s ease;
 }
 
 #resume {
   color: #2d2d2d;
-  transition: all 0.5s ease;
+  transition: all 0.25s ease;
 }
 #github {
   color: #2d2d2d;
-  transition: all 0.5s ease;
+  transition: all 0.25s ease;
 }
 #email {
   color: #2d2d2d;
-  transition: all 0.5s ease;
+  transition: all 0.25s ease;
 }
 
 .container a {
   text-decoration: none;
   color: #2d2d2d;
   margin: 1.5rem;
-  transition: all 0.5s ease;
+  transition: all 0.25s ease;
   margin-top: 0;
 }
 .container a:hover {
@@ -85,7 +85,7 @@
 .anchor-div {
   display: inline-block;
   text-align: center;
-  transition: all 0.5s ease;
+  transition: all 0.25s ease;
 }
 .anchor-div:hover{
   color: grey;

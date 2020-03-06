@@ -1,21 +1,10 @@
 .header_container{
-    height: 5rem;
-    border-radius: 15px;
+    height: 3rem;
     text-align:center;
-    padding: 0 3rem 0.5rem 3rem;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.900);
-    background-color: rgba(0, 0, 0, 0.666);
-    margin: 2rem auto 3rem;
+    margin: 0 auto;
 }
 
 .header_container h2{
-    color: rgba(255, 255, 255, 0.877);
-    opacity: 0.8;
-    font-size: 2rem;
-    text-shadow: 0 0 15px rgba(0, 0, 0, 0.993);
-}
-
-.less {
-    margin: 2rem auto 1.5rem;
-
+    color: rgba(0, 0, 0, 0.666);
+    font-size: 1.2rem;
 }

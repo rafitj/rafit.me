@@ -2,351 +2,133 @@
     transition: all 0.25s ease;
 }
 .exp_card{
-    border-radius: 30px;
-    margin: 0 0.5rem 3rem 0.5rem;
-    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.300);
-    height: 14rem;
-    color: white;
     position: relative;
+    cursor: pointer;
+} 
+@keyframes clicked {
+    0%   { opacity: 1}
+    50% { opacity: 0.65;}
+    100% {opacity: 1}
 }
-.exp_card::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0.7;
-    border-radius: 30px;
-    
-    /* Declaring our shadow color inherit from the parent (button) */
-    background: inherit;
-    
-    /* Blurring the element for shadow effect */
-    -webkit-filter: blur(20px);
-    -moz-filter: blur(20px);
-    -o-filter: blur(20px);
-    -ms-filter: blur(20px);
-    filter: blur(20px);
-    
-    /* Transition for the magic */
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
-  }
+
+.exp_card:hover{
+    transform: translateY(-0.25rem) !important;
+}
+.exp_card:active{
+    animation: clicked 0.4s ease;
+}
 .exp_logo{
-    width: 6rem;
-    position: absolute;
-    top: -25px;
-    right: 20px;
-    -webkit-filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));
-    filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));    
+    height: 4rem;
+    padding: 0.3rem;
+    margin: 0 auto;
 }
-.mlse_img{
-    height: 10rem;
-    width: 10rem; 
-    top: -50px;
-    right: 15px;
+
+.hide_details{
+    display: none;
 }
+
 .exp_title{
-    position: absolute;
-    top: 75px;
-    left: 25px;
+    margin-left: 10rem;
+    margin-bottom: 0.3rem;
     font-size: 1.6em;
+    opacity: 0.9;
 }
 .exp_date{
-    opacity: 0.6;
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-bottom: 0.3rem;
+    padding-top: 1rem;
+    margin-left: 10rem;
+    font-size: 0.9rem;
 }
 .exp_company{
-    position: absolute;
-    top: 50px;
-    left: 25px;
+    margin-bottom: 0.3rem;
+    opacity: 0.9;
+    margin-left: 10rem;
     font-size: 1.1rem;
     font-weight: 500;
 }
 .exp_desc{
-    position: absolute;
-    top: 110px;
-    left: 25px;
+    margin-bottom: 0.3rem;
+    margin-left: 10rem;
     line-height: 1.5;
-    opacity: 0.7;
+    opacity: 0.9;
     padding-right: 1rem;
     width: auto;
-    font-size: 0.9rem;
+    font-weight: bold;
     margin-right: 25px;
 }
-.exp_view{
-    position: absolute;
-    width: 5rem;
-    height: 2rem;
-    border-radius: 50px;
-    bottom: 20px;
-    right: 20px;
-    background-color: rgba(255, 255, 255, 0.6);
-    text-align: center;
-    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.50);
+.exp_details{
+    margin-left: 10rem;
+    line-height: 1.5;
+    opacity: 0.8;
+    padding-right: 1rem;
+    width: auto;
+    font-size: 0.85rem;
+    margin-bottom: 0;
+    margin-right: 25px;
 }
-.exp_view_text{
-    color: rgba(0, 0, 0, 0.6);
-    font-weight: bold;
-    margin: auto 0;
+.exp_details p{
+    margin-bottom: 0;
 }
-.exp_view:hover{
-    background-color: rgba(255, 255, 255, 0.7);
-    box-shadow: 0 18px 18px rgba(0, 0, 0, 0.6);
-    cursor: pointer;
-    transform: translateY(-3px)
-}
-
 
 
 .mlse{
-    background-image: linear-gradient(-45deg, rgba(231, 69, 69, 0.654),rgba(105, 1, 1, 0.654));
+    color: #b34e50;
 }
 
 .bliss{
-    background-image: linear-gradient(-45deg, rgba(69, 231, 91, 0.654),rgba(0, 124, 128, 0.654));
+   color: #5bc99f;
 }
 
-.actioncind{
-    background-image: linear-gradient(-45deg, rgba(26, 52, 167, 0.654),rgba(70, 0, 128, 0.654));
+.mfest {
+    color: rgb(218, 132, 51);
 }
 
-.festivecurrents{
-    background-image: linear-gradient(-45deg, rgba(226, 48, 226, 0.654),rgba(48, 172, 221, 0.654),rgba(227, 243, 84, 0.654));
-}
-
-
-@media (max-width: 992px) {
-    .exp_logo{
-        width: 5.5rem;
-        top: -35px;
-        right: -5px; 
-        -webkit-filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));
-        filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));    
-    }
-    .mlse_img{
-        height: 9rem;
-        width: 9rem; 
-        top: -55px;
-        right: -10px;
-    }
-    .exp_title{
-        position: absolute;
-        left: 10; 
-        top: 85px; 
-        width: 20rem;
-        font-size: 1.6em;
-    }
-    .exp_date{
-        opacity: 0.6;
-        position: absolute;
-        top: 40px;
-        left: 10; 
-        font-size: 0.8rem;
-        line-height: 1.3;
-    }
-    .exp_company{
-        position: absolute;
-        left: 10; 
-        top: 62px; 
-        width: 20rem;
-        font-size: 0.95rem;
-        font-weight: 500;
-    }
-    .exp_desc{
-        position: absolute;
-        left: 10; 
-        top: 115px; 
-        font-size: 0.8rem;
-        line-height: 1.6;
-        font-weight: 500;
-        opacity: 0.7;
-    }
-    .exp_view{
-        width: 5rem;
-        height: 2rem;
-        margin: auto;
-        right: 15px;
-        bottom: 18px;
-    }
-    .exp_view:hover{
-        transform: translateY(5px)
-    }
-}
-
-@media (max-width: 768px) {
-    .exp_logo{
-        width: 6rem;
-        position: absolute;
-        top: -30px;
-        right: 5px;
-        -webkit-filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));
-        filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));    
-    }
-    .mlse_img{
-        height: 9.5rem;
-        width: 9.5rem; 
-        top: -60px;
-        right: 2px;
-    }
-    .exp_title{
-        position: absolute;
-        top: 72px;
-        left: 30px;
-        font-size: 1.55em;
-    }
-    .exp_date{
-        opacity: 0.6;
-        position: absolute;
-        top: 30px;
-        left: 30px;
-        font-size: 0.75rem;
-    }
-    .exp_company{
-        position: absolute;
-        top: 50px;
-        left: 30px;
-        font-size: 1.0rem;
-        font-weight: 500;
-    }
-    .exp_desc{
-        position: absolute;
-        font-size: 0.8rem;
-        line-height: 1.6;
-        position: absolute;
-        top: 105px;
-        left: 30px;
-        font-size: 0.85rem;
-        opacity: 0.7;
-    }
-    .exp_view{
-        margin: 0;
-        bottom: 20px;
-        right: 20px;
-        left: 77.5%;
-    }
-    .exp_view:hover{
-        cursor: pointer;
-        transform: translateY(-5px)
-    }
+.setter {
+    color: #264E68;
 }
 
 
-@media (max-width: 455px) {
-    .exp_desc{
-        position: absolute;
-        font-size: 0.8rem;
-        line-height: 1.6;
-        position: absolute;
-        top: 105px;
-        left: 20px;
-        font-size: 0.85rem;
-        opacity: 0.7;
+@media(max-width: 767px) {
+    .exp_card:hover{
+        transform: none !important;
     }
     .exp_logo{
-        width: 5.75rem;
-        position: absolute;
-        top: -30px;
-        right: -5px;
-        -webkit-filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));
-        filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));    
-    }
-    .mlse_img{
-        height: 9rem;
-        width: 9rem; 
-        top: -60px;
-        right: -5px;
-    }
-    .exp_title{
-        position: absolute;
-        top: 70px;
-        left: 20px;
-        font-size: 1.55em;
-    }
-    .exp_date{
-        opacity: 0.6;
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        font-size: 0.75rem;
-    }
-    .exp_company{
-        position: absolute;
-        top: 42px;
-        left: 20px;
-        font-size: 1.0rem;
-        font-weight: 500;
-    }
-    .exp_view{
-        margin: 0;
-        bottom: 20px;
-        right: 15px;
-        left: 70%;
-    }
-   
-}
-
-
-@media (max-width: 365px) {
-    .exp_logo{
-        width: 5rem;
-        position: absolute;
-        top: -30px;
-        right: -5px;
-        -webkit-filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));
-        filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.753));    
-    }
-    .mlse_img{
-        height: 8rem;
-        width: 8rem; 
-        top: -60px;
-        right: -5px;
-    }
-    .exp_title{
-        position: absolute;
-        top: 70px;
-        left: 20px;
-        width: 15rem;
-        font-size: 1.4em;
-    }
-    .exp_date{
-        opacity: 0.7;
-        position: absolute;
-        top: 20px;
-        width: auto;
-        left: 20px;
-        font-size: 0.6rem;
-    }
-    .exp_company{
-        position: absolute;
-        top: 42px;
-        left: 20px;
-        width: 15rem;
-        font-size: 0.975rem;
-        font-weight: 500;
-    }
-    .exp_view{
-        width: 5rem;
-        height: 2rem;
-        margin: auto;
+        height: 5rem;
+        top: -40px;
         left: 0;
         right: 0;
-        bottom: -8px;
-    }   
-    .exp_desc{
-        position: absolute;
-        font-size: 0.7rem;
-        line-height: 1.3;
-        top: 102px;
-        left: 20px;
-        font-size: 0.85rem;
-        opacity: 0.7;
-        margin-right: 10px;
+        margin: auto;
     }
-  
+    .expanded{
+        top: -50px;
+        height: 5.5rem;
+    }
+    .mlse_img{
+        top: -60px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 8rem;
+    }
+    .exp_title{
+        margin-left: 2rem;
+    }
+    .exp_date{
+        padding-top: 3rem;
+        margin-left: 2rem;
+    }
+    .exp_company{
+        margin-left: 2rem;
+    }
+    .exp_desc{
+        margin-left: 2rem;
+    }
+    .exp_details {
+        margin-left: 2rem;
+    }
+}
+
+#experience {
+    border: 1.2px solid black;
 }

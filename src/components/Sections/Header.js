@@ -7,7 +7,7 @@ class Header extends Component {
         return (
           <Container>
              <Row>
-                <div data-aos="fade-right" data-aos-duration = "500" className = {classes}>
+                <div className = {classes}>
                     <h2>{this.props.text}</h2>
                 </div>
            </Row>

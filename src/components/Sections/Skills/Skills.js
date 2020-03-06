@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'react-grid-system';
 import LangCard from './LangCard';
 import ToolCard from './ToolCard';
 import Header from '../Header';
@@ -9,9 +8,11 @@ import JS from '../../../assets/images/langs/JS.svg';
 import CPlus from '../../../assets/images/langs/CPlus.svg';
 import C from '../../../assets/images/langs/C.svg';
 import Swift from '../../../assets/images/langs/Swift.svg';
-import SQL from '../../../assets/images/langs/SQL.svg';
+import Cloud from '../../../assets/images/langs/Cloud.svg';
 import HTML from '../../../assets/images/langs/HTML+CSS.svg';
 import Go from '../../../assets/images/langs/Go.svg';
+import DB from '../../../assets/images/langs/DB.svg';
+import PHP from '../../../assets/images/langs/PHP.svg';
 
 import react from '../../../assets/images/tools/react.svg'
 import node from '../../../assets/images/tools/node.svg'
@@ -23,12 +24,14 @@ import rxjs from '../../../assets/images/tools/rxjs.svg'
 import tf from '../../../assets/images/tools/tf.svg'
 import ts from '../../../assets/images/langs/TS.svg'
 
-import aws from '../../../assets/images/tools/aws.svg'
+import git from '../../../assets/images/tools/git.svg'
+import opencv from '../../../assets/images/tools/opencv.svg'
+import aws from '../../../assets/images/tools/aws-dark.svg'
 import azure from '../../../assets/images/tools/azure.svg'
 import graphql from '../../../assets/images/tools/graphql.svg'
 import docker from '../../../assets/images/tools/docker.svg'
 import keras from '../../../assets/images/tools/keras.svg'
-import pyspark from '../../../assets/images/tools/pyspark.svg'
+import pyspark from '../../../assets/images/tools/pyspark-dark.svg'
 import aspark from '../../../assets/images/tools/aspark.svg'
 
 import mongo from '../../../assets/images/tools/mongo.svg'
@@ -38,102 +41,120 @@ import redis from '../../../assets/images/tools/redis.svg'
 import firebase from '../../../assets/images/tools/firebase.svg'
 // import memcached from '../../../assets/images/tools/memcached.svg'
 import cassandra from '../../../assets/images/tools/cassandra.svg'
+import Scrollable from '../Scrollable'
+import coreml from '../../../assets/images/tools/coreml.svg'
+import arkit from '../../../assets/images/tools/arkit.svg'
+import arduino from '../../../assets/images/tools/arduino.svg'
 
+import bootstrap from '../../../assets/images/tools/bootstrap.svg'
+import sass from '../../../assets/images/tools/sass.svg'
+import materialui from '../../../assets/images/tools/materialui.svg'
+import phpmysql from '../../../assets/images/tools/phpmysql.svg'
+import laravel from '../../../assets/images/tools/laravel.svg'
+import mux from '../../../assets/images/tools/mux.svg'
+import gokit from '../../../assets/images/tools/gokit.svg'
 
 class Skills extends Component {
      state = {
-          filter: 'framework'
+          filter: 'framework',
+          width: window.innerWidth
      }
      getFilterClass = (f) => {
           return "tool_filter " + (this.state.filter === f ? " selected_filter" : " ")
      }
+     updateDimensions = () => {
+        this.setState({ width: window.innerWidth });
+      };
+      componentDidMount() {
+        window.addEventListener('resize', this.updateDimensions);
+      }
+      componentWillUnmount() {
+        window.removeEventListener('resize', this.updateDimensions);
+      }
     render() {
           const tools = [
-               {name: 'React', type: 'framework', tool: 'react', img: react},
-               {name: 'Node JS', type: 'framework', tool: 'node', img: node},
-               {name: 'Docker', type: 'tool', tool: 'docker', img: docker},
-               {name: 'MySQL', type: 'database', tool: 'mysql', img: mysql},
-               {name: 'Django', type: 'framework', tool: 'django', img: django},
-               {name: 'Redis', type: 'database', tool: 'redis', img: redis},
-               {name: 'Type Script', type:'framework', tool:'ts', img: ts},
-               {name: 'OpenCV', type: 'library', tool: 'opencv', img: jquery},
-               {name: 'Firebase', type: 'database', tool: 'firebase', img: firebase},
-               {name: 'Flask', type: 'framework', tool: 'flask', img: flask},
-               {name: 'AWS', type: 'tool', tool: 'aws', img: aws},
-               {name: 'Azure', type: 'tool', tool: 'azure', img: azure},
-               {name: 'MongoDB', type: 'database', tool: 'mongo', img: mongo},
-               {name: 'Cassanadra', type: 'database', tool: 'cassandra', img: cassandra},
-               {name: 'GraphQL', type: 'tool', tool: 'graphql', img: graphql},
-               {name: 'Git', type: 'tool', tool: 'git', img: graphql},
-               {name: 'Keras', type: 'library', tool: 'keras', img: keras},
-               {name: 'Postgres', type: 'database', tool: 'postgres', img: postgres},
-               {name: 'Apache', type: 'tool', tool: 'aspark', img: aspark},
+               {name: 'React', type: 'JavaScript', tool: 'react', img: react},
+               {name: 'Node JS', type: 'JavaScript', tool: 'node', img: node},
+               {name: 'Docker', type: 'Other', tool: 'docker', img: docker},
+               {name: 'MySQL', type: 'Databases', tool: 'mysql', img: mysql},
+               {name: 'Django', type: 'Python', tool: 'django', img: django},
+               {name: 'Redis', type: 'Databases', tool: 'redis', img: redis},
+               {name: 'Type Script', type:'JavaScript', tool:'ts', img: ts},
+               {name: 'OpenCV', type: 'Python', tool: 'opencv', img: opencv},
+               {name: 'Firebase', type: 'Cloud Technology', tool: 'firebase', img: firebase},
+               {name: 'Flask', type: 'Python', tool: 'flask', img: flask},
+               {name: 'AWS', type: 'Cloud Technology', tool: 'aws', img: aws},
+               {name: 'Azure', type: 'Cloud Technology', tool: 'azure', img: azure},
+               {name: 'MongoDB', type: 'Databases', tool: 'mongo', img: mongo},
+               {name: 'Cassanadra', type: 'Databases', tool: 'cassandra', img: cassandra},
+               {name: 'GraphQL', type: 'JavaScript', tool: 'graphql', img: graphql},
+               {name: 'Git', type: 'Other', tool: 'git', img: git},
+               {name: 'Keras', type: 'Python', tool: 'keras', img: keras},
+               {name: 'Postgres', type: 'Databases', tool: 'postgres', img: postgres},
+               {name: 'Apache', type: 'Other', tool: 'aspark', img: aspark},
                // {name: 'MemCached', type: 'database', tool: 'memcached', img: memcached},
-               {name: 'jQuery', type: 'library', tool: 'jquery', img: jquery},
-               {name: 'PySpark', type: 'library', tool: 'pyspark', img: pyspark},
-               {name: 'Tensor Flow', type: 'library', tool: 'tf', img: tf},
-               {name: 'RxJS', type: 'library', tool: 'rxjs', img: rxjs},
-               {name: 'D3', type: 'library', tool: 'd3', img: d3,},
+               {name: 'jQuery', type: 'JavaScript', tool: 'jquery', img: jquery},
+               {name: 'PySpark', type: 'Python', tool: 'pyspark', img: pyspark},
+               {name: 'Tensor Flow', type: 'Python', tool: 'tf', img: tf},
+               {name: 'RxJS', type: 'JavaScript', tool: 'rxjs', img: rxjs},
+               {name: 'D3', type: 'Python', tool: 'd3', img: d3,},
+               {name: 'Core ML', type: 'Swift', tool: 'coreml', img: coreml},
+               {name: 'AR Kit', type: 'Swift', tool: 'arkit', img: arkit},
+               {name: 'Ardunio', type: 'C++', tool: 'arduino', img: arduino},
+               {name: 'Arduino', type: 'C', tool: 'arduino', img: arduino},
+
+               {name: 'Bootstrap', type: 'HTML/CSS', tool: 'bootstrap', img: bootstrap},
+               {name: 'Sass', type: 'HTML/CSS', tool: 'sass', img: sass},
+               {name: 'Material UI', type: 'HTML/CSS', tool: 'materialui', img: materialui},
+
+               {name: 'MySQL', type: 'PHP', tool: 'phpmysql', img: phpmysql},
+               {name: 'Laravel', type: 'PHP', tool: 'laravel', img: laravel},
+               {name: 'GoKit', type: 'Go', tool: 'gokit', img: gokit},
+               {name: 'Mux', type: 'Go', tool: 'mux', img: mux},
+
           ]
 
-          const toolList = tools.reduce((filtered, item) => {
-               if (item.type === this.state.filter || this.state.filter === 'all') {
-                  filtered.push(
-                         <ToolCard key = {item.tool} img = {item.img} 
+          const toolList = tools.map(item => (
+                        <ToolCard type = {item.type} key = {item.tool} img = {item.img} 
                               name = {item.name} tool = {item.tool} />
-                  );
-               }
-               return filtered;
-             }, []);
+                ))
           
-
+        const toShow = () => {
+            if (this.state.width < 500) {
+                return 1
+            }
+            else if (this.state.width < 960) {
+                return 3
+            } 
+            return 5
+        }
         return (
         <section id = "skills">
           <Header text="Skills"/>
-          <Container>
-             <Row>
-                <LangCard img = {Python} lang = "Python" extra_classes = "python"
+          <Scrollable  max = {10}  show = {toShow()} tools = {toolList}>
+                <LangCard img = {Python} title = "Python" extra_classes = "python"
                     content = {["Micro-Servers", "Machine Learning", "Utility & Scripting"]} />
-                <LangCard img = {Go}  lang = "Go" extra_classes = "go" 
+                <LangCard img = {Go}  title = "Go" extra_classes = "go" 
                     content = {["Micro-Servers", "Distributed Backends", "Chatbots"]}/>
-                <LangCard img = {JS}  lang = "JavaScript" extra_classes = "js"
+                <LangCard img = {JS}  title = "JavaScript" extra_classes = "js"
                     content = {["Backend Servers", "Frontend APIs", "Data Visualization"]} />
-                <LangCard img = {Swift} lang = "Swift" extra_classes = "swift"
-                    content = {["iOS Mobile Apps", "AR Applications"]}  />
-                <LangCard img = {CPlus} lang = "C++" extra_classes = "cplus"
+                <LangCard img = {CPlus} title = "C++" extra_classes = "cplus"
                     content = {["Embedded Software", "Hardware Hacks"]}  />
-                <LangCard img = {C} lang = "C" extra_classes = "c" 
+                <LangCard img = {PHP} title = "PHP" extra_classes = "php"
+                    content = {["Web Dev"]}  />
+                <LangCard img = {Swift} title = "Swift" extra_classes = "swift"
+                    content = {["iOS Mobile Apps", "AR Applications"]}  />
+
+                <LangCard img = {C} title = "C" extra_classes = "c" 
                     content = {["Embedded Software", "Hardware Hacks"]}/>
-                <LangCard img = {SQL} lang = "SQL" extra_classes = "sql" 
-                    content = {["Database Query"]}/>
-                <LangCard img = {HTML} lang = "HTML/CSS" extra_classes = "html" 
+                        <LangCard img = {HTML} title = "HTML/CSS" extra_classes = "html" 
                     content = {["Web Development"]}/>
-           </Row>
-          </Container>
-          <Container>
-             <Row>
-                <Col xs={12} sm = {12} md = {2.4}>
-                    <div data-aos = "fade-right" className = {this.getFilterClass('all')} onClick = {()=>{this.setState({filter: 'all'})}}>All</div>
-                  </Col>
-                  <Col xs={6} sm = {6} md = {2.4}>
-                    <div data-aos = "fade-right"  className = {this.getFilterClass('framework')} onClick = {()=>{this.setState({filter: 'framework'})}}>Frameworks</div>
-                  </Col>
-                  <Col xs={6} sm = {6} md = {2.4}>
-                  <div data-aos = "fade-right"  className = {this.getFilterClass('database')} onClick = {()=>{this.setState({filter: 'database'})}}>Databases</div>
-                  </Col>
-                  <Col xs={6} sm = {6} md = {2.4}>
-                  <div data-aos = "fade-right"  className = {this.getFilterClass('library')} onClick = {()=>{this.setState({filter: 'library'})}}>Libraries</div>
-                  </Col>
-                  <Col xs={6} sm = {6} md = {2.4}>
-                  <div data-aos = "fade-right"  className = {this.getFilterClass('tool')} onClick = {()=>{this.setState({filter: 'tool'})}}>Tools</div>
-                  </Col>
-             </Row>
-          </Container>
-          <Container>
-             <Row>
-                  {toolList}
-               </Row>
-          </Container>
+                <LangCard img = {DB} title = "Databases" extra_classes = "sql" 
+                    content = {["Database Query"]}/>
+                <LangCard img = {Cloud} title = "Cloud Technology" extra_classes = "cloud" 
+                    content = {["Web Development"]}/>
+            
+          </Scrollable>
           </section>
         );
     }

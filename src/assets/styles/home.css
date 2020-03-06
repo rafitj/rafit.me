@@ -1,48 +1,76 @@
 .home_img img{
     height: 15rem;
-    -webkit-filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.888));
-    filter: drop-shadow( 0 20px 20px rgba(0, 0, 0, 0.888));  
 }
 .home_container{
     text-align: center;
-    padding: 3rem;
+    padding: 0rem;
+    display: table-cell;
+    width: 100vw;
+    height: 100vh;
+    vertical-align: middle;
+}
+.tiny {
+    font-size: 0.6rem !important;
 }
 .muted_p{
-    color: rgba(255, 255, 255, 0.555);
+    color: #7e7e7e;
     font-size: 0.95rem;
-    margin: 1.5rem 1rem;
+    margin: 0 1rem 1rem;
     line-height: 2;
     transition: all 0.25s ease;
     padding: 0 2rem;
 }
-.name_header{
-    color: rgba(255, 255, 255, 0.938);
-    text-shadow: 0 10px 10px rgb(0, 0, 0);
-}
 
+.home_down_arrow{
+    transform: rotate(180deg) translateY(0);
+    width: 1rem;
+    opacity: 0.8;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+    padding-bottom: 3rem;
+}
+.home_down_arrow:hover{
+    transform: rotate(180deg) translateY(-5px);
+}
 .home_button{
     text-decoration: none;
     display: inline-block;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.650);
-    border-radius: 15px;
-    border: none;
-    padding: 1rem 2rem;
+    border: 2px solid rgba(255, 255, 255, 0);
+    padding: 0.5rem 1rem;
     margin: 1rem;
-    font-size:1.1rem;
-    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 0.9rem;
     transition: all 0.25s ease;
-    color: rgba(255, 255, 255, 0.74);
+    color: rgba(33, 33, 33, 0.74);
 }
 .home_button:hover{
-    box-shadow: 0 20px 20px rgb(0, 0, 0);
     transform: translateY(-5px);
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.65);
-    color: rgba(255, 255, 255, 0.95);
+    border: 2px solid rgba(33, 33, 33, 0.74);
+}
+@keyframes clicked {
+    0%   { opacity: 1}
+    50% { opacity: 0.65;}
+    100% {opacity: 1}
+}
+
+.home_button:active{
+    animation: clicked 0.4s ease;
 }
 
 @media (max-width: 768px) {
     .muted_p{
         padding: 0 0rem;
     }
+}
+
+.text-display-home {
+    width: 100vw;
+    height: 3rem;
+    overflow:hidden;
+    margin: 0 auto;
+    color: rgb(85, 85, 85);
+}
+
+.text-display-home:hover {
+    cursor: pointer;
 }
