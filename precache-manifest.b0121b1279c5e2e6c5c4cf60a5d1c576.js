@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6a0472f84931c34ab87e567028caa1d7",
+    "revision": "ebb956d22f1ad40a5047ed7ef40fc658",
     "url": "/index.html"
   },
   {
-    "revision": "94da8df135742e6e7e7a",
+    "revision": "0e2bba833c0a5fc1a94e",
     "url": "/static/css/2.4707e12a.chunk.css"
   },
   {
-    "revision": "022a872b797636482daf",
-    "url": "/static/css/main.704e0590.chunk.css"
+    "revision": "c6d20d869e1483b3a330",
+    "url": "/static/css/main.43052326.chunk.css"
   },
   {
-    "revision": "94da8df135742e6e7e7a",
-    "url": "/static/js/2.63dff118.chunk.js"
+    "revision": "0e2bba833c0a5fc1a94e",
+    "url": "/static/js/2.a2abb8a3.chunk.js"
   },
   {
-    "revision": "022a872b797636482daf",
-    "url": "/static/js/main.cf766aa5.chunk.js"
+    "revision": "c6d20d869e1483b3a330",
+    "url": "/static/js/main.aa370d36.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -132,10 +132,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Resume.2d283a29.pdf"
   },
   {
-    "revision": "0207257c47803b22b73f16256878e2cd",
-    "url": "/static/media/SQL.0207257c.svg"
-  },
-  {
     "revision": "91fe3d753506ef35c6e011ef09abf96f",
     "url": "/static/media/Setter.91fe3d75.svg"
   },
@@ -168,10 +164,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/aws-dark.9517a3e6.svg"
   },
   {
-    "revision": "274d0761a5847d684edcd8dbbf5b3c58",
-    "url": "/static/media/aws.274d0761.svg"
-  },
-  {
     "revision": "d0af71f331d9c161bcca269b907f4b54",
     "url": "/static/media/azure.d0af71f3.svg"
   },
@@ -186,10 +178,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "7c48ff3db772aae2a1f9196d7b8259c2",
     "url": "/static/media/coreml.7c48ff3d.svg"
-  },
-  {
-    "revision": "6e91a8426edf3d72d26b49748906408d",
-    "url": "/static/media/cross.6e91a842.svg"
   },
   {
     "revision": "16703d4902b698215fa8de83f4fa1727",
@@ -318,10 +306,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1b9482c4d2f64b4a745cdc2ded6fa9f1",
     "url": "/static/media/pyspark-dark.1b9482c4.svg"
-  },
-  {
-    "revision": "f4a7e89d2a4e8af0c06e45c8a5e9d102",
-    "url": "/static/media/pyspark.f4a7e89d.svg"
   },
   {
     "revision": "0745b9d700da0df637199b066483fcb5",
