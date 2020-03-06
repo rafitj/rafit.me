@@ -13,11 +13,33 @@ import pillar from '../../../assets/images/projects/Pillar.svg'
 import traffix from '../../../assets/images/projects/Traffix.svg'
 import Scrollable from '../Scrollable'
 class Projects extends Component {
+    state = {
+        width: window.innerWidth
+   }
+   updateDimensions = () => {
+      this.setState({ width: window.innerWidth });
+    };
+    componentDidMount() {
+      window.addEventListener('resize', this.updateDimensions);
+    }
+    componentWillUnmount() {
+      window.removeEventListener('resize', this.updateDimensions);
+    }
     render() {
+
+        const toShow = () => {
+            if (this.state.width < 500) {
+                return 1
+            }
+            else if (this.state.width < 960) {
+                return 3
+            } 
+            return 5
+        }
         return (
             <section id="projects">
                 <Header text="Projects" />
-                <Scrollable  max = {10} show = {5} projects = {true}>
+                <Scrollable  max = {10} show = {toShow()} projects = {true}>
                         <ProjectCard img={density} title="Density" date="May 2019" extra_classes="density"
                             desc="Passive Wifi Density Triangulation"
                             link="https://github.com/rafitj/density"
@@ -64,7 +86,7 @@ class Projects extends Component {
                      
                     />
                     <ProjectCard img={pillar} title="Pillar" date="August 2019" extra_classes="pillar"
-                                desc="Low-Cost and Voice-Powered Medical Hubs"
+                                desc="Cheap & Voice-Powered Medical Hubs"
                                 link="https://github.com/rafitj/pillar"
                                 trophy="Hack the 6ix 2019 Winner"
                                 devpostUrl="https://devpost.com/software/pillar-cum1sq"
@@ -72,19 +94,19 @@ class Projects extends Component {
                      
                     />
                     <ProjectCard img={pseudo} title="Pseudo" date="April 2019" extra_classes="pseudo"
-                        desc="Micro-Freelancing for Developers, Designers and Creators"
+                        desc="Micro-Freelancing for All Creators"
                         link="https://github.com/rafitj/pseudo-project"
                         techData={["Django", "React", "AWS"]}
                         />
                     <ProjectCard img={fashionably} title="Fashionably" date="January 2019" extra_classes="fashionably"
-                        desc="ML Assisted Attire and Wardrobe Management"
+                        desc="ML Assisted Wardrobe Management"
                         link="https://github.com/rafitj/fashionably"
                         techData={["Swift", "Python", "Keras"]}
                         trophy="StarterHacks 2019 Winner"
                         devpostUrl="https://devpost.com/software/fashionably"
                        />
                     <ProjectCard img={echo} title="Echo" date="October 2018" extra_classes="echo"
-                        desc="Gesture Controlled Laptop Attachment"
+                        desc="Gesture Controlled Laptop"
                         link="https://github.com/rafitj/echo"
                         techData={["Python", "C", "Arduino"]}
                          />

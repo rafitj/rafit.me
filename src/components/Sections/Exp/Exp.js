@@ -8,16 +8,36 @@ import bliss from '../../../assets/images/exp/Bliss.svg'
 import Scrollable from '../Scrollable'
 
 class Exp extends Component {
+  state = {
+    width: window.innerWidth
+}
+updateDimensions = () => {
+  this.setState({ width: window.innerWidth });
+};
+componentDidMount() {
+  window.addEventListener('resize', this.updateDimensions);
+}
+componentWillUnmount() {
+  window.removeEventListener('resize', this.updateDimensions);
+}
+
   render() {
+              
+const toShow = () => {
+   if (this.state.width < 960) {
+      return 1
+  } 
+  return 3
+}
     return (
       <section id='experience'>
         <Header text="Experience" />
-        <Scrollable max = {4} show = {3}>
+        <Scrollable max = {4} show = {toShow()}>
             <ExpCard img={setter} title="Setter" desc="Software Engineering Intern" date="MAY 2019 - AUG 2019" extra_classes="setter"
               details="Developed Big-Data algorithmns and Deep-Learning models for Toronto FC & Toronto Raptors"
               techData={["Python", "Keras", "Azure", "Flask", "Pyspark"]}
                />
-            <ExpCard img={mlse} title="MLSE - Toronto Raptors + Toronto FC" desc="Software Engineering Intern" date="MAY 2019 - AUG 2019" extra_classes="mlse"
+            <ExpCard img={mlse} title="Maple Leaf Sports" desc="Software Engineering Intern" date="MAY 2019 - AUG 2019" extra_classes="mlse"
               details="Developed Big-Data algorithmns and Deep-Learning models for Toronto FC & Toronto Raptors"
               techData={["Python", "Keras", "Azure", "Flask", "Pyspark"]}
                />

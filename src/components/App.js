@@ -18,7 +18,7 @@ class App extends React.Component {
         return (
             <>
                 <Home />
-                <div >
+                <div data-aos="fade" data-aos-duration={200} >
                     <div className="main" >
                         <div>
                             <Content />

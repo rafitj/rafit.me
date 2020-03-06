@@ -9,24 +9,17 @@ class Scrollable extends Component {
     state = {
         oldSlide: 0,
         activeSlide: 0,
-        showScroll: false,
-        opened: false
       };
     render(){
         const changeSlide = (current, next) => {
             this.setState({ oldSlide: current, activeSlide: next })
-            if (next === this.props.max) {
-                this.setState({ showScroll: false})
-                this.setState({ activeSlide: 0})
-                this.setState({opened: false})
-                resetSlide()
-            }
         }
         const resetSlide = () => {
+            this.setState({ oldSlide: 0, activeSlide: 0 })
             this.slider.slickGoTo(0)
         }
         var settings = {
-            autoplay: this.state.showScroll,
+            autoplay: false,
             slidesToShow: this.props.show,
             centerMode: true,
             focusOnSelect: true,
@@ -47,11 +40,12 @@ class Scrollable extends Component {
             }
         }
         const renderChildren = () => {
-            const items = this.props.children.concat(
-                <div className = "end-cont"> 
-                    <img className = "end-x" src = {cross}/>
-                </div>
-            )
+            const items = this.props.children
+            // concat(
+            //     <div onClick = {resetSlide} className = "end-cont"> 
+            //         <img alt ="goback" className = "end-x" src = {cross}/>
+            //     </div>
+            // )
             return items.map((p,indx) => {
                 if (indx === this.props.max) {
                     return p
@@ -67,45 +61,40 @@ class Scrollable extends Component {
                 return <></>
             }
             else {
-                return this.props.tools.map((t) => {
+                return (<div className="slider-tools-cont">
+                 {this.props.tools.map((t) => {
                     if (t.props.type === element.title) {
                         return <div className ="slider-tool">{t}</div>
                     }
                     return <></>
-                })
+                })} </div>)
             }
         }
         const renderGit = (el) => {
             if (el.link) {
-                return  <a target="_blank" href={el.link}><img className = "git" src={github} alt="github" /></a>
+                return  <a target="_blank"  rel="noopener noreferrer" href={el.link}><img className = "git" src={github} alt="github" /></a>
             }
         }
         const renderDev = (el) => {
             if (el.devpostUrl) {
-                return  <a target="_blank" href={el.link}><img className = "git" src={devpost} alt="devpost" /></a>
+                return  <a target="_blank"  rel="noopener noreferrer" href={el.link}><img className = "git" src={devpost} alt="devpost" /></a>
             }
         }
         const renderHacker = (el) => {
             if (el.hackerUrl) {
-                return  <a target="_blank" href={el.link}><img className = "git" src={hacker_earth} alt="hacker_earth" /></a>
+                return  <a target="_blank"  rel="noopener noreferrer" href={el.link}><img className = "git" src={hacker_earth} alt="hacker_earth" /></a>
             }
         }
-        const className = this.state.showScroll ? "open-slider" : "close-slider"
-        const openSlider = () =>{
-            if (!this.state.opened) {
-                this.setState({showScroll: true})
-                this.setState({opened: true})
-            }
-        }
+        const className =  "open-slider" 
         return (
 
-            <div className = {className} onClick = {openSlider}>
+            <div className = {className}>
                 <Slider ref={slider => this.slider = slider} {...settings}>
                     {renderChildren()}
                 </Slider>
                 <div className = {"slider-text " + element.extra_classes}>
                     <div className = "slider-main">{element.title}</div>
-                    <div className = "slider-sub">{element.desc}</div>
+                    {element.desc ? <div className = "slider-sub">{element.desc}</div> : <div></div>}
                     {renderTools()}
                     {renderGit(element)}
                     {renderDev(element)}

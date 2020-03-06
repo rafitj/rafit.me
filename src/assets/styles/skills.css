@@ -8,6 +8,7 @@
 .lang_logo{
     height: 3rem;
     margin: 0 auto;
+    padding: 0.3rem;
 }
 
 .lang_text{
@@ -29,7 +30,7 @@
 }
 
 .tool_logo{
-    width: 2rem;
+    height: 2rem;
 }
 
 .python {
@@ -62,6 +63,10 @@
 
 .swift{
     color:rgba(255, 140, 9);
+}
+
+.php{
+    color:rgb(148, 130, 179);
 }
 
 .react{
@@ -149,7 +154,7 @@
     color: linear-gradient(45deg,#c67155, #eea14f);
 }
 
-.git {
+ {
     color: linear-gradient(45deg,#fca016, #e47a09);
 }
 .opencv{

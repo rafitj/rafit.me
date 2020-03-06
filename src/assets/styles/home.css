@@ -9,8 +9,11 @@
     height: 100vh;
     vertical-align: middle;
 }
+.tiny {
+    font-size: 0.6rem !important;
+}
 .muted_p{
-    color: rgba(34, 34, 34, 0.555);
+    color: #7e7e7e;
     font-size: 0.95rem;
     margin: 0 1rem 1rem;
     line-height: 2;
@@ -58,4 +61,16 @@
     .muted_p{
         padding: 0 0rem;
     }
+}
+
+.text-display-home {
+    width: 100vw;
+    height: 3rem;
+    overflow:hidden;
+    margin: 0 auto;
+    color: rgb(85, 85, 85);
+}
+
+.text-display-home:hover {
+    cursor: pointer;
 }

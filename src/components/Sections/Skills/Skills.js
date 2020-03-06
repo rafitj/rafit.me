@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'react-grid-system';
 import LangCard from './LangCard';
 import ToolCard from './ToolCard';
 import Header from '../Header';
@@ -13,6 +12,7 @@ import Cloud from '../../../assets/images/langs/Cloud.svg';
 import HTML from '../../../assets/images/langs/HTML+CSS.svg';
 import Go from '../../../assets/images/langs/Go.svg';
 import DB from '../../../assets/images/langs/DB.svg';
+import PHP from '../../../assets/images/langs/PHP.svg';
 
 import react from '../../../assets/images/tools/react.svg'
 import node from '../../../assets/images/tools/node.svg'
@@ -42,15 +42,35 @@ import firebase from '../../../assets/images/tools/firebase.svg'
 // import memcached from '../../../assets/images/tools/memcached.svg'
 import cassandra from '../../../assets/images/tools/cassandra.svg'
 import Scrollable from '../Scrollable'
+import coreml from '../../../assets/images/tools/coreml.svg'
+import arkit from '../../../assets/images/tools/arkit.svg'
+import arduino from '../../../assets/images/tools/arduino.svg'
 
+import bootstrap from '../../../assets/images/tools/bootstrap.svg'
+import sass from '../../../assets/images/tools/sass.svg'
+import materialui from '../../../assets/images/tools/materialui.svg'
+import phpmysql from '../../../assets/images/tools/phpmysql.svg'
+import laravel from '../../../assets/images/tools/laravel.svg'
+import mux from '../../../assets/images/tools/mux.svg'
+import gokit from '../../../assets/images/tools/gokit.svg'
 
 class Skills extends Component {
      state = {
-          filter: 'framework'
+          filter: 'framework',
+          width: window.innerWidth
      }
      getFilterClass = (f) => {
           return "tool_filter " + (this.state.filter === f ? " selected_filter" : " ")
      }
+     updateDimensions = () => {
+        this.setState({ width: window.innerWidth });
+      };
+      componentDidMount() {
+        window.addEventListener('resize', this.updateDimensions);
+      }
+      componentWillUnmount() {
+        window.removeEventListener('resize', this.updateDimensions);
+      }
     render() {
           const tools = [
                {name: 'React', type: 'JavaScript', tool: 'react', img: react},
@@ -78,6 +98,20 @@ class Skills extends Component {
                {name: 'Tensor Flow', type: 'Python', tool: 'tf', img: tf},
                {name: 'RxJS', type: 'JavaScript', tool: 'rxjs', img: rxjs},
                {name: 'D3', type: 'Python', tool: 'd3', img: d3,},
+               {name: 'Core ML', type: 'Swift', tool: 'coreml', img: coreml},
+               {name: 'AR Kit', type: 'Swift', tool: 'arkit', img: arkit},
+               {name: 'Ardunio', type: 'C++', tool: 'arduino', img: arduino},
+               {name: 'Arduino', type: 'C', tool: 'arduino', img: arduino},
+
+               {name: 'Bootstrap', type: 'HTML/CSS', tool: 'bootstrap', img: bootstrap},
+               {name: 'Sass', type: 'HTML/CSS', tool: 'sass', img: sass},
+               {name: 'Material UI', type: 'HTML/CSS', tool: 'materialui', img: materialui},
+
+               {name: 'MySQL', type: 'PHP', tool: 'phpmysql', img: phpmysql},
+               {name: 'Laravel', type: 'PHP', tool: 'laravel', img: laravel},
+               {name: 'GoKit', type: 'Go', tool: 'gokit', img: gokit},
+               {name: 'Mux', type: 'Go', tool: 'mux', img: mux},
+
           ]
 
           const toolList = tools.map(item => (
@@ -85,21 +119,32 @@ class Skills extends Component {
                               name = {item.name} tool = {item.tool} />
                 ))
           
-
+        const toShow = () => {
+            if (this.state.width < 500) {
+                return 1
+            }
+            else if (this.state.width < 960) {
+                return 3
+            } 
+            return 5
+        }
         return (
         <section id = "skills">
           <Header text="Skills"/>
-          <Scrollable  max = {9}  show = {5} tools = {toolList}>
+          <Scrollable  max = {10}  show = {toShow()} tools = {toolList}>
                 <LangCard img = {Python} title = "Python" extra_classes = "python"
                     content = {["Micro-Servers", "Machine Learning", "Utility & Scripting"]} />
                 <LangCard img = {Go}  title = "Go" extra_classes = "go" 
                     content = {["Micro-Servers", "Distributed Backends", "Chatbots"]}/>
                 <LangCard img = {JS}  title = "JavaScript" extra_classes = "js"
                     content = {["Backend Servers", "Frontend APIs", "Data Visualization"]} />
-                <LangCard img = {Swift} title = "Swift" extra_classes = "swift"
-                    content = {["iOS Mobile Apps", "AR Applications"]}  />
                 <LangCard img = {CPlus} title = "C++" extra_classes = "cplus"
                     content = {["Embedded Software", "Hardware Hacks"]}  />
+                <LangCard img = {PHP} title = "PHP" extra_classes = "php"
+                    content = {["Web Dev"]}  />
+                <LangCard img = {Swift} title = "Swift" extra_classes = "swift"
+                    content = {["iOS Mobile Apps", "AR Applications"]}  />
+
                 <LangCard img = {C} title = "C" extra_classes = "c" 
                     content = {["Embedded Software", "Hardware Hacks"]}/>
                         <LangCard img = {HTML} title = "HTML/CSS" extra_classes = "html" 
