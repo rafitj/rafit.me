@@ -12,12 +12,12 @@ class Home extends Component {
             <div id="home">
                 <div className="home_container">
                     <LogoAnimation/>
-                    <div data-aos="fade" data-aos-delay={1500}  >
+                    <div data-aos="fade" data-aos-delay={1500} >
                         <HomeText/>
-                        <a target="_blank" rel="noopener noreferrer" href={Resume} className="home_button">📄Resume</a>
-                        <a target="_blank" rel="noopener noreferrer" href="mailto: rafit.jamil@gmail.com" className="home_button">📫Email</a>
-                        <a target="_blank" rel="noopener noreferrer" href="http://github.com/rafitj" className="home_button">💻Github</a>
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/rafitj/" className="home_button">💼LinkedIn</a>
+                        <a target="_blank" rel="noopener noreferrer" href={Resume} className="home_button"><span role ="img" aria-label="resume">📄</span>Resume</a>
+                        <a target="_blank" rel="noopener noreferrer" href="mailto: rafit.jamil@gmail.com" className="home_button"><span role ="img" aria-label="mail">📫</span>Email</a>
+                        <a target="_blank" rel="noopener noreferrer" href="http://github.com/rafitj" className="home_button"><span role ="img" aria-label="computer">💻</span>Github</a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/rafitj/" className="home_button"><span role ="img" aria-label="breifcase">💼</span>LinkedIn</a>
                     </div>
                     <div data-aos="fade" data-aos-delay={1500}>
                         <AnchorLink href='#experience'>

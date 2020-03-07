@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Hidden } from 'react-grid-system';
 import '../../assets/styles/nav.css'
 import nav_arrow from '../../assets/images/nav_arrow.svg'
 import AnchorLink from 'react-anchor-link-smooth-scroll'

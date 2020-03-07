@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../../../assets/styles/experience.css';
-import Tech from '../Projects/Tech';
+// import Tech from '../Projects/Tech';
 class ExpCard extends Component {
     state = {
         showTech: false,

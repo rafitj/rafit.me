@@ -154,9 +154,6 @@
     color: linear-gradient(45deg,#c67155, #eea14f);
 }
 
- {
-    color: linear-gradient(45deg,#fca016, #e47a09);
-}
 .opencv{
     color: linear-gradient(45deg,#fc1616,#1efc16, #0d09e4);
 }
@@ -208,5 +205,6 @@
   
 
 #skills {
-    border: 1.2px solid black;
+    border-top: 1.2px solid black;
+    border-bottom: 1.2px solid black;
 }

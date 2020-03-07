@@ -147,3 +147,55 @@ i {
     position: relative;
 
 }
+.left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    border: none;
+    z-index: 999;
+    background-color: transparent;
+}
+
+.l-arrow {
+    transform: rotate(-90deg);
+    width: 1.5rem;
+    padding: 1rem;
+}
+
+
+.l-arrow:hover {
+    transform: rotate(-90deg) translateY(-5px);
+    cursor: pointer
+}
+
+.right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    border: none;
+    z-index: 999;
+    background-color: transparent;
+}
+
+.r-arrow {
+    transform: rotate(90deg);
+    width: 1.5rem;
+    padding: 1rem;
+}
+
+.r-arrow:hover {
+    transform: rotate(90deg) translateY(-5px);
+    cursor: pointer
+}
+
+.slick-disabled {
+    opacity: 0.2;
+}
+.r-arrow.slick-disabled:hover {
+    cursor: default !important;
+    transform: rotate(90deg);
+}
+.l-arrow.slick-disabled:hover {
+    cursor: default !important;
+    transform: rotate(-90deg);
+}

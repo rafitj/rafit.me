@@ -130,5 +130,6 @@
 }
 
 #experience {
-    border: 1.2px solid black;
+    border-top: 1.2px solid black;
+    border-bottom: 1.2px solid black;
 }

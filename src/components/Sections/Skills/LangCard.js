@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../../../assets/styles/skills.css';
-import { Col } from 'react-grid-system';
 
 class LangCard extends Component {
     state = {

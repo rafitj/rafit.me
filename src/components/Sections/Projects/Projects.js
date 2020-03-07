@@ -41,7 +41,7 @@ class Projects extends Component {
                 <Header text="Projects" />
                 <Scrollable  max = {10} show = {toShow()} projects = {true}>
                         <ProjectCard img={density} title="Density" date="May 2019" extra_classes="density"
-                            desc="Passive Wifi Density Triangulation"
+                            desc="Wi-Fi Density Triangulation"
                             link="https://github.com/rafitj/density"
                             onClick={this.openModal}
                             trophy="RU Hacks 2019 Winner"
@@ -57,20 +57,20 @@ class Projects extends Component {
                             techData={["Node", "Arduino", "C++", "React"]}
                             />
                         <ProjectCard img={framear} title="FrameAR" date="June 2019" extra_classes="framear"
-                            desc="VCS and AR visualization for 3D CAD"
+                            desc="VCS with AR view for 3D CAD"
                             link="https://github.com/rafitj/framear"
                             techData={["Swift", "JS", "MongoDB"]}
                             trophy="ENG Hacks 2019 Winner"
                             devpostUrl="https://devpost.com/software/framear"
                         />
                         <ProjectCard img={gaze} title="Gaze" date="August 2019" extra_classes="gaze"
-                            desc="Real-Time Gaze Tracking Analytics"
+                            desc="Real-Time Gaze Tracking"
                             link="https://github.com/rafitj/gaze"
                             techData={["Python", "OpenCV", "Keras", "Cassandra", "Flask"]}
                         />
                         
                         <ProjectCard img={compass} title="Compass" date="September 2019" extra_classes="compass"
-                            desc="City Exploration via AR and Facebook"
+                            desc="City Exploration via AR + Facebook"
                             link="https://github.com/rafitj/compass"
                             techData={["Swift", "Flask", "Python", "Node", "Firebase"]}
                             trophy="Hack the North 2019 Winner"
@@ -78,7 +78,7 @@ class Projects extends Component {
                         />
 
                     <ProjectCard img={realm} title="Realm" date="August 2019" extra_classes="realm"
-                                            desc="AR, ML and Speech Powered Presentations"
+                                            desc="AR & ML Powered Presentations"
                                             link="https://github.com/rafitj/realm"
                                             trophy="Hack the 6ix 2019 Winner"
                                             devpostUrl="https://devpost.com/software/realm"
@@ -86,7 +86,7 @@ class Projects extends Component {
                      
                     />
                     <ProjectCard img={pillar} title="Pillar" date="August 2019" extra_classes="pillar"
-                                desc="Cheap & Voice-Powered Medical Hubs"
+                                desc="Voice-Powered Medical Hubs"
                                 link="https://github.com/rafitj/pillar"
                                 trophy="Hack the 6ix 2019 Winner"
                                 devpostUrl="https://devpost.com/software/pillar-cum1sq"
@@ -99,7 +99,7 @@ class Projects extends Component {
                         techData={["Django", "React", "AWS"]}
                         />
                     <ProjectCard img={fashionably} title="Fashionably" date="January 2019" extra_classes="fashionably"
-                        desc="ML Assisted Wardrobe Management"
+                        desc="ML Wardrobe Management"
                         link="https://github.com/rafitj/fashionably"
                         techData={["Swift", "Python", "Keras"]}
                         trophy="StarterHacks 2019 Winner"
