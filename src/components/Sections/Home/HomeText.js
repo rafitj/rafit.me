@@ -64,11 +64,11 @@ const textArray = [
   </p>,
   <p key="t7">
     <span role="img" aria-label="emoji">
-      🎒
+      🎓
     </span>{" "}
     Software Engineering at the University of Waterloo{" "}
     <span role="img" aria-label="emoji">
-      🎒
+      🎓
     </span>
   </p>
 ];
@@ -134,11 +134,11 @@ const smallTextArray = [
   </p>,
   <p key="t7">
     <span role="img" aria-label="emoji">
-      🎒
+      🎓
     </span>{" "}
     SE at the UWaterloo{" "}
     <span role="img" aria-label="emoji">
-      🎒
+      🎓
     </span>
   </p>
 ];
@@ -171,6 +171,11 @@ class HomeText extends Component {
   render() {
     const onClickHandler = () => {
       this.setState({ textIdx: this.state.textIdx + 1 });
+      clearInterval(this.timeout);
+      this.timeout = setInterval(() => {
+        let currentIdx = this.state.textIdx;
+        this.setState({ textIdx: currentIdx + 1 });
+      }, 5000);
     };
     let textThatChanges = this.state.array[
       this.state.textIdx % this.state.array.length
