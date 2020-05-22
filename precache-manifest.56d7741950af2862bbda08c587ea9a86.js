@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "95119278c438b040ebce19ba39ddaca8",
+    "revision": "aa6bee9ae34593194d9acf26deb6f1b9",
     "url": "/index.html"
   },
   {
-    "revision": "36544c70e40bb9d8de4c",
-    "url": "/static/css/2.4707e12a.chunk.css"
+    "revision": "6b5560bab17e858cd7d3",
+    "url": "/static/css/2.7abef457.chunk.css"
   },
   {
-    "revision": "7133cd1e40123437a37c",
-    "url": "/static/css/main.ee83b262.chunk.css"
+    "revision": "0ce496e03fba6072013c",
+    "url": "/static/css/main.b21a112d.chunk.css"
   },
   {
-    "revision": "36544c70e40bb9d8de4c",
-    "url": "/static/js/2.60cc8e4a.chunk.js"
+    "revision": "6b5560bab17e858cd7d3",
+    "url": "/static/js/2.580183b8.chunk.js"
   },
   {
-    "revision": "7133cd1e40123437a37c",
-    "url": "/static/js/main.b62496cc.chunk.js"
+    "revision": "0ce496e03fba6072013c",
+    "url": "/static/js/main.714efe20.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -132,6 +132,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Resume.2d283a29.pdf"
   },
   {
+    "revision": "0207257c47803b22b73f16256878e2cd",
+    "url": "/static/media/SQL.0207257c.svg"
+  },
+  {
     "revision": "91fe3d753506ef35c6e011ef09abf96f",
     "url": "/static/media/Setter.91fe3d75.svg"
   },
@@ -148,24 +152,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Traffix.f4f7a91a.svg"
   },
   {
-    "revision": "972c0dcd0b906ae53f729a2111253dc4",
-    "url": "/static/media/apollo.972c0dcd.svg"
-  },
-  {
     "revision": "71d16d6e132b95268906f36009c25f0d",
     "url": "/static/media/arduino.71d16d6e.svg"
   },
   {
-    "revision": "b335f6fd7dbec9a6f2ce969eb8a43758",
-    "url": "/static/media/arkit.b335f6fd.svg"
+    "revision": "d9aa4005cedc0458949c2b383000ed5c",
+    "url": "/static/media/arkit.d9aa4005.svg"
   },
   {
-    "revision": "77f89da553ce51c35d5c2f0888a72ead",
-    "url": "/static/media/aspark.77f89da5.svg"
+    "revision": "589a9a7f8d0ff16c51423e577185372a",
+    "url": "/static/media/aspark.589a9a7f.svg"
   },
   {
-    "revision": "d40f91f6b2716fe044146f463c80b394",
-    "url": "/static/media/aws-dark.d40f91f6.svg"
+    "revision": "9517a3e6b0c3ac174756f0bcdf907f57",
+    "url": "/static/media/aws-dark.9517a3e6.svg"
+  },
+  {
+    "revision": "274d0761a5847d684edcd8dbbf5b3c58",
+    "url": "/static/media/aws.274d0761.svg"
   },
   {
     "revision": "d0af71f331d9c161bcca269b907f4b54",
@@ -176,8 +180,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/bootstrap.ad075fc3.svg"
   },
   {
-    "revision": "2b0727c509ac454e6e25dc32002800f6",
-    "url": "/static/media/coreml.2b0727c5.svg"
+    "revision": "2e24cd05037526567def9e888ade2a2b",
+    "url": "/static/media/cassandra.2e24cd05.svg"
+  },
+  {
+    "revision": "7c48ff3db772aae2a1f9196d7b8259c2",
+    "url": "/static/media/coreml.7c48ff3d.svg"
+  },
+  {
+    "revision": "6e91a8426edf3d72d26b49748906408d",
+    "url": "/static/media/cross.6e91a842.svg"
   },
   {
     "revision": "16703d4902b698215fa8de83f4fa1727",
@@ -196,8 +208,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/docker.4783f654.svg"
   },
   {
-    "revision": "17fb6e2322a96e3380bb3bd129caa2c2",
-    "url": "/static/media/firebase.17fb6e23.svg"
+    "revision": "67984b0c85db40d0ed6fba6624b53acd",
+    "url": "/static/media/firebase.67984b0c.svg"
   },
   {
     "revision": "7e3176e3e65e4f4285bb35ff28bf30dc",
@@ -256,8 +268,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/img_7.d4ea97e9.png"
   },
   {
-    "revision": "6921ccd9477dd1d98d4bcc7e4dcbca16",
-    "url": "/static/media/jquery.6921ccd9.svg"
+    "revision": "11c2b33c1be0545097deba503a7066e9",
+    "url": "/static/media/jquery.11c2b33c.svg"
   },
   {
     "revision": "687bcb1ccd5a56478df10fc44068445a",
@@ -268,24 +280,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/laravel.641e82cd.svg"
   },
   {
-    "revision": "99f349d67647c9c98f3a326d00796c53",
-    "url": "/static/media/materialui.99f349d6.svg"
+    "revision": "2ae4c33c768344600268347c2aacbcb1",
+    "url": "/static/media/materialui.2ae4c33c.svg"
   },
   {
-    "revision": "96142e4466a57d69945a8929b652c2fe",
-    "url": "/static/media/mongo.96142e44.svg"
+    "revision": "40a50faf343a1edce2dd73ba9678412f",
+    "url": "/static/media/mongo.40a50faf.svg"
   },
   {
-    "revision": "f64f7a1b8779ac33f221cea31208bcfa",
-    "url": "/static/media/mux.f64f7a1b.svg"
+    "revision": "f09875489293eeb530cfd7e68dd57451",
+    "url": "/static/media/mux.f0987548.svg"
   },
   {
     "revision": "29e21c4529be0be800fbd0ef5966709e",
     "url": "/static/media/mysql.29e21c45.svg"
   },
   {
-    "revision": "d89a68043e3a25436839202efe7a40ef",
-    "url": "/static/media/nav_arrow.d89a6804.svg"
+    "revision": "170feba52323a8d9fb1b661c2602279c",
+    "url": "/static/media/nav_arrow.170feba5.svg"
   },
   {
     "revision": "917959298a26733dc6b600dde5227839",
@@ -300,20 +312,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/phpmysql.9a665295.svg"
   },
   {
-    "revision": "c71993859f5b0f655fff1d0c6dd67780",
-    "url": "/static/media/postgres.c7199385.svg"
+    "revision": "52931bd7cb90a4b5243c98642b4c2bfc",
+    "url": "/static/media/postgres.52931bd7.svg"
   },
   {
-    "revision": "d71303e1135ce29b9a2c953f1457e72a",
-    "url": "/static/media/pyspark-dark.d71303e1.svg"
+    "revision": "1b9482c4d2f64b4a745cdc2ded6fa9f1",
+    "url": "/static/media/pyspark-dark.1b9482c4.svg"
+  },
+  {
+    "revision": "f4a7e89d2a4e8af0c06e45c8a5e9d102",
+    "url": "/static/media/pyspark.f4a7e89d.svg"
   },
   {
     "revision": "0745b9d700da0df637199b066483fcb5",
     "url": "/static/media/react.0745b9d7.svg"
   },
   {
-    "revision": "2d76ca220fdd0b9bf34b4dfd9b50a7ab",
-    "url": "/static/media/redis.2d76ca22.svg"
+    "revision": "e7484fd30fcb7992b049fd037834e6b8",
+    "url": "/static/media/redis.e7484fd3.svg"
   },
   {
     "revision": "ea07eb1c61e53711395f6913dce76a40",
