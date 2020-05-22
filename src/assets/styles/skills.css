@@ -1,17 +1,19 @@
-.lang_card{
+.lang_card {
     text-align: center;
     cursor: pointer;
 }
-.lang_card:hover{
+
+.lang_card:hover {
     transform: translateY(-0.25rem) !important;
 }
-.lang_logo{
+
+.lang_logo {
     height: 3rem;
     margin: 0 auto;
     padding: 0.3rem;
 }
 
-.lang_text{
+.lang_text {
     position: absolute;
     left: 0;
     margin: auto;
@@ -24,144 +26,149 @@
     line-height: 1.5;
 }
 
-.lang_name{
+.lang_name {
     font-size: 0.9rem;
     opacity: 0.8;
 }
 
-.tool_logo{
+.tool_logo {
     height: 2rem;
 }
 
 .python {
-    color:#f5cd60
+    color: #f5cd60
 }
 
 .sql {
-    color:#316092;
+    color: #316092;
 }
 
-.js{
+.js {
     color: #eed94f
 }
 
-.cplus{
+.cplus {
     color: #5c97d4;
 }
 
-.go{
+.go {
     color: #7beaf7;
 }
 
-.c{
+.c {
     color: #abb8c8;
 }
 
-.html{
+.html {
     color: #d45f39;
 }
 
-.swift{
-    color:rgba(255, 140, 9);
+.swift {
+    color: rgba(255, 140, 9);
 }
 
-.php{
-    color:rgb(148, 130, 179);
+.php {
+    color: rgb(148, 130, 179);
 }
 
-.react{
-    color: rgb(124, 214, 247,0.5);
+.react {
+    color: rgb(124, 214, 247, 0.5);
 }
 
-.node{
-    color: linear-gradient(45deg, rgba(61, 110, 47),rgba(173, 248, 135));
+.node {
+    color: linear-gradient(45deg, rgba(61, 110, 47), rgba(173, 248, 135));
 }
 
-.ts{
-    color: linear-gradient(45deg, rgba(31, 173, 192),rgba(21, 103, 150));
+.ts {
+    color: linear-gradient(45deg, rgba(31, 173, 192), rgba(21, 103, 150));
 }
 
-.django{
-    color: linear-gradient(45deg, rgba(12, 141, 81),rgba(21, 150, 90));
+.django {
+    color: linear-gradient(45deg, rgba(12, 141, 81), rgba(21, 150, 90));
 }
 
-.flask{
-    color: linear-gradient(45deg, rgba(185, 185, 185),rgba(121, 121, 121));
+.flask {
+    color: linear-gradient(45deg, rgba(185, 185, 185), rgba(121, 121, 121));
 }
 
-.jquery{
-    color: linear-gradient(45deg, rgba(7, 135, 255),rgba(32, 32, 32));
+.jquery {
+    color: linear-gradient(45deg, rgba(7, 135, 255), rgba(32, 32, 32));
 }
 
-.aws{
-    color: linear-gradient(45deg, rgba(187, 113, 2),rgba(255, 198, 77));
-
+.aws {
+    color: linear-gradient(45deg, rgba(187, 113, 2), rgba(255, 198, 77));
 }
 
-.azure{
-    color: linear-gradient(45deg, rgba(0, 71, 81),rgba(12, 41, 83));
-
+.azure {
+    color: linear-gradient(45deg, rgba(0, 71, 81), rgba(12, 41, 83));
 }
 
-.graphql{
-    color: linear-gradient(45deg, rgba(177, 14, 172),rgba(77, 5, 77) );
-
+.graphql {
+    color: linear-gradient(45deg, rgba(177, 14, 172), rgba(77, 5, 77));
 }
 
-.keras{
-    color: linear-gradient(45deg, rgba(158, 52, 52),rgba(255, 34, 34) );
-
+.keras {
+    color: linear-gradient(45deg, rgba(158, 52, 52), rgba(255, 34, 34));
 }
 
-.docker{
-    color: linear-gradient(45deg, rgba(231, 231, 231),rgba(34, 178, 255));
-
-}
-.aspark, .pyspark{
-    color: linear-gradient(45deg, rgba(113, 51, 0),rgba(196, 111, 7));
+.docker {
+    color: linear-gradient(45deg, rgba(231, 231, 231), rgba(34, 178, 255));
 }
 
-.mongo{
-    color: linear-gradient(-45deg, rgb(116, 211, 76),rgba(121, 85, 9));
+.aspark,
+.pyspark {
+    color: linear-gradient(45deg, rgba(113, 51, 0), rgba(196, 111, 7));
 }
 
-.mysql{
+.mongo {
+    color: linear-gradient(-45deg, rgb(116, 211, 76), rgba(121, 85, 9));
+}
+
+.mysql {
     color: rgba(9, 76, 121);
 }
 
-.postgres{
-    color: linear-gradient(45deg, rgba(8, 8, 8),rgba(8, 131, 189));
-}
-.redis{
-    color: linear-gradient(45deg, rgba(240, 88, 88),rgba(250, 53, 53));
-}
-.firebase{
-    color: linear-gradient(45deg, rgba(250, 230, 49),rgba(241, 169, 60));
-}
-.memcached{
-    color: linear-gradient(45deg, rgba(109, 89, 89),rgba(112, 247, 213));
-}
-.cassandra{
-    color: linear-gradient(45deg, rgb(195, 230, 252),rgb(177, 228, 255));
-}
-.rxjs{
-    color: linear-gradient(45deg,#512c86, #ec168e);
-}
-.tf{
-    color: linear-gradient(45deg, rgb(241, 148, 48,0.7), rgb(241, 148, 48,0.7));
-}
-.d3{
-    color: linear-gradient(45deg,#c67155, #eea14f);
+.postgres {
+    color: linear-gradient(45deg, rgba(8, 8, 8), rgba(8, 131, 189));
 }
 
- {
-    color: linear-gradient(45deg,#fca016, #e47a09);
-}
-.opencv{
-    color: linear-gradient(45deg,#fc1616,#1efc16, #0d09e4);
+.redis {
+    color: linear-gradient(45deg, rgba(240, 88, 88), rgba(250, 53, 53));
 }
 
-.tool_filter{
+.firebase {
+    color: linear-gradient(45deg, rgba(250, 230, 49), rgba(241, 169, 60));
+}
+
+.memcached {
+    color: linear-gradient(45deg, rgba(109, 89, 89), rgba(112, 247, 213));
+}
+
+.cassandra {
+    color: linear-gradient(45deg, rgb(195, 230, 252), rgb(177, 228, 255));
+}
+
+.rxjs {
+    color: linear-gradient(45deg, #512c86, #ec168e);
+}
+
+.tf {
+    color: linear-gradient(45deg, rgb(241, 148, 48, 0.7), rgb(241, 148, 48, 0.7));
+}
+
+.d3 {
+    color: linear-gradient(45deg, #c67155, #eea14f);
+}
+
+{
+    color: linear-gradient(45deg, #fca016, #e47a09);
+}
+
+.opencv {
+    color: linear-gradient(45deg, #fc1616, #1efc16, #0d09e4);
+}
+
+.tool_filter {
     color: rgba(255, 255, 255, 0.763);
     color: rgba(0, 0, 0, 0.700);
     font-size: 80%;
@@ -174,23 +181,32 @@
     border-radius: 10px;
     color: rgb(63, 63, 63);
 }
+
 @keyframes clicked {
-    0%   { opacity: 1}
-    50% { opacity: 0.65;}
-    100% {opacity: 1}
+    0% {
+        opacity: 1
+    }
+    50% {
+        opacity: 0.65;
+    }
+    100% {
+        opacity: 1
+    }
 }
 
-.tool_filter:active{
+.tool_filter:active {
     animation: clicked 0.4s ease;
 }
-.tool_filter:hover{
+
+.tool_filter:hover {
     padding: 0.5rem 1rem;
     color: rgba(41, 41, 41, 0.903);
     color: rgb(154, 154, 154);
     transform: translateY(-5px);
     cursor: pointer;
 }
-.selected_filter{
+
+.selected_filter {
     color: rgba(225, 225, 225, 0.903);
     color: rgba(0, 0, 0, 0.749);
     transform: translateY(-5px);
@@ -200,13 +216,22 @@
     padding: 0 0.75rem;
 }
 
-.tool_card{
+.tool_card {
     margin: 0.5rem auto;
     text-align: center;
     transition: all 0.25s ease;
 }
-  
 
 #skills {
     border: 1.2px solid black;
+    height: 28vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+@media(max-height: 500px) {
+    .slider-tools-cont{
+        display: none;
+    }
+  }

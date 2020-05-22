@@ -37,7 +37,7 @@ const toShow = () => {
               details="Developed Big-Data algorithmns and Deep-Learning models for Toronto FC & Toronto Raptors"
               techData={["Python", "Keras", "Azure", "Flask", "Pyspark"]}
                />
-            <ExpCard img={mlse} title="Maple Leaf Sports" desc="Software Engineering Intern" date="MAY 2019 - AUG 2019" extra_classes="mlse"
+            <ExpCard img={mlse} title="MLSE" desc="Software Engineering Intern" date="MAY 2019 - AUG 2019" extra_classes="mlse"
               details="Developed Big-Data algorithmns and Deep-Learning models for Toronto FC & Toronto Raptors"
               techData={["Python", "Keras", "Azure", "Flask", "Pyspark"]}
                />

@@ -1,53 +1,66 @@
 * {
     transition: all 0.25s ease;
 }
-.exp_card{
+
+.exp_card {
     position: relative;
     cursor: pointer;
-} 
-@keyframes clicked {
-    0%   { opacity: 1}
-    50% { opacity: 0.65;}
-    100% {opacity: 1}
 }
 
-.exp_card:hover{
+@keyframes clicked {
+    0% {
+        opacity: 1
+    }
+    50% {
+        opacity: 0.65;
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+.exp_card:hover {
     transform: translateY(-0.25rem) !important;
 }
-.exp_card:active{
+
+.exp_card:active {
     animation: clicked 0.4s ease;
 }
-.exp_logo{
+
+.exp_logo {
     height: 4rem;
     padding: 0.3rem;
     margin: 0 auto;
 }
 
-.hide_details{
+.hide_details {
     display: none;
 }
 
-.exp_title{
+.exp_title {
     margin-left: 10rem;
     margin-bottom: 0.3rem;
     font-size: 1.6em;
     opacity: 0.9;
 }
-.exp_date{
+
+.exp_date {
     opacity: 0.7;
     margin-bottom: 0.3rem;
     padding-top: 1rem;
     margin-left: 10rem;
     font-size: 0.9rem;
 }
-.exp_company{
+
+.exp_company {
     margin-bottom: 0.3rem;
     opacity: 0.9;
     margin-left: 10rem;
     font-size: 1.1rem;
     font-weight: 500;
 }
-.exp_desc{
+
+.exp_desc {
     margin-bottom: 0.3rem;
     margin-left: 10rem;
     line-height: 1.5;
@@ -57,7 +70,8 @@
     font-weight: bold;
     margin-right: 25px;
 }
-.exp_details{
+
+.exp_details {
     margin-left: 10rem;
     line-height: 1.5;
     opacity: 0.8;
@@ -67,17 +81,17 @@
     margin-bottom: 0;
     margin-right: 25px;
 }
-.exp_details p{
+
+.exp_details p {
     margin-bottom: 0;
 }
 
-
-.mlse{
+.mlse {
     color: #b34e50;
 }
 
-.bliss{
-   color: #5bc99f;
+.bliss {
+    color: #5bc99f;
 }
 
 .mfest {
@@ -88,40 +102,39 @@
     color: #264E68;
 }
 
-
 @media(max-width: 767px) {
-    .exp_card:hover{
+    .exp_card:hover {
         transform: none !important;
     }
-    .exp_logo{
+    .exp_logo {
         height: 5rem;
         top: -40px;
         left: 0;
         right: 0;
         margin: auto;
     }
-    .expanded{
+    .expanded {
         top: -50px;
         height: 5.5rem;
     }
-    .mlse_img{
+    .mlse_img {
         top: -60px;
         left: 0;
         right: 0;
         margin: auto;
         height: 8rem;
     }
-    .exp_title{
+    .exp_title {
         margin-left: 2rem;
     }
-    .exp_date{
+    .exp_date {
         padding-top: 3rem;
         margin-left: 2rem;
     }
-    .exp_company{
+    .exp_company {
         margin-left: 2rem;
     }
-    .exp_desc{
+    .exp_desc {
         margin-left: 2rem;
     }
     .exp_details {
@@ -131,4 +144,13 @@
 
 #experience {
     border: 1.2px solid black;
+    height: 28vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+@media(max-height: 700px) {
+ 
 }
