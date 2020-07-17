@@ -1,156 +1,155 @@
 * {
-    transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 .exp_card {
-    position: relative;
-    cursor: pointer;
+  position: relative;
+  cursor: pointer;
 }
 
 @keyframes clicked {
-    0% {
-        opacity: 1
-    }
-    50% {
-        opacity: 0.65;
-    }
-    100% {
-        opacity: 1
-    }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.65;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .exp_card:hover {
-    transform: translateY(-0.25rem) !important;
+  transform: translateY(-0.25rem) !important;
 }
 
 .exp_card:active {
-    animation: clicked 0.4s ease;
+  animation: clicked 0.4s ease;
 }
 
 .exp_logo {
-    height: 4rem;
-    padding: 0.3rem;
-    margin: 0 auto;
+  height: 4rem;
+  padding: 0.3rem;
+  margin: 0 auto;
 }
 
 .hide_details {
-    display: none;
+  display: none;
 }
 
 .exp_title {
-    margin-left: 10rem;
-    margin-bottom: 0.3rem;
-    font-size: 1.6em;
-    opacity: 0.9;
+  margin-left: 10rem;
+  margin-bottom: 0.3rem;
+  font-size: 1.6em;
+  opacity: 0.9;
 }
 
 .exp_date {
-    opacity: 0.7;
-    margin-bottom: 0.3rem;
-    padding-top: 1rem;
-    margin-left: 10rem;
-    font-size: 0.9rem;
+  opacity: 0.7;
+  margin-bottom: 0.3rem;
+  padding-top: 1rem;
+  margin-left: 10rem;
+  font-size: 0.9rem;
 }
 
 .exp_company {
-    margin-bottom: 0.3rem;
-    opacity: 0.9;
-    margin-left: 10rem;
-    font-size: 1.1rem;
-    font-weight: 500;
+  margin-bottom: 0.3rem;
+  opacity: 0.9;
+  margin-left: 10rem;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 .exp_desc {
-    margin-bottom: 0.3rem;
-    margin-left: 10rem;
-    line-height: 1.5;
-    opacity: 0.9;
-    padding-right: 1rem;
-    width: auto;
-    font-weight: bold;
-    margin-right: 25px;
+  margin-bottom: 0.3rem;
+  margin-left: 10rem;
+  line-height: 1.5;
+  opacity: 0.9;
+  padding-right: 1rem;
+  width: auto;
+  font-weight: bold;
+  margin-right: 25px;
 }
 
 .exp_details {
-    margin-left: 10rem;
-    line-height: 1.5;
-    opacity: 0.8;
-    padding-right: 1rem;
-    width: auto;
-    font-size: 0.85rem;
-    margin-bottom: 0;
-    margin-right: 25px;
+  margin-left: 10rem;
+  line-height: 1.5;
+  opacity: 0.8;
+  padding-right: 1rem;
+  width: auto;
+  font-size: 0.85rem;
+  margin-bottom: 0;
+  margin-right: 25px;
 }
 
 .exp_details p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .mlse {
-    color: #b34e50;
+  color: #b34e50;
 }
 
 .bliss {
-    color: #5bc99f;
+  color: #5bc99f;
 }
 
 .mfest {
-    color: rgb(218, 132, 51);
+  color: rgb(218, 132, 51);
 }
 
 .setter {
-    color: #264E68;
+  color: #264e68;
 }
 
-@media(max-width: 767px) {
-    .exp_card:hover {
-        transform: none !important;
-    }
-    .exp_logo {
-        height: 5rem;
-        top: -40px;
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
-    .expanded {
-        top: -50px;
-        height: 5.5rem;
-    }
-    .mlse_img {
-        top: -60px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        height: 8rem;
-    }
-    .exp_title {
-        margin-left: 2rem;
-    }
-    .exp_date {
-        padding-top: 3rem;
-        margin-left: 2rem;
-    }
-    .exp_company {
-        margin-left: 2rem;
-    }
-    .exp_desc {
-        margin-left: 2rem;
-    }
-    .exp_details {
-        margin-left: 2rem;
-    }
+@media (max-width: 767px) {
+  .exp_card:hover {
+    transform: none !important;
+  }
+  .exp_logo {
+    height: 5rem;
+    top: -40px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .expanded {
+    top: -50px;
+    height: 5.5rem;
+  }
+  .mlse_img {
+    top: -60px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 8rem;
+  }
+  .exp_title {
+    margin-left: 2rem;
+  }
+  .exp_date {
+    padding-top: 3rem;
+    margin-left: 2rem;
+  }
+  .exp_company {
+    margin-left: 2rem;
+  }
+  .exp_desc {
+    margin-left: 2rem;
+  }
+  .exp_details {
+    margin-left: 2rem;
+  }
 }
 
 #experience {
-    border: 1.2px solid black;
-    height: 28vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  border-bottom: 1.2px solid black;
+  border-top: 1.2px solid black;
+  height: 28vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-
-@media(max-height: 700px) {
- 
+@media (max-height: 700px) {
 }

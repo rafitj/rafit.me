@@ -24,7 +24,7 @@ class Scrollable extends Component {
       focusOnSelect: true,
       dots: false,
       infinite: false,
-      arrows: false,
+      arrows: true,
       swipeToSlide: true,
       speed: 250,
       beforeChange: changeSlide,
@@ -106,10 +106,11 @@ class Scrollable extends Component {
         </Slider>
         <div className={"slider-text " + element.extra_classes}>
           <div className="slider-main">{element.title}</div>
-          {element.desc ? (
+          {element.desc && (
             <div className="slider-sub">{element.desc}</div>
-          ) : (
-            <div></div>
+          )}
+          {element.loc && (
+            <div className="slider-loc">{element.loc}</div>
           )}
           {renderTools()}
           {renderGit(element)}
