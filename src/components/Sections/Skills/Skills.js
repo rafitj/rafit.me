@@ -86,7 +86,7 @@ class Skills extends Component {
                {name: 'AWS', type: 'Cloud Technology', tool: 'aws', img: aws},
                {name: 'Azure', type: 'Cloud Technology', tool: 'azure', img: azure},
                {name: 'MongoDB', type: 'Databases', tool: 'mongo', img: mongo},
-               {name: 'Cassanadra', type: 'Databases', tool: 'cassandra', img: cassandra},
+            //    {name: 'Cassanadra', type: 'Databases', tool: 'cassandra', img: cassandra},
                {name: 'GraphQL', type: 'JavaScript', tool: 'graphql', img: graphql},
                {name: 'Git', type: 'Other', tool: 'git', img: git},
                {name: 'Keras', type: 'Python', tool: 'keras', img: keras},

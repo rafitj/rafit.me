@@ -148,7 +148,6 @@
     height: 28vh;
     display: flex;
     flex-direction: column;
-    padding: 0 0.75rem;
     justify-content: center;
 }
 

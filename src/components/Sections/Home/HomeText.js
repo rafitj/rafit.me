@@ -1,13 +1,12 @@
 import React, { Component, useEffect, useState } from 'react';
 import '../../../assets/styles/home.css'
 
-const textArray = [<p>🎒 Software Engineering at UWaterloo 🎒</p>,
+const textArray = [<p>🎒 Software Eng at UWaterloo 🎒</p>,
 <p>👨‍💻 SWE Intern at Meter 👨‍💻</p>,
 <p>⚽ Football Fanatic & Madridista 🏆</p>,
 <p>😍 Python x Go x TypeScript x C++ 😍</p>,
 <p>🤖 Distributed Computing & ML 🤖</p>,
-<p>🎥 Films, 🎨 Design & 🍔 Food</p>,
-<p>🎯 Putting Tech in Everyone's Hands 🎯</p>];
+<p>🎥 Films, 🎨 Design & 🍔 Food</p>];
 
 const HomeText = () => {
     const [indx, setIndx] = useState(0);

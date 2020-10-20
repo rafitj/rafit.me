@@ -12,7 +12,7 @@ class Home extends Component {
             <div id="home">
                 <div className="home_container">
                     <LogoAnimation/>
-                    <div data-aos="fade" data-aos-delay={1500}  >
+                    <div data-aos="fade" data-aos-delay={1500} style={{textAlign: 'center', margin: '0 auto'}} >
                         <HomeText/>
                         <a target="_blank" rel="noopener noreferrer" href={Resume} className="home_button">📄Resume</a>
                         <a target="_blank" rel="noopener noreferrer" href="mailto: rafit.jamil@gmail.com" className="home_button">📫Email</a>
