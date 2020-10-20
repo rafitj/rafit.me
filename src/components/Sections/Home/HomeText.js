@@ -1,46 +1,34 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import '../../../assets/styles/home.css'
-import Slider from 'react-slick';
 
 const textArray = [<p>🎒 Software Engineering at UWaterloo 🎒</p>,
 <p>👨‍💻 SWE Intern at Meter 👨‍💻</p>,
-<p>⚽ Football Fanatic and Madridista 🏆</p>,
+<p>⚽ Football Fanatic & Madridista 🏆</p>,
 <p>😍 Python x Go x TypeScript x C++ 😍</p>,
-<p>🤖 Distributed Computing & Machine Learning 🤖</p>,
-<p>🎥 Movies, 🎨 Graphic Design and 🍔 Food</p>,
+<p>🤖 Distributed Computing & ML 🤖</p>,
+<p>🎥 Films, 🎨 Design & 🍔 Food</p>,
 <p>🎯 Putting Tech in Everyone's Hands 🎯</p>];
-class HomeText extends Component {
-    state = {
-        oldSlide: 0,
-        activeSlide: 0,
-        array: textArray
-    };
-    render() {
-        const changeSlide = (current, next) => {
-            this.setState({ oldSlide: current, activeSlide: next })
-        }
-        const settings = {
-            autoplay: true,
-            slidesToShow: 1,
-            centerMode: true,
-            focusOnSelect: true,
-            dots: false,
-            arrows: false,
-            swipeToSlide: true,
-            speed: 250,
-            vertical: true,
-            beforeChange: changeSlide,
-            infinite: true,
-        };
-        return (
-            <div className="text-display-home">
-                <Slider ref={slider => this.slider = slider} {...settings}>
-                    {textArray}
-                </Slider>
-            </div>
 
-        );
+const HomeText = () => {
+    const [indx, setIndx] = useState(0);
+    useEffect(() => {
+        const timerID = setInterval(
+            clickSlide,
+            5000
+          );
+
+          return function cleanup() {
+            clearInterval(timerID);
+        };
+    })
+    const clickSlide = () => {
+        setIndx((indx+1)% textArray.length)
     }
+    return (
+        <div className="text-display-home" onClick={clickSlide}>
+            {textArray[indx]}
+        </div>
+    )
 }
 
 export default HomeText;
