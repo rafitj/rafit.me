@@ -142,13 +142,17 @@
     }
 }
 
-#experience {
-    border-bottom: 1.2px solid black;
-    border-top: 1.2px solid black;
-    height: 28vh;
+.link {
+    color: "white";
+    background-color: #333333;
+    border-radius: 4px;
+    padding: 2px 5px;
+}
+.section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 5px 0;
 }
 
 @media (max-height: 700px) {}

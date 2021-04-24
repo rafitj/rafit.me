@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "antd": "^4.15.2",
     "aos": "^2.3.4",
     "gh-pages": "^2.0.1",
     "infinite-react-carousel": "^1.2.11",
@@ -21,7 +22,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "format": "prettier --write 'src/**/*.ts?(x)' && npm run lint-fix",
+    "format-check": "prettier --check 'src/**/*.ts?(x)'"
   },
   "homepage": "https://rafit.me/",
   "eslintConfig": {
