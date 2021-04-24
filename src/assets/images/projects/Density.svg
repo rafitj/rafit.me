@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 330.6 330.6" style="enable-background:new 0 0 330.6 330.6;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#61C7D8;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
+	.st0{fill:#61C7D8;stroke:#1E1E1E;stroke-width:4;stroke-miterlimit:10;}
 </style>
 <g>
-	<circle class="st0" cx="127.3" cy="249.8" r="15.6"/>
+	
+		<ellipse transform="matrix(9.853754e-02 -0.9951 0.9951 9.853754e-02 -133.8281 351.8658)" class="st0" cx="127.3" cy="249.8" rx="15.6" ry="15.6"/>
 	<circle class="st0" cx="127.9" cy="214.6" r="16.1"/>
 	<circle class="st0" cx="126.6" cy="178.9" r="17.3"/>
 	<circle class="st0" cx="218.1" cy="89.2" r="18.8"/>
@@ -21,7 +22,7 @@
 	<circle class="st0" cx="218.9" cy="199.1" r="19.5"/>
 	<circle class="st0" cx="189.1" cy="217.5" r="19.5"/>
 	<circle class="st0" cx="157" cy="235.8" r="19.5"/>
-	<circle class="st0" cx="253.7" cy="143.2" r="20"/>
+	<ellipse transform="matrix(0.1602 -0.9871 0.9871 0.1602 71.7109 370.686)" class="st0" cx="253.7" cy="143.2" rx="20" ry="20"/>
 	<circle class="st0" cx="220.9" cy="162" r="20"/>
 	<circle class="st0" cx="190.3" cy="180.8" r="20"/>
 	<circle class="st0" cx="157.5" cy="199.5" r="20"/>

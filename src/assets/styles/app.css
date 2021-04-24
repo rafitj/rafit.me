@@ -207,3 +207,16 @@ i {
     text-align: center;
     position: relative;
 }
+
+.emoji {
+    width: 50px;
+    margin: 0 10px;
+}
+
+.small {
+    width: 20px;
+}
+
+.nomargin {
+    margin: 0 !important;
+}

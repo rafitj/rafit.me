@@ -89,12 +89,12 @@
     text-align: left;
     color: whitesmoke;
     font-size: 50px;
-    opacity: 0.8;
+    /* opacity: 0.8; */
     height: 60px;
     display: flex;
     align-items: center;
 }
 
-.home-text:hover{
+.home-text:hover {
     opacity: 0.6;
 }

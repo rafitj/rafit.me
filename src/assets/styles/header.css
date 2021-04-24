@@ -1,17 +1,11 @@
 .header_container {
-    height: 3rem;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 0.5rem;
-}
-
-.header_container h2 {
-    color: rgba(0, 0, 0, 0.666);
-    font-size: 1.2rem;
+    margin-bottom: 24px;
 }
 
 @media(max-height: 700px) {
-    .header_container{
+    .header_container {
         display: none;
     }
 }
