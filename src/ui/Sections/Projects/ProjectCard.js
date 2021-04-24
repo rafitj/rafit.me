@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import devpost from "../../../assets/images/devpost.svg";
-import hacker_earth from "../../../assets/images/hacker_earth.svg";
-import "../../../assets/styles/app.css";
-import "../../../assets/styles/projects.css";
+import React, { Component } from 'react';
+import devpost from '../../../assets/images/devpost.svg';
+import hacker_earth from '../../../assets/images/hacker_earth.svg';
+import '../../../assets/styles/app.css';
+import '../../../assets/styles/projects.css';
 
 class ProjectCard extends Component {
   state = {};
@@ -34,7 +34,7 @@ class ProjectCard extends Component {
       ) : (
         <></>
       );
-    const classes = "project_card  " + this.props.extra_classes;
+    const classes = 'project_card  ' + this.props.extra_classes;
     return (
       <div className={classes}>
         <img

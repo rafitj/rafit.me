@@ -7,20 +7,20 @@ import Footer from './Sections/Footer';
 import AOS from 'aos';
 
 class Content extends Component {
-    componentDidMount(){
-      AOS.init();
-    }
-    render() {
-        return (
-          <>
-            <Exp />
-            <Projects />
-            <Skills />
-            <Footer/>
-            <Nav />
-          </>
-        );
-    }
+  componentDidMount() {
+    AOS.init();
+  }
+  render() {
+    return (
+      <>
+        <Exp />
+        <Projects />
+        <Skills />
+        <Footer />
+        <Nav />
+      </>
+    );
+  }
 }
 
 export default Content;

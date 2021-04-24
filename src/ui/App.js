@@ -1,34 +1,31 @@
 import React from 'react';
 import Maintenance from './Maintenance';
 import Content from './Content';
-import '../assets/styles/app.css'
+import '../assets/styles/app.css';
 import Home from './Sections/Home/Home';
 import AOS from 'aos';
 class App extends React.Component {
-    componentDidMount() {
-        AOS.init();
+  componentDidMount() {
+    AOS.init();
+  }
+  render() {
+    const maintenance = false;
+    if (maintenance) {
+      return <Maintenance />;
     }
-    render() {
-        const maintenance = false;
-        if (maintenance) {
-            return (<
-                Maintenance />
-            )
-        }
-        return (
-            <>
-                <Home />
-                <div data-aos="fade" data-aos-duration={200} >
-                    <div className="main" >
-                        <div>
-                            <Content />
-                        </div>
-                    </div >
-                </div>
-            </>
-
-        );
-    }
+    return (
+      <>
+        <Home />
+        <div data-aos="fade" data-aos-duration={200}>
+          <div className="main">
+            <div>
+              <Content />
+            </div>
+          </div>
+        </div>
+      </>
+    );
+  }
 }
 
 export default App;
