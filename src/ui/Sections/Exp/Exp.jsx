@@ -4,6 +4,7 @@ import meter from '../../../assets/images/exp/Meter.svg';
 import mlse from '../../../assets/images/exp/MLSE.svg';
 import salesforce from '../../../assets/images/exp/Salesforce.svg';
 import setter from '../../../assets/images/exp/Setter.svg';
+import office from '../../../assets/images/other/office.png';
 import Resume from '../../../assets/resume/Resume.pdf';
 import { openInNewTab } from '../../utils';
 import Header from '../Header';
@@ -13,7 +14,7 @@ class Exp extends Component {
   render() {
     return (
       <div className="section">
-        <Header text="Work Experience" />
+        <Header text="Work Experience" img={office} />
         <div
           style={{
             display: 'flex',

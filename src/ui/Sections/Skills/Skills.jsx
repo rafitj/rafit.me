@@ -8,33 +8,31 @@ import JS from '../../../assets/images/langs/JS.svg';
 import PHP from '../../../assets/images/langs/PHP.svg';
 import Python from '../../../assets/images/langs/Python.svg';
 import TS from '../../../assets/images/langs/TS.svg';
-// import aspark from '../../../assets/images/tools/aspark.svg';
-// import aws from '../../../assets/images/tools/aws-dark.svg';
-// import azure from '../../../assets/images/tools/azure.svg';
-// import django from '../../../assets/images/tools/django.svg';
-// import docker from '../../../assets/images/tools/docker.svg';
-// import firebase from '../../../assets/images/tools/firebase.svg';
-// import flask from '../../../assets/images/tools/flask.svg';
-// import graphql from '../../../assets/images/tools/graphql.svg';
-// import mongo from '../../../assets/images/tools/mongo.svg';
-// import mysql from '../../../assets/images/tools/mysql.svg';
-// import node from '../../../assets/images/tools/node.svg';
-// import opencv from '../../../assets/images/tools/opencv.svg';
-// import phpmysql from '../../../assets/images/tools/phpmysql.svg';
-// import postgres from '../../../assets/images/tools/postgres.svg';
-// import pyspark from '../../../assets/images/tools/pyspark-dark.svg';
-// import react from '../../../assets/images/tools/react.svg';
-// import redis from '../../../assets/images/tools/redis.svg';
-// import tf from '../../../assets/images/tools/tf.svg';
+import ninja from '../../../assets/images/other/ninja.png';
+import aws from '../../../assets/images/tools/aws.svg';
+import django from '../../../assets/images/tools/django.svg';
+import docker from '../../../assets/images/tools/docker.svg';
+import firebase from '../../../assets/images/tools/firebase.svg';
+import flask from '../../../assets/images/tools/flask.svg';
+import graphql from '../../../assets/images/tools/graphql.svg';
+import mongo from '../../../assets/images/tools/mongo.svg';
+import neo4j from '../../../assets/images/tools/neo4j.svg';
+import node from '../../../assets/images/tools/node.svg';
+import postgres from '../../../assets/images/tools/postgres.svg';
+import react from '../../../assets/images/tools/react.svg';
+import redis from '../../../assets/images/tools/redis.svg';
+import springboot from '../../../assets/images/tools/springboot.svg';
+import tf from '../../../assets/images/tools/tf.svg';
 import Header from '../Header';
 import LangCard from './LangCard';
 import MainLangCard from './MainLangCard';
+import ToolCard from './ToolCard';
 
 class Skills extends Component {
   render() {
     return (
       <div className="section">
-        <Header text="Skills" />
+        <Header text="Skills" img={ninja}/>
         <div
           style={{
             marginTop: 24,
@@ -116,6 +114,63 @@ class Skills extends Component {
           >
             Here are my faviroute tools
           </div>
+          
+          <ToolCard
+            img={node}
+            color="#9cbc45"
+          />
+          <ToolCard
+            img={springboot}
+            color="#41c029"
+          />
+          <ToolCard
+            img={flask}
+            color="#ffffff"
+          />
+           <ToolCard
+            img={react}
+            color="#7bd6f7"
+          />
+          <ToolCard
+            img={django}
+            color="#53a276"
+          />
+          <ToolCard
+            img={graphql}
+            color="#ca4896"
+          />
+           <ToolCard
+            img={mongo}
+            color="#6a8e49"
+          />
+          <ToolCard
+            img={postgres}
+            color="#386390"
+          />
+        <ToolCard
+            img={neo4j}
+            color="#028ec7"
+          />
+          <ToolCard
+            img={redis}
+            color="#ba4839"
+          />
+            <ToolCard
+            img={aws}
+            color="#ca9150"
+          />
+          <ToolCard
+            img={firebase}
+            color="#f9c844"
+          />
+          <ToolCard
+            img={docker}
+            color="#4eb6e5"
+          />
+          <ToolCard
+            img={tf}
+            color="#f18c31"
+          />
         </div>
       </div>
     );

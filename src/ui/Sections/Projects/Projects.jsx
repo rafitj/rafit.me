@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import mage from '../../../assets/images/other/mage.png';
 import compass from '../../../assets/images/projects/Compass.svg';
 import density from '../../../assets/images/projects/Density.svg';
+import fashionably from '../../../assets/images/projects/Fashionably.svg';
 import framear from '../../../assets/images/projects/FrameAR.svg';
 import gaze from '../../../assets/images/projects/Gaze.svg';
 import mesh from '../../../assets/images/projects/Mesh.svg';
 import pillar from '../../../assets/images/projects/Pillar.svg';
+import promotion from '../../../assets/images/projects/ProMotion.svg';
 import pseudo from '../../../assets/images/projects/PseudoLogo.svg';
 import realm from '../../../assets/images/projects/Realm.svg';
 import traffix from '../../../assets/images/projects/Traffix.svg';
@@ -28,7 +31,7 @@ class Projects extends Component {
   render() {
     return (
       <div className="section">
-        <Header text="Projects" />
+        <Header text="Projects" img={mage} />
         <div
           style={{
             marginTop: 24,
@@ -79,6 +82,15 @@ class Projects extends Component {
             color="#D66B6B"
           />
           <ProjectCard
+            img={promotion}
+            title="ProMotion"
+            desc="AR and ML Motion Games"
+            link="https://github.com/rafitj/promotion"
+            trophy="Hack Western 2020"
+            devpostUrl="https://devpost.com/software/promotion"
+            color="#91267a"
+          />
+          <ProjectCard
             img={compass}
             title="Compass"
             desc="City Exploration via AR and Facebook"
@@ -101,9 +113,18 @@ class Projects extends Component {
             title="Pillar"
             desc="Voice-Powered Medical Hubs"
             link="https://github.com/rafitj/pillar"
-            trophy="Hack Wester 2019 API Prize"
+            trophy="Hack Western 2019 API Prize"
             devpostUrl="https://devpost.com/software/pillar-cum1sq"
             color="#ad6d42"
+          />
+          <ProjectCard
+            img={fashionably}
+            title="Fashionably"
+            desc="Wardrobe Management with AI"
+            link="https://github.com/rafitj/fashionably"
+            trophy="StarterHacks 2018 Mentor Prize"
+            devpostUrl="https://devpost.com/software/fashionably"
+            color="#ffa74c"
           />
           <div
             style={{
@@ -119,10 +140,17 @@ class Projects extends Component {
           <ProjectCard
             img={mesh}
             title="Mesh"
-            desc="Network Simulation"
-            link="https://github.com/rafitj/gaze"
+            desc="Network Design & Simulation"
+            link="https://github.com/rafitj/mesh"
             color="#38b2ac"
           />
+           {/* <ProjectCard
+            img={mesh}
+            title="KnowIt"
+            desc="Notes & Flashcards App"
+            link="https://github.com/rafitj/know-it-web"
+            color="#666666"
+          /> */}
           <ProjectCard
             img={gaze}
             title="Gaze"

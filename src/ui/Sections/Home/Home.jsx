@@ -4,7 +4,7 @@ import business from '../../../assets/images/emoji/business.png';
 import laptop from '../../../assets/images/emoji/laptop.png';
 import mail from '../../../assets/images/emoji/mail.png';
 import scroll from '../../../assets/images/emoji/scroll.png';
-import me from '../../../assets/images/other/me.png';
+import me from '../../../assets/images/other/me.gif';
 import Resume from '../../../assets/resume/Resume.pdf';
 import '../../../assets/styles/home.css';
 import { openInNewTab } from '../../utils';
