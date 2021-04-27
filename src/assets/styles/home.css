@@ -5,10 +5,12 @@
 .home_container {
     text-align: center;
     padding: 0rem;
-    display: table-cell;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .tiny {
@@ -88,9 +90,9 @@
     cursor: pointer;
     text-align: left;
     color: whitesmoke;
-    font-size: 50px;
+    font-size: 200%;
     /* opacity: 0.8; */
-    height: 60px;
+    /* height: 60px; */
     display: flex;
     align-items: center;
 }

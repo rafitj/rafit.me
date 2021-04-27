@@ -7,6 +7,7 @@
 
 #root {
     background-color: #1e1e1e;
+    padding: 20px;
 }
 
 body {
@@ -17,7 +18,7 @@ body {
 * {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     /* letter-spacing: 0.2em; */
-    transition: all 0.25s ease;
+    transition: all 0.2s ease;
     transition-property: all !important;
 }
 
@@ -219,4 +220,28 @@ i {
 
 .nomargin {
     margin: 0 !important;
+}
+
+.down-arrow {
+    padding: 15px 0;
+    width: 45px;
+    transform: rotate(270deg);
+    align-self: center;
+}
+
+.down-arrow:hover {
+    transform: translateY(3px) rotate(270deg);
+    cursor: pointer;
+}
+
+.up-arrow {
+    padding: 15px 0;
+    width: 45px;
+    transform: rotate(90deg);
+    align-self: center;
+}
+
+.up-arrow:hover {
+    transform: translateY(-3px);
+    cursor: pointer;
 }

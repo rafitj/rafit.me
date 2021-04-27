@@ -13,17 +13,9 @@ import ExpCard from './ExpCard';
 class Exp extends Component {
   render() {
     return (
-      <div className="section">
+      <div className="section" id="exp">
         <Header text="Work Experience" img={office} />
-        <div
-          style={{
-            display: 'flex',
-            margin: '0 auto',
-            flexWrap: 'wrap',
-            width: '75%',
-            justifyContent: 'center',
-          }}
-        >
+        <div className="section-body">
           <ExpCard
             img={amz}
             title="Amazon"

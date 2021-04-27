@@ -24,7 +24,7 @@
 }
 
 .exp_card:active {
-    animation: clicked 0.4s ease;
+    animation: clicked 0.2s ease;
 }
 
 .exp_logo {
@@ -163,8 +163,9 @@
 }
 
 .home-link {
-    margin: 0;
+    margin: 10px 14px 10px 0;
     font-size: 18px;
+    width: 125px;
 }
 
 .section {
@@ -175,4 +176,20 @@
     min-height: 100vh;
 }
 
-@media (max-height: 700px) {}
+.section-body {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 85%;
+    justify-Content: center;
+}
+
+@media (max-height: 812px) {
+    .section-body {
+        width: 100%;
+    }
+    .home-link {
+        margin: 7px 7px 0 0;
+        width: 40%;
+    }
+}

@@ -80,7 +80,9 @@ class ProjectCard extends Component {
               >
                 {this.props.title}
               </div>
-              <div style={{ marginBottom: 1 }}>{this.props.desc}</div>
+              <div style={{ marginBottom: 1, fontSize: '80%' }}>
+                {this.props.desc}
+              </div>
             </div>
           </Space>
         )}

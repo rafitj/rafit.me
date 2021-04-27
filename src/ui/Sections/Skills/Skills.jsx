@@ -31,8 +31,8 @@ import ToolCard from './ToolCard';
 class Skills extends Component {
   render() {
     return (
-      <div className="section">
-        <Header text="Skills" img={ninja}/>
+      <div className="section" id="skill">
+        <Header text="Skills" img={ninja} />
         <div
           style={{
             marginTop: 24,
@@ -44,65 +44,21 @@ class Skills extends Component {
         >
           I know a lot of languages
         </div>
-        <div
-          style={{
-            display: 'flex',
-            margin: '0 auto',
-            flexWrap: 'wrap',
-            width: '65%',
-            justifyContent: 'center',
-          }}
-        >
-          <MainLangCard
-            img={Python}
-            title="Python"
-            color="#f5cd60"
-          />
-          <MainLangCard
-            img={CPlus}
-            title="C++"
-            color="#004482"
-          />
-          <MainLangCard
-            img={Java}
-            title="Java"
-            color="#ff010a"
-          />
-          <MainLangCard
-            img={TS}
-            title="TypeScript"
-            color="#237ec8"
-          />
+        <div className="section-body">
+          <MainLangCard img={Python} title="Python" color="#f5cd60" />
+          <MainLangCard img={CPlus} title="C++" color="#004482" />
+          <MainLangCard img={Java} title="Java" color="#ff010a" />
+          <MainLangCard img={TS} title="TypeScript" color="#237ec8" />
           <div
             style={{
               width: '100%',
             }}
           />
-          <LangCard
-            img={JS}
-            title="JavaScript"
-            color="#eed65b"
-          />
-          <LangCard
-            img={Go}
-            title="Golang"
-            color="#00addb"
-          />
-          <LangCard
-            img={PHP}
-            title="PHP"
-            color="#8791c1"
-          />
-          <LangCard
-            img={C}
-            title="C"
-            color="#808a96"
-          />
-          <LangCard
-            img={HTML}
-            title="HTML/CSS"
-            color="#c86a45"
-          />
+          <LangCard img={JS} title="JavaScript" color="#eed65b" />
+          <LangCard img={Go} title="Golang" color="#00addb" />
+          <LangCard img={PHP} title="PHP" color="#8791c1" />
+          <LangCard img={C} title="C" color="#808a96" />
+          <LangCard img={HTML} title="HTML/CSS" color="#c86a45" />
           <div
             style={{
               marginTop: 24,
@@ -114,63 +70,21 @@ class Skills extends Component {
           >
             Here are my faviroute tools
           </div>
-          
-          <ToolCard
-            img={node}
-            color="#9cbc45"
-          />
-          <ToolCard
-            img={springboot}
-            color="#41c029"
-          />
-          <ToolCard
-            img={flask}
-            color="#ffffff"
-          />
-           <ToolCard
-            img={react}
-            color="#7bd6f7"
-          />
-          <ToolCard
-            img={django}
-            color="#53a276"
-          />
-          <ToolCard
-            img={graphql}
-            color="#ca4896"
-          />
-           <ToolCard
-            img={mongo}
-            color="#6a8e49"
-          />
-          <ToolCard
-            img={postgres}
-            color="#386390"
-          />
-        <ToolCard
-            img={neo4j}
-            color="#028ec7"
-          />
-          <ToolCard
-            img={redis}
-            color="#ba4839"
-          />
-            <ToolCard
-            img={aws}
-            color="#ca9150"
-          />
-          <ToolCard
-            img={firebase}
-            color="#f9c844"
-          />
-          <ToolCard
-            img={docker}
-            color="#4eb6e5"
-          />
-          <ToolCard
-            img={tf}
-            color="#f18c31"
-          />
+
+          <ToolCard img={node} color="#9cbc45" />
+          <ToolCard img={springboot} color="#41c029" />
+          <ToolCard img={flask} color="#ffffff" />
+          <ToolCard img={react} color="#7bd6f7" />
+          <ToolCard img={django} color="#53a276" />
+          <ToolCard img={graphql} color="#ca4896" />
+          <ToolCard img={mongo} color="#6a8e49" />
+          <ToolCard img={postgres} color="#386390" />
+          <ToolCard img={neo4j} color="#028ec7" />
+          <ToolCard img={redis} color="#ba4839" />
+          <ToolCard img={aws} color="#ca9150" />
+          <ToolCard img={firebase} color="#f9c844" />
+          <ToolCard img={docker} color="#4eb6e5" />
+          <ToolCard img={tf} color="#f18c31" />
         </div>
       </div>
     );

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import mage from '../../../assets/images/other/mage.png';
+import mage from '../../../assets/images/other/mage.gif';
 import compass from '../../../assets/images/projects/Compass.svg';
 import density from '../../../assets/images/projects/Density.svg';
 import fashionably from '../../../assets/images/projects/Fashionably.svg';
@@ -30,7 +30,7 @@ class Projects extends Component {
   }
   render() {
     return (
-      <div className="section">
+      <div className="section" id="project">
         <Header text="Projects" img={mage} />
         <div
           style={{
@@ -43,19 +43,11 @@ class Projects extends Component {
         >
           I made some pretty crazy stuff at hackathons
         </div>
-        <div
-          style={{
-            display: 'flex',
-            margin: '0 auto',
-            flexWrap: 'wrap',
-            width: '65%',
-            justifyContent: 'center',
-          }}
-        >
+        <div className="section-body">
           <ProjectCard
             img={density}
             title="Density"
-            desc="Passive Wifi Density Triangulation"
+            desc="Passive WiFi Triangulation"
             link="https://github.com/rafitj/density"
             onClick={this.openModal}
             trophy="RU Hacks 2019 2nd Place"
@@ -120,7 +112,7 @@ class Projects extends Component {
           <ProjectCard
             img={fashionably}
             title="Fashionably"
-            desc="Wardrobe Management with AI"
+            desc="AI Wardrobe Management"
             link="https://github.com/rafitj/fashionably"
             trophy="StarterHacks 2018 Mentor Prize"
             devpostUrl="https://devpost.com/software/fashionably"
@@ -144,7 +136,7 @@ class Projects extends Component {
             link="https://github.com/rafitj/mesh"
             color="#38b2ac"
           />
-           {/* <ProjectCard
+          {/* <ProjectCard
             img={mesh}
             title="KnowIt"
             desc="Notes & Flashcards App"

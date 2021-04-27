@@ -11,7 +11,6 @@ class Card extends Component {
           width: this.props.width,
           height: this.props.height,
           borderColor: this.props.color,
-          margin: '24px 24px',
         }}
       >
         {this.props.children}

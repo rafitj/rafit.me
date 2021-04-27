@@ -7,20 +7,25 @@ class LangCard extends Component {
   render() {
     return (
       <Card color={this.props.color} height={15} width={105}>
-        <Space direction="horizontal" style={{flexDirection: 'row', display: 'flex', alignItems: 'center'}}>
-          <div style={{display: 'flex'}}>
-        <img
-          src={this.props.img}
-          alt={this.props.lang}
-          height={30}
+        <Space
+          direction="horizontal"
           style={{
-            filter: `drop-shadow( 0px 0px 2px ${this.props.color})`,
+            flexDirection: 'row',
+            display: 'flex',
+            alignItems: 'center',
           }}
-        />
-        </div>
-        <div>
-        {this.props.title}
-        </div>
+        >
+          <div style={{ display: 'flex' }}>
+            <img
+              src={this.props.img}
+              alt={this.props.lang}
+              height={30}
+              style={{
+                filter: `drop-shadow( 0px 0px 2px ${this.props.color})`,
+              }}
+            />
+          </div>
+          <div>{this.props.title}</div>
         </Space>
       </Card>
     );

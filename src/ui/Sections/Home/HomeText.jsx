@@ -6,13 +6,27 @@ import school from '../../../assets/images/emoji/school.png';
 import soccer from '../../../assets/images/emoji/soccer.png';
 import '../../../assets/styles/home.css';
 
-
 const textArray = [
-  <><div>I study Software @ UWaterloo</div><img src={school} alt="school" className="emoji"/></>,
-  <><div>I'm a SWE Intern @ Salesforce</div><img src={cloud} alt="cloud" className="emoji"/></>,
-  <><div>I love everything football</div><img src={soccer} alt="soccer" className="emoji"/></>,
-  <><div>I'm trying to learn cool stuff</div><img src={arm} alt="arm" className="emoji"/></>,
-  <><div>I like film, food and design</div><img src={art} alt="art" className="emoji"/></>,
+  <>
+    <div>I study Software @ UWaterloo</div>
+    <img src={school} alt="school" className="emoji" />
+  </>,
+  <>
+    <div>I'm a SWE Intern @ Salesforce</div>
+    <img src={cloud} alt="cloud" className="emoji" />
+  </>,
+  <>
+    <div>I love everything football</div>
+    <img src={soccer} alt="soccer" className="emoji" />
+  </>,
+  <>
+    <div>I'm trying to learn cool stuff</div>
+    <img src={arm} alt="arm" className="emoji" />
+  </>,
+  <>
+    <div>I like film, food and design</div>
+    <img src={art} alt="art" className="emoji" />
+  </>,
 ];
 
 const HomeText = () => {

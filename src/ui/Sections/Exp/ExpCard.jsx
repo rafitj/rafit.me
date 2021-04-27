@@ -14,10 +14,8 @@ class ExpCard extends Component {
     }));
   };
   render() {
-    const classes = 'exp_card ' + this.props.extra_classes;
     return (
       <Card
-        className={classes}
         width={320}
         height={75}
         color={this.props.color}
@@ -33,7 +31,10 @@ class ExpCard extends Component {
               padding: '0 5px',
             }}
           >
-            <div style={{ textAlign: 'center' }}> {this.props.details} </div>
+            <div style={{ textAlign: 'center', fontSize: '95%' }}>
+              {' '}
+              {this.props.details}{' '}
+            </div>
             <div className="link" onClick={() => openInNewTab(this.props.link)}>
               Learn More
             </div>
@@ -42,7 +43,7 @@ class ExpCard extends Component {
           <Space
             direction="horizontal"
             size="large"
-            style={{ display: 'flex', alignItems: 'center' }}
+            style={{ display: 'flex', alignItems: 'center', padding: '0 5px' }}
           >
             <img
               alt={this.props.company}
@@ -62,7 +63,9 @@ class ExpCard extends Component {
               >
                 {this.props.title}
               </div>
-              <div style={{ marginBottom: 1 }}>{this.props.desc}</div>
+              <div style={{ marginBottom: 2, fontSize: '90%' }}>
+                {this.props.desc}
+              </div>
               <div style={{ opacity: 0.75, fontSize: '80%' }}>
                 {this.props.date}
               </div>
