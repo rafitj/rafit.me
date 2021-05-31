@@ -214,6 +214,10 @@
     justify-content: center;
 }
 
+.proj-link:hover {
+    opacity: 0.5;
+}
+
 @media (max-height: 700px) {
     #projects .slider-sub {
         display: none;

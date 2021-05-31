@@ -44,16 +44,16 @@ class ProjectCard extends Component {
             >
               {this.props.devpostUrl && (
                 <div onClick={() => openInNewTab(this.props.devpostUrl)}>
-                  <img width={30} src={devpost} alt="devpost" />
+                  <img className="proj-link" width={30} src={devpost} alt="devpost" />
                 </div>
               )}
               {this.props.hackerUrl && (
                 <div onClick={() => openInNewTab(this.props.hackerUrl)}>
-                  <img width={30} src={hacker} alt="hacker" />
+                  <img className="proj-link" width={30} src={hacker} alt="hacker" />
                 </div>
               )}
               <div onClick={() => openInNewTab(this.props.link)}>
-                <img width={30} src={github} alt="github" />
+                <img className="proj-link" width={30} src={github} alt="github" />
               </div>
             </Space>
           </Space>
@@ -66,7 +66,7 @@ class ProjectCard extends Component {
               alt={this.props.title}
               src={this.props.img}
               style={{
-                filter: `drop-shadow( 0px 0px 2px ${this.props.color})`,
+                // filter: `drop-shadow( 0px 0px 2px ${this.props.color})`,
                 width: this.props.imgW ? this.props.imgW : '3rem',
               }}
             />

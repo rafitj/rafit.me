@@ -22,7 +22,6 @@ import postgres from '../../../assets/images/tools/postgres.svg';
 import react from '../../../assets/images/tools/react.svg';
 import redis from '../../../assets/images/tools/redis.svg';
 import springboot from '../../../assets/images/tools/springboot.svg';
-import tf from '../../../assets/images/tools/tf.svg';
 import Header from '../Header';
 import LangCard from './LangCard';
 import MainLangCard from './MainLangCard';
@@ -36,13 +35,25 @@ class Skills extends Component {
         <div
           style={{
             marginTop: 24,
-            marginBottom: 12,
+            marginBottom: 5,
             width: '100%',
             textAlign: 'center',
             color: 'gray',
           }}
         >
-          I know a lot of languages
+          These are some of the skills I've developed
+        </div>
+        <div
+          style={{
+            marginBottom: 12,
+            width: '100%',
+            textAlign: 'center',
+            color: 'gray',
+            fontSize: '70%',
+            opacity: 0.5
+          }}
+        >
+          (pun intended)
         </div>
         <div className="section-body">
           <MainLangCard img={Python} title="Python" color="#f5cd60" />
@@ -68,9 +79,8 @@ class Skills extends Component {
               color: 'gray',
             }}
           >
-            Here are my faviroute tools
+            Here are my faviroute tools I've worked with
           </div>
-
           <ToolCard img={node} color="#9cbc45" />
           <ToolCard img={springboot} color="#41c029" />
           <ToolCard img={flask} color="#ffffff" />
@@ -84,7 +94,7 @@ class Skills extends Component {
           <ToolCard img={aws} color="#ca9150" />
           <ToolCard img={firebase} color="#f9c844" />
           <ToolCard img={docker} color="#4eb6e5" />
-          <ToolCard img={tf} color="#f18c31" />
+          {/* <ToolCard img={tf} color="#f18c31" /> */}
         </div>
       </div>
     );

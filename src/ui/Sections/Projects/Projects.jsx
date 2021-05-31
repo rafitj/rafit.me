@@ -5,6 +5,7 @@ import density from '../../../assets/images/projects/Density.svg';
 import fashionably from '../../../assets/images/projects/Fashionably.svg';
 import framear from '../../../assets/images/projects/FrameAR.svg';
 import gaze from '../../../assets/images/projects/Gaze.svg';
+import knowit from '../../../assets/images/projects/KnowIt.svg';
 import mesh from '../../../assets/images/projects/Mesh.svg';
 import pillar from '../../../assets/images/projects/Pillar.svg';
 import promotion from '../../../assets/images/projects/ProMotion.svg';
@@ -35,13 +36,25 @@ class Projects extends Component {
         <div
           style={{
             marginTop: 24,
-            marginBottom: 12,
+            marginBottom: 5,
             width: '100%',
             textAlign: 'center',
             color: 'gray',
           }}
         >
           I made some pretty crazy stuff at hackathons
+        </div>
+        <div
+          style={{
+            marginBottom: 12,
+            width: '100%',
+            textAlign: 'center',
+            color: 'gray',
+            fontSize: '70%',
+            opacity: 0.5
+          }}
+        >
+          (only dubs)
         </div>
         <div className="section-body">
           <ProjectCard
@@ -118,9 +131,20 @@ class Projects extends Component {
             devpostUrl="https://devpost.com/software/fashionably"
             color="#ffa74c"
           />
+          <div style={{width: '100%'}}>
+
+          <div
+          className="link"
+          style={{ width: 200, marginTop: 10 }}
+          onClick={() => openInNewTab('http://devpost.com/rafitj')}
+        >
+          View in detail on my Devpost
+        </div>
+          </div>
+           
           <div
             style={{
-              marginTop: 24,
+              marginTop: 45,
               marginBottom: 12,
               width: '100%',
               textAlign: 'center',
@@ -136,13 +160,13 @@ class Projects extends Component {
             link="https://github.com/rafitj/mesh"
             color="#38b2ac"
           />
-          {/* <ProjectCard
-            img={mesh}
+          <ProjectCard
+            img={knowit}
             title="KnowIt"
             desc="Notes & Flashcards App"
             link="https://github.com/rafitj/know-it-web"
-            color="#666666"
-          /> */}
+            color="#ffffff"
+          />
           <ProjectCard
             img={gaze}
             title="Gaze"

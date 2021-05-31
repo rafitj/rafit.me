@@ -21,7 +21,7 @@ class ToolCard extends Component {
               alt={this.props.lang}
               height={30}
               style={{
-                filter: `drop-shadow( 0px 0px 2px ${this.props.color})`,
+                // filter: `drop-shadow( 0px 0px 2px ${this.props.color})`,
               }}
             />
           </div>

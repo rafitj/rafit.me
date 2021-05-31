@@ -2,7 +2,6 @@ import { Space } from 'antd';
 import React, { Component } from 'react';
 import '../../../assets/styles/experience.css';
 import Card from '../../components/Card';
-import { openInNewTab } from '../../utils';
 
 class ExpCard extends Component {
   state = {
@@ -16,8 +15,8 @@ class ExpCard extends Component {
   render() {
     return (
       <Card
-        width={320}
-        height={75}
+        width={300}
+        height={60}
         color={this.props.color}
         onClick={this.toggleContent}
       >
@@ -31,13 +30,13 @@ class ExpCard extends Component {
               padding: '0 5px',
             }}
           >
-            <div style={{ textAlign: 'center', fontSize: '95%' }}>
+            <div style={{ textAlign: 'center', fontSize: '95%', lineHeight: 1.5 }}>
               {' '}
               {this.props.details}{' '}
             </div>
-            <div className="link" onClick={() => openInNewTab(this.props.link)}>
+            {/* <div className="link" onClick={() => openInNewTab(this.props.link)}>
               Learn More
-            </div>
+            </div> */}
           </Space>
         ) : (
           <Space
@@ -49,7 +48,7 @@ class ExpCard extends Component {
               alt={this.props.company}
               src={this.props.img}
               style={{
-                filter: `drop-shadow( 0px 0px 3px ${this.props.color})`,
+                // filter: `drop-shadow( 0px 0px 3px ${this.props.color})`,
                 width: this.props.imgW ? this.props.imgW : '3rem',
               }}
             />

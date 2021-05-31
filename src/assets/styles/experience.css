@@ -163,16 +163,16 @@
 }
 
 .home-link {
-    margin: 10px 14px 10px 0;
-    font-size: 18px;
-    width: 125px;
+    margin: 15px 18px 15px 0;
+    font-size: 15px;
+    width: 100px;
 }
 
 .section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 24px 0;
+    margin: 24px 0;
     min-height: 100vh;
 }
 
