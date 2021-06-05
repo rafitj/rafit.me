@@ -23,7 +23,7 @@ class ProjectCard extends Component {
       <Card
         className={classes}
         width={225}
-        height={55}
+        height={40}
         color={this.props.color}
         onClick={this.toggleContent}
       >
@@ -37,23 +37,38 @@ class ProjectCard extends Component {
               padding: '0 5px',
             }}
           >
-            <div style={{ textAlign: 'center' }}> {this.props.details} </div>
+            {/* <div style={{ textAlign: 'center' }}> {this.props.details} </div> */}
             <Space
               direction="horizontal"
               style={{ display: 'flex', alignItems: 'center' }}
             >
               {this.props.devpostUrl && (
                 <div onClick={() => openInNewTab(this.props.devpostUrl)}>
-                  <img className="proj-link" width={30} src={devpost} alt="devpost" />
+                  <img
+                    className="proj-link"
+                    width={30}
+                    src={devpost}
+                    alt="devpost"
+                  />
                 </div>
               )}
               {this.props.hackerUrl && (
                 <div onClick={() => openInNewTab(this.props.hackerUrl)}>
-                  <img className="proj-link" width={30} src={hacker} alt="hacker" />
+                  <img
+                    className="proj-link"
+                    width={30}
+                    src={hacker}
+                    alt="hacker"
+                  />
                 </div>
               )}
               <div onClick={() => openInNewTab(this.props.link)}>
-                <img className="proj-link" width={30} src={github} alt="github" />
+                <img
+                  className="proj-link"
+                  width={30}
+                  src={github}
+                  alt="github"
+                />
               </div>
             </Space>
           </Space>
@@ -62,25 +77,31 @@ class ProjectCard extends Component {
             direction="horizontal"
             style={{ display: 'flex', alignItems: 'center' }}
           >
-            <img
-              alt={this.props.title}
-              src={this.props.img}
-              style={{
-                // filter: `drop-shadow( 0px 0px 2px ${this.props.color})`,
-                width: this.props.imgW ? this.props.imgW : '3rem',
-              }}
-            />
+            <div style={{ height: '100%', display: 'flex' }}>
+              <img
+                alt={this.props.title}
+                src={this.props.img}
+                style={{
+                  // filter: `drop-shadow( 0px 0px 2px ${this.props.color})`,
+                  width: 'calc(2rem + 0.9vmax)'
+                }}
+              />
+            </div>
             <div style={{ flexDirection: 'column', display: 'flex' }}>
               <div
                 style={{
                   fontWeight: 'bold',
-                  fontSize: '120%',
+                  fontSize: 'calc(100% + 0.3vmax)',
                   marginBottom: 2,
                 }}
               >
                 {this.props.title}
               </div>
-              <div style={{ marginBottom: 1, fontSize: '80%' }}>
+              <div
+                style={{ marginBottom: 1,                   fontSize: 'calc(70% + 0.3vmax)',
+              }}
+                className="details"
+              >
                 {this.props.desc}
               </div>
             </div>

@@ -210,12 +210,26 @@ i {
 }
 
 .emoji {
-    width: 20px;
+    width: calc(20px + 1vmax);
     margin: 0 6px;
 }
 
 .small {
-    width: 20px;
+    margin-top: 32px;
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+    color: gray;
+    font-size: calc(15% + 0.75vmax);
+}
+
+.smaller {
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+    color: gray;
+    font-size: calc(5% + 0.75vmax);
+    opacity: 0.5;
 }
 
 .nomargin {

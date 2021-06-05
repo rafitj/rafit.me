@@ -6,7 +6,7 @@ import Card from '../../components/Card';
 class LangCard extends Component {
   render() {
     return (
-      <Card color={this.props.color} height={15} width={105}>
+      <Card color={this.props.color} height={20} width={30}>
         <Space
           direction="horizontal"
           style={{
@@ -19,13 +19,15 @@ class LangCard extends Component {
             <img
               src={this.props.img}
               alt={this.props.lang}
-              height={30}
-              style={{
-                // filter: `drop-shadow( 0px 0px 2px ${this.props.color})`,
-              }}
+              height={25}
+              style={
+                {
+                  // filter: `drop-shadow( 0px 0px 2px ${this.props.color})`,
+                }
+              }
             />
           </div>
-          <div>{this.props.title}</div>
+          {/* <div style={{ fontSize: '90%' }}>{this.props.title}</div> */}
         </Space>
       </Card>
     );

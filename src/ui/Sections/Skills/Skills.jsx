@@ -22,6 +22,7 @@ import postgres from '../../../assets/images/tools/postgres.svg';
 import react from '../../../assets/images/tools/react.svg';
 import redis from '../../../assets/images/tools/redis.svg';
 import springboot from '../../../assets/images/tools/springboot.svg';
+import tf from '../../../assets/images/tools/tf.svg';
 import Header from '../Header';
 import LangCard from './LangCard';
 import MainLangCard from './MainLangCard';
@@ -32,29 +33,8 @@ class Skills extends Component {
     return (
       <div className="section" id="skill">
         <Header text="Skills" img={ninja} />
-        <div
-          style={{
-            marginTop: 24,
-            marginBottom: 5,
-            width: '100%',
-            textAlign: 'center',
-            color: 'gray',
-          }}
-        >
-          These are some of the skills I've developed
-        </div>
-        <div
-          style={{
-            marginBottom: 12,
-            width: '100%',
-            textAlign: 'center',
-            color: 'gray',
-            fontSize: '70%',
-            opacity: 0.5
-          }}
-        >
-          (pun intended)
-        </div>
+        <div className="small">These are some of the skills I've developed</div>
+        <div className="smaller">(pun intended)</div>
         <div className="section-body">
           <MainLangCard img={Python} title="Python" color="#f5cd60" />
           <MainLangCard img={CPlus} title="C++" color="#004482" />
@@ -70,15 +50,7 @@ class Skills extends Component {
           <LangCard img={PHP} title="PHP" color="#8791c1" />
           <LangCard img={C} title="C" color="#808a96" />
           <LangCard img={HTML} title="HTML/CSS" color="#c86a45" />
-          <div
-            style={{
-              marginTop: 24,
-              marginBottom: 12,
-              width: '100%',
-              textAlign: 'center',
-              color: 'gray',
-            }}
-          >
+          <div className="small">
             Here are my faviroute tools I've worked with
           </div>
           <ToolCard img={node} color="#9cbc45" />
@@ -94,7 +66,7 @@ class Skills extends Component {
           <ToolCard img={aws} color="#ca9150" />
           <ToolCard img={firebase} color="#f9c844" />
           <ToolCard img={docker} color="#4eb6e5" />
-          {/* <ToolCard img={tf} color="#f18c31" /> */}
+          <ToolCard img={tf} color="#f18c31" />
         </div>
       </div>
     );

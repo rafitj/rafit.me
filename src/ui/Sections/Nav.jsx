@@ -10,18 +10,35 @@ class Nav extends Component {
   render() {
     return (
       <div className="nav-container">
-            <AnchorLink href="#home">
-                <img className={this.props.active === "home" && "active"} src={me} alt={'nav-me'}/>
-            </AnchorLink>
-            <AnchorLink href="#exp">
-          <img className={this.props.active === "exp" && "active"} src={office} alt={'nav-office'}/>
-          </AnchorLink>
-          <AnchorLink href="#project">
-          <img className={this.props.active === "proj" && "active"} src={mage} alt={'nav-mage'}/>
-          </AnchorLink>
-          <AnchorLink href="#skill">
-          <img className={this.props.active === "skill" && "active"} src={ninja} alt={'nav-ninja'} style={{marginRight: 0}}/>
-          </AnchorLink>
+        <AnchorLink href="#home">
+          <img
+            className={this.props.active === 'home' && 'active'}
+            src={me}
+            alt={'nav-me'}
+          />
+        </AnchorLink>
+        <AnchorLink href="#exp">
+          <img
+            className={this.props.active === 'exp' && 'active'}
+            src={office}
+            alt={'nav-office'}
+          />
+        </AnchorLink>
+        <AnchorLink href="#project">
+          <img
+            className={this.props.active === 'proj' && 'active'}
+            src={mage}
+            alt={'nav-mage'}
+          />
+        </AnchorLink>
+        <AnchorLink href="#skill">
+          <img
+            className={this.props.active === 'skill' && 'active'}
+            src={ninja}
+            alt={'nav-ninja'}
+            style={{ marginRight: 0 }}
+          />
+        </AnchorLink>
       </div>
     );
   }

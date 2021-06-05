@@ -33,29 +33,10 @@ class Projects extends Component {
     return (
       <div className="section" id="project">
         <Header text="Projects" img={mage} />
-        <div
-          style={{
-            marginTop: 24,
-            marginBottom: 5,
-            width: '100%',
-            textAlign: 'center',
-            color: 'gray',
-          }}
-        >
+        <div className="small">
           I made some pretty crazy stuff at hackathons
         </div>
-        <div
-          style={{
-            marginBottom: 12,
-            width: '100%',
-            textAlign: 'center',
-            color: 'gray',
-            fontSize: '70%',
-            opacity: 0.5
-          }}
-        >
-          (only dubs)
-        </div>
+        <div className="smaller">(only dubs)</div>
         <div className="section-body">
           <ProjectCard
             img={density}
@@ -98,7 +79,7 @@ class Projects extends Component {
           <ProjectCard
             img={compass}
             title="Compass"
-            desc="City Exploration via AR and Facebook"
+            desc="City Exploration via AR and FB"
             link="https://github.com/rafitj/compass"
             trophy="Hack the North 2019 API Prize"
             devpostUrl="https://devpost.com/software/wandar"
@@ -131,26 +112,17 @@ class Projects extends Component {
             devpostUrl="https://devpost.com/software/fashionably"
             color="#ffa74c"
           />
-          <div style={{width: '100%'}}>
-
-          <div
-          className="link"
-          style={{ width: 200, marginTop: 10 }}
-          onClick={() => openInNewTab('http://devpost.com/rafitj')}
-        >
-          View in detail on my Devpost
-        </div>
+          <div style={{ width: '100%' }}>
+            <div
+              className="link"
+              style={{ marginTop: 15 }}
+              onClick={() => openInNewTab('http://devpost.com/rafitj')}
+            >
+              View in detail on my Devpost
+            </div>
           </div>
-           
-          <div
-            style={{
-              marginTop: 45,
-              marginBottom: 12,
-              width: '100%',
-              textAlign: 'center',
-              color: 'gray',
-            }}
-          >
+
+          <div className="small">
             And I've worked on some personal projects too
           </div>
           <ProjectCard
@@ -170,21 +142,21 @@ class Projects extends Component {
           <ProjectCard
             img={gaze}
             title="Gaze"
-            desc="Real-Time Gaze Tracking Analytics"
+            desc="Real-Time Gaze Tracking"
             link="https://github.com/rafitj/gaze"
             color="#8376DF"
           />
           <ProjectCard
             img={pseudo}
             title="Pseudo"
-            desc="Micro-Freelancing for All Creators"
+            desc="Micro-Freelancing for Creators"
             link="https://github.com/rafitj/pseudo-project"
             color="#cc0a60"
           />
         </div>
         <div
           className="link"
-          style={{ width: 200, marginTop: 30 }}
+          style={{ marginTop: 15 }}
           onClick={() => openInNewTab('http://github.com/rafitj')}
         >
           Much more on my Github

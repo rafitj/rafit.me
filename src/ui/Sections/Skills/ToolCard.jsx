@@ -6,7 +6,7 @@ import Card from '../../components/Card';
 class ToolCard extends Component {
   render() {
     return (
-      <Card color={this.props.color} height={15} width={30}>
+      <Card color={this.props.color} height={12} width={30}>
         <Space
           direction="horizontal"
           style={{
@@ -19,10 +19,12 @@ class ToolCard extends Component {
             <img
               src={this.props.img}
               alt={this.props.lang}
-              height={30}
-              style={{
-                // filter: `drop-shadow( 0px 0px 2px ${this.props.color})`,
-              }}
+              height={25}
+              style={
+                {
+                  // filter: `drop-shadow( 0px 0px 2px ${this.props.color})`,
+                }
+              }
             />
           </div>
         </Space>

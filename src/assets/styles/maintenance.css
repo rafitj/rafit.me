@@ -1,87 +1,90 @@
-
 .maint_box {
-  text-decoration: none;
-  display: inline-block;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.600);
-  border-radius: 15px;
-  border: none;
-  padding: 1rem 2rem;
-  margin: 2rem;
-  font-size: 0.9rem;
-  background-color: rgba(0, 0, 0, 0.45);
-  transition: all 0.25s ease;
-  color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.600);
+    border-radius: 15px;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 2rem;
+    font-size: 0.9rem;
+    background-color: rgba(0, 0, 0, 0.45);
+    transition: all 0.25s ease;
+    color: rgba(255, 255, 255, 0.7);
 }
+
 .maint_box:hover {
-  cursor: pointer;
-  transform: translateY(-5px);
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.900);
-  background-color: rgba(0, 0, 0, 0.7);
-  color: rgba(255, 255, 255, 0.85);
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.900);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgba(255, 255, 255, 0.85);
 }
+
 .break {
-  margin: 0 auto;
-  width: 40%;
-  height: 0.3%;
-  background-color: #2d2d2d;
-  margin-top: 2.8rem;
-  transition: all 0.25s ease;
-  animation: animate_line 2s forwards linear;
+    margin: 0 auto;
+    width: 40%;
+    height: 0.3%;
+    background-color: #2d2d2d;
+    margin-top: 2.8rem;
+    transition: all 0.25s ease;
+    animation: animate_line 2s forwards linear;
 }
 
 @keyframes animate_line {
- 50% {
-    width:0%;
-  }
-  to {
-    width:20%;
-  }
+    50% {
+        width: 0%;
+    }
+    to {
+        width: 20%;
+    }
 }
 
 .container p {
-  color: #2d2d2d;
-  transition: all 0.25s ease;
+    color: #2d2d2d;
+    transition: all 0.25s ease;
 }
 
 #resume {
-  color: #2d2d2d;
-  transition: all 0.25s ease;
+    color: #2d2d2d;
+    transition: all 0.25s ease;
 }
+
 #github {
-  color: #2d2d2d;
-  transition: all 0.25s ease;
+    color: #2d2d2d;
+    transition: all 0.25s ease;
 }
+
 #email {
-  color: #2d2d2d;
-  transition: all 0.25s ease;
+    color: #2d2d2d;
+    transition: all 0.25s ease;
 }
 
 .container a {
-  text-decoration: none;
-  color: #2d2d2d;
-  margin: 1.5rem;
-  transition: all 0.25s ease;
-  margin-top: 0;
-}
-.container a:hover {
-  text-decoration: none;
-  color: grey;
-  margin: 1.5rem;
-  transition: all 0.8s ease;
-  margin-top: 0;
-}
-.anchor-div {
-  display: inline-block;
-  text-align: center;
-  transition: all 0.25s ease;
-}
-.anchor-div:hover{
-  color: grey;
+    text-decoration: none;
+    color: #2d2d2d;
+    margin: 1.5rem;
+    transition: all 0.25s ease;
+    margin-top: 0;
 }
 
-.small {
-  font-size: 0.95rem;
+.container a:hover {
+    text-decoration: none;
+    color: grey;
+    margin: 1.5rem;
+    transition: all 0.8s ease;
+    margin-top: 0;
 }
-.edit{
-  margin-bottom: 1rem;
+
+.anchor-div {
+    display: inline-block;
+    text-align: center;
+    transition: all 0.25s ease;
+}
+
+.anchor-div:hover {
+    color: grey;
+}
+
+.edit {
+    margin-bottom: 1rem;
 }
