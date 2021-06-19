@@ -12,31 +12,16 @@ import promotion from '../../../assets/images/projects/ProMotion.svg';
 import pseudo from '../../../assets/images/projects/PseudoLogo.svg';
 import realm from '../../../assets/images/projects/Realm.svg';
 import traffix from '../../../assets/images/projects/Traffix.svg';
-import { openInNewTab } from '../../utils';
 import Header from '../Header';
 import ProjectCard from './ProjectCard';
-
 class Projects extends Component {
-  state = {
-    width: window.innerWidth,
-  };
-  updateDimensions = () => {
-    this.setState({ width: window.innerWidth });
-  };
-  componentDidMount() {
-    window.addEventListener('resize', this.updateDimensions);
-  }
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.updateDimensions);
-  }
   render() {
     return (
       <div className="section" id="project">
-        <Header text="Projects" img={mage} />
-        <div className="small">
-          I made some pretty crazy stuff at hackathons
-        </div>
-        <div className="smaller">(only dubs)</div>
+        <Header
+          text="I've made some dope tech projects"
+          img={mage}
+        />
         <div className="section-body">
           <ProjectCard
             img={density}
@@ -112,7 +97,7 @@ class Projects extends Component {
             devpostUrl="https://devpost.com/software/fashionably"
             color="#ffa74c"
           />
-          <div style={{ width: '100%' }}>
+          {/* <div style={{ width: '100%' }}>
             <div
               className="link"
               style={{ marginTop: 15 }}
@@ -120,11 +105,11 @@ class Projects extends Component {
             >
               View in detail on my Devpost
             </div>
-          </div>
+          </div> */}
 
-          <div className="small">
+          {/* <div className="small">
             And I've worked on some personal projects too
-          </div>
+          </div> */}
           <ProjectCard
             img={mesh}
             title="Mesh"
@@ -154,13 +139,13 @@ class Projects extends Component {
             color="#cc0a60"
           />
         </div>
-        <div
+        {/* <div
           className="link"
           style={{ marginTop: 15 }}
           onClick={() => openInNewTab('http://github.com/rafitj')}
         >
           Much more on my Github
-        </div>
+        </div> */}
       </div>
     );
   }

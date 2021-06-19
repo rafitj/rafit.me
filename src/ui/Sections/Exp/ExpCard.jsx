@@ -1,6 +1,5 @@
 import { Space } from 'antd';
 import React, { Component } from 'react';
-import '../../../assets/styles/experience.css';
 import Card from '../../components/Card';
 
 class ExpCard extends Component {
@@ -8,15 +7,15 @@ class ExpCard extends Component {
     showDetails: false,
   };
   toggleContent = () => {
-    this.setState((prevState) => ({
-      showDetails: !prevState.showDetails,
-    }));
+    // this.setState((prevState) => ({
+    //   showDetails: !prevState.showDetails,
+    // }));
   };
   render() {
     return (
       <Card
-        width={225}
-        height={45}
+        width={5}
+        height={35}
         color={this.props.color}
         onClick={this.toggleContent}
         disabled={this.props.disabled}
@@ -54,12 +53,14 @@ class ExpCard extends Component {
                 src={this.props.img}
                 style={{
                   // filter: `drop-shadow( 0px 0px 3px ${this.props.color})`,
-                  width: this.props.imgW ? `calc(${this.props.imgW } + 0.5vmax)`: 'calc(2rem + 0.5vmax)',
+                  width: this.props.imgW
+                    ? `calc(${this.props.imgW} + 0.4vmax)`
+                    : 'calc(2rem + 0.4vmax)',
                 }}
               />
             </div>
-            <div style={{ flexDirection: 'column', display: 'flex' }}>
-              <div
+            {/* <div style={{ flexDirection: 'column', display: 'flex' }}> */}
+            {/* <div
                 style={{
                   fontWeight: 'bold',
                   fontSize: 'calc(100% + 0.3vmax)',
@@ -67,17 +68,17 @@ class ExpCard extends Component {
                 }}
               >
                 {this.props.title}
-              </div>
-              {/* <div style={{ marginBottom: 2, fontSize: '90%' }}>
+              </div> */}
+            {/* <div style={{ marginBottom: 2, fontSize: '90%' }}>
                 {this.props.desc}
               </div> */}
-              <div
+            {/* <div
                 style={{ opacity: 0.75, fontSize: 'calc(80% + 0.3vmax)' }}
                 className="details"
               >
                 {this.props.date}
-              </div>
-            </div>
+              </div> */}
+            {/* </div> */}
           </Space>
         )}
       </Card>

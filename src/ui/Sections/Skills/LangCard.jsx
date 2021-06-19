@@ -1,6 +1,5 @@
 import { Space } from 'antd';
 import React, { Component } from 'react';
-import '../../../assets/styles/skills.css';
 import Card from '../../components/Card';
 
 class LangCard extends Component {

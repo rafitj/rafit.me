@@ -1,44 +1,21 @@
-import { Space } from 'antd';
+import { Popover } from 'antd';
 import React, { Component } from 'react';
-import devpost from '../../../assets/images/other/devpost.svg';
-import github from '../../../assets/images/other/github.svg';
-import hacker from '../../../assets/images/other/hacker_earth.svg';
+// import devpost from '../../../assets/images/other/devpost.svg';
+// import github from '../../../assets/images/other/github.svg';
+// import hacker from '../../../assets/images/other/hacker_earth.svg';
 import '../../../assets/styles/app.css';
-import '../../../assets/styles/projects.css';
 import Card from '../../components/Card';
-import { openInNewTab } from '../../utils';
+// import { openInNewTab } from '../../utils';
 
 class ProjectCard extends Component {
-  state = {
-    showDetails: false,
-  };
-  toggleContent = () => {
-    this.setState((prevState) => ({
-      showDetails: !prevState.showDetails,
-    }));
-  };
   render() {
-    const classes = 'project_card  ' + this.props.extra_classes;
     return (
-      <Card
-        className={classes}
-        width={225}
-        height={40}
-        color={this.props.color}
-        onClick={this.toggleContent}
-      >
-        {this.state.showDetails ? (
-          <Space
-            direction="vertical"
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              flexDirection: 'column',
-              padding: '0 5px',
-            }}
-          >
-            {/* <div style={{ textAlign: 'center' }}> {this.props.details} </div> */}
-            <Space
+      <Popover
+        placement="bottom"
+        style={{width: 'auto'}}
+        content={
+          <>{this.props.details}
+            {/* <Space
               direction="horizontal"
               style={{ display: 'flex', alignItems: 'center' }}
             >
@@ -70,44 +47,29 @@ class ProjectCard extends Component {
                   alt="github"
                 />
               </div>
-            </Space>
-          </Space>
-        ) : (
-          <Space
-            direction="horizontal"
-            style={{ display: 'flex', alignItems: 'center' }}
-          >
-            <div style={{ height: '100%', display: 'flex' }}>
-              <img
-                alt={this.props.title}
-                src={this.props.img}
-                style={{
-                  // filter: `drop-shadow( 0px 0px 2px ${this.props.color})`,
-                  width: 'calc(2rem + 0.9vmax)'
-                }}
-              />
-            </div>
-            <div style={{ flexDirection: 'column', display: 'flex' }}>
-              <div
-                style={{
-                  fontWeight: 'bold',
-                  fontSize: 'calc(100% + 0.3vmax)',
-                  marginBottom: 2,
-                }}
-              >
-                {this.props.title}
-              </div>
-              <div
-                style={{ marginBottom: 1,                   fontSize: 'calc(70% + 0.3vmax)',
-              }}
-                className="details"
-              >
-                {this.props.desc}
-              </div>
-            </div>
-          </Space>
-        )}
-      </Card>
+            </Space> */}
+            </>
+        }
+        trigger="click"
+        visible={this.props.isSelected}
+        // onVisibleChange={() => this.props.onSelect(this.props.title)}
+      >
+        <Card
+          className={'project_card'}
+          width={10}
+          height={20}
+          color={this.props.color}
+          onClick={this.toggleContent}
+        >
+          <img
+            alt={this.props.title}
+            src={this.props.img}
+            style={{
+              width: 'calc(2rem + 0.9vmax)',
+            }}
+          />
+        </Card>
+      </Popover>
     );
   }
 }

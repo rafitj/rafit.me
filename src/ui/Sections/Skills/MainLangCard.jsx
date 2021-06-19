@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../../../assets/styles/skills.css';
 import Card from '../../components/Card';
 
 class MainLangCard extends Component {
@@ -10,7 +9,7 @@ class MainLangCard extends Component {
         <img
           src={this.props.img}
           alt={this.props.lang}
-          width={30}
+          width={this.props.w || 30}
           style={
             {
               // filter: `drop-shadow( 0px 0px 2px ${this.props.color})`,

@@ -1,12 +1,5 @@
 .header_container {
-    text-align: center;
-    margin: 0 auto;
+    text-align: left;
+    /* margin: 0 auto; */
     margin-bottom: 5px;
 }
-
-
-/* @media(max-height: 700px) {
-    .header_container {
-        display: none;
-    }
-} */

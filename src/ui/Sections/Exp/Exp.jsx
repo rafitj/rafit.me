@@ -5,8 +5,6 @@ import mlse from '../../../assets/images/exp/MLSE.svg';
 import salesforce from '../../../assets/images/exp/Salesforce.svg';
 import setter from '../../../assets/images/exp/Setter.svg';
 import office from '../../../assets/images/other/office.png';
-import Resume from '../../../assets/resume/Resume.pdf';
-import { openInNewTab } from '../../utils';
 import Header from '../Header';
 import ExpCard from './ExpCard';
 
@@ -14,11 +12,11 @@ class Exp extends Component {
   render() {
     return (
       <div className="section" id="exp">
-        <Header text="Work Experience" img={office} />
+        <Header text="I've worked at a few cool places" img={office} />
         <div className="section-body">
-          <div className="small">
+          {/* <div className="small">
             My SWE internship experience over the years
-          </div>
+          </div> */}
           <ExpCard
             img={amz}
             title="Amazon"
@@ -29,7 +27,7 @@ class Exp extends Component {
             color="#FE9401"
             link="https:/www.amazon.com/"
             imgW="4.4rem"
-            disabled
+            // disabled
           />
           <ExpCard
             img={salesforce}
@@ -75,7 +73,7 @@ class Exp extends Component {
             imgW="2.6rem"
           />
         </div>
-        <div className="small">
+        {/* <div className="small">
           Also, I'm looking for Winter 2021 internships so hit me up :)
         </div>
         <div
@@ -84,7 +82,7 @@ class Exp extends Component {
           onClick={() => openInNewTab(Resume)}
         >
           Checkout details in my Resume
-        </div>
+        </div> */}
       </div>
     );
   }

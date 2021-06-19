@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
-import { Container } from 'react-grid-system';
 import '../../assets/styles/footer.css';
 
 class Footer extends Component {
   render() {
     return (
-      <>
-        <Container>
           <div id="contact" className="footer_container">
             <div className="connect-details">
               <p className="muted_p">
@@ -20,8 +17,6 @@ class Footer extends Component {
               </p>
             </div>
           </div>
-        </Container>
-      </>
     );
   }
 }
