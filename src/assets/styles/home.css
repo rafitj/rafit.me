@@ -5,7 +5,7 @@
 .home_container {
     text-align: left;
     padding: 0rem;
-    width: 70vw;
+    /* width: 70vw; */
     /* height: 100vh; */
     display: flex;
     flex-direction: column;
@@ -15,6 +15,7 @@
 
 #home {
     padding-bottom: 75px;
+    width: 80vw;
 }
 
 .tiny {

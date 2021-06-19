@@ -9,20 +9,23 @@ class Home extends Component {
   state = {
     showMore: false,
     height: 0,
-    prevSize: window.outerWidth
+    prevSize: window.outerWidth,
   };
   componentDidMount() {
     window.addEventListener('resize', this.handleResize);
-    this.setState({height: document.getElementById("content-container").offsetHeight})
+    window.addEventListener('resize', this.delayedReact);
+    this.handleResize();
+    this.delayedReact();
   }
+  delayedReact = () => {
+    setTimeout(this.handleResize, 260);
+  };
   handleResize = () => {
-    if (this.state.prevSize-window.outerWidth) {
-      setTimeout(this.handleResize, 5)
-      setTimeout(this.handleResize, 50)
-    }
-    this.setState({prevSize: window.outerWidth})
-    this.setState({height: document.getElementById("content-container").offsetHeight})
-  }
+    this.setState({ prevSize: window.outerWidth });
+    this.setState({
+      height: document.getElementById('content-container').offsetHeight,
+    });
+  };
   toggleShow = () => {
     this.setState((prevState) => ({
       showMore: !prevState.showMore,
@@ -32,7 +35,7 @@ class Home extends Component {
   render() {
     return (
       <>
-        <div id="home" style={{marginTop: 20}}>
+        <div id="home" style={{ marginTop: 20 }}>
           <div className="home_container">
             <div
               style={{
@@ -53,20 +56,26 @@ class Home extends Component {
                   style={{ width: 'calc(75px + 0.8vmax)' }}
                 />
               </div>
-              <div style={{display: 'flex', flexWrap: 'wrap', alignItems: 'flex-end'}}>
               <div
                 style={{
-                  fontSize: 'calc(125% + 1vmax)',
-                  fontWeight: 'bold',
-                  marginRight: 10,
-                  // marginBottom: 15,
-                  lineHeight: 1,
-                  textAlign: 'left',
+                  display: 'flex',
+                  flexWrap: 'wrap',
+                  alignItems: 'flex-end',
                 }}
               >
-                I'm Rafit
-              </div>
-              <HomeText />
+                <div
+                  style={{
+                    fontSize: 'calc(125% + 1vmax)',
+                    fontWeight: 'bold',
+                    marginRight: 10,
+                    // marginBottom: 15,
+                    lineHeight: 1,
+                    textAlign: 'left',
+                  }}
+                >
+                  I'm Rafit
+                </div>
+                <HomeText />
               </div>
             </div>
             <div
@@ -116,26 +125,43 @@ class Home extends Component {
                 <div>LinkedIn</div>
               </div>
             </div>
-            
           </div>
-          <div style={{margin: '0 10px'}}>
-          {!this.state.showMore && (
-                    <div style={{marginTop: 20, textAlign: 'left' }}>
-              <div className="small" onClick={this.toggleShow}>
-                That's it? <span role="img" aria-label="smiley" style={{marginLeft: 4}}>🤔</span>
+          <div style={{ margin: '0 10px' }}>
+            {!this.state.showMore && (
+              <div style={{ marginTop: 20, textAlign: 'left' }}>
+                <div className="small" onClick={this.toggleShow}>
+                  That's it?{' '}
+                  <span
+                    role="img"
+                    aria-label="smiley"
+                    style={{ marginLeft: 4 }}
+                  >
+                    🤔
+                  </span>
+                </div>
               </div>
+            )}
+            <Content
+              isVisible={this.state.showMore}
+              height={this.state.height}
+            />
+            {this.state.showMore && (
+              <div style={{ marginTop: 30, textAlign: 'left' }}>
+                <div className="small" onClick={this.toggleShow}>
+                  Ok, that's enough{' '}
+                  <span
+                    role="img"
+                    aria-label="smiley"
+                    style={{ marginLeft: 4 }}
+                  >
+                    {' '}
+                    🤯
+                  </span>
+                </div>
               </div>
-        )}
-        <Content isVisible={this.state.showMore} height={this.state.height}/>
-        {this.state.showMore && (
-          <div style={{marginTop: 30, textAlign: 'left' }}>
-            <div className="small" onClick={this.toggleShow}>
-              Ok, that's enough <span role="img" aria-label="smiley" style={{marginLeft: 4}}> 🤯</span>
-            </div>
+            )}
           </div>
-        )}</div>
         </div>
-     
       </>
     );
   }

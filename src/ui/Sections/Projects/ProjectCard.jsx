@@ -12,9 +12,10 @@ class ProjectCard extends Component {
     return (
       <Popover
         placement="bottom"
-        style={{width: 'auto'}}
+        style={{ width: 'auto' }}
         content={
-          <>{this.props.details}
+          <>
+            {this.props.details}
             {/* <Space
               direction="horizontal"
               style={{ display: 'flex', alignItems: 'center' }}
@@ -48,7 +49,7 @@ class ProjectCard extends Component {
                 />
               </div>
             </Space> */}
-            </>
+          </>
         }
         trigger="click"
         visible={this.props.isSelected}

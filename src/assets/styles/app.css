@@ -36,7 +36,7 @@ i {
 }
 
 ::-webkit-scrollbar {
-    width: 0px;
+    height: 0px;
     /* Remove scrollbar space */
     background: transparent;
     /* Optional: just make scrollbar invisible */
@@ -79,6 +79,7 @@ i {
 
 * {
     transition: all 0.25s ease;
+    scrollbar-width: none;
 }
 
 .link {
@@ -120,11 +121,37 @@ i {
 
 .section-body {
     display: flex;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     /* flex-wrap: wrap; */
-    width: 70vw;
+    /* width: 70vw; */
     justify-content: flex-start;
     /* position: relative; */
     overflow-x: scroll;
     /* box-shadow: 5px 10px 5px pink inset; */
+}
+
+.show-left-arrow {
+    width: 10px;
+    margin-left: 10px;
+    opacity: 1;
+}
+
+.hide-left-arrow {
+    width: 0px;
+    margin-left: 0px;
+    opacity: 0;
+}
+
+.show-right-arrow {
+    transform: rotate(180deg);
+    width: 10px;
+    margin-right: 10px;
+    opacity: 1;
+}
+
+.hide-right-arrow {
+    transform: rotate(180deg);
+    width: 0px;
+    margin-right: 0px;
+    opacity: 0;
 }
