@@ -19,6 +19,7 @@ class Projects extends Component {
   state = {
     showLeftArrow: false,
     showRightArrow: false,
+    selected: '',
   };
   componentDidMount() {
     const elem = document.getElementById('proj-body');
@@ -33,6 +34,7 @@ class Projects extends Component {
     setTimeout(this.onScroll, 260);
   };
   onScroll = () => {
+    this.setState({ selected: '' });
     const elem = document.getElementById('proj-body');
     const newScrollLeft = elem.scrollLeft;
     const width = elem.offsetWidth;
@@ -46,6 +48,13 @@ class Projects extends Component {
       this.setState({ showRightArrow: false });
     } else {
       this.setState({ showRightArrow: true });
+    }
+  };
+  onSelect = (t) => {
+    if (t === this.props.selected) {
+      this.setState({ selected: '' });
+    } else {
+      this.setState({ selected: t });
     }
   };
   render() {
@@ -64,6 +73,9 @@ class Projects extends Component {
           />
           <div className="section-body" id="proj-body">
             <ProjectCard
+              noneSelected={this.props.selected === ''}
+              onSelect={this.props.onSelect}
+              selected={this.props.selected === 'Density'}
               img={density}
               title="Density"
               desc="Passive WiFi Triangulation"
@@ -74,6 +86,9 @@ class Projects extends Component {
               color="#61C7D8"
             />
             <ProjectCard
+              noneSelected={this.props.selected === ''}
+              onSelect={this.props.onSelect}
+              selected={this.props.selected === 'Traffix'}
               img={traffix}
               title="Traffix"
               desc="Autonomous Car Networks"
@@ -84,6 +99,9 @@ class Projects extends Component {
               color="#7CDD86"
             />
             <ProjectCard
+              noneSelected={this.props.selected === ''}
+              onSelect={this.props.onSelect}
+              selected={this.props.selected === 'FrameAR'}
               img={framear}
               title="FrameAR"
               desc="VCS and AR Viz for 3D CAD"
@@ -93,6 +111,9 @@ class Projects extends Component {
               color="#D66B6B"
             />
             <ProjectCard
+              noneSelected={this.props.selected === ''}
+              onSelect={this.props.onSelect}
+              selected={this.props.selected === 'ProMotion'}
               img={promotion}
               title="ProMotion"
               desc="AR and ML Motion Games"
@@ -102,6 +123,9 @@ class Projects extends Component {
               color="#91267a"
             />
             <ProjectCard
+              noneSelected={this.props.selected === ''}
+              onSelect={this.props.onSelect}
+              selected={this.props.selected === 'Compass'}
               img={compass}
               title="Compass"
               desc="City Exploration via AR and FB"
@@ -111,6 +135,9 @@ class Projects extends Component {
               color="#0b87d6"
             />
             <ProjectCard
+              noneSelected={this.props.selected === ''}
+              onSelect={this.props.onSelect}
+              selected={this.props.selected === 'Realm'}
               img={realm}
               title="Realm"
               desc="AR Speech Powered Presentations"
@@ -120,6 +147,9 @@ class Projects extends Component {
               color="#c80005"
             />
             <ProjectCard
+              noneSelected={this.props.selected === ''}
+              onSelect={this.props.onSelect}
+              selected={this.props.selected === 'Pillar'}
               img={pillar}
               title="Pillar"
               desc="Voice-Powered Medical Hubs"
@@ -129,6 +159,9 @@ class Projects extends Component {
               color="#ad6d42"
             />
             <ProjectCard
+              noneSelected={this.props.selected === ''}
+              onSelect={this.props.onSelect}
+              selected={this.props.selected === 'Fashionably'}
               img={fashionably}
               title="Fashionably"
               desc="AI Wardrobe Management"
@@ -151,6 +184,9 @@ class Projects extends Component {
             And I've worked on some personal projects too
           </div> */}
             <ProjectCard
+              noneSelected={this.props.selected === ''}
+              onSelect={this.props.onSelect}
+              selected={this.props.selected === 'Mesh'}
               img={mesh}
               title="Mesh"
               desc="Network Design & Simulation"
@@ -158,6 +194,9 @@ class Projects extends Component {
               color="#38b2ac"
             />
             <ProjectCard
+              noneSelected={this.props.selected === ''}
+              onSelect={this.props.onSelect}
+              selected={this.props.selected === 'KnowIt'}
               img={knowit}
               title="KnowIt"
               desc="Notes & Flashcards App"
@@ -165,6 +204,9 @@ class Projects extends Component {
               color="#ffffff"
             />
             <ProjectCard
+              noneSelected={this.props.selected === ''}
+              onSelect={this.props.onSelect}
+              selected={this.props.selected === 'Gaze'}
               img={gaze}
               title="Gaze"
               desc="Real-Time Gaze Tracking"
@@ -172,6 +214,9 @@ class Projects extends Component {
               color="#8376DF"
             />
             <ProjectCard
+              noneSelected={this.props.selected === ''}
+              onSelect={this.props.onSelect}
+              selected={this.props.selected === 'Pseudo'}
               img={pseudo}
               title="Pseudo"
               desc="Micro-Freelancing for Creators"

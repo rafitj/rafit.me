@@ -27,6 +27,7 @@ class Exp extends Component {
     setTimeout(this.onScroll, 260);
   };
   onScroll = () => {
+    this.props.onSelect('');
     const elem = document.getElementById('exp-body');
     const newScrollLeft = elem.scrollLeft;
     const width = elem.offsetWidth;
@@ -42,6 +43,7 @@ class Exp extends Component {
       this.setState({ showRightArrow: true });
     }
   };
+
   render() {
     return (
       <div className="section" id="exp">
@@ -58,6 +60,9 @@ class Exp extends Component {
           />
           <div className="section-body" id="exp-body">
             <ExpCard
+              noneSelected={this.props.selected === ''}
+              onSelect={this.props.onSelect}
+              selected={this.props.selected === 'Amazon'}
               img={amz}
               title="Amazon"
               desc="Incoming SDE Intern"
@@ -70,6 +75,9 @@ class Exp extends Component {
               // disabled
             />
             <ExpCard
+              noneSelected={this.props.selected === ''}
+              onSelect={this.props.onSelect}
+              selected={this.props.selected === 'Salesforce'}
               img={salesforce}
               title="Salesforce"
               desc="Software Engineering Intern"
@@ -81,6 +89,9 @@ class Exp extends Component {
               imgW="3.7rem"
             />
             <ExpCard
+              noneSelected={this.props.selected === ''}
+              onSelect={this.props.onSelect}
+              selected={this.props.selected === 'Meter'}
               img={meter}
               title="Meter"
               desc="Software Engineering Intern"
@@ -91,6 +102,9 @@ class Exp extends Component {
               link="https://meter.parts/"
             />
             <ExpCard
+              noneSelected={this.props.selected === ''}
+              onSelect={this.props.onSelect}
+              selected={this.props.selected === 'Setter'}
               img={setter}
               title="Setter"
               desc="Software Engineering Intern"
@@ -102,6 +116,9 @@ class Exp extends Component {
               imgW="2.2rem"
             />
             <ExpCard
+              noneSelected={this.props.selected === ''}
+              onSelect={this.props.onSelect}
+              selected={this.props.selected === 'MLSE'}
               img={mlse}
               title="MLSE"
               desc="Software Engineering Intern"

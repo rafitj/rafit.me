@@ -1,9 +1,19 @@
 import React, { Component } from 'react';
-import Exp from './Sections/Exp/Exp';
-import Projects from './Sections/Projects/Projects';
-import Skills from './Sections/Skills/Skills';
+import Exp from './sections/Exp/Exp';
+import Projects from './sections/Projects/Projects';
+import Skills from './sections/Skills/Skills';
 
 class Content extends Component {
+  state = {
+    selected: '',
+  };
+  onSelect = (t) => {
+    if (t === this.state.selected) {
+      this.setState({ selected: '' });
+    } else {
+      this.setState({ selected: t });
+    }
+  };
   render() {
     return (
       <div
@@ -13,9 +23,9 @@ class Content extends Component {
         }}
       >
         <div id="content-container">
-          <Exp />
-          <Projects />
-          <Skills />
+          <Exp selected={this.state.selected} onSelect={this.onSelect} />
+          <Projects selected={this.state.selected} onSelect={this.onSelect} />
+          <Skills selected={this.state.selected} onSelect={this.onSelect} />
         </div>
       </div>
     );

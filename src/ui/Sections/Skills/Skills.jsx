@@ -20,8 +20,7 @@ import react from '../../../assets/images/tools/react.svg';
 import redis from '../../../assets/images/tools/redis.svg';
 import springboot from '../../../assets/images/tools/springboot.svg';
 import Header from '../Header';
-import MainLangCard from './MainLangCard';
-import ToolCard from './ToolCard';
+import SkillCard from './SkillCard';
 class Skills extends Component {
   state = {
     showLeftArrow: false,
@@ -70,26 +69,123 @@ class Skills extends Component {
             alt="arrow"
           />
           <div className="section-body" id="skill-body">
-            <MainLangCard img={Python} title="Python" color="#f5cd60" />
-            <MainLangCard img={CPlus} title="C++" color="#004482" />
-            <MainLangCard img={Java} title="Java" color="#ff010a" />
-            <MainLangCard img={TS} title="TypeScript" color="#237ec8" />
-            <MainLangCard img={JS} title="JavaScript" color="#eed65b" />
-            <MainLangCard img={Go} title="Golang" color="#00addb" w={48} />
-            <ToolCard img={node} color="#9cbc45" />
-            <ToolCard img={springboot} color="#41c029" />
-            <ToolCard img={flask} color="#ffffff" />
-            <ToolCard img={react} color="#7bd6f7" />
-            <ToolCard img={django} color="#53a276" />
-            {/* <ToolCard img={graphql} color="#ca4896" /> */}
-            <ToolCard img={mongo} color="#6a8e49" />
-            <ToolCard img={postgres} color="#386390" />
-            <ToolCard img={neo4j} color="#028ec7" />
-            <ToolCard img={redis} color="#ba4839" />
-            <ToolCard img={aws} color="#ca9150" />
-            <ToolCard img={firebase} color="#f9c844" />
-            <ToolCard img={docker} color="#4eb6e5" />
-            {/* <ToolCard img={tf} color="#f18c31" /> */}
+            <SkillCard
+              selected={this.props.selected}
+              onSelect={() => this.props.onSelect('')}
+              img={Python}
+              title="Python"
+              color="#f5cd60"
+            />
+            <SkillCard
+              selected={this.props.selected}
+              onSelect={() => this.props.onSelect('')}
+              img={CPlus}
+              title="C++"
+              color="#004482"
+            />
+            <SkillCard
+              selected={this.props.selected}
+              onSelect={() => this.props.onSelect('')}
+              img={Java}
+              title="Java"
+              color="#ff010a"
+            />
+            <SkillCard
+              selected={this.props.selected}
+              onSelect={() => this.props.onSelect('')}
+              img={TS}
+              title="TypeScript"
+              color="#237ec8"
+            />
+            <SkillCard
+              selected={this.props.selected}
+              onSelect={() => this.props.onSelect('')}
+              img={JS}
+              title="JavaScript"
+              color="#eed65b"
+            />
+            <SkillCard
+              selected={this.props.selected}
+              onSelect={() => this.props.onSelect('')}
+              img={Go}
+              title="Golang"
+              color="#00addb"
+              w={48}
+            />
+            <SkillCard
+              selected={this.props.selected}
+              onSelect={() => this.props.onSelect('')}
+              img={node}
+              color="#9cbc45"
+            />
+            <SkillCard
+              selected={this.props.selected}
+              onSelect={() => this.props.onSelect('')}
+              img={springboot}
+              color="#41c029"
+            />
+            <SkillCard
+              selected={this.props.selected}
+              onSelect={() => this.props.onSelect('')}
+              img={flask}
+              color="#ffffff"
+            />
+            <SkillCard
+              selected={this.props.selected}
+              onSelect={() => this.props.onSelect('')}
+              img={react}
+              color="#7bd6f7"
+            />
+            <SkillCard
+              selected={this.props.selected}
+              onSelect={() => this.props.onSelect('')}
+              img={django}
+              color="#53a276"
+            />
+            {/* <SkillCard selected={this.props.selected} onSelect={() => this.props.onSelect('')} img={graphql} color="#ca4896" /> */}
+            <SkillCard
+              selected={this.props.selected}
+              onSelect={() => this.props.onSelect('')}
+              img={mongo}
+              color="#6a8e49"
+            />
+            <SkillCard
+              selected={this.props.selected}
+              onSelect={() => this.props.onSelect('')}
+              img={postgres}
+              color="#386390"
+            />
+            <SkillCard
+              selected={this.props.selected}
+              onSelect={() => this.props.onSelect('')}
+              img={neo4j}
+              color="#028ec7"
+            />
+            <SkillCard
+              selected={this.props.selected}
+              onSelect={() => this.props.onSelect('')}
+              img={redis}
+              color="#ba4839"
+            />
+            <SkillCard
+              selected={this.props.selected}
+              onSelect={() => this.props.onSelect('')}
+              img={aws}
+              color="#ca9150"
+            />
+            <SkillCard
+              selected={this.props.selected}
+              onSelect={() => this.props.onSelect('')}
+              img={firebase}
+              color="#f9c844"
+            />
+            <SkillCard
+              selected={this.props.selected}
+              onSelect={() => this.props.onSelect('')}
+              img={docker}
+              color="#4eb6e5"
+            />
+            {/* <SkillCard selected={this.props.selected} onSelect={() => this.props.onSelect('')} img={tf} color="#f18c31" /> */}
           </div>
           <img
             src={arrow}
