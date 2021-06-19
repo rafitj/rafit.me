@@ -35,20 +35,16 @@ class Home extends Component {
   render() {
     return (
       <>
-        <div id="home" style={{ marginTop: 20 }}>
+        <div id="home">
           <div className="home_container">
             <div
               style={{
                 color: 'white',
                 justifyContent: 'flex-start',
-                margin: '0 10px',
                 width: '100%',
-                // maxWidth: '100%',
               }}
+              className="dynamic-margin"
             >
-              {/* <div style={{ fontSize: '250%', opacity: 0.8, marginBottom: 2 }}>
-              Hi
-            </div> */}
               <div style={{ marginBottom: 15 }}>
                 <img
                   src={me}
@@ -56,19 +52,12 @@ class Home extends Component {
                   style={{ width: 'calc(75px + 0.8vmax)' }}
                 />
               </div>
-              <div
-                style={{
-                  display: 'flex',
-                  flexWrap: 'wrap',
-                  alignItems: 'flex-end',
-                }}
-              >
+              <div className="home-header">
                 <div
                   style={{
                     fontSize: 'calc(125% + 1vmax)',
                     fontWeight: 'bold',
                     marginRight: 10,
-                    // marginBottom: 15,
                     lineHeight: 1,
                     textAlign: 'left',
                   }}
@@ -91,42 +80,34 @@ class Home extends Component {
             >
               <div
                 onClick={() => openInNewTab(Resume)}
-                style={{ margin: 10, padding: 5 }}
                 className="link home-link"
               >
                 Resume
-                {/* <img alt="emoji" src={scroll} className="emoji small" />{' '} */}
                 <div> </div>
               </div>
               <div
                 onClick={() => openInNewTab('mailto: rafit.jamil@gmail.com')}
-                style={{ margin: 10, padding: 5 }}
                 className="link home-link"
               >
-                {/* <img alt="emoji" src={mail} className="emoji small" />{' '} */}
                 <div> Email</div>
               </div>
               <div
                 onClick={() => openInNewTab('http://github.com/rafitj')}
-                style={{ margin: 10, padding: 5 }}
                 className="link home-link"
               >
-                {/* <img alt="emoji" src={laptop} className="emoji small" />{' '} */}
                 <div>Github</div>
               </div>
               <div
                 onClick={() =>
                   openInNewTab('https://www.linkedin.com/in/rafitj')
                 }
-                style={{ margin: 10, padding: 5 }}
                 className="link home-link"
               >
-                {/* <img alt="emoji" src={business} className="emoji small" />{' '} */}
                 <div>LinkedIn</div>
               </div>
             </div>
           </div>
-          <div style={{ margin: '0 10px' }}>
+          <div className="dynamic-margin">
             {!this.state.showMore && (
               <div style={{ marginTop: 20, textAlign: 'left' }}>
                 <div className="small" onClick={this.toggleShow}>

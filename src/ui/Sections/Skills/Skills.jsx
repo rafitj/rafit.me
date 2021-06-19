@@ -12,6 +12,7 @@ import django from '../../../assets/images/tools/django.svg';
 import docker from '../../../assets/images/tools/docker.svg';
 import firebase from '../../../assets/images/tools/firebase.svg';
 import flask from '../../../assets/images/tools/flask.svg';
+import graphql from '../../../assets/images/tools/graphql.svg';
 import mongo from '../../../assets/images/tools/mongo.svg';
 import neo4j from '../../../assets/images/tools/neo4j.svg';
 import node from '../../../assets/images/tools/node.svg';
@@ -142,7 +143,12 @@ class Skills extends Component {
               img={django}
               color="#53a276"
             />
-            {/* <SkillCard selected={this.props.selected} onSelect={() => this.props.onSelect('')} img={graphql} color="#ca4896" /> */}
+            <SkillCard
+              selected={this.props.selected}
+              onSelect={() => this.props.onSelect('')}
+              img={graphql}
+              color="#ca4896"
+            />
             <SkillCard
               selected={this.props.selected}
               onSelect={() => this.props.onSelect('')}
@@ -185,7 +191,6 @@ class Skills extends Component {
               img={docker}
               color="#4eb6e5"
             />
-            {/* <SkillCard selected={this.props.selected} onSelect={() => this.props.onSelect('')} img={tf} color="#f18c31" /> */}
           </div>
           <img
             src={arrow}

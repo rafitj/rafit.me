@@ -13,6 +13,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
 }
 
 body {
@@ -26,7 +27,6 @@ body>* {
 
 * {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    /* letter-spacing: 0.2em; */
     transition: all 0.2s ease;
     transition-property: all !important;
 }
@@ -41,9 +41,7 @@ i {
 
 ::-webkit-scrollbar {
     height: 0px;
-    /* Remove scrollbar space */
     background: transparent;
-    /* Optional: just make scrollbar invisible */
 }
 
 .git {
@@ -65,7 +63,6 @@ i {
     display: flex;
     align-items: center;
     margin-top: 15px;
-    /* width: 100%; */
     text-align: left;
     color: gray;
     font-size: calc(15% + 0.75vmax);
@@ -84,14 +81,12 @@ i {
 .small-2 {
     display: flex;
     align-items: center;
-    /* width: 100%; */
     text-align: left;
     color: gray;
-    font-size: calc(10% + 0.75vmax);
+    font-size: calc(20% + 0.75vmax);
     border-radius: 5px;
     cursor: pointer;
     opacity: 1;
-    /* border: 1px solid gray; */
     padding: 4.5px 5px;
     width: max-content;
 }
@@ -99,14 +94,12 @@ i {
 .small-3 {
     display: flex;
     align-items: center;
-    /* width: 100%; */
     text-align: left;
     color: gray;
-    font-size: calc(5% + 0.6vmax);
+    font-size: calc(20% + 0.6vmax);
     border-radius: 5px;
     cursor: pointer;
     opacity: 0.75;
-    /* border: 1px solid gray; */
     padding: 4.5px 5px;
     padding-left: 0;
     width: max-content;
@@ -140,9 +133,24 @@ i {
 }
 
 .home-link {
-    /* margin: 24px 24px 24px 0; */
-    font-size: calc(1px + 0.8vmax);
-    width: calc(70px + 1vmax);
+    font-size: calc(4px + 0.65vmax);
+    width: calc(75px + 1vmax);
+    margin: calc(10px - 0.25vmax);
+}
+
+.dynamic-margin {
+    margin: 0 calc(10px - 0.25vmax);
+}
+
+@media (max-width: 550px) {
+    .home-link {
+        font-size: calc(5px + 0.65vmax);
+        width: calc(70px + 1vmax);
+        margin: calc(5px - 0.15vmax);
+    }
+    .dynamic-margin {
+        margin: 0 calc(5px - 0.15vmax);
+    }
 }
 
 .section {
@@ -150,19 +158,12 @@ i {
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    /* margin: 52px 15px; */
-    /* min-height: 100vh; */
 }
 
 .section-body {
     display: flex;
-    /* margin: 0 auto; */
-    /* flex-wrap: wrap; */
-    /* width: 70vw; */
     justify-content: flex-start;
-    /* position: relative; */
     overflow-x: scroll;
-    /* box-shadow: 5px 10px 5px pink inset; */
 }
 
 .show-left-arrow {

@@ -7,6 +7,7 @@ class Content extends Component {
   state = {
     selected: '',
   };
+  cards = document.getElementsByClassName('card');
   onSelect = (t) => {
     if (t === this.state.selected) {
       this.setState({ selected: '' });
@@ -14,6 +15,16 @@ class Content extends Component {
       this.setState({ selected: t });
     }
   };
+  componentDidMount() {
+    window.addEventListener('click', (e) => {
+      const outside = Array.from(this.cards).every(
+        (card) => !card.contains(e.target)
+      );
+      if (outside) {
+        this.setState({ selected: '' });
+      }
+    });
+  }
   render() {
     return (
       <div

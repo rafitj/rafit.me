@@ -71,7 +71,7 @@ class Exp extends Component {
               date="Jul 2021 - Oct 2021"
               color="#FE9401"
               link="https:/www.amazon.com/"
-              imgW="4.4rem"
+              imgW="3.4rem"
               // disabled
             />
             <ExpCard
@@ -86,7 +86,7 @@ class Exp extends Component {
               date="May 2021 - Jul 2021"
               color="#009FDF"
               link="https://www.salesforce.com/ca/campaign/lightning/"
-              imgW="3.7rem"
+              imgW="2.4rem"
             />
             <ExpCard
               noneSelected={this.props.selected === ''}
@@ -113,7 +113,7 @@ class Exp extends Component {
               date="Jan 2020 - May 2020"
               color="#FF2D4F"
               link="https://setter.com/"
-              imgW="2.2rem"
+              imgW="1.5rem"
             />
             <ExpCard
               noneSelected={this.props.selected === ''}
@@ -127,7 +127,7 @@ class Exp extends Component {
               date="May 2019 - Sep 2019"
               color="#BBA388"
               link="https://www.mlse.com/"
-              imgW="2.6rem"
+              imgW="1.7rem"
             />
           </div>
           <img

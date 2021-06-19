@@ -5,8 +5,6 @@
 .home_container {
     text-align: left;
     padding: 0rem;
-    /* width: 70vw; */
-    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -15,11 +13,23 @@
 
 #home {
     padding-bottom: 75px;
-    width: 80vw;
+    margin-top: 25px;
+    width: 70vw;
+}
+
+@media (max-width: 600px) {
+    #home {
+        width: 80vw;
+    }
+}
+
+.home-header {
+    display: flex;
+    align-items: flex-end;
 }
 
 .tiny {
-    font-size: 0.7rem !important;
+    font-size: 0.5rem !important;
 }
 
 .muted_p {
@@ -91,6 +101,12 @@
     }
 }
 
+@media (max-width: 420px) {
+    .home-header {
+        display: block;
+    }
+}
+
 .home-text {
     cursor: pointer;
     color: whitesmoke;
@@ -104,8 +120,8 @@
     opacity: 0.6;
 }
 
-@media (max-width: 300px) {
-    .home-text .emoji {
+@media (max-width: 275px) {
+    .emoji {
         display: none;
     }
 }

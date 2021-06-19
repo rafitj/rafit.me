@@ -170,19 +170,6 @@ class Projects extends Component {
               devpostUrl="https://devpost.com/software/fashionably"
               color="#ffa74c"
             />
-            {/* <div style={{ width: '100%' }}>
-            <div
-              className="link"
-              style={{ marginTop: 15 }}
-              onClick={() => openInNewTab('http://devpost.com/rafitj')}
-            >
-              View in detail on my Devpost
-            </div>
-          </div> */}
-
-            {/* <div className="small">
-            And I've worked on some personal projects too
-          </div> */}
             <ProjectCard
               noneSelected={this.props.selected === ''}
               onSelect={this.props.onSelect}
@@ -232,13 +219,6 @@ class Projects extends Component {
             alt="arrow"
           />
         </div>
-        {/* <div
-          className="link"
-          style={{ marginTop: 15 }}
-          onClick={() => openInNewTab('http://github.com/rafitj')}
-        >
-          Much more on my Github
-        </div> */}
       </div>
     );
   }

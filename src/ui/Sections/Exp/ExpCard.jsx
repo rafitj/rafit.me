@@ -41,8 +41,8 @@ class ExpCard extends Component {
             }
             style={{
               width: this.props.imgW
-                ? `calc(${this.props.imgW} + 0.2vmax)`
-                : 'calc(2rem + 0.2vmax)',
+                ? `calc(${this.props.imgW} + 0.6vmax)`
+                : 'calc(1.5rem + 0.6vmax)',
             }}
           />
         </Card>
