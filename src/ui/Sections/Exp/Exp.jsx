@@ -5,7 +5,6 @@ import mlse from '../../../assets/images/exp/MLSE.svg';
 import salesforce from '../../../assets/images/exp/Salesforce.svg';
 import setter from '../../../assets/images/exp/Setter.svg';
 import arrow from '../../../assets/images/other/arrow3.svg';
-import office from '../../../assets/images/other/office.png';
 import Header from '../Header';
 import ExpCard from './ExpCard';
 
@@ -47,7 +46,7 @@ class Exp extends Component {
   render() {
     return (
       <div className="section" id="exp">
-        <Header text="I've worked at a few cool places" img={office} />
+        <Header text="I've worked at a few cool places" />
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <img
             src={arrow}

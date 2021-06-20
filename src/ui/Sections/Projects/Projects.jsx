@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import arrow from '../../../assets/images/other/arrow3.svg';
-import mage from '../../../assets/images/other/mage.gif';
 import compass from '../../../assets/images/projects/Compass.svg';
 import density from '../../../assets/images/projects/Density.svg';
 import fashionably from '../../../assets/images/projects/Fashionably.svg';
@@ -60,7 +59,7 @@ class Projects extends Component {
   render() {
     return (
       <div className="section" id="project">
-        <Header text="I've made some dope tech projects" img={mage} />
+        <Header text="I've made some dope tech projects" />
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <img
             src={arrow}

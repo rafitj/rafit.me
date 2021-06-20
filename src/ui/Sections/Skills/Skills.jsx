@@ -6,7 +6,6 @@ import JS from '../../../assets/images/langs/JS.svg';
 import Python from '../../../assets/images/langs/Python.svg';
 import TS from '../../../assets/images/langs/TS.svg';
 import arrow from '../../../assets/images/other/arrow3.svg';
-import ninja from '../../../assets/images/other/ninja.png';
 import aws from '../../../assets/images/tools/aws.svg';
 import django from '../../../assets/images/tools/django.svg';
 import docker from '../../../assets/images/tools/docker.svg';
@@ -58,7 +57,7 @@ class Skills extends Component {
   render() {
     return (
       <div className="section" id="skill">
-        <Header text="I've developed some neat skills" img={ninja} />
+        <Header text="I've developed some neat skills" />
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <img
             src={arrow}
