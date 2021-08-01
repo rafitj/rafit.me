@@ -12,7 +12,7 @@ const textArray = [
     <img src={school} alt="school" className="emoji" />
   </>,
   <>
-    <div>and I'm a SWE Intern @ Salesforce</div>
+    <div>and I'm a SWE Intern @ Amazon</div>
     <img src={cloud} alt="cloud" className="emoji" />
   </>,
   <>

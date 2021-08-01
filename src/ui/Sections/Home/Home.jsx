@@ -1,3 +1,4 @@
+// import IonIcon from 'ionicons/icons/';
 import React, { Component } from 'react';
 import me from '../../../assets/images/other/me.gif';
 import Resume from '../../../assets/resume/Resume.pdf';
@@ -82,6 +83,9 @@ class Home extends Component {
                 onClick={() => openInNewTab(Resume)}
                 className="link home-link"
               >
+                <div style={{ marginRight: 6, display: 'flex' }}>
+                  <ion-icon name="reader"></ion-icon>
+                </div>
                 Resume
                 <div> </div>
               </div>
@@ -89,12 +93,18 @@ class Home extends Component {
                 onClick={() => openInNewTab('mailto: rafit.jamil@gmail.com')}
                 className="link home-link"
               >
+                <div style={{ marginRight: 6, display: 'flex' }}>
+                  <ion-icon name="mail"></ion-icon>
+                </div>
                 <div> Email</div>
               </div>
               <div
                 onClick={() => openInNewTab('http://github.com/rafitj')}
                 className="link home-link"
               >
+                <div style={{ marginRight: 6, display: 'flex' }}>
+                  <ion-icon name="logo-github"></ion-icon>
+                </div>
                 <div>Github</div>
               </div>
               <div
@@ -103,6 +113,9 @@ class Home extends Component {
                 }
                 className="link home-link"
               >
+                <div style={{ marginRight: 6, display: 'flex' }}>
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </div>
                 <div>LinkedIn</div>
               </div>
             </div>

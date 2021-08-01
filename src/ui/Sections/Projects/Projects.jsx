@@ -81,7 +81,7 @@ class Projects extends Component {
               link="https://github.com/rafitj/density"
               onClick={this.openModal}
               trophy="RU Hacks 2019 2nd Place"
-              hackerUrl="https://ruhacks2019.hackerearth.com/challenges/hackathon/ru-hacks-2019/dashboard/1e422e1/submission/"
+              // hackerUrl="https://ruhacks2019.hackerearth.com/challenges/hackathon/ru-hacks-2019/dashboard/1e422e1/submission/"
               color="#61C7D8"
             />
             <ProjectCard
