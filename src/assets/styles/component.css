@@ -3,8 +3,8 @@
     background-color: #333333;
     border-radius: 5px;
     border: 2px solid transparent;
-    width: calc(50px + 0.5vmax);
-    margin: calc(10px - 0.15vmax);
+    width: calc(50px + 0.5vw);
+    margin: calc(10px - 0.15vw);
     display: flex;
     align-items: center;
     justify-content: center;

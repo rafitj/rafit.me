@@ -66,7 +66,7 @@ class ProjectCard extends Component {
                 : 'popover-unselected'
             }
             style={{
-              width: 'calc(2rem + 0.9vmax)',
+              width: 'calc(2rem + 0.9vw)',
             }}
           />
         </Card>

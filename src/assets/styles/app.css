@@ -55,7 +55,7 @@ i {
 }
 
 .emoji {
-    width: calc(10px + 1vmax);
+    width: calc(10px + 1vw);
     margin: 0 6px;
 }
 
@@ -65,7 +65,7 @@ i {
     margin-top: 15px;
     text-align: left;
     color: gray;
-    font-size: calc(15% + 0.75vmax);
+    font-size: calc(15% + 0.75vw);
     border-radius: 5px;
     cursor: pointer;
     opacity: 0.75;
@@ -83,7 +83,7 @@ i {
     align-items: center;
     text-align: left;
     color: gray;
-    font-size: calc(20% + 0.75vmax);
+    font-size: calc(20% + 0.75vw);
     border-radius: 5px;
     cursor: pointer;
     opacity: 1;
@@ -96,7 +96,7 @@ i {
     align-items: center;
     text-align: left;
     color: gray;
-    font-size: calc(20% + 0.6vmax);
+    font-size: calc(20% + 0.6vw);
     border-radius: 5px;
     cursor: pointer;
     opacity: 0.75;
@@ -115,14 +115,14 @@ i {
     background-color: #333333;
     border-radius: 5px;
     padding: 6px 12px;
-    font-size: calc(35% + 0.5vmax);
+    font-size: auto;
     text-align: center;
     margin: 0 auto;
     align-items: center;
     display: flex;
     justify-content: center;
     border: 2px solid transparent;
-    width: calc(350px + 0.5vmax);
+    width: calc(350px + 0.5vw);
     line-height: 1.5;
 }
 
@@ -133,23 +133,18 @@ i {
 }
 
 .home-link {
-    font-size: calc(6px + 0.45vmax);
-    width: calc(65px + 1.35vmax);
-    margin: calc(10px - 0.15vmax);
+    font-size: auto;
+    width: calc(75px + 1.15vw);
+    margin: calc(10px - 0.05vw);
 }
 
 .dynamic-margin {
-    margin: 0 calc(10px - 0.25vmax);
+    margin: 0 calc(10px - 0.25vw);
 }
 
-@media (max-width: 550px) {
+@media (max-width: 700px) {
     .home-link {
-        font-size: calc(5px + 0.65vmax);
-        width: calc(70px + 1vmax);
-        margin: calc(8px - 0.15vmax);
-    }
-    .dynamic-margin {
-        margin: 0 calc(5px - 0.15vmax);
+        margin: calc(8px - 0.15vw);
     }
 }
 

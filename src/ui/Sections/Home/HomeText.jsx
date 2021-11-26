@@ -22,7 +22,7 @@ const textArray = [
   </p>,
   loading(),
   <p class="from-them">
-    I study Software @ UWaterloo{' '}
+    I study SE @ UWaterloo{' '}
     <span aria-label="" role="img">
       🎒
     </span>
@@ -69,6 +69,7 @@ const HomeText = () => {
   });
   const clickSlide = () => {
     setIndx((indx + 1) % textArray.length);
+    setShowTime(false);
     if (indx % 2 !== 0) {
       setTime(
         new Date().toLocaleTimeString(navigator.language, {

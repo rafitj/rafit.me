@@ -9,7 +9,7 @@ class Header extends Component {
             color: 'gray',
             marginBottom: 8,
             marginTop: 25,
-            fontSize: 'calc(5px + 0.8vmax)',
+            fontSize: 'calc(5px + 0.8vw)',
           }}
         >
           {this.props.text}
