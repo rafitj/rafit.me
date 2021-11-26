@@ -1,56 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import AMZ from '../../../assets/images/exp/AMZ.svg';
+import CRM from '../../../assets/images/exp/CRM.svg';
+import FB from '../../../assets/images/exp/FB.svg';
+import GOOGL from '../../../assets/images/exp/GOOGL.svg';
 import '../../../assets/styles/home.css';
-
-const loading = () => (
-  <>
-    <p class="from-them">
-      <div class="loading">
-        <div class="dot one"></div>
-        <div class="dot two"></div>
-        <div class="dot three"></div>
-      </div>
-    </p>
-  </>
-);
-
-const textArray = [
-  <p class="from-them">
-    Hi, I'm Rafit{' '}
-    <span aria-label="" role="img">
-      👋🏽
-    </span>
-  </p>,
-  loading(),
-  <p class="from-them">
-    I study SE @ UWaterloo{' '}
-    <span aria-label="" role="img">
-      🎒
-    </span>
-  </p>,
-  loading(),
-  <p class="from-them">
-    I'm a SWE Intern @ Google{' '}
-    <span aria-label="" role="img">
-      🔍
-    </span>
-  </p>,
-  loading(),
-  <p class="from-them">
-    I love football{' '}
-    <span aria-label="" role="img">
-      ⚽
-    </span>
-  </p>,
-  loading(),
-  <p class="from-them">
-    I like film, food and design{' '}
-    <span aria-label="" role="img">
-      🍿
-    </span>
-  </p>,
-  loading(),
-];
-
 
 const HomeText = () => {
   const [indx, setIndx] = useState(0);
@@ -68,9 +21,84 @@ const HomeText = () => {
       clearInterval(timerID);
     };
   });
+
+  const loading = () => (
+    <div className="fadeIn imessage">
+      <p class="from-them">
+        <div class="loading">
+          <div class="dot one"></div>
+          <div class="dot two"></div>
+          <div class="dot three"></div>
+        </div>
+      </p>
+      <p className={!showTime ? 'sent' : 'sent show'}>{time}</p>
+    </div>
+  );
+
+  const textArray = [
+    <div className="fadeIn imessage">
+      <p class="from-them">
+        Hi, I'm Rafit{' '}
+        <span aria-label="" role="img">
+          👋🏽
+        </span>
+      </p>
+      <p className={!showTime ? 'sent' : 'sent show'}>{time}</p>
+    </div>,
+    loading(),
+    <div className="fadeIn imessage">
+      <p class="from-them">
+        I study SE @ UWaterloo{' '}
+        <span aria-label="" role="img">
+          🎒
+        </span>
+      </p>
+      <p className={!showTime ? 'sent' : 'sent show'}>{time}</p>
+    </div>,
+    loading(),
+    <div className="fadeIn imessage">
+      <p class="from-them" style={{ display: 'flex', alignItems: 'center'}}>
+        I'm a SWE Intern @ Google{' '}
+        <img alt="" src={GOOGL} style={{ width: 17.5, marginLeft: 7.1}}/>
+      </p>
+      <p className={!showTime ? 'sent' : 'sent show'}>{time}</p>
+    </div>,
+    loading(),
+    <div className="fadeIn imessage">
+      <p class="from-them" style={{ display: 'flex', alignItems: 'center'}}>
+        I've worked @
+        <img alt="" src={FB} style={{ width: 23, marginLeft: 7.1}}/>
+        <img alt="" src={GOOGL} style={{ width: 17.5, marginLeft: 7.1}}/>
+        <img alt="" src={AMZ} style={{ width: 17, marginLeft: 7.1}}/>
+        <img alt="" src={CRM} style={{ width: 25, marginLeft: 7.1}}/>
+      </p>
+      <p className={!showTime ? 'sent' : 'sent show'}>{time}</p>
+    </div>,
+    loading(),
+    <div className="fadeIn imessage">
+      <p class="from-them">
+        I love football{' '}
+        <span aria-label="" role="img">
+          ⚽
+        </span>
+      </p>
+      <p className={!showTime ? 'sent' : 'sent show'}>{time}</p>
+    </div>,
+    loading(),
+    <div className="fadeIn imessage">
+      <p class="from-them">
+        I like film, food and design{' '}
+        <span aria-label="" role="img">
+          🍿
+        </span>
+      </p>
+      <p className={!showTime ? 'sent' : 'sent show'}>{time}</p>
+    </div>,
+    loading(),
+  ];
   const clickSlide = () => {
     setIndx((indx + 1) % textArray.length);
-    setShowTime(false);
+    // setShowTime(false);
     if (indx % 2 !== 0) {
       setTime(
         new Date().toLocaleTimeString(navigator.language, {
@@ -88,18 +116,15 @@ const HomeText = () => {
   const onMouseLeave = () => {
     setShowTime(false);
   };
-  const getMsg = (i) => (
+  return (
     <div
-      className={"fadeIn imessage " + i}
       onClick={clickSlide}
       onMouseOver={onMouseOver}
       onMouseLeave={onMouseLeave}
     >
-      {textArray[i]}
-      <p className={!showTime ? 'sent' : 'sent show'}>{time}</p>
+      {textArray[indx]}
     </div>
   );
-  return getMsg(indx);
 };
 
 export default HomeText;

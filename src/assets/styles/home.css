@@ -165,6 +165,7 @@
     animation: float 3s ease-in-out infinite;
     transition: all 0.2s ease;
     display: table;
+    width: fit-content;
 }
 
 @keyframes fadeIn {
