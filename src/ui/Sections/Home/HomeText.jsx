@@ -51,6 +51,7 @@ const textArray = [
   loading(),
 ];
 
+
 const HomeText = () => {
   const [indx, setIndx] = useState(0);
   const [showTime, setShowTime] = useState(false);
@@ -87,17 +88,18 @@ const HomeText = () => {
   const onMouseLeave = () => {
     setShowTime(false);
   };
-  return (
+  const getMsg = (i) => (
     <div
-      className="fadeIn imessage"
+      className={"fadeIn imessage " + i}
       onClick={clickSlide}
       onMouseOver={onMouseOver}
       onMouseLeave={onMouseLeave}
     >
-      {textArray[indx]}
+      {textArray[i]}
       <p className={!showTime ? 'sent' : 'sent show'}>{time}</p>
     </div>
   );
+  return getMsg(indx);
 };
 
 export default HomeText;
