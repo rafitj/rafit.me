@@ -156,8 +156,6 @@
     background-color: #1e1e1e;
     border: 1px solid #1e1e1e;
     border-radius: 0.15rem;
-    display: flex;
-    flex-direction: column;
     font-family: "SanFrancisco";
     text-align: left;
     position: absolute;
@@ -166,7 +164,7 @@
     transform: translate(100%, -75%);
     animation: float 3s ease-in-out infinite;
     transition: all 0.2s ease;
-    width: fit-content;
+    display: table;
 }
 
 @keyframes fadeIn {
@@ -355,6 +353,10 @@ p[class^="from-"].emoji::before {
     .imessage .sent {
         display: none;
     }
+}
+
+.loading {
+    height: 14px;
 }
 
 .loading .dot {
