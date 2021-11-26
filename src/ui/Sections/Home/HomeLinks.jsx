@@ -17,7 +17,7 @@ const HomeLinks = () => {
       }}
     >
       <div onClick={() => openInNewTab(Resume)} className="link home-link">
-        <div style={{ marginRight: 'calc(2px + 0.25vw)', display: 'flex' }}>
+        <div style={{ marginRight: 'calc(3.5px + 0.25vw)', display: 'flex' }}>
           <ion-icon name="reader"></ion-icon>
         </div>
         Resume
@@ -27,7 +27,7 @@ const HomeLinks = () => {
         onClick={() => openInNewTab('mailto: rafit.jamil@gmail.com')}
         className="link home-link"
       >
-        <div style={{ marginRight: 'calc(2px + 0.25vw)', display: 'flex' }}>
+        <div style={{ marginRight: 'calc(3.5px + 0.25vw)', display: 'flex' }}>
           <ion-icon name="mail"></ion-icon>
         </div>
         <div>Email</div>
@@ -36,7 +36,7 @@ const HomeLinks = () => {
         onClick={() => openInNewTab('http://github.com/rafitj')}
         className="link home-link"
       >
-        <div style={{ marginRight: 'calc(2px + 0.25vw)', display: 'flex' }}>
+        <div style={{ marginRight: 'calc(3.5px + 0.25vw)', display: 'flex' }}>
           <ion-icon name="logo-github"></ion-icon>
         </div>
         <div>Github</div>
@@ -45,7 +45,7 @@ const HomeLinks = () => {
         onClick={() => openInNewTab('https://www.linkedin.com/in/rafitj')}
         className="link home-link"
       >
-        <div style={{ marginRight: 'calc(2px + 0.25vw)', display: 'flex' }}>
+        <div style={{ marginRight: 'calc(3.5px + 0.25vw)', display: 'flex' }}>
           <ion-icon name="logo-linkedin"></ion-icon>
         </div>
         <div>LinkedIn</div>

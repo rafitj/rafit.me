@@ -26,12 +26,12 @@ class Home extends Component {
                     margin: '0 auto',
                   }}
                 >
+                  <HomeText />
                   <img
                     src={me}
                     alt={'me'}
                     style={{ width: 'calc(75px + 0.8vw)' }}
                   />
-                  <HomeText />
                 </div>
               </div>
             </div>

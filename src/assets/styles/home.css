@@ -155,17 +155,16 @@
 .imessage {
     background-color: #1e1e1e;
     border: 1px solid #1e1e1e;
-    border-radius: 0.15rem;
-    font-family: "SanFrancisco";
     text-align: left;
     position: absolute;
-    top: 0;
+    top: -20%;
     right: 0;
-    transform: translate(100%, -75%);
-    animation: float 3s ease-in-out infinite;
+    transform: translateX(100%);
     transition: all 0.2s ease;
     display: table;
     width: fit-content;
+    margin: 0 auto;
+    animation: float 3s ease-in-out infinite;
 }
 
 @keyframes fadeIn {
@@ -179,13 +178,13 @@
 
 @keyframes float {
     0% {
-        transform: translate(100%, -70%);
+        top: -20%;
     }
     50% {
-        transform: translate(100%, -80%);
+        top: -15%;
     }
     100% {
-        transform: translate(100%, -70%);
+        top: -20%;
     }
 }
 
@@ -339,13 +338,13 @@ p[class^="from-"].emoji::before {
     }
     @keyframes float {
         0% {
-            transform: translate(-50%, -155%);
+            top: 0%;
         }
         50% {
-            transform: translate(-50%, -165%);
+            top: -5%;
         }
         100% {
-            transform: translate(-50%, -155%);
+            top: 0%;
         }
     }
     p.from-them:before {
