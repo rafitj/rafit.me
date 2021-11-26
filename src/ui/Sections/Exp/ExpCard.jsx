@@ -34,18 +34,14 @@ class ExpCard extends Component {
           <img
             alt={this.props.company}
             src={this.props.img}
-            className={
-              this.props.selected || this.props.noneSelected
-                ? 'popover-selected'
-                : 'popover-unselected'
-            }
             style={{
               width: this.props.imgW
-                ? `calc(${this.props.imgW} + 0.6vmax)`
-                : 'calc(1.5rem + 0.6vmax)',
-              paddingRight: 10,
+                ? `calc(${this.props.imgW} + 0.4vmax)`
+                : 'calc(1.5rem + 0.4vmax)',
             }}
+            
           />
+          {/* {this.props.title} */}
         </Card>
       </Popover>
     );

@@ -133,9 +133,9 @@ i {
 }
 
 .home-link {
-    font-size: calc(4px + 0.65vmax);
-    width: calc(75px + 1vmax);
-    margin: calc(10px - 0.25vmax);
+    font-size: calc(6px + 0.45vmax);
+    width: calc(65px + 1.35vmax);
+    margin: calc(10px - 0.15vmax);
 }
 
 .dynamic-margin {
@@ -146,7 +146,7 @@ i {
     .home-link {
         font-size: calc(5px + 0.65vmax);
         width: calc(70px + 1vmax);
-        margin: calc(5px - 0.15vmax);
+        margin: calc(8px - 0.15vmax);
     }
     .dynamic-margin {
         margin: 0 calc(5px - 0.15vmax);

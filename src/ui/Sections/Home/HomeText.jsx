@@ -1,36 +1,65 @@
 import React, { useEffect, useState } from 'react';
-import arm from '../../../assets/images/emoji/arm.png';
-import art from '../../../assets/images/emoji/art.png';
-import cloud from '../../../assets/images/emoji/cloud.png';
-import school from '../../../assets/images/emoji/school.png';
-import soccer from '../../../assets/images/emoji/soccer.png';
 import '../../../assets/styles/home.css';
 
+const loading = () => (
+  <>
+    <p class="from-them">
+      <div class="loading">
+        <div class="dot one"></div>
+        <div class="dot two"></div>
+        <div class="dot three"></div>
+      </div>
+    </p>
+  </>
+);
+
 const textArray = [
-  <>
-    <div>and I study Software @ UWaterloo</div>
-    <img src={school} alt="school" className="emoji" />
-  </>,
-  <>
-    <div>and I'm a SWE Intern @ Amazon</div>
-    <img src={cloud} alt="cloud" className="emoji" />
-  </>,
-  <>
-    <div>and I love everything football</div>
-    <img src={soccer} alt="soccer" className="emoji" />
-  </>,
-  <>
-    <div>and I'm trying to learn cool stuff</div>
-    <img src={arm} alt="arm" className="emoji" />
-  </>,
-  <>
-    <div>and I like film, food and design</div>
-    <img src={art} alt="art" className="emoji" />
-  </>,
+  <p class="from-them">
+    Hi, I'm Rafit{' '}
+    <span aria-label="" role="img">
+      👋🏽
+    </span>
+  </p>,
+  loading(),
+  <p class="from-them">
+    I study Software @ UWaterloo{' '}
+    <span aria-label="" role="img">
+      🎒
+    </span>
+  </p>,
+  loading(),
+  <p class="from-them">
+    I'm a SWE Intern @ Google{' '}
+    <span aria-label="" role="img">
+      🔍
+    </span>
+  </p>,
+  loading(),
+  <p class="from-them">
+    I love football{' '}
+    <span aria-label="" role="img">
+      ⚽
+    </span>
+  </p>,
+  loading(),
+  <p class="from-them">
+    I like film, food and design{' '}
+    <span aria-label="" role="img">
+      🍿
+    </span>
+  </p>,
+  loading(),
 ];
 
 const HomeText = () => {
   const [indx, setIndx] = useState(0);
+  const [showTime, setShowTime] = useState(false);
+  const [time, setTime] = useState(
+    new Date().toLocaleTimeString(navigator.language, {
+      hour: '2-digit',
+      minute: '2-digit',
+    })
+  );
   useEffect(() => {
     const timerID = setInterval(clickSlide, 5000);
 
@@ -40,10 +69,32 @@ const HomeText = () => {
   });
   const clickSlide = () => {
     setIndx((indx + 1) % textArray.length);
+    if (indx % 2 !== 0) {
+      setTime(
+        new Date().toLocaleTimeString(navigator.language, {
+          hour: '2-digit',
+          minute: '2-digit',
+        })
+      );
+    } else {
+      setTime('');
+    }
+  };
+  const onMouseOver = () => {
+    setShowTime(true);
+  };
+  const onMouseLeave = () => {
+    setShowTime(false);
   };
   return (
-    <div className="home-text" onClick={clickSlide}>
+    <div
+      className="fadeIn imessage"
+      onClick={clickSlide}
+      onMouseOver={onMouseOver}
+      onMouseLeave={onMouseLeave}
+    >
       {textArray[indx]}
+      <p className={!showTime ? 'sent' : 'sent show'}>{time}</p>
     </div>
   );
 };
