@@ -58,8 +58,8 @@ const HomeText = () => {
     loading(),
     <>
       <p class="from-them" style={{ display: 'flex', alignItems: 'center' }}>
-        I'm a SWE Intern @ Google{' '}
-        <img alt="" src={GOOGL} style={{ width: 17.5, marginLeft: 7.1 }} />
+        I'm a SWE Intern @ Meta{' '}
+        <img alt="" src={FB} style={{ width: 23, marginLeft: 7.1 }} />
       </p>
       <p className={!showTime ? 'sent' : 'sent show'}>{time}</p>
     </>,
