@@ -48,8 +48,16 @@ const HomeText = () => {
     </>,
     loading(),
     <>
+      <p class="from-them" style={{ display: 'flex', alignItems: 'center' }}>
+        I'm building AGI @ OpenAI{' '}
+        <img alt="openai" src={OPENAI} style={{ width: 17.5, marginLeft: 7.1 }} />
+      </p>
+      <p className={!showTime ? 'sent' : 'sent show'}>{time}</p>
+    </>,
+    loading(),
+        <>
       <p class="from-them">
-        I studied Software @ UWaterloo{' '}
+        I studied software @ UWaterloo{' '}
         <span aria-label="" role="img">
           🎒
         </span>
@@ -59,30 +67,22 @@ const HomeText = () => {
     loading(),
     <>
       <p class="from-them" style={{ display: 'flex', alignItems: 'center' }}>
-        I'm a MTS @ OpenAI{' '}
-        <img alt="" src={OPENAI} style={{ width: 17.5, marginLeft: 7.1 }} />
-      </p>
-      <p className={!showTime ? 'sent' : 'sent show'}>{time}</p>
-    </>,
-    loading(),
-    <>
-      <p class="from-them" style={{ display: 'flex', alignItems: 'center' }}>
         I've worked @
-        <img alt="" src={FB} style={{ width: 23, marginLeft: 7.1 }} />
-        <img alt="" src={GOOGL} style={{ width: 17.5, marginLeft: 7.1 }} />
-        <img alt="" src={AMZ} style={{ width: 17, marginLeft: 7.1 }} />
-        <img alt="" src={CRM} style={{ width: 25, marginLeft: 7.1 }} />
+        <img alt="facebook" src={FB} style={{ width: 23, marginLeft: 7.1 }} />
+        <img alt="google" src={GOOGL} style={{ width: 17.5, marginLeft: 7.1 }} />
+        <img alt="amazon" src={AMZ} style={{ width: 17, marginLeft: 7.1 }} />
+        <img alt="salesforce" src={CRM} style={{ width: 25, marginLeft: 7.1 }} />
       </p>
       <p className={!showTime ? 'sent' : 'sent show'}>{time}</p>
     </>,
     loading(),
     <>
       <p class="from-them">
-        I love coffee{' '}
+        I live for coffee{' '}
         <span aria-label="" role="img">
           ☕
         </span>
-        & football{' '}
+        {' '}+ football{' '}
         <span aria-label="" role="img">
           ⚽
         </span>
@@ -92,7 +92,7 @@ const HomeText = () => {
     loading(),
     <>
       <p class="from-them">
-        I like film, food and design{' '}
+        I dabble in film, food and design{' '}
         <span aria-label="" role="img">
           🍿
         </span>

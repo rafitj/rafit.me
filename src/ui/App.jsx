@@ -1,7 +1,7 @@
 import React from 'react';
 import '../assets/styles/app.css';
-import Footer from './sections/Footer';
-import Home from './sections/Home/Home';
+import Footer from './Sections/Footer';
+import Home from './Sections/Home/Home';
 class App extends React.Component {
   render() {
     return (

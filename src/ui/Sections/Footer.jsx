@@ -9,8 +9,7 @@ class Footer extends Component {
           <p className="muted_p">
             <span role="img" aria-label="NY">
               🌉
-            </span>{' '}
-            San Francisco, CA
+            </span>{'  '}San Francisco, CA
           </p>
           <p className="muted_p tiny">
             Copyright © 2025 Rafit Jamil. All rights reserved.
