@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import AMZ from '../../../assets/images/exp/AMZ.svg';
 import CRM from '../../../assets/images/exp/CRM.svg';
 import FB from '../../../assets/images/exp/FB.svg';
 import GOOGL from '../../../assets/images/exp/GOOGL.svg';
+import OPENAI from '../../../assets/images/exp/OPENAI.svg';
 import '../../../assets/styles/home.css';
 
 const HomeText = () => {
@@ -48,7 +49,7 @@ const HomeText = () => {
     loading(),
     <>
       <p class="from-them">
-        I study SE @ UWaterloo{' '}
+        I studied Software @ UWaterloo{' '}
         <span aria-label="" role="img">
           🎒
         </span>
@@ -58,8 +59,8 @@ const HomeText = () => {
     loading(),
     <>
       <p class="from-them" style={{ display: 'flex', alignItems: 'center' }}>
-        I'm a SWE @ Google{' '}
-        <img alt="" src={GOOGL} style={{ width: 17.5, marginLeft: 7.1 }} />
+        I'm a MTS @ OpenAI{' '}
+        <img alt="" src={OPENAI} style={{ width: 17.5, marginLeft: 7.1 }} />
       </p>
       <p className={!showTime ? 'sent' : 'sent show'}>{time}</p>
     </>,
@@ -77,7 +78,11 @@ const HomeText = () => {
     loading(),
     <>
       <p class="from-them">
-        I love football{' '}
+        I love coffee{' '}
+        <span aria-label="" role="img">
+          ☕
+        </span>
+        & football{' '}
         <span aria-label="" role="img">
           ⚽
         </span>

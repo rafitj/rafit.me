@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import '../../assets/styles/footer.css';
 
 class Footer extends Component {
@@ -8,12 +8,12 @@ class Footer extends Component {
         <div className="connect-details">
           <p className="muted_p">
             <span role="img" aria-label="NY">
-              🗽
+              🌉
             </span>{' '}
-            New York, NY
+            San Francisco, CA
           </p>
           <p className="muted_p tiny">
-            Copyright © 2021 Rafit Jamil. All rights reserved.
+            Copyright © 2025 Rafit Jamil. All rights reserved.
           </p>
         </div>
       </div>

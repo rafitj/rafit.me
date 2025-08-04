@@ -1,5 +1,3 @@
-import React from 'react';
-import Resume from '../../../assets/resume/Resume.pdf';
 import '../../../assets/styles/home.css';
 import { openInNewTab } from '../../utils';
 
@@ -16,7 +14,14 @@ const HomeLinks = () => {
         flexWrap: 'wrap',
       }}
     >
-      <div onClick={() => openInNewTab(Resume)} className="link home-link">
+      <div
+        onClick={() =>
+          openInNewTab(
+            'https://drive.google.com/file/d/1Exy1tZ7WSrB-8JJWXSLuoyFdfGAEcyVM/view?usp=sharing'
+          )
+        }
+        className="link home-link"
+      >
         <div style={{ marginRight: 'calc(3.5px + 0.25vw)', display: 'flex' }}>
           <ion-icon name="reader"></ion-icon>
         </div>
